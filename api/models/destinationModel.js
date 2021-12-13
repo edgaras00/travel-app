@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const destinationSchema = Schema({
+const destinationSchema = new Schema({
   _id: Schema.Types.ObjectId,
   name: {
     type: String,
@@ -31,5 +31,5 @@ const destinationSchema = Schema({
   packages: [{ type: Schema.Types.ObjectId, ref: "Package" }],
 });
 
-const Destination = mongoose.Model(destinationSchema, "Destination");
+const Destination = mongoose.model("Destination", destinationSchema);
 module.exports = Destination;

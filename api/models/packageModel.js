@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const packageSchema = Schema({
+const packageSchema = new Schema({
   _id: Schema.Types.ObjectId,
   name: {
     type: String,
@@ -48,5 +48,5 @@ const packageSchema = Schema({
   guides: [{ type: Schema.Types.ObjectId, ref: "User" }],
 });
 
-const Package = mongoose.Model(packageSchema, "Package");
+const Package = mongoose.model("Package", packageSchema);
 module.exports = Package;

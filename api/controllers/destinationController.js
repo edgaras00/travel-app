@@ -1,3 +1,5 @@
+const Destination = require("../models/destinationModel");
+
 exports.getAllDestinations = (req, res, next) => {
   const destinations = [];
   res.status(200).json({
@@ -19,11 +21,10 @@ exports.getDestination = (req, res, next) => {
 };
 
 exports.createDestination = (req, res, next) => {
-  const newDestination = {};
   res.status(201).json({
     status: "Success",
     data: {
-      newDestination,
+      destination: {},
     },
   });
 };

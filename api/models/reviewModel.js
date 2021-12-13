@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const reviewSchema = Schema({
+const reviewSchema = new Schema({
   _id: Schema.Types.ObjectId,
   header: {
     type: String,
@@ -32,5 +32,5 @@ const reviewSchema = Schema({
   },
 });
 
-const Review = mongoose.Model(reviewSchema, "Review");
+const Review = mongoose.model("Review", reviewSchema);
 module.exports = Review;

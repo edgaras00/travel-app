@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const bookingSchema = Schema({
+const bookingSchema = new Schema({
   _id: Schema.Types.ObjectId,
   price: {
     type: Number,
@@ -23,5 +23,5 @@ const bookingSchema = Schema({
   },
 });
 
-const Booking = mongoose.Model(bookingSchema, "Booking");
+const Booking = mongoose.model("Booking", bookingSchema);
 module.exports = Booking;

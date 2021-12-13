@@ -9,6 +9,9 @@ require("dotenv").config();
 
 const app = express();
 
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+
 const DB_CONN = process.env.DB_STRING.replace(
   "<password>",
   process.env.DB_PASSWORD
