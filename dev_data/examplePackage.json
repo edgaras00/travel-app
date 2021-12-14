@@ -1,0 +1,32 @@
+[
+  {
+    "name": "The Italy Tour",
+    "price": 2000,
+    "description": "Tour description",
+    "duration": 10,
+    "averageRating": 4.7,
+    "numberOfRatings": 39,
+    "tags": ["culture", "group", "family"],
+    "coverImage": "1.jpg"
+  },
+  {
+    "name": "The France Tour",
+    "price": 2300,
+    "description": "Tour description",
+    "duration": 14,
+    "averageRating": 5.0,
+    "numberOfRatings": 12,
+    "tags": ["culture", "romantic"],
+    "coverImage": "2.jpg"
+  },
+  {
+    "name": "The Lithuania Tour",
+    "price": 1800,
+    "description": "Tour description",
+    "duration": 7,
+    "averageRating": 4.8,
+    "numberOfRatings": 11,
+    "tags": ["family", "general", "group"],
+    "coverImage": "3.jpg"
+  }
+]

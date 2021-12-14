@@ -1,41 +1,57 @@
-exports.getAllUsers = (req, res, next) => {
-  const users = [];
+const User = require("../models/userModel");
 
-  res.status(200).json({
-    status: "Success",
-    data: {
-      users,
-    },
-  });
+exports.getAllUsers = async (req, res, next) => {
+  try {
+    const users = await User.find();
+
+    res.status(200).json({
+      status: "Success",
+      data: {
+        users,
+      },
+    });
+  } catch (error) {
+    console.log(error);
+  }
 };
 
-exports.getUser = (req, res, next) => {
-  const user = req.params.userID;
+exports.getUser = async (req, res, next) => {
+  try {
+    const user = await User.findById(req.params.userID);
 
-  res.status(200).json({
-    status: "Success",
-    data: {
-      user,
-    },
-  });
+    res.status(200).json({
+      status: "Success",
+      data: {
+        user,
+      },
+    });
+  } catch (error) {
+    console.log(error);
+  }
 };
 
-exports.updateUser = (req, res, next) => {
-  const user = req.params.userID;
-
-  res.status(200).json({
-    status: "Success",
-    data: {
-      user,
-    },
-  });
+exports.updateUser = async (req, res, next) => {
+  try {
+    const user = await User.findByIdAndUpdate(req.params.userID);
+    res.status(200).json({
+      status: "Success",
+      data: {
+        user,
+      },
+    });
+  } catch (error) {
+    console.log(error);
+  }
 };
 
-exports.deleteUser = (req, res, next) => {
-  const user = req.params.userID;
-
-  res.status(204).json({
-    status: "Success",
-    message: "Successful deletion",
-  });
+exports.deleteUser = async (req, res, next) => {
+  try {
+    await User.findByIdAndDelete(req.params.userID);
+    res.status(204).json({
+      status: "Success",
+      message: "Successful deletion",
+    });
+  } catch (error) {
+    console.log(error);
+  }
 };

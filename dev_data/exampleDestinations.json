@@ -1,0 +1,140 @@
+[
+  {
+    "name": "Italy",
+    "description": "Language and culture, food and fashion, art and architecture, history and myths... all fill your senses as you set foot in bella Italia. Whether it’s the gondola rides and soft sunsets at Venice, the sweeping landscape and vineyards in Tuscany or the iconic larger-than-life sites in Rome—Italy invites you to slow down and soak it all in. Something that your Liberty Travel consultant keeps in mind when customizing your vacation package with just the right excursion or tour, so it can be one to remember.",
+    "weather": "The climate varies considerably from the north to the south of Italy. North has extreme winters and summer. Central is milder, as is the South. Always check local weather.",
+    "language": "Italian",
+    "currency": "Euro",
+    "thingsToDo": [
+      {
+        "title": "Hike the Cinque Terre",
+        "text": "For spectacular views, picturesque villages, wild open landscapes and local experiences, it's hard to beat the five towns of Italy's Cinque Terre and the cliff path that connects them. The 12-kilometer Sentiero Azzurro stretches from Monterosso to Riomaggiore, but it's conveniently broken into segments that you can hike from one town to the next, returning or moving on by train."
+      },
+      {
+        "title": "Glide through Venice in a Gondola",
+        "text": "It may be Venice's number one cliché, but drifting along a canal in the graceful curve of a gondola is one of the top things to do in Italy. Finding a gondolier is easy. They gather along the Grand Canal by the Doge's Palace and at Rialto Bridge, and you'll see them in their striped shirts and straw hats on bridges and canals as you explore the city. As he (or occasionally she) will be your guide, converse a bit to see if you're comfortable with their style and command of English"
+      },
+      {
+        "title": "Tour Tuscan Hill Towns by Bicycle or Car",
+        "text": "Tuscany's hilly countryside is best enjoyed at leisure, stopping to explore tiny settlements between the tourist attractions of the larger medieval towns that crown the hilltops. While a driving tour can cover more of these towns, a bicycle gets you closer to the land and gives you time to notice more details."
+      }
+    ],
+    "places": [
+      {
+        "name": "Rome",
+        "description": "Italy’s vibrant capital has all the evidence of once being the Caput Mundi or capital of the world. From the Roman Forum and the Colosseum, to the Pantheon, these ancient sites intertwine effortlessly with present-day Rome. In addition to marveling at the relics of the golden age, lap up the current dolce vita lifestyle. Sip espressos in sleek cafés. Stroll on picturesque night-lit streets. Dine on authentic Italian cuisine and enjoy people-watching on pretty piazzas—all an integral part of the Roman experience built into your customized vacation package",
+        "thingsToDo": [
+          { "title": "Thing 1", "text": "Text 1" },
+          { "title": "Thing 2", "text": "Text 2" },
+          { "title": "Thing 3", "text": "Text 3" }
+        ]
+      },
+      {
+        "name": "Milan",
+        "description": "From historic attractions, like The Last Supper painting, the world’s largest Gothic cathedral, and the famous La Scala Opera, to A-list fashion houses like Prada, Versace, and Armani, Milan offers its visitors a blend of the traditional and the ultra-modern. Whether you want to soak in some history at the Duomo; indulge in retail therapy at the Quadrilatero district; take in some culture at the Pinacoteca di Brera, or head to Navigli for a cocktail, we can customize your vacation package with insider insights to experience the best of Milan.",
+        "thingsToDo": [
+          { "title": "Thing 1", "text": "Text 1" },
+          { "title": "Thing 2", "text": "Text 2" },
+          { "title": "Thing 3", "text": "Text 3" }
+        ]
+      },
+      {
+        "name": "Venice",
+        "description": "With its spectacular setting and architectural heritage, Venice always enchants. Virtually unchanged for over 600 years, this city on a lagoon is famed for its weathered buildings, picturesque canals, arched bridges, pedestrian streets, soft sunsets and an old-world charm. Whether you travel by vaporetto to Piazza San Marco, take a romantic gondola ride, lose your way shopping in a bustling alley or enjoy an authentic Venetian meal in a canal-side bistro, we can customize your vacation with experiences that’ll stay with you long after.",
+        "thingsToDo": [
+          { "title": "Thing 1", "text": "Text 1" },
+          { "title": "Thing 2", "text": "Text 2" },
+          { "title": "Thing 3", "text": "Text 3" }
+        ]
+      }
+    ],
+    "coverImage": "1.jpg",
+    "packages": []
+  },
+  {
+    "name": "France",
+    "description": "France is the world’s leading travel destination and for good reason. You can stroll Paris’s bohemian Latin Quarter, see the Mona Lisa at the Louvre, and view the glittering Eiffel Tower. Glamour meets the coast in the sun-drenched French Riviera. Bask in the sun in the Côte d’Azur’s St. Tropez, Nice, and Cannes. Ski the French Alps, follow the Michelin Guide to some of the world’s most renowned three-star restaurants, or journey to a Château in Bordeaux or Burgundy, and taste the local wines.",
+    "weather": "Temperatures vary from average lows in the mid-thirties in the winter to highs in the mid-seventies in the summer. Pack an umbrella for July.",
+    "language": "French",
+    "currency": "Euro",
+    "thingsToDo": [
+      { "title": "Thing 1", "text": "Text 1" },
+      { "title": "Thing 2", "text": "Text 2" },
+      { "title": "Thing 3", "text": "Text 3" }
+    ],
+    "places": [
+      {
+        "name": "Paris",
+        "description": "Paris decription",
+        "thingsToDo": [
+          { "title": "Thing 1", "text": "Text 1" },
+          { "title": "Thing 2", "text": "Text 2" },
+          { "title": "Thing 3", "text": "Text 3" }
+        ]
+      },
+      {
+        "name": "Nice",
+        "description": "Nice description.",
+        "thingsToDo": [
+          { "title": "Thing 1", "text": "Text 1" },
+          { "title": "Thing 2", "text": "Text 2" },
+          { "title": "Thing 3", "text": "Text 3" }
+        ]
+      },
+      {
+        "name": "Saint-Tropez",
+        "description": "Saint-Tropez description",
+        "thingsToDo": [
+          { "title": "Thing 1", "text": "Text 1" },
+          { "title": "Thing 2", "text": "Text 2" },
+          { "title": "Thing 3", "text": "Text 3" }
+        ]
+      }
+    ],
+    "coverImage": "2.jpg",
+    "packages": []
+  },
+  {
+    "name": "Lithuania",
+    "description": "Lithuania description",
+    "weather": "Weather in Lithuania",
+    "currency": "Euro",
+    "language": "Lithuanian",
+    "coverImage": "3.jpg",
+    "thingsToDo": [
+      { "title": "Thing 1", "text": "Text 1" },
+      { "title": "Thing 2", "text": "Text 2" },
+      { "title": "Thing 3", "text": "Text 3" }
+    ],
+    "places": [
+      {
+        "name": "Vilnius",
+        "description": "Vilnius description",
+        "thingsToDo": [
+          { "title": "Thing 1", "text": "Text 1" },
+          { "title": "Thing 2", "text": "Text 2" },
+          { "title": "Thing 3", "text": "Text 3" }
+        ]
+      },
+      {
+        "name": "Kaunas",
+        "description": "Kaunas description",
+        "thingsToDo": [
+          { "title": "Thing 1", "text": "Text 1" },
+          { "title": "Thing 2", "text": "Text 2" },
+          { "title": "Thing 3", "text": "Text 3" }
+        ]
+      },
+      {
+        "name": "Klaipeda",
+        "description": "Klaipeda description",
+        "thingsToDo": [
+          { "title": "Thing 1", "text": "Text 1" },
+          { "title": "Thing 2", "text": "Text 2" },
+          { "title": "Thing 3", "text": "Text 3" }
+        ]
+      }
+    ],
+    "packages": []
+  }
+]

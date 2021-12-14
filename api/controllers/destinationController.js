@@ -1,48 +1,81 @@
 const Destination = require("../models/destinationModel");
+const mongoose = require("mongoose");
 
-exports.getAllDestinations = (req, res, next) => {
-  const destinations = [];
-  res.status(200).json({
-    status: "Success",
-    data: {
-      destinations,
-    },
-  });
+exports.getAllDestinations = async (req, res, next) => {
+  try {
+    const destinations = await Destination.find();
+    res.status(200).json({
+      status: "Success",
+      results: destinations.length,
+      data: {
+        destinations,
+      },
+    });
+  } catch (error) {
+    console.log(error);
+  }
 };
 
-exports.getDestination = (req, res, next) => {
-  const destination = req.params.destinationID;
-  res.status(200).json({
-    status: "Success",
-    data: {
-      destination,
-    },
-  });
+exports.getDestination = async (req, res, next) => {
+  try {
+    const destination = await Destination.findById(req.params.destinationID);
+
+    res.status(200).json({
+      status: "Success",
+      data: {
+        destination,
+      },
+    });
+  } catch (error) {
+    console.log(error);
+  }
 };
 
-exports.createDestination = (req, res, next) => {
-  res.status(201).json({
-    status: "Success",
-    data: {
-      destination: {},
-    },
-  });
+exports.createDestination = async (req, res, next) => {
+  try {
+    const newDestination = {
+      _id: req.body._id ? req.body._id : mongoose.Types.ObjectId(),
+      ...req.body,
+    };
+    const destination = await Destination.create(newDestination);
+
+    res.status(201).json({
+      status: "Success",
+      data: {
+        destination,
+      },
+    });
+  } catch (error) {
+    console.log(error);
+  }
 };
 
-exports.updateDestination = (req, res, next) => {
-  const updatedDestination = req.params.destinationID;
-  res.status(200).json({
-    status: "Success",
-    data: {
-      updatedDestination,
-    },
-  });
+exports.updateDestination = async (req, res, next) => {
+  try {
+    const updatedDestination = await Destination.findByIdAndUpdate(
+      req.params.destinationID,
+      req.body
+    );
+
+    res.status(200).json({
+      status: "Success",
+      data: {
+        updatedDestination,
+      },
+    });
+  } catch (error) {
+    console.log(error);
+  }
 };
 
-exports.deleteDestination = (req, res, next) => {
-  const deletedDestination = req.params.destinationID;
-  res.status(204).json({
-    status: "Success",
-    message: "Successful deletion",
-  });
+exports.deleteDestination = async (req, res, next) => {
+  try {
+    await Destination.findByIdAndDelete(req.params.destinationID);
+    res.status(204).json({
+      status: "Success",
+      message: "Successful deletion",
+    });
+  } catch (error) {
+    console.log(error);
+  }
 };

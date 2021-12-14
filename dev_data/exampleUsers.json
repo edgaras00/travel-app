@@ -1,0 +1,46 @@
+[
+  {
+    "name": "E B",
+    "email": "eb@gmail.com",
+    "password": "password",
+    "role": "admin"
+  },
+  {
+    "name": "A C",
+    "email": "ac@gmail.com",
+    "password": "password",
+    "role": "guide"
+  },
+  {
+    "name": "A D",
+    "email": "ad@gmail.com",
+    "password": "password",
+    "role": "guide"
+  },
+  {
+    "name": "B A",
+    "email": "ba@gmail.com",
+    "password": "password",
+    "role": "guide"
+  },
+  {
+    "name": "Z C",
+    "email": "xc@gmail.com",
+    "password": "password"
+  },
+  {
+    "name": "C C",
+    "email": "cc@gmail.com",
+    "password": "password"
+  },
+  {
+    "name": "T K",
+    "email": "tk@gmail.com",
+    "password": "password"
+  },
+  {
+    "name": "N Y",
+    "email": "ac@gmail.com",
+    "password": "password"
+  }
+]

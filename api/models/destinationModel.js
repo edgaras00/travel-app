@@ -7,7 +7,7 @@ const destinationSchema = new Schema({
     type: String,
     required: [true, "Destination must have a name"],
     unique: true,
-    maxLength: [50, "Package name cannot be longer than 50 characters"],
+    maxLength: [50, "Destination name cannot be longer than 50 characters"],
   },
   description: {
     type: String,
@@ -21,7 +21,7 @@ const destinationSchema = new Schema({
     {
       name: String,
       description: String,
-      thingsToDo: String,
+      thingsToDo: [{ title: String, text: String }],
     },
   ],
   coverImage: {
