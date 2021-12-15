@@ -1,14 +1,14 @@
 const mongoose = require("mongoose");
-const Package = require("../models/packageModel");
+const Tour = require("../models/tourModel");
 
-exports.getAllPackages = async (req, res, next) => {
+exports.getAllTours = async (req, res, next) => {
   try {
-    const packages = await Package.find();
+    const tours = await Tour.find();
     res.status(200).json({
       status: "Success",
-      results: packages.length,
+      results: tours.length,
       data: {
-        packages,
+        tours,
       },
     });
   } catch (error) {
@@ -16,13 +16,13 @@ exports.getAllPackages = async (req, res, next) => {
   }
 };
 
-exports.getPackage = async (req, res, next) => {
+exports.getTour = async (req, res, next) => {
   try {
-    const package = await Package.findById(req.params.packageID);
+    const tour = await Tour.findById(req.params.tourID);
     res.status(200).json({
       status: "Success",
       data: {
-        package: {},
+        tour,
       },
     });
   } catch (error) {
@@ -30,19 +30,19 @@ exports.getPackage = async (req, res, next) => {
   }
 };
 
-exports.createPackage = async (req, res, next) => {
+exports.createTour = async (req, res, next) => {
   try {
-    const newPackage = {
+    const newTour = {
       _id: req.body._id ? req.body._id : mongoose.Types.ObjectId(),
       ...req.body,
     };
 
-    const package = await Package.create(newPackage);
+    const tour = await Tour.create(newTour);
 
     res.status(201).json({
       status: "Success",
       data: {
-        package,
+        tour,
       },
     });
   } catch (error) {
@@ -50,14 +50,17 @@ exports.createPackage = async (req, res, next) => {
   }
 };
 
-exports.updatePackage = async (req, res, next) => {
+exports.updateTour = async (req, res, next) => {
   try {
-    const updatedPackage = await Package.findByIdAndUpdate(req.body);
+    const updatedTour = await Tour.findByIdAndUpdate(
+      req.params.tourID,
+      req.body
+    );
 
     res.status(201).json({
       status: "Success",
       data: {
-        package: updatedPackage,
+        tour: updatedTour,
       },
     });
   } catch (error) {
@@ -65,9 +68,9 @@ exports.updatePackage = async (req, res, next) => {
   }
 };
 
-exports.deletePackage = async (req, res, next) => {
+exports.deleteTour = async (req, res, next) => {
   try {
-    await Package.findByIdAndDelete(req.params.packageID);
+    await Tour.findByIdAndDelete(req.params.tourID);
     res.status(204).json({
       status: "Success",
       message: "Success",

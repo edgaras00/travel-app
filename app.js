@@ -4,7 +4,7 @@ const destinationRouter = require("./api/routes/destinationsRouter");
 const userRouter = require("./api/routes/userRouter");
 const bookingRouter = require("./api/routes/bookingRouter");
 const reviewRouter = require("./api/routes/reviewRouter");
-const packageRouter = require("./api/routes/packageRouter");
+const tourRouter = require("./api/routes/tourRouter");
 require("dotenv").config();
 
 const app = express();
@@ -24,7 +24,7 @@ mongoose.connect(DB_CONN, () => {
 app.use("/api/destinations", destinationRouter);
 app.use("/api/users", userRouter);
 app.use("/api/reviews", reviewRouter);
-app.use("/api/packages", packageRouter);
+app.use("/api/tours", tourRouter);
 app.use("/api/bookings", bookingRouter);
 
 const PORT = process.env.PORT || 5000;

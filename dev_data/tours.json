@@ -1,0 +1,250 @@
+[
+  {
+    "name": "8-night Italy's Great Cities",
+    "price": 2579,
+    "description": "All roads may lead to Rome, but we know the scenic avenues to reach all the enchanting cities on your Italy bucket list. That serene passageway in Assisi, that chic leather boutique in Florence, that off-the-beaten-path bridge in Venice—we know the way! We’ve mapped out the iconic experiences of Italy, leading you through the historic streets and piazzas of the “Eternal City,” the vine and olive-clad hills of Tuscany, and the romantic canals of the “Floating City” so you can experience the art, architecture, vino, and espresso you’ve long imagined. On this dreamy tour of Italy’s great cities, you’ll wake up to lush gardens in San Martino in Campo, stroll through the medieval-walled city of Siena, ponder the curious tilt at the Tower of Pisa, and happily lean into the delicious plates of pasta, pizza, and pastries along the way.",
+    "duration": 9,
+    "tags": ["culture", "general", "romantic", "family"],
+    "itineraries": {
+      "day1": {
+        "title": "Arrive in Rome, Italy",
+        "description": "Welcome to Rome! At 5 pm, meet your Tour Director and traveling companions for a welcome dinner at a local restaurant."
+      },
+      "day2": {
+        "title": "Rome-San Martino in Campo",
+        "description": [
+          "ROME Guided sightseeing includes the Colosseum, the Roman Forum, Fontana di Trevi, the Pantheon, and Piazza Navona. Scenic drive en route to San Martino in Campo.",
+          "SAN MARTINO IN CAMPO Overnight stay and dinner in 17th-century hotel. Free time before dinner."
+        ]
+      },
+      "day3": {
+        "title": "San Martino in Campo–Assisi–Venice island",
+        "description": "ASSISI See the Basilica of St. Francis. Scenic drive en route to Venice."
+      },
+      "day4": {
+        "title": "Venice Island",
+        "description": "VENICE ISLAND Private boat ride. Guided walking tour includes St. Mark’s Square and Basilica, Doges’ Palace and the Bridge of Sighs followed by a glassblowing demonstration. Free time this afternoon and evening."
+      },
+      "day5": {
+        "title": "Venice Island-Pisa-Florence",
+        "description": "PISA See the Leaning Tower en route to Florence."
+      },
+      "day6": {
+        "title": "Florence",
+        "description": "FLORENCE Guided sightseeing includes Michelangelo’s masterpiece, David, at the Academy of Fine Arts, Giotto’s Bell Tower, the Baptistry’s heavy bronze “Gates of Paradise,” and Signoria Square. Free time this afternoon and evening."
+      },
+      "day7": {
+        "title": "Florence-Sienna-Rome",
+        "description": "SIENA Orientation walk includes Piazza del Campo. Taste traditional panforte and ricciarelli (local specialties) before returning to Rome."
+      },
+      "day8": {
+        "title": "Rome. Excursion to Castel Gandolfo",
+        "description": [
+          "CASTEL GANDOLFO Guided visit of the Papal Palace and the Barberini Gardens.",
+          "ROME Guided visit of the Vatican Museums and Sistine Chapel, St. Peter’s Square and Basilica to admire Michelangelo’s Pietà. Farewell dinner at a local restaurant this evening."
+        ]
+      },
+      "day9": {
+        "title": "Vacation ends",
+        "description": "Your vacation ends with breakfast this morning."
+      }
+    },
+    "coverImage": "8nights.png"
+  },
+  {
+    "name": "9-night Northern Italy’s Highlights & Cinque Terre",
+    "price": 2915,
+    "description": "Parmesan and prosciutto. Ferraris and Fiats. Ruins and the Riviera. Some of Italy’s greatest indulgences can be found up north. Italy’s “Fabulous Five,” the nickname for the gelato-colored, cliffside fishing villages along the Mediterranean, start the count of the numerous joys you’ll experience on this Undiscovered Tour of Northern Italy. In addition to savoring the freshest seafood along the coast, you’ll relish a balsamic vinegar tasting in the epicurean city of Modena, a parmesan cheese tasting near Verdi’s hometown of Busseto, a risotto lunch at a Vercelli rice factory, and a wine tasting in vineyard-dotted Gabiano. To spice things up, you’ll speed over to the Ferrari Museum in Maranello, cruise to the yacht-filled harbor of Portofino, and strut your stuff down the streets of Milan. Leading you to the fabulous, the famous, and the fashionable, this tour is the way to see Northern Italy in style.",
+    "duration": 10,
+    "coverImage": "9night-italy.png",
+    "tags": ["culture", "romantic", "family", "general"],
+    "itineraries": {
+      "day1": {
+        "title": "Milan",
+        "description": "Welcome to Milan! At 5 pm, meet your Tour Director and traveling companions for a welcome dinner at your hotel."
+      },
+      "day2": {
+        "title": "Milan tour | Busseto - Parma",
+        "description": [
+          "MILAN Guided walking tour includes a visit to the Sforzesco Castle grounds and museum. See the Galleria, La Scala Opera House, and the Duomo. Free time before continuing to Busseto.",
+          "BUSSETO See the birthplace of Verdi with free time for lunch before Parmesan cheese tasting at a local Caseificio (cheese-making factory)."
+        ]
+      },
+      "day3": {
+        "title": "Parma. Excursion to Modena and Maranello",
+        "description": [
+          "PARMA Guided sightseeing includes sights of the cathedral, bell tower, and octagonal baptistry. Free time to visit the cathedral.",
+          "MODENA Balsamic vinegar tasting at the renowned Acetaia Leonardi.",
+          "MARANELLO Visit the Ferrari museum. Free time this afternoon and evening."
+        ]
+      },
+      "day4": {
+        "title": "Parma-Luca",
+        "description": "Orientation walk. Free time this afternoon and evening."
+      },
+      "day5": {
+        "title": "Lucca-Cinque Terre-Rapallo",
+        "description": [
+          "Scenic drive en route to La Spezia.",
+          "CINQUE TERRE Guided boat ride (weather permitting) to Monterosso. Free time before a train trip to Rapallo"
+        ]
+      },
+      "day6": {
+        "title": "Rapallo. Excursion to Portofino",
+        "description": "RAPALLO Scenic cruise to Portofino. Free time this afternoon and evening."
+      },
+      "day7": {
+        "title": "Rapallo-Gabiano",
+        "description": "GABIANO Wine tasting and lunch at the castle."
+      },
+      "day8": {
+        "title": "Gabiano-Turin",
+        "description": "URIN Guided sightseeing includes sights of the Mole Antonelliana and visit the cathedral."
+      },
+      "day9": {
+        "title": "Turin-Vercelli-Milan",
+        "description": [
+          "VERCELLI Visit a rice factory followed by a risotto lunch.",
+          "MILAN Farewell dinner at a local restaurant this evening."
+        ]
+      },
+      "day10": {
+        "title": "Farewell breakfast",
+        "description": "Your vacation ends with breakfast this morning"
+      }
+    }
+  },
+  {
+    "name": "10-Nights The Croatian",
+    "price": 6215,
+    "description": "When you stroll through Croatia’s leafy towns, enjoy a walk in a national park, and marvel at its sparkling emerald lakes, it’s easy to see why other countries are green with envy. With its glorious coastal cities, ancient Roman ruins, magnificent medieval architecture, and stunning natural wonders, Croatia has it all. On this Undiscovered Tour of Croatia and Slovenia, you will see what European vacationers have long tried to keep secret from the rest of the world—impressive caves and castles, spectacular waterfalls and walled cities, picture-perfect shorelines and famous film locations. Game of Thrones fans will recognize Old Town Dubrovnik as the medieval setting for the fictional city of King’s Landing, yet at the end of this dramatic vacation to Croatia, you’ll be perfectly happy with the start-to-finish storyline.",
+    "duration": 10,
+    "coverImage": "10night-croatia.png",
+    "tags": ["culture", "family", "general"],
+    "itineraries": {
+      "day1": {
+        "title": "Zagreb",
+        "description": "Welcome to Zagreb! At 6 pm, meet your Tour Director and traveling companions for a welcome dinner at your hotel."
+      },
+      "day2": {
+        "title": "Zagreb-Ljubljana, Slovenia",
+        "description": "ZAGREB Guided sightseeing includes the cathedral. Scenic drive into Slovenia en route to Ljubljana."
+      },
+      "day3": {
+        "title": "Ljubljana",
+        "description": "LJUBLJANA Guided sightseeing features the Town Hall’s inner court. See St. Nicholas Cathedral. Free time this afternoon and evening."
+      },
+      "day4": {
+        "title": "Ljubljana-Postojna–Opatija, Croatia",
+        "description": "POSTOJNA Guided tour through the caves before continuing to Opatija."
+      },
+      "day5": {
+        "title": "Opatija. Excursion to Pula",
+        "description": [
+          "Scenic drive through the Istrian Peninsula to Pula.",
+          "PULA Guided sightseeing features the Amphitheater and the Temple of Augustus. Free time to browse before returning to Opatija.",
+          "OPATIJA Free time to walk along the seaside promenade and see the Maiden with the Seagull."
+        ]
+      },
+      "day6": {
+        "title": "Opatija-Plitvice-Zadar",
+        "description": "PLITVICE Guided walking tour of the national park. Scenic drive along the coastline en route to Zadar."
+      },
+      "day7": {
+        "title": "Zadar-Trogir-Split",
+        "description": [
+          "ZADAR Guided walking tour through the Old Town to the main square. Free time for lunch.",
+          "TROGIR Visit the historic city.",
+          "SPLIT Dinner at a local restaurant."
+        ]
+      },
+      "day8": {
+        "title": "SPLIT Walking tour with a Local Guide includes Diocletian’s Palace. Free time this afternoon and evening."
+      },
+      "day9": {
+        "title": "Split-Bosnia-Herzegovina-Dubrovnik, Croatia",
+        "description": "DUBROVNIK Walking tour with a Local Guide includes the Rector’s Palace. Free time this afternoon and evening."
+      },
+      "day10": {
+        "title": "Dubrovnik",
+        "description": "DUBROVNIK Free day. Farewell dinner at your hotel this evening."
+      },
+      "day11": {
+        "title": "Farewell",
+        "description": "Your vacation ends with breakfast this morning."
+      }
+    }
+  },
+  {
+    "name": "9-night America's National Parks",
+    "duration": "10",
+    "coverImage": "9-night-america.png",
+    "price": 3359,
+    "description": "The mining boom may have been more than a century ago, but it’s never too late to strike gold in America’s West. Filled with dazzling nuggets of wonder, this National Parks vacation takes you deep into the golden wilderness of untamed South Dakota, Wyoming, and Montana. Back-to-back visits to some of the country’s most renowned national parks bring you face-to-face with the monumental sculptures of Mount Rushmore, the explosive geysers of Yellowstone National Park, and the towering spires of Grand Teton National Park. Plus, visits to the Crazy Horse Memorial, the Little Bighorn Battlefield, and the gold rush towns of Cody, Jackson, and Deadwood shed light on some of the 19th century’s most famous battles and barroom brawls. After meeting herds of elk, bison, and other area locals, city slickers can get their fix with a visit to lively Salt Lake City.",
+    "tags": ["culture", "family", "adventure", "general"],
+    "itineraries": {
+      "day1": {
+        "title": "Rapid city",
+        "description": "Welcome to Rapid City! At 6:30 pm, join your Tour Director and traveling companions for a welcome drink."
+      },
+      "day2": {
+        "title": "Rapid city, excursion to Crazy Horse and Mount Rushmore memorials",
+        "description": [
+          "RAPID CITY Orientation tour. Free time this evening.",
+          "CRAZY HORSE MEMORIAL Visit the memorial and museum.",
+          "MOUNT RUSHMORE NATIONAL MEMORIAL Visit the memorial."
+        ]
+      },
+      "day3": {
+        "title": "Rapid city-Deadwood-Sheridan",
+        "description": [
+          "RAPID CITY Scenic drive through Black Hills National Forest en route to Deadwood.",
+          "DEADWOOD Tour with Local Guide. Scenic drive en route to Sheridan.",
+          "SHERIDAN Dinner at a local restaurant."
+        ]
+      },
+      "day4": {
+        "title": "Sheridan-Little Bighorn Battlefield National Monument - Cody",
+        "description": [
+          "SHERIDAN Scenic drive en route to Little Bighorn Battlefield National Monument.",
+          "LITTLE BIGHORN BATTLEFIELD NATIONAL MONUMENT Guided sightseeing and museum visit. Scenic drive through the Bighorn Mountains en route to Cody.",
+          "CODY Free time this evening."
+        ]
+      },
+      "day5": {
+        "title": "Cody-Yellowstone National Park",
+        "description": [
+          "CODY Visit to Buffalo Bill Center of The West. Scenic drive through Shoshone National Forest en route to Yellowstone National Park.",
+          "YELLOWSTONE NATIONAL PARK Scenic drive. Free time this evening."
+        ]
+      },
+      "day6": {
+        "title": "Yellowstone National Park",
+        "description": "YELLOWSTONE NATIONAL PARK Scenic drive through the park includes Old Faithful Geyser, Fountain Paint Pots, and more."
+      },
+      "day7": {
+        "title": "Yellowstone National Park - Grand Teton Park - Jackson",
+        "description": [
+          "YELLOWSTONE NATIONAL PARK Scenic drive en route to Grand Teton National Park.",
+          "GRAND TETON NATIONAL PARK Visit to Jackson Lake Lodge includes a Huckleberry Shake. Scenic drive en route to Jackson.",
+          "JACKSON Horse-drawn covered wagon ride to Cache Creek Canyon. Bar T-5 chuckwagon cookout and Wild West Show."
+        ]
+      },
+      "day8": {
+        "title": "Jackson",
+        "description": "Free day"
+      },
+      "day9": {
+        "title": "Jackson - Salt Lake City",
+        "description": [
+          "JACKSON Scenic drive en route to Salt Lake City.",
+          "SALT LAKE CITY Guided sightseeing tour. Farewell dinner this evening at a local restaurant."
+        ]
+      },
+      "day10": {
+        "title": "Salt Lake City",
+        "description": "Your vacation ends with breakfast this morning."
+      }
+    }
+  }
+]

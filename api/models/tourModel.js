@@ -1,22 +1,22 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const packageSchema = new Schema({
+const tourSchema = new Schema({
   _id: Schema.Types.ObjectId,
   name: {
     type: String,
     unique: true,
-    required: [true, "Package must have a name"],
-    minLength: [10, "Package name must be at least 10 characters long"],
-    maxLength: [50, "Package name cannot be longer than 50 characters"],
+    required: [true, "Tour must have a name"],
+    minLength: [10, "Tour name must be at least 10 characters long"],
+    maxLength: [50, "Tour name cannot be longer than 50 characters"],
   },
   price: {
     type: Number,
-    required: [true, "Package must have a price"],
+    required: [true, "Tour must have a price"],
   },
   description: {
     type: String,
-    required: [true, "Package must have a description"],
+    required: [true, "Tour must have a description"],
   },
   isSpecial: {
     type: Boolean,
@@ -24,7 +24,7 @@ const packageSchema = new Schema({
   },
   duration: {
     type: Number,
-    required: [true, "Package must have a duration (days)"],
+    required: [true, "Tour must have a duration (days)"],
   },
   averageRating: {
     type: Number,
@@ -42,11 +42,14 @@ const packageSchema = new Schema({
   groupSize: Number,
   coverImage: {
     type: String,
-    required: [true, "Package must have a cover image"],
+    required: [true, "Tour must have a cover image"],
   },
   photos: [String],
+  itineraries: {},
+  specialNotes: {},
+  locations: [],
   guides: [{ type: Schema.Types.ObjectId, ref: "User" }],
 });
 
-const Package = mongoose.model("Package", packageSchema);
-module.exports = Package;
+const Tour = mongoose.model("Tour", tourSchema);
+module.exports = Tour;
