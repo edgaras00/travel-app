@@ -246,5 +246,183 @@
         "description": "Your vacation ends with breakfast this morning."
       }
     }
+  },
+  {
+    "name": "Thailand Island Hopper",
+    "description": "Lorem ipsum",
+    "price": 1670,
+    "coverImage": "thailand-island-hopper.png",
+    "duration": 14,
+    "tags": ["adventure", "family", "general", "group"],
+    "itineraries": {
+      "day1": {
+        "title": "Airport Pickup",
+        "description": "Like on all of our trips, we can collect you from the airport when you land and take you directly to your hotel. The first day is just a check-in day so you have this freedom to explore the city and get settled in. Spend time bonding with your new group of pals before hitting the infamous Khao San Road in the evening for drinks."
+      },
+      "day2": {
+        "title": "Temples and River Cruise",
+        "description": "See Thailand’s capital city by tuk tuk, visiting two prestigious temples – Wat Arun and Wat Pho, to see the very impressive giant & gold reclining Buddha statue. We’ll also see the city from the water as we travel by longtail boat along the Chao Phraya River. Enjoy the afternoon at your own pace. Explore, eat, or even try some bartering at one of the many street vendors that can be found throughout the city. You can sometimes get as much as 50% off the original price if you’re willing to haggle! Meet with the rest of the group in the evening for dinner and no doubt, drinks on Khao San Rd. Buckets anyone?"
+      },
+      "day3": {
+        "title": "Massage and Overnight Train",
+        "description": "Enjoy a Thai massage in the morning, before boarding a sleeper train for the night, a truly authentic Thai experience. You’ll get your very own berth on the train, and it’s a great place to get to know the rest of your group a little better. We travel south, out of Bangkok, towards Khao Sok National Park – situated in the Surat Thani province of Thailand. Watching the scenery change from a sprawling cityscape to countryside dotted throughout by limestone mountains is definitely something you won’t forget in a hurry"
+      },
+      "day4": {
+        "title": "Khao Sok National Park",
+        "description": "Head via longtail boat, into Khao Sok National Park to our floating bungalows, stopping for a quick dip along the way at a couple of Instagram-worthy locations. Try your hand at some kayaking or chill with a cold beer in a tube in front of the absolutely stunning backdrop of the surrounding limestone mountain range. You’ll soon see why this place is, and always will be, a TruTravels favourite destination."
+      },
+      "day5": {
+        "title": "Travel to Koh Phangan",
+        "description": "Wake up in your floating bungalow and why not take a quick dip in the freshwater lake before breakfast. After a relaxed morning, we make our way over to Koh Phangan; an island to the east. Once we get there, we go straight to a place called Bottle Beach, another one of our favourite locations! It’s beautiful, quiet, accessible only by boat, and to make it even better, we get the whole place pretty much to ourselves, staying in beach bungalows pretty much right on the water. Relax here for the rest of the day on the beach or in the bar. After dinner, we’ll all enjoy a bonfire on the beach, complete with a fire show."
+      },
+      "day6": {
+        "title": "Morning Chill and Muay Thai Lesson",
+        "description": "A nice chilled wake up to the sound of waves rolling in on the beach. You will have a free morning to make the most of your surroundings. You can go kayaking, play volleyball, top up the tan, trek to viewpoints or enjoy a lay in. We are picked up early afternoon and taken to a local gym, where you can try your hand at a bit of Muay Thai boxing, Thailand’s national sport. After, we head to our awesome accommodation where we will spend the final nights of the trip. It’s got a great bar, and atmosphere; an ideal location to spend the evening."
+      },
+      "day7": {
+        "title": "Island Boat Trip",
+        "description": "Today we set sail on a cruise around the island. Stop at some of the best snorkelling spots the island has to offer, visit waterfalls (seasonal) and take in the amazing tropical island scenery. Does it get any better? Yes, it does! We’ll also throw in free food and a free bucket (+ paid bar on board) for the day. After a fun-filled day in the sun, we head back to our accommodation for a dip in the pool, before heading out in the evening for a night out to enjoy the island’s lively nightlife."
+      },
+      "day8": {
+        "title": "Travel to Koh Tao",
+        "description": "It’s now time to catch the ferry over to Koh Tao or ‘Turtle Island’ where we will spend the next 2 nights. (Recently voted ‘Best Island in S.E. Asia’ in a Trip Advisor survey). Drop your bags off at our hotel, which is just a short stroll to Sairee beach. We’ll enjoy the sunset over a couple of drinks, & relax in this island paradise."
+      },
+      "day9": {
+        "title": "Koh Nang Yuan",
+        "description": "Enjoy a boat ride from Koh Tao to the adjoining and amazingly beautiful island of Koh Nang Yuan. Here we can snorkel in the Japanese Gardens and trek up to the viewpoint to get some seriously Instagram-worthy photos. Afterwards, we head back to Koh Tao we will have some free time before meeting for dinner & a night out."
+      },
+      "day10": {
+        "title": "Action/Relaxation",
+        "description": "Today we have a free day to either soak up some rays or get active. We will arrange a taxi round to Tanote Bay, one of our favourite spots on the island for those who want to have a nice chilled beach day. In the evening, we will jump on the night ferry over to the mainland where we are picked up by our private minibus (with tunes & DVD player) and taken over to the West coast and our next stop, the famous Phi Phi Islands."
+      },
+      "day11": {
+        "title": "Phi Phi Islands",
+        "description": "Once arriving into Phi Phi we will check in to our accommodation and take a trek up to the stunning viewpoint of the island below, before enjoying the epic beach nightlife."
+      },
+      "day12": {
+        "title": "Phi Phi Boat Trip",
+        "description": "Today we take you on a sunset boat trip round the islands, we stop outside of Maya Bay (where they actually filmed ‘The Beach’), Monkey Island and the Viking caves as well, as for some snorkelling in Phi Phi’s emerald waters. Lunch is included on the boat and after sunset, we go swimming with the phosphorescence (really cool glow in the dark plankton - seasonal)"
+      },
+      "day13": {
+        "title": "Phuket",
+        "description": "We hop on the island boat over to Phuket, the largest of the Thai islands where we spend our last night. In the evening we will explore the wonders of Phuket & Patong before we celebrate the final night of an awesome trip!"
+      },
+      "day14": {
+        "title": "Chilled Checkout",
+        "description": "Today we say goodbye, but we can help you sort out all of your onward travel from Phuket, whether it’s back to Bangkok for a flight home or the next leg of your Thailand/Asian adventure!"
+      }
+    }
+  },
+  {
+    "name": "Japan Adventures",
+    "description": "Lorem ipsum",
+    "duration": 10,
+    "coverImage": "japan-adventures.png",
+    "price": 2459,
+    "tags": ["culture", "group", "family", "adventure"],
+    "itineraries": {
+      "day1": {
+        "title": "Welcome to Japan!",
+        "description": "Touch down Japan! Welcome to the land of culture, a country with majestic mountains, crazy neon lights, world-class food & ancient and fascinating history. A land where the sake is hot or cold, where the sun glistens off the snow-covered peaks, where incense floats around temples and shrines & where the technological advances take the world by storm. Japan is a dream, a desired destination where all those leave with a newfound sense of wonder. Arrive into your traditional Tokyo designed hostel to be greeted by your tour guide. Tonight well take you out to feast on Japanese cuisines and meet the rest of your group. Once we've finished exploring, we'll head to Senso-Ji, which is one of the most important temples in Tokyo. This illustrious red temple is a feast for the senses especially when all the crowds have gone. Smell the incense and draw a fortune, visiting this temple in the evening is truly a special event"
+      },
+      "day2": {
+        "title": "Explore Tokyo",
+        "description": "We'll start the morning off with an orientation class. You'll learn simple Japanese customs and phrases to help you dictate your way across the country. Once we have learned all we need, we'll head out to the birthplace of Japanese teen pop culture, Harajuku. We'll then move away from all that craziness to the serenity of Yoyogi park which houses the magnificent Mei-ji Shrine. In the evening, we'll head to Akihabara - Tokyo's electric town - and be blinded by the all the neon lights and crazy shops in store. We'll challenge you all in the Sega Centre and provide you with a map with the best things to do so you can explore the area."
+      },
+      "day3": {
+        "title": "Sushi Making Class and Robot Restaurant",
+        "description": "Today we'll head to the world-famous Tsukiji Fish Market. Tokyo is famed for its seafood delights and this is the epicentre of where the best fish in the world is found. Once we have toured the facility, we will head over to our sushi making class where our guides here will teach you how to roll the perfect sushi, fry the best tempura and eat sashimi properly. After your sushi lunch, well head back to the hostel for a quick freshen up before heading to the incredible Shinjuku area for a meal of Yakitori and beer. After dinner we will treat you to an incredible show like no other, where robots dance to the theme of thriller whilst lasers and lights bounce off the walls of the world famous Robot Restaurant. Wrapping up the day viewing the world famous Shibuya Pedestrian Crossing"
+      },
+      "day4": {
+        "title": "Travel to Hakone and Mt. Fuji Viewing",
+        "description": "Today we leave Tokyo by the aptly named Romance Car to the stunning mountainous town of Hakone. After checking into our guesthouse accommodation situated in the mountains, we will spend the day exploring the surrounding areas on a variety of different transport including Cable Cars, Rope Ways and even a Pirate Ship. Why is Hakone so special? Well, not only is the food incredible but the views of Mt Fuji are pretty spectacular on a clear day. After a day of exploring and taking photos of Japan's most famous mountain, we'll arrange a typical Japanese Nabe dinner in the guesthouse and settle in to play some family games for the evening."
+      },
+      "day5": {
+        "title": "Temple Stay",
+        "description": "Today we board the bullet train, a soaring feat of engineering that throws you across the countryside. Along the way, be sure to take in the stunning mountains that pass by all the way to the UNESCO World Heritage town of Takayama. Our accommodation tonight is in a stunning Japanese temple. Never before would you have stayed in more beautiful surroundings, your bed will be on simple tatami mats. In the evening we'll head out for some traditional Sake Tasting and you can even treat yourself to some infamously tasty Hida beef. After all of that, you get a real chance for you to focus on your mindful experience as you sleep soundly in the temple."
+      },
+      "day6": {
+        "title": "Arrive in Kyoto and Gion Walking Tour",
+        "description": "In the morning your guide will walk you around the beautiful old town and village of Takayama, we'll be sure to stop for lunch before boarding the train back to Nagoya and taking our final bullet train to Kyoto. Famous for its shrines, temples and Geishas, Kyoto is a sure fire way to find your inner peace and get lost exploring its small alleyways. In the evening, we'll walk around Kyoto's Gion district, famous for Geishas (Japan's traditional art form of entertainment), if you are lucky enough you might even spot one."
+      },
+      "day7": {
+        "title": "Kyoto Temple and Shrine Tour",
+        "description": "We'll rise early in the morning and take the subway to Fushimi-Inari Shrine. We arrive early to escape the bustling throng of tourists and work our way through the mountain exploring corridors of never-ending red gates. After we'll make our way to Kiyomizu-Dera temple, one of Japan's most famous temples. A stunning bamboo and wooden complex that sits high on the mountainside. After coming back to the hostel and eating breakfast, you'll have the whole afternoon to explore the amazing town of Kyoto!"
+      },
+      "day8": {
+        "title": "Golden Pavilion, Zen Gardens, and Kendo Class",
+        "description": "This morning we'll head to the incredible Golden Pavilion, a beautiful gold laden building, surrounded by lakes which showcase a stunning reflection of the building. After well head to Daitoku-Ji, a quiet group of buildings and temples, away from the main tourist districts, where you can truly channel your inner zen. In the afternoon we head to a traditional Kendo class housed in the dojo where it all began. Your authentic Bushido instructor, a descendant of a Japanese Samurai Warrior, will teach you the way of this respectful martial art, before finishing with a  guided meditation reflection to finish off this incredible day."
+      },
+      "day9": {
+        "title": "Bamboo Forest, Arrive in Osaka, Food Tour and Karaoke",
+        "description": "In the morning, we'll beat the crowds and take the train to the Arashiyama district. This stunning district is flanked by mountainous valleys with a river working its way through the middle. We'll start off by wandering through the Instagram worthy bamboo forest, before climbing the steps up to Monkey Mountain. Once we make our way down, well board a private rowboat and explore the valleys the traditional Japanese way. We'll then head back to our hostel check out and make our way to Osaka! After checking in we will head out into the Dotonbori area to take you on a food tour. There is no better way to view this incredible, living, breathing city than tasting your way through it. In the evening well wrap up our tour with one final Japanese tradition - Karaoke!"
+      },
+      "day10": {
+        "title": "Depart",
+        "description": "After nursing your head from last nights antics, its time to say goodbye to your group and the new friends you have made from your tour. We hope we have shown you the best that Japan has to offer."
+      }
+    }
+  },
+  {
+    "name": "Pandas and Palaces",
+    "duration": 13,
+    "description": "Lorem ipsum",
+    "price": 2800,
+    "coverImage": "pandas-palaces.png",
+    "tags": ["group", "general", "culture"],
+    "itineraries": {
+      "day1": {
+        "title": "Beijing",
+        "description": "Begin your amazing discovery of China with a Peking duck welcome dinner. Your home for the next four nights islocated within walking distance to the Silk Markets."
+      },
+      "day2": {
+        "title": "Beijing",
+        "description": "Start your tour with a special highlight as you visit China’s most iconic attraction – the Great Wall at Mutianyu.Freechoice: Spend an unforgettable evening at either the famed Peking Opera or the spectacular Kung Fu Show."
+      },
+      "day3": {
+        "title": "Beijing",
+        "description": "Wander through Tiananmen Square and enter the mysterious Forbidden City. Afterwards, enjoy lunch with a local family in a traditional home in the hutongs before relaxing on a rickshaw ride through the ancient laneways separating these homes.SundownersFinish the day as you started, overlooking the magnificent Forbidden City, as you enjoy a drink with your fellow travellers and soak up Beijing at dusk.Freechoice: Choose between mixed Asian at Lost Heaven or Western dishes at The Cut."
+      },
+      "day4": {
+        "title": "Beijing",
+        "description": "Freechoice: Indulge in a shopping spree at the Silk Markets or hunt for ingredients at the wet markets for a wonderful interactive cooking class. Alternatively, discover the jealously guarded secrets of traditional Chinese medicine or visit the incredible 15th century Temple of Heaven.Later, explore the Summer Palace’s landscaped beauty and enjoy a cruise on Kunming Lake."
+      },
+      "day5": {
+        "title": "Beijing - Xi'an",
+        "description": "Explore Xi’an’s ancient city wall on foot, by bike or electric buggy. Tonight, enjoy a performance at the Tang Dynasty Cultural Show over dinner. You’ll spend the next two nights at yourhistorically located hotel."
+      },
+      "day6": {
+        "title": "Xi-an",
+        "description": "EnrichGaze at Emperor Qin Shi Huang’s amazing Terracotta Warriors in the company of a museum curator, an incredible opportunity to learn first-hand about the restoration process.Later, enjoy a stroll around the Big Wild Goose Pagoda and Thanksgiving Temple.EnrichBe treated to a special private viewing of ancient artefacts at a local museum. Savour a refreshing drink and learn more about Shaanxi Province history from the museum’s curator. Continue your refreshments overlooking the splendid Big Wild Goose Pagoda at sunset."
+      },
+      "day7": {
+        "title": "Xi'an - Yichang - Yangtze River Cruise",
+        "description": "Explore the maze of markets in the Muslim Quarter.EnrichVisit a local painter’s home in nearby Hu Xi’an County, famous for its rural peasant paintings. You’ll learn about his art and enjoy lunch with his family.Fly to Yichang to join your refurbished cruise ship at Maoping or Taohuacun Pier, the Yangzi Explorer. On board enjoy included wine and beer with your lunch and dinner."
+      },
+      "day8": {
+        "title": "Yangtze River Cruise",
+        "description": "Inspect the Three Gorges Dam project site. Experience the ship elevator in operation (when available). Later, sail through Xiling Gorge while sampling afternoon tea delights. Tonight enjoy the Captain’s reception."
+      },
+      "day9": {
+        "title": "Yangtze River Cruise",
+        "description": "Explore the dramatic Bamboo Gorge and Shennong Stream by longboat (sampan) and then visit a local village of rowers. Later, traverse Wu Gorge, known for its sheer rock walls, and Qutang Gorge, the most dramatic of the three gorges."
+      },
+      "day10": {
+        "title": "Yangtze River Cruise - Fulling",
+        "description": "Enjoy an insightful excursion in Fuling to the ‘816 Underground Project’. This afternoon is at leisure in Fuling. Tonight, mingle at the Taste of China gala dinner. Be sure to dress in your finest Chinese outfit."
+      },
+      "day11": {
+        "title": "Yangtze River Cruise - Chongqing - Chengdu",
+        "description": "Disembark and tour around Chongqing and the ancient town of Ciqikou, known for its porcelain. Then experience China’s new high-speed train network to Chengdu, before settling in for a two night stay at yourluxurioushotel inChengdu.Freechoice Dining: Dinner is a delicious choice between traditional Sichuan cuisine at Shang Palace or a Western steak or burger at Mooneys Irish bar or international fare at Café Z."
+      },
+      "day12": {
+        "title": "Chengdu",
+        "description": "EnrichA special day as you’ll enjoy an enchanting close encounter with rare giant panda cubs.Wander through the old quarter of town and visit Jinli Street, one of the oldest commercial streets in China, and the second century Wuhou Temple. Tonight, be entertained by a performance of Sichuan Opera."
+      },
+      "day13": {
+        "title": "Chengdu",
+        "description": "It’s the end of a journey you’ll look back on fondly for years to come. Finish after breakfast and transfer to Chengdu airport."
+      }
+    }
   }
 ]
