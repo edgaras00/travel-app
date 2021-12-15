@@ -33,7 +33,7 @@ exports.getTour = async (req, res, next) => {
 exports.createTour = async (req, res, next) => {
   try {
     const newTour = {
-      _id: req.body._id ? req.body._id : mongoose.Types.ObjectId(),
+      // _id: req.body._id ? req.body._id : mongoose.Types.ObjectId(),
       ...req.body,
     };
 

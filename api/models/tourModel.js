@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const tourSchema = new Schema({
-  _id: Schema.Types.ObjectId,
+  // _id: Schema.Types.ObjectId,
   name: {
     type: String,
     unique: true,
@@ -37,7 +37,17 @@ const tourSchema = new Schema({
   },
   tags: {
     type: [String],
-    enum: ["adventure", "general", "group", "culture", "family", "romantic"],
+    enum: [
+      "adventure",
+      "general",
+      "group",
+      "culture",
+      "family",
+      "romantic",
+      "safari",
+      "wildlife",
+      "city",
+    ],
   },
   groupSize: Number,
   coverImage: {

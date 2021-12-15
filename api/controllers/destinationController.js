@@ -34,7 +34,7 @@ exports.getDestination = async (req, res, next) => {
 exports.createDestination = async (req, res, next) => {
   try {
     const newDestination = {
-      _id: req.body._id ? req.body._id : mongoose.Types.ObjectId(),
+      // _id: req.body._id ? req.body._id : mongoose.Types.ObjectId(),
       ...req.body,
     };
     const destination = await Destination.create(newDestination);
