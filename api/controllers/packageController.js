@@ -6,6 +6,7 @@ exports.getAllPackages = async (req, res, next) => {
     const packages = await Package.find();
     res.status(200).json({
       status: "Success",
+      results: packages.length,
       data: {
         packages,
       },
