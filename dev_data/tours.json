@@ -417,11 +417,155 @@
       },
       "day12": {
         "title": "Chengdu",
-        "description": "EnrichA special day as you’ll enjoy an enchanting close encounter with rare giant panda cubs.Wander through the old quarter of town and visit Jinli Street, one of the oldest commercial streets in China, and the second century Wuhou Temple. Tonight, be entertained by a performance of Sichuan Opera."
+        "description": "EnrichA special day as you’ll enjoy an enchanting close encounter with rare giant panda cubs. Wander through the old quarter of town and visit Jinli Street, one of the oldest commercial streets in China, and the second century Wuhou Temple. Tonight, be entertained by a performance of Sichuan Opera."
       },
       "day13": {
         "title": "Chengdu",
         "description": "It’s the end of a journey you’ll look back on fondly for years to come. Finish after breakfast and transfer to Chengdu airport."
+      }
+    }
+  },
+  {
+    "name": "Felluca Odyssey",
+    "price": 2100,
+    "coverImage": "felluca.png",
+    "description": "Uncover the jewels of the Nile. Visit the Valley of The Kings. Discover the 'City of the Dead' Take a cruise down the Nile",
+    "duration": 9,
+    "tags": ["culture", "group", "adventure"],
+    "itineraries": {
+      "day1": {
+        "title": "Cairo",
+        "description": "Welcome to Egypt! At the Cairo terminal keep your eyes peeled for the Travel Talk sign for your transfer to the hotel. Freshen up and meet in the lobby around 6:00pm for an informal meeting with your guide and other tour members. Afterwards you have free time to start exploring vibrant Cairo or board a cruise for an optional group dinner."
+      },
+      "day2": {
+        "title": "Cairo City Tour. Overnight Sleeper Train",
+        "description": "Set your alarms for 7.30am and fill up on plenty of breakfast before a big day exploring Egypt’s iconic Ancient Wonder of the World – the Pyramids and Sphinx! Follow your guide for a tour across the ancient site to learn about the 4,600-year-old wonders. After everyone has had their dose of awe, we’ll head out to Sakkara to see the iconic step pyramid built in 2700 B.C. Later in the afternoon, board an overnight sleeper train to Aswan."
+      },
+      "day3": {
+        "title": "Aswan",
+        "description": "Wake up in Aswan, ready to explore on a city tour with your local guide. Visit the Unfinished Obelisk for a look into the incredible building methods used to create the four-sided, hallmark monuments that are placed at the entrances of Egyptian temples. Take some time to walk along the 42-metre long lying bed of granite and learn about its significance from your guide. Visit the Philae Temple, dedicated to the goddess Isis, divine mother of the pharaohs. The temple is set beautifully on an island in the middle of the Nile. We will then arrive at the hotel for check in at 5.30pm with the option to join a traditional Nubian dinner in the evening."
+      },
+      "day4": {
+        "title": "Aswan, Felluca Cruise",
+        "description": "Enjoy a free morning to explore Aswan and the banks of the Nile River at your own pace. If you are feeling up to it in the afternoon, join the optional trip to the UNESCO World Heritage Listed Abu Simbel. It is a must-do for all keen historians! Then we will hop on board the traditional Felucca sailboat and embark on our 2-night cruise down the Nile River."
+      },
+      "day5": {
+        "title": "Felluca Cruise on the Nile",
+        "description": "Today is a chill-day sailing down the Nile, watching beautiful scenery and waving to the locals and fishermen. Whilst absorbing the stunning temples along the coast, sit back and enjoy the relaxing breeze. Have a dip in the Nile, play volleyball with the local kids and prepare for a local feast on the riverbanks as you watch the sunset with a cold drink in hand."
+      },
+      "day6": {
+        "title": "Felluca Cruise on the Nile, Edfu, Komombo, Luxor",
+        "description": "Time to bid farewell to our lovely felucca as we hop back onboard the coach and drive north towards Kom Ombo. Visit the Kom Ombo Temple, dedicated to the crocodile god Sobek. Next stop will be Edfu, home to one of the largest and best-preserved temples in Egypt. Dedicated to the falcon god Horus, the temple was built over 180-years from 237 BC to 57 BC. We’ll arrive in Luxor in the late afternoon, before checking out the Luxor Temple in the evening. Explore the dim-light temple after dark and learn from your guide of the temple complexes ancient history, dating back to the 14th century B.C"
+      },
+      "day7": {
+        "title": "Luxor. Overnight Sleeper Train",
+        "description": "The West bank of the Nile River awaits you! Follow your guide to the Valley of the Kings, also known as the ‘City of the Dead’, home to fancy royal tombs carved into desert rocks and filled with treasures for the Pharaoh afterlife. Next up, the Temple of Queen Hatshepsut and Colossi of Memnon. Not to forget, a visit to the vast Karnak Temple Complex, one of the most important religious centres of ancient Egypt with its marvellous temples. Your Egyptologist guide will enlighten you with the most intriguing stories and mythologies from the temple complex. Feeling adventurous? Take to the skies on an optional hot air balloon ride over Luxor. In the evening, board an overnight sleeper train to Cairo."
+      },
+      "day8": {
+        "title": "Cairo City Tour",
+        "description": "Wake up well rested as your overnight sleeper train pulls into Cairo! The journey continues with one of the most important museums dedicated to the ancient world - Egyptian Museum of Cairo. Home to over 120,000 ancient Egyptian relics and antiquities, this place will leave you in awe! Then, roam around Cairo stopping by the Citadel of Saladin and the world-famous Khan el-Khalili bazaar. Make sure to wear your haggling hats and brace for the mayhem!"
+      },
+      "day9": {
+        "title": "Cairo",
+        "description": "Have your final breakfast on us and start bidding farewells to your travel mates. Check-out of the hotel in Cairo (11:00am) and catch the transfer to the airport at the end of your tour."
+      }
+    }
+  },
+  {
+    "name": "6-Day Group Garden Route & Addo Adcenture Tour",
+    "price": 980,
+    "description": "Winner Tour of the Year Award 2019 - South Africa. Spot colonies endangered penguins. Relax in the seaside town of Hermanus. Be brave and go shark cage diving. Enjoy unforgettable wine tastings.",
+    "duration": 6,
+    "coverImage": "6-day-sa.png",
+    "tags": ["adventure", "group", "safari", "wildlife"],
+    "itineraries": {
+      "day1": {
+        "title": "Cape Town - Hermanus - Cape Agulhas",
+        "description": "We depart from Cape Town/Stellenbosch early on Monday morning for Hermanus. (Shark cage diving clients will be picked up very early in the morning by the diving operator, and will miss the first half of Day 1). We follow the scenic coastal road, stopping at Betties Bay to view a colony of endangered African penguins. You can spend the afternoon in the seaside resort town of Hermanus, famous for hundreds of Southern Right Whales during the whale season (July to November) and many shops, restaurants and markets. In the afternoon we will drive on to Cape Agulhas, the most southern tip of Africa, where we visit a viewpoint known as the “real” place where the Indian and Atlantic Oceans meet."
+      },
+      "day2": {
+        "title": "Cape Agulhas - Oudtshoorn",
+        "description": "We travel to Oudtshoorn in the Little Karoo, known as the Ostrich Capital of the World, via the spectacular Route 62, which is South Africa’s longest wine route. We will have a lovely lunch and wine tasting at a local winery, before experiencing the subterranean beauty of the Cango Caves on a guided adventure tour."
+      },
+      "day3": {
+        "title": "Oudtshoorn - Knynsa - Sedgefield",
+        "description": "After breakfast we head over the marvellous Outeniqua Mountain pass where we will explore Wilderness National Park with some canoes. Enjoy a paddle up the Touw River through indigenous forest, enjoying the abundance of birdlife. After about 40 minutes, the canoes will be left for a 2km hike along a boardwalk, which will take us to a lovely waterfall and rock pools. After the canoeing, we will head to the famous town of Knysna via the lavish Lake District of the Garden Route. This up-market little town is filled with curios, restaurants and a waterfront, where you will be able to relax and do some shopping. After Knysna we will head to the Knysna Heads viewpoint for some magnificent views over Knysna River estuary and the Indian Ocean. Late afternoon you can spend exploring Sedgefield with its expansive views and beaches."
+      },
+      "day4": {
+        "title": "Sedgefield - Tsitsikamma - Addo",
+        "description": "After breakfast, off to Tsitsikamma National Park. En route we will stop at Bloukrans Bridge to view the world’s highest bungee jump bridge (216 meters). There is plenty of time for the adventure seekers among you to test their courage. The late morning will be spent in Tsitsikamma National Park with its unique combination of indigenous forest and beautiful Indian Ocean coastline. The park has a wide choice of activities for all, including hiking, crossing a suspension bridge and swimming. Early afternoon we will leave the Garden Route for Big 5 country, Addo."
+      },
+      "day5": {
+        "title": "Addo - Wilderness/Mossel Bay",
+        "description": "We will spend the morning exploring Addo Elephant National Park. We will spend up to 2-3 hours exploring the 28,000 hectare National reserve with approximately 600 elephant and some Cape buffalo, lion, black rhino, warthog, zebra, eland, kudu, hartebeest and many more animals. After an exciting morning of game viewing we will drive back to the heart of the Garden Route where we will overnight in Wilderness or Mossel Bay."
+      },
+      "day6": {
+        "title": "Wilderness/Mossel Bay - Cape Town",
+        "description": "After breakfast, we will stop in Mossel Bay to spend some time on the spectacular beaches, hike the Cape St. Blaize trail along the cliffs overlooking the Indian Ocean, and visit the famous Diaz Museum complex, commemorating the first known European exploration around the tip of Africa. The more adventurous can try a 10,000 foot tandem skydive or sandboarding on the longest dune in South Africa. We will arrive back to Cape Town/Stellenbosch in the early evening."
+      }
+    }
+  },
+  {
+    "name": "Best of Northern Arizona",
+    "description": "Start and end in Flagstaff! With the Hiking & Trekking tour Best of Northern Arizona, you have a 6 days tour package taking you through Flagstaff, USA and 2 other destinations in USA. Best of Northern Arizona includes accommodation in a hotel as well as an expert guide, meals, transport and more.",
+    "price": 2839,
+    "duration": 6,
+    "coverImage": "north-arizona.png",
+    "tags": ["adventure", "group"],
+    "itineraries": {
+      "day1": {
+        "title": "Flagstaff",
+        "description": "On this Arizona hiking vacation, we’ll pick you up at your hotel in Flagstaff and begin our drive to the North Rim of the Grand Canyon. En route we’ll cross the Little Colorado River and then the Colorado River near Lee’s Ferry, where the Old Navajo Bridge (built in the 1920’s) is suspended 467 feet above the water. Your guide will drop you off so you can walk across the historic bridge and snap pictures of this amazing spot, which marks the beginning of the Grand Canyon. Occasionally we see California Condors perched on the rafters beneath the bridge. After eating breakfast at the Old Navajo Bridge, we’ll continue on our journey to the North Rim of Grand Canyon National Park and the famous Grand Canyon Lodge. We’ll check in to our rooms, then enjoy the lodge and its massive picture windows before hiking to Bright Angel Point, one of the most impressive views in the Canyon. After a hearty lunch we’ll hike down the famous North Kaibab Trail to Coconino Overlook, another one of the most impressive overlooks in the Canyon. Once the hiking is done we’ll continue back to the Grand Canyon Lodge, where we’ll shower and meet up for a wonderful dinner overlooking the depths of the Grand Canyon from the Lodge restaurant’s spectacular picture windows."
+      },
+      "day2": {
+        "title": "Grand Canyon",
+        "description": "After a big breakfast we’ll drive a short distance to our trailhead. Today’s hike is on a beautiful trail that winds through the pine trees and aspen of the high North Rim (8,000 feet) past ancient fossil beds to the edge of the Canyon. Elk, deer, coyotes, fox, mountain lions, and even half-breed wild buffalo roam these forests and meadows regularly. The plant life is rich and lush, which is an amazing contrast to the desert ecosystems we’ll be gazing down at inside the Canyon (and later walking through off the South Rim). Once we reach the edge of the Canyon, we’ll traverse the North Rim to a stunning viewpoint. We’ll enjoy a picnic lunch overlooking the depths of the Canyon, explore this incredible area by extending our hike along the Rim, and then return on the same trail. We’ll have a nice sunset dinner this evening cooked by your guide at a spectacular view point called Point Imperial."
+      },
+      "day3": {
+        "title": "South Rim",
+        "description": "We’ll check out of our rooms and drive again over the Colorado River at Lee’s Ferry. We’ll turn west and enter the Park from the East Entrance this time, where we’ll stop at the famous Desert View Watchtower. This amazing structure is a replica of a Native American tower found in the same location by early explorers centuries ago. After driving along the famous Desert View Drive, we’ll reach the jumping off point for our amazing hike on the Grandview Trail! As the name implies, phenomenal views abound on this hike! You can see for more than 100 miles on a clear Grand Canyon day from the top. Originally used by native peoples of the Grand Canyon, the Grandview Trail as we know it today was built as access to the Last Chance Mine when copper was discovered on Horseshoe Mesa in 1890. Along with prehistoric sites, much of the old mining operation remains, including the original miner’s cabin walls and fireplace. After our hike we’ll check in to our hotel and then head out for a very special dinner at the historic El Tovar Lodge at the very edge of the South Rim."
+      },
+      "day4": {
+        "title": "Sedona",
+        "description": "Today we get an early start, check out of our rooms and embark on one of most scenic hikes the Grand Canyon has to offer. We descend the spine of a spectacular ridge that allows for BIG Grand Canyon views as the ridge drops off on both sides and in front of us. It is the trail to do if you’re looking for some of the best panoramas in the Grand Canyon. These panoramas and the moderate nature of the hiking make our hike one of the most photographed trails in the country and a fantastic day in the canyon. After our hike we embark on a 2.5 hour scenic drive through the stunning Oak Creek Canyon to the red rock landscape of Sedona. We check into our charming lodge and enjoy dinner at a local eatery hand-picked by your guide."
+      },
+      "day5": {
+        "title": "Sedona",
+        "description": "We begin our time in Sedona with a classic hike to some of the most iconic features in the area. Starting near two of Sedona’s most prominent and beautiful landmarks, Courthouse Butte and Bell Rock, we quickly ascend into layered shelves of red rock sandstone. We’ll stop to appreciate and learn about all the different types and uses of desert plants in the area. Half-way into our hike we’ll reach Cathedral Rock, a stunning, nearly 1,000 foot tall sandstone monolith. We’ll rest in the shade of cottonwood trees lining the banks of Oak Creek, along the northwest side of Cathedral Rock. Your guide will prepare a tasty lunch and share some of the native and indigenous history of the area – this very spot was once a fertile hunting ground. After lunch, we’ll complete our hike among the towering cliffs, sheer pinnacles and pristine canyons of Sedona. We’ll return to our lodging, relax for an hour or two, and then depart for another wonderful local Sedona dinner."
+      },
+      "day6": {
+        "title": "Flagstaff",
+        "description": "After checking out of our lodge we shuttle to another local trailhead for what is sure to be a highlight of our time in Northern Arizona. This hike is one of the best in the area as we walk back in time on old wagon roads (now trails) to a red rock saddle that offers incredible views. This trail, named for the overhanging rock that shelters part of the route from the sun, is a Sedona must-do. It involves exhilarating steps on pure sandstone up Schnebly Hill vistas and panoramic views of the canyons below. This is a great hike to hear the history and story of T.C. Schnebly and his wife Sedona, for whom the town is named. After our hike and lunch on the trail we shuttle back to Flagstaff through the scenic Oak Creek Canyon, soaking in more views of towering red and gold cliffs as we go. We’ll say our goodbyes to new friends and make plans to share memories of the hidden gems of Northern Arizona! Please Note: We always do everything in our power to follow the set itinerary, however it can change occasionally based on temporary access restrictions, weather, lodging/campground availability, guest ability/injury, natural events like fires and flooding, and other potential causes."
+      }
+    }
+  },
+  {
+    "name": "New York Explorer",
+    "description": "Start and end in New York City! With the In-depth Cultural tour New York Explorer (5 Days), you have a 5 days tour package taking you through New York City, USA. New York Explorer (5 Days) includes accommodation, an expert guide, meals.",
+    "duration": 5,
+    "coverImage": "ny-explorer.png",
+    "price": 900,
+    "tags": ["culture", "group", "general", "city"],
+    "itineraries": {
+      "day1": {
+        "title": "New York",
+        "description": "HELLOOOOO BIG APPLE! After check-in to your digs in Manhattan, feel free to get somewhat more familiar with this stylish city, your way, with your included Official New York CityPASS™ . Maybe check out Museum Mile, including all the most prestigious NYC galleries and historical museums like the Guggenheim and MOMA. Then feel free to shop ‘til you drop on Fifth Avenue, or take a stroll over the historic Brooklyn Bridge."
+      },
+      "day2": {
+        "title": "New York",
+        "description": "With three whole days to spend in the city that never sleeps, there’s no time to lose. Make the most of your included breakfast, then you’re free to roam wonderful New York. Where to start? With the CityPASS you could check out Lady Liberty from the Ellis Island ferry or take a Circle Line sightseeing cruise. Once you’ve hit the museums, you’re free to peddle through Central Park or explore the trendy Greenwich Village or Soho. No matter what you choose to do, try and take in as much as possible, because there's nothing like being set free on the streets of NYC."
+      },
+      "day3": {
+        "title": "New York",
+        "description": "After you grab some breakfast (on us), how will you spend your day? The options are almost endless - but if you haven’t seen it yet, it’s worth visiting Ground Zero, the sombre New York Trade Center Memorial & Museum, or the more adventurous can opt to visit the Intrepid Sea, Air & Space Museum - choose one included in your CityPASS. When the sun goes down, why not head to the most famous New York landmark, the Empire State Building? With your CityPASS you’ll get an uninterrupted view of the concrete jungle lit up like a Christmas tree, that's one big tick off the bucket list, and the day’s not even over yet!"
+      },
+      "day4": {
+        "title": "New York",
+        "description": "Rise & shine, it’s your final day in New York and this city won’t explore itself! After your included breakfast, make the most of your final 24 hours in this vibrant metropolis. If you’re all museum-ed out, you could hit trendy Williamsburg or the East Village to check out some impressive urban street art. Or, channel your inner Jordan Belfort (Leo DiCaprio) and visit iconic Wall Street and the NYSE. It’s your final evening in NYC, so it’s up to you to make it count!"
+      },
+      "day5": {
+        "title": "New York",
+        "description": "You came, you saw, you took a big ol’ bite out of the Big Apple. We hope you’ve grabbed your ‘I heart NY’ t-shirt. How about one more cream cheese bagel for the road?"
       }
     }
   }
