@@ -8,7 +8,8 @@ exports.getAllTours = async (req, res, next) => {
       .filter()
       .sort()
       .limitFields()
-      .paginate();
+      .paginate()
+      .populate("guides name");
     const tours = await features.query;
 
     res.status(200).json({

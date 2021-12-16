@@ -1,8 +1,15 @@
 const User = require("../models/userModel");
+const APIfeatures = require("../utils/APIFeatures");
 
 exports.getAllUsers = async (req, res, next) => {
   try {
-    const users = await User.find();
+    const features = new APIFeatures(User.find(), req.query)
+      .filter()
+      .sort()
+      .limitField()
+      .paginate();
+
+    const users = await features.query;
 
     res.status(200).json({
       status: "Success",
@@ -33,7 +40,7 @@ exports.getUser = async (req, res, next) => {
 
 exports.updateUser = async (req, res, next) => {
   try {
-    const user = await User.findByIdAndUpdate(req.params.userID);
+    const user = await User.findByIdAndUpdate(req.params.userID, req.body);
     res.status(200).json({
       status: "Success",
       data: {

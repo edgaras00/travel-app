@@ -109,3 +109,16 @@ exports.protectRoute = async (req, res, next) => {
     console.log(error);
   }
 };
+
+exports.restrictRouteTo = (...userRoles) => {
+  return async (req, res, next) => {
+    try {
+      if (!userRoles.includes(req.user.role)) {
+        throw new Error("Unauthorized");
+      }
+      next();
+    } catch (error) {
+      console.log(error);
+    }
+  };
+};

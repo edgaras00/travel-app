@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const bookingSchema = new Schema({
-  _id: Schema.Types.ObjectId,
+  // _id: Schema.Types.ObjectId,
   price: {
     type: Number,
     required: [true, "Booking must have a price"],
@@ -16,10 +16,10 @@ const bookingSchema = new Schema({
     ref: "User",
     required: [true, "Booking must reference a user"],
   },
-  package: {
+  tour: {
     type: Schema.Types.ObjectId,
-    ref: "Package",
-    required: [true, "Booking must reference a package"],
+    ref: "Tour",
+    required: [true, "Booking must reference a tour"],
   },
 });
 
