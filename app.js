@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const cookieParser = require("cookie-parser");
 const destinationRouter = require("./api/routes/destinationsRouter");
 const userRouter = require("./api/routes/userRouter");
 const bookingRouter = require("./api/routes/bookingRouter");
@@ -8,6 +9,8 @@ const tourRouter = require("./api/routes/tourRouter");
 require("dotenv").config();
 
 const app = express();
+
+app.use(cookieParser());
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());

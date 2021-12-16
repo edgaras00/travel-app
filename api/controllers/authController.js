@@ -1,3 +1,4 @@
+const { promisify } = require("util");
 const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const User = require("../models/userModel");
@@ -76,13 +77,35 @@ exports.login = async (req, res, next) => {
   }
 };
 
-exports.protectRoute = (req, res, next) => {
-  // Get token
-  const token = "";
+exports.protectRoute = async (req, res, next) => {
+  try {
+    // Check for token
+    let token;
+    if (
+      req.headers.authorization &&
+      req.headers.authorization.startsWith("Bearer")
+    ) {
+      token = req.headers.authorization.split(" ")[1];
+    } else if (req.cookies.jwt) {
+      token = req.cookies.jwt;
+    }
 
-  // Verify token
+    if (!token) {
+      throw new Error("Please log in to gain access");
+    }
 
-  // Check for user
+    // Verify token
+    const decoded = await promisify(jwt.verify)(token, process.env.JWT_SECRET);
 
-  next();
+    // Check if user with decoded id exists
+    const user = await User.findById(decoded.id);
+
+    if (!user) {
+      throw new Error("User who this token belongs to does not exist");
+    }
+    req.user = user;
+    next();
+  } catch (error) {
+    console.log(error);
+  }
 };
