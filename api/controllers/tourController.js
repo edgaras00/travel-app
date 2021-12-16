@@ -1,9 +1,16 @@
 const mongoose = require("mongoose");
 const Tour = require("../models/tourModel");
+const APIFeatures = require("../utils/apiFeatures");
 
 exports.getAllTours = async (req, res, next) => {
   try {
-    const tours = await Tour.find();
+    const features = new APIFeatures(Tour.find(), req.query)
+      .filter()
+      .sort()
+      .limitFields()
+      .paginate();
+    const tours = await features.query;
+
     res.status(200).json({
       status: "Success",
       results: tours.length,
@@ -13,6 +20,7 @@ exports.getAllTours = async (req, res, next) => {
     });
   } catch (error) {
     console.log(error);
+    res.status(404).json({ error });
   }
 };
 
