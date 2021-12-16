@@ -14,8 +14,18 @@ const destinationSchema = new Schema({
     required: [true, "Destination must have a description"],
   },
   weather: String,
-  currency: String,
-  language: String,
+  currency: {
+    type: String,
+    required: [true, "Destination must have a currency"],
+  },
+  language: {
+    type: String,
+    required: [true, "Destination must have a language"],
+  },
+  region: {
+    type: String,
+    required: [true, "Destination must have a region"],
+  },
   thingsToDo: [{ title: String, text: String }],
   places: [
     {
@@ -28,7 +38,7 @@ const destinationSchema = new Schema({
     type: String,
     required: [true, "Destination must have a cover image"],
   },
-  packages: [{ type: Schema.Types.ObjectId, ref: "Package" }],
+  tours: [{ type: Schema.Types.ObjectId, ref: "Tour" }],
 });
 
 const Destination = mongoose.model("Destination", destinationSchema);

@@ -1,9 +1,15 @@
 const Destination = require("../models/destinationModel");
 const mongoose = require("mongoose");
+const APIFeatures = require("../utils/apiFeatures");
 
 exports.getAllDestinations = async (req, res, next) => {
   try {
-    const destinations = await Destination.find();
+    const features = new APIFeatures(Destination.find(), req.query)
+      .filter()
+      .limitFields()
+      .paginate();
+    const destinations = await features.query;
+    // const destinations = await Destination.find();
     res.status(200).json({
       status: "Success",
       results: destinations.length,
