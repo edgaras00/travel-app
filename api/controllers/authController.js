@@ -1,6 +1,7 @@
 const { promisify } = require("util");
 const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
+const catchAsync = require("../utils/catchAsync");
 const User = require("../models/userModel");
 
 const signToken = async (id) => {
@@ -10,115 +11,99 @@ const signToken = async (id) => {
   return token;
 };
 
-exports.signup = async (req, res, next) => {
-  try {
-    const newUser = {
-      _id: req.body._id ? req.body._id : mongoose.Types.ObjectId(),
-      name: req.body.name,
-      email: req.body.email,
-      password: req.body.password,
-    };
+exports.signup = catchAsync(async (req, res, next) => {
+  const newUser = {
+    _id: req.body._id ? req.body._id : mongoose.Types.ObjectId(),
+    name: req.body.name,
+    email: req.body.email,
+    password: req.body.password,
+  };
 
-    const user = await User.create(newUser);
-    // Hide password in output
-    user.password = undefined;
+  const user = await User.create(newUser);
+  // Hide password in output
+  user.password = undefined;
 
-    const token = await signToken(user._id);
+  const token = await signToken(user._id);
 
-    res.cookie("jwt", token, {
-      httpOnly: true,
-      maxAge: process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000,
-    });
-    res.status(201).json({
-      status: "Success",
-      token,
-      data: {
-        user,
-      },
-    });
-  } catch (error) {
-    console.log(error);
+  res.cookie("jwt", token, {
+    httpOnly: true,
+    maxAge: process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000,
+  });
+  res.status(201).json({
+    status: "Success",
+    token,
+    data: {
+      user,
+    },
+  });
+});
+
+exports.login = catchAsync(async (req, res, next) => {
+  // Check for user
+  const user = await User.findOne({ email: req.body.email }).select(
+    "+password"
+  );
+
+  if (
+    !user ||
+    !(await user.comparePasswords(req.body.password, user.password))
+  ) {
+    throw new Error("Incorrect email or password");
   }
-};
 
-exports.login = async (req, res, next) => {
-  try {
-    // Check for user
-    const user = await User.findOne({ email: req.body.email }).select(
-      "+password"
-    );
+  // Hide password
+  user.password = undefined;
 
-    if (
-      !user ||
-      !(await user.comparePasswords(req.body.password, user.password))
-    ) {
-      throw new Error("Incorrect email or password");
-    }
+  const token = await signToken(user._id);
 
-    // Hide password
-    user.password = undefined;
+  res.cookie("jwt", token, {
+    httpOnly: true,
+    maxAge: process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000,
+  });
 
-    const token = await signToken(user._id);
+  res.status(200).json({
+    status: "Success",
+    token,
+    data: {
+      user,
+    },
+  });
+});
 
-    res.cookie("jwt", token, {
-      httpOnly: true,
-      maxAge: process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000,
-    });
-
-    res.status(200).json({
-      status: "Success",
-      token,
-      data: {
-        user,
-      },
-    });
-  } catch (error) {
-    console.log(error);
+exports.protectRoute = catchAsync(async (req, res, next) => {
+  // Check for token
+  let token;
+  if (
+    req.headers.authorization &&
+    req.headers.authorization.startsWith("Bearer")
+  ) {
+    token = req.headers.authorization.split(" ")[1];
+  } else if (req.cookies.jwt) {
+    token = req.cookies.jwt;
   }
-};
 
-exports.protectRoute = async (req, res, next) => {
-  try {
-    // Check for token
-    let token;
-    if (
-      req.headers.authorization &&
-      req.headers.authorization.startsWith("Bearer")
-    ) {
-      token = req.headers.authorization.split(" ")[1];
-    } else if (req.cookies.jwt) {
-      token = req.cookies.jwt;
-    }
-
-    if (!token) {
-      throw new Error("Please log in to gain access");
-    }
-
-    // Verify token
-    const decoded = await promisify(jwt.verify)(token, process.env.JWT_SECRET);
-
-    // Check if user with decoded id exists
-    const user = await User.findById(decoded.id);
-
-    if (!user) {
-      throw new Error("User who this token belongs to does not exist");
-    }
-    req.user = user;
-    next();
-  } catch (error) {
-    console.log(error);
+  if (!token) {
+    throw new Error("Please log in to gain access");
   }
-};
+
+  // Verify token
+  const decoded = await promisify(jwt.verify)(token, process.env.JWT_SECRET);
+
+  // Check if user with decoded id exists
+  const user = await User.findById(decoded.id);
+
+  if (!user) {
+    throw new Error("User who this token belongs to does not exist");
+  }
+  req.user = user;
+  next();
+});
 
 exports.restrictRouteTo = (...userRoles) => {
-  return async (req, res, next) => {
-    try {
-      if (!userRoles.includes(req.user.role)) {
-        throw new Error("Unauthorized");
-      }
-      next();
-    } catch (error) {
-      console.log(error);
+  return catchAsync(async (req, res, next) => {
+    if (!userRoles.includes(req.user.role)) {
+      throw new Error("Unauthorized");
     }
-  };
+    next();
+  });
 };
