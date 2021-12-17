@@ -9,7 +9,6 @@ exports.getAllDestinations = async (req, res, next) => {
       .limitFields()
       .paginate();
     const destinations = await features.query;
-    // const destinations = await Destination.find();
     res.status(200).json({
       status: "Success",
       results: destinations.length,

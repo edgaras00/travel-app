@@ -1,15 +1,16 @@
+const mongoose = require("mongoose");
 const User = require("../models/userModel");
-const APIfeatures = require("../utils/APIFeatures");
+const APIFeatures = require("../utils/APIFeatures");
 
 exports.getAllUsers = async (req, res, next) => {
   try {
     const features = new APIFeatures(User.find(), req.query)
       .filter()
       .sort()
-      .limitField()
+      .limitFields()
       .paginate();
 
-    const users = await features.query;
+    const users = await features.query.populate("cart", "name price");
 
     res.status(200).json({
       status: "Success",
@@ -63,3 +64,99 @@ exports.deleteUser = async (req, res, next) => {
     console.log(error);
   }
 };
+
+exports.modifyCart = async (req, res, next) => {
+  try {
+    let user;
+
+    if (req.body.action === "clear") {
+      user = await User.findByIdAndUpdate(
+        req.user._id,
+        { $set: { cart: [] } },
+        { new: true }
+      );
+    } else if (req.body.action === "add") {
+      user = await User.findByIdAndUpdate(
+        req.user._id,
+        { $push: { cart: req.body.tourID } },
+        { new: true }
+      );
+    } else if (req.body.action === "remove") {
+      user = await User.findByIdAndUpdate(
+        req.user._id,
+        { $pull: { cart: req.body.tourID } },
+        { new: true }
+      );
+    }
+
+    res.status(200).json({
+      status: "Success",
+      data: {
+        user,
+      },
+    });
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+// exports.addToCart = async (req, res, next) => {
+//   try {
+//     const user = await User.findByIdAndUpdate(
+//       req.user._id,
+//       {
+//         $push: { cart: req.body.tourID },
+//       },
+//       { new: true }
+//     );
+
+//     res.status(200).json({
+//       status: "Success",
+//       data: {
+//         user,
+//       },
+//     });
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
+
+// exports.removeFromCart = async (req, res, next) => {
+//   try {
+//     const user = await User.findByIdAndUpdate(
+//       req.user._id,
+//       {
+//         $pull: { cart: req.body.tourID },
+//       },
+//       { new: true }
+//     );
+
+//     res.status(200).json({
+//       status: "Success",
+//       data: {
+//         user,
+//       },
+//     });
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
+
+// exports.clearCart = async (req, res, next) => {
+//   try {
+//     const user = await User.findByIdAndUpdate(
+//       req.user._id,
+//       { $set: { cart: [] } },
+//       { new: true }
+//     );
+
+//     res.status(200).json({
+//       status: "Success",
+//       data: {
+//         user,
+//       },
+//     });
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };

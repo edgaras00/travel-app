@@ -7,9 +7,9 @@ exports.getAllReviews = async (req, res, next) => {
       .filter()
       .sort()
       .limitFields()
-      .paginate()
-      .populate("tour user", "name");
-    const reviews = await features.query;
+      .paginate();
+
+    const reviews = await features.query.populate("tour user", "name");
 
     res.status(200).json({
       status: "Success",
