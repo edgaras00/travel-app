@@ -1,6 +1,6 @@
 const Destination = require("../models/destinationModel");
-const mongoose = require("mongoose");
 const APIFeatures = require("../utils/apiFeatures");
+const AppError = require("../utils/appError");
 const catchAsync = require("../utils/catchAsync");
 
 exports.getAllDestinations = catchAsync(async (req, res, next) => {
@@ -20,6 +20,10 @@ exports.getAllDestinations = catchAsync(async (req, res, next) => {
 
 exports.getDestination = catchAsync(async (req, res, next) => {
   const destination = await Destination.findById(req.params.destinationID);
+
+  if (!destination) {
+    return next(new AppError("Destination not found", 404));
+  }
 
   res.status(200).json({
     status: "Success",
@@ -45,21 +49,32 @@ exports.createDestination = catchAsync(async (req, res, next) => {
 });
 
 exports.updateDestination = catchAsync(async (req, res, next) => {
-  const updatedDestination = await Destination.findByIdAndUpdate(
+  const destination = await Destination.findByIdAndUpdate(
     req.params.destinationID,
     req.body
   );
 
+  if (!destination) {
+    return next(new AppError("Destination not found", 404));
+  }
+
   res.status(200).json({
     status: "Success",
     data: {
-      updatedDestination,
+      destination,
     },
   });
 });
 
 exports.deleteDestination = catchAsync(async (req, res, next) => {
-  await Destination.findByIdAndDelete(req.params.destinationID);
+  const destination = await Destination.findByIdAndDelete(
+    req.params.destinationID
+  );
+
+  if (!destination) {
+    return next(new AppError("Destination not found", 404));
+  }
+
   res.status(204).json({
     status: "Success",
     message: "Successful deletion",

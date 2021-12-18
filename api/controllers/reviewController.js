@@ -1,5 +1,6 @@
 const Review = require("../models/reviewModel");
 const APIFeatures = require("../utils/apiFeatures");
+const AppError = require("../utils/appError");
 const catchAsync = require("../utils/catchAsync");
 
 exports.getAllReviews = catchAsync(async (req, res, next) => {
@@ -22,6 +23,10 @@ exports.getAllReviews = catchAsync(async (req, res, next) => {
 
 exports.getReview = catchAsync(async (req, res, next) => {
   const review = await Review.findById(req.params.reviewID);
+
+  if (!review) {
+    return next(new AppError("Review not found", 404));
+  }
 
   res.status(200).json({
     status: "Success",
@@ -46,6 +51,10 @@ exports.createReview = catchAsync(async (req, res, next) => {
 exports.updateReview = catchAsync(async (req, res, next) => {
   const review = await Review.findByIdAndUpdate(req.params.reviewID, req.body);
 
+  if (!review) {
+    return next(new AppError("Review not found"));
+  }
+
   res.status(200).json({
     status: "Success",
     data: {
@@ -55,7 +64,11 @@ exports.updateReview = catchAsync(async (req, res, next) => {
 });
 
 exports.deleteReview = catchAsync(async (req, res, next) => {
-  await Review.findByIdAndDelete(req.params.reviewID);
+  const review = await Review.findByIdAndDelete(req.params.reviewID);
+
+  if (!review) {
+    return next(new AppError("Review not found", 404));
+  }
 
   res.status(204).json({
     status: "Success",

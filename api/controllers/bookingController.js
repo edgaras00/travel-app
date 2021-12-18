@@ -1,5 +1,6 @@
 const Booking = require("../models/bookingModel");
 const APIFeatures = require("../utils/apiFeatures");
+const AppError = require("../utils/appError");
 const catchAsync = require("../utils/catchAsync");
 
 exports.getAllBookings = catchAsync(async (req, res, next) => {
@@ -22,6 +23,10 @@ exports.getAllBookings = catchAsync(async (req, res, next) => {
 
 exports.getBooking = catchAsync(async (req, res, next) => {
   const booking = await Booking.findById(req.params.bookingID);
+
+  if (!booking) {
+    return next(new AppError("Booking not found", 404));
+  }
 
   res.status(200).json({
     status: "Success",
@@ -49,6 +54,10 @@ exports.updateBooking = catchAsync(async (req, res, next) => {
     req.body
   );
 
+  if (!booking) {
+    return next(new AppError("Booking not found", 404));
+  }
+
   res.status(200).json({
     status: "Success",
     data: {
@@ -58,7 +67,11 @@ exports.updateBooking = catchAsync(async (req, res, next) => {
 });
 
 exports.deleteBooking = catchAsync(async (req, res, next) => {
-  await Booking.findByIdAndDelete(req.params.bookingID);
+  const booking = await Booking.findByIdAndDelete(req.params.bookingID);
+
+  if (!booking) {
+    return next(new AppError("Booking not found", 404));
+  }
 
   res.status(204).json({
     status: "Success",

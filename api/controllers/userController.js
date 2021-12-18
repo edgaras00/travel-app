@@ -24,6 +24,10 @@ exports.getAllUsers = catchAsync(async (req, res, next) => {
 exports.getUser = catchAsync(async (req, res, next) => {
   const user = await User.findById(req.params.userID);
 
+  if (!user) {
+    return next(new AppError("User not found", 404));
+  }
+
   res.status(200).json({
     status: "Success",
     data: {
@@ -34,6 +38,11 @@ exports.getUser = catchAsync(async (req, res, next) => {
 
 exports.updateUser = catchAsync(async (req, res, next) => {
   const user = await User.findByIdAndUpdate(req.params.userID, req.body);
+
+  if (!user) {
+    return next(new AppError("User not found", 404));
+  }
+
   res.status(200).json({
     status: "Success",
     data: {
@@ -43,7 +52,12 @@ exports.updateUser = catchAsync(async (req, res, next) => {
 });
 
 exports.deleteUser = catchAsync(async (req, res, next) => {
-  await User.findByIdAndDelete(req.params.userID);
+  const user = await User.findByIdAndDelete(req.params.userID);
+
+  if (!user) {
+    return next(new AppError("User not found", 404));
+  }
+
   res.status(204).json({
     status: "Success",
     message: "Successful deletion",
