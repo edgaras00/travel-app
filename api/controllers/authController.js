@@ -2,6 +2,7 @@ const { promisify } = require("util");
 const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const catchAsync = require("../utils/catchAsync");
+const AppError = require("../utils/appError");
 const User = require("../models/userModel");
 
 const signToken = async (id) => {
@@ -48,7 +49,7 @@ exports.login = catchAsync(async (req, res, next) => {
     !user ||
     !(await user.comparePasswords(req.body.password, user.password))
   ) {
-    throw new Error("Incorrect email or password");
+    return next(new AppError("Email or password is incorrect", 401));
   }
 
   // Hide password
@@ -83,7 +84,7 @@ exports.protectRoute = catchAsync(async (req, res, next) => {
   }
 
   if (!token) {
-    throw new Error("Please log in to gain access");
+    return next(new AppError("Please log in to gain access", 401));
   }
 
   // Verify token
@@ -93,7 +94,9 @@ exports.protectRoute = catchAsync(async (req, res, next) => {
   const user = await User.findById(decoded.id);
 
   if (!user) {
-    throw new Error("User who this token belongs to does not exist");
+    return next(
+      new AppError("User who this token belongs to does not exist", 401)
+    );
   }
   req.user = user;
   next();
@@ -102,7 +105,7 @@ exports.protectRoute = catchAsync(async (req, res, next) => {
 exports.restrictRouteTo = (...userRoles) => {
   return catchAsync(async (req, res, next) => {
     if (!userRoles.includes(req.user.role)) {
-      throw new Error("Unauthorized");
+      return next(new AppError("Not authorized", 401));
     }
     next();
   });

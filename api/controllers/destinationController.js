@@ -51,7 +51,8 @@ exports.createDestination = catchAsync(async (req, res, next) => {
 exports.updateDestination = catchAsync(async (req, res, next) => {
   const destination = await Destination.findByIdAndUpdate(
     req.params.destinationID,
-    req.body
+    req.body,
+    { new: true }
   );
 
   if (!destination) {

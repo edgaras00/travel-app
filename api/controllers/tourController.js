@@ -53,7 +53,9 @@ exports.createTour = catchAsync(async (req, res, next) => {
 });
 
 exports.updateTour = catchAsync(async (req, res, next) => {
-  const tour = await Tour.findByIdAndUpdate(req.params.tourID, req.body);
+  const tour = await Tour.findByIdAndUpdate(req.params.tourID, req.body, {
+    new: true,
+  });
 
   if (!tour) {
     return next(new AppError("Tour not found", 404));

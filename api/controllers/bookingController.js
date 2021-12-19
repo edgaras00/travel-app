@@ -51,7 +51,8 @@ exports.createBooking = catchAsync(async (req, res, next) => {
 exports.updateBooking = catchAsync(async (req, res, next) => {
   const booking = await Booking.findByIdAndUpdate(
     req.params.bookingID,
-    req.body
+    req.body,
+    { new: true }
   );
 
   if (!booking) {

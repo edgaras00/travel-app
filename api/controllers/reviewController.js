@@ -49,7 +49,9 @@ exports.createReview = catchAsync(async (req, res, next) => {
 });
 
 exports.updateReview = catchAsync(async (req, res, next) => {
-  const review = await Review.findByIdAndUpdate(req.params.reviewID, req.body);
+  const review = await Review.findByIdAndUpdate(req.params.reviewID, req.body, {
+    new: true,
+  });
 
   if (!review) {
     return next(new AppError("Review not found"));

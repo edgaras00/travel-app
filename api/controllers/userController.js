@@ -37,7 +37,9 @@ exports.getUser = catchAsync(async (req, res, next) => {
 });
 
 exports.updateUser = catchAsync(async (req, res, next) => {
-  const user = await User.findByIdAndUpdate(req.params.userID, req.body);
+  const user = await User.findByIdAndUpdate(req.params.userID, req.body, {
+    new: true,
+  });
 
   if (!user) {
     return next(new AppError("User not found", 404));
