@@ -19,11 +19,14 @@
   width: 20%;
   border-radius: 5px;
   margin-left: 0.6em;
+  font-size: 0.8em;
 }
 
 .footer input {
   height: 55px;
   width: 50%;
+  font-size: 0.9em;
+  padding-left: 0.8em;
 }
 
 .footer button:focus,
