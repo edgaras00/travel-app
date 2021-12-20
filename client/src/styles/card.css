@@ -1,0 +1,22 @@
+img {
+  width: 70px;
+}
+
+.card {
+  width: 22%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.title {
+  font-size: 2.2em;
+  font-weight: bold;
+}
+
+.text {
+  font-size: 1.2em;
+  text-align: center;
+}

@@ -1,0 +1,33 @@
+.offer-card {
+  width: 90%;
+  height: 420px;
+  border: 1px solid lightgrey;
+  display: flex;
+}
+
+.offer-card img {
+  width: 100%;
+}
+
+.offer-card-img-container {
+  width: 78%;
+  max-height: 420px;
+}
+
+.offer-card-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer-card-title-container {
+  width: 90%;
+  font-size: 2.1em;
+}
+
+.offer-card-text {
+  width: 90%;
+  margin-top: 1.4em;
+  font-size: 1.1em;
+}
