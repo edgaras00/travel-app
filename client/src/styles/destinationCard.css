@@ -1,0 +1,10 @@
+.destination-card {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.6em;
+  background-size: cover;
+}

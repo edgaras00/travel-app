@@ -1,0 +1,16 @@
+.destinations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 6em;
+  margin-top: 4em;
+}
+
+.destination-card-container {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1em;
+  row-gap: 1em;
+  margin-top: 3em;
+}
