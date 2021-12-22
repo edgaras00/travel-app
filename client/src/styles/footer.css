@@ -79,3 +79,8 @@
   line-height: 1.8;
   display: list-item;
 }
+
+.copyright {
+  font-size: 0.85em;
+  margin-bottom: 2em;
+}

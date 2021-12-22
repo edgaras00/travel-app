@@ -10,7 +10,7 @@ import LocationDetails from "./components/LocationDetails";
 
 const App = () => {
   return (
-    <div>
+    <div className="app">
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
@@ -24,6 +24,12 @@ const App = () => {
           path="/destinations/:regionID/:destinationID/:locationID"
           element={<LocationDetails />}
         />
+        <Route path="/vacations" />
+        <Route path="/vacations/:vacationType" />
+        <Route path="/vacations/:vacationType/:vacationID" />
+        <Route path="/tours" />
+        <Route path="tours/:tourType/:tourID" />
+        <Route path="/blog" />
       </Routes>
       <Footer />
     </div>

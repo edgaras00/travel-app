@@ -1,5 +1,6 @@
 .destination-card {
   height: 200px;
+  width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,4 +8,9 @@
   font-weight: 800;
   font-size: 1.6em;
   background-size: cover;
+}
+
+.card-large {
+  width: 480px;
+  height: 400px;
 }

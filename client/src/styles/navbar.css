@@ -1,3 +1,7 @@
+a {
+  color: #fff;
+}
+
 .navbar-container {
   width: 100%;
   height: 100px;
@@ -5,6 +9,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  /* background-color: #3b5998; */
+  background-color: #457b9d;
+  /* background-color: #1d3557; */
 }
 
 .logo {
@@ -12,6 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.6em;
 }
 
 .links {
@@ -20,4 +28,5 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  font-size: 1.1em;
 }

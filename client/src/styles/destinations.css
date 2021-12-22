@@ -1,0 +1,47 @@
+.destinations-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8em;
+}
+
+.destination-list-header {
+  margin-bottom: 1.2em;
+}
+
+.region-description {
+  width: 94%;
+  margin-top: 5em;
+  margin-bottom: 6em;
+}
+
+.region-at-glance {
+  width: 100%;
+  display: flex;
+  background-color: #eae4e9;
+  margin-bottom: 6em;
+}
+
+.region-description-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  font-size: 1.1em;
+}
+
+.region-description-text p {
+  margin: 1.2em 0;
+  width: 80%;
+}
+
+.region-description-text h2 {
+  width: 80%;
+}
+
+.region-map {
+  height: 450px;
+  width: 50%;
+}

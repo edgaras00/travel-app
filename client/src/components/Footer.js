@@ -51,6 +51,10 @@ const Footer = () => {
           />
           <button>Sign Up Now</button>
         </form>
+        <div className="copyright">
+          {" "}
+          &copy; 2021 Paradise Travel. All rights reserved.
+        </div>
       </div>
       <div className="footer-links">
         <div className="company-links">
