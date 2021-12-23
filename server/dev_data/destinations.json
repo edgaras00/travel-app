@@ -2065,6 +2065,69 @@
     ]
   },
   {
-    "name": "Barbados"
+    "name": "Barbados",
+    "description": "For an island that’s just 21 miles long and 14 miles wide, Barbados sure has a lot to offer. A stunning coastline with pristine white-sand beaches that turn pink at sunrise. Lush interiors with plantations, gardens, and plenty of wildlife. A cultural heritage remnant of its former time as a British colony, and a plethora of activities—from watching a Polo match and taking a rum tour to sailing and snorkeling in the crystal-clear waters, this little island does have it all.",
+    "currency": "Barbadian Dollar",
+    "language": "English",
+    "bestTimeToVisit": "December-June is a popular time to visit as it is dry, though February-April is considered as the peak season.",
+    "weather": " It’s generally warm and sunny all year round with an average daytime high of 75-85°F, cooled by trade winds.",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/barbados.jpg",
+    "region": "Caribbean",
+    "thingsToDo": [
+      {
+        "name": "Tour the island",
+        "text": "Enjoy a scenic drive through the countryside to historic Barbados. Then, head to Bathsheba and see the iconic pounding surf on the rugged East Coast."
+      },
+      {
+        "name": "Snorkel away",
+        "text": "Sail on a deluxe catamaran for a fascinating visit with sea turtles. Then, snorkel your way to a shallow shipwreck teeming with brilliantly hued marine life."
+      },
+      {
+        "name": "Take a submarine tour",
+        "text": "Submerge to depths of 150 feet for an underwater adventure. Take in the amazing sights of colorful coral, and tropical marine life outside your window."
+      }
+    ],
+    "places": [
+      {
+        "name": "South Coast",
+        "description": "The South Coast of Barbados is home to the island’s capital city, Bridgetown. This UNESCO World Heritage city is known for its historic British colonial buildings, its stunning Parliament Building, and the oldest Jewish synagogue in the Western Hemisphere. Enjoy the duty-free shopping on Swan Street and Broad Street. Snorkel the shipwrecks of Carlisle Bay, and watch for sea turtles.",
+        "thingsToDo": [
+          {
+            "name": "Snorkel or Dive a Shipwreck",
+            "text": "The shipwrecks in Carlisle Bay draw a range of marine animals, from sea turtles, to octopus, eels, and tropical fish."
+          },
+          {
+            "name": "Shop Tax-Free",
+            "text": "Barbados is a tax-free shopping haven; browse Broad Street, where you’ll find jewelers and boutiques; find fashions on Swan Street, or visit the Pelican Craft Centre for local handicrafts."
+          },
+          {
+            "name": "Take a Walk Through Historic Bridgetown",
+            "text": "Bridgetown is a UNESCO World Heritage Site. Stroll the historic architecture, visiting the Parliament Building, the Jewish synagogue, St. Mary’s Church, and the Chamberlain Bridge."
+          }
+        ]
+      },
+      {
+        "name": "West Coast",
+        "description": "Whether you’re looking for world-class waves, diving or snorkeling adventures, or want to sit back, relax, and sip rum on a white-sand beach, the West Coast of Barbados has it all. Hidden surf spots can be found all along Barbados’ West Coast. Bathsheba Beach is known for its rock formations. Snorkel in the emerald blue water of Brandons Beach and look for sea turtles, or make your way north to Mullins Beach and sip a drink under an umbrella.",
+        "thingsToDo": [
+          {
+            "name": "Relax at Mullins Beach",
+            "text": "Get a tan on the soft white sand or go for a swim in the clear blue water of Mullins Beach."
+          },
+          {
+            "name": "Surf Barbados",
+            "text": "Barbados is known for its surfing, and Bathsheba is a great beach where you can learn to catch your first wave."
+          },
+          {
+            "name": "Snorkel or Dive the West Coast",
+            "text": "Batts Rock is a West Coast Beach known to be frequented by sea turtles."
+          },
+          {
+            "name": "Get a Massage",
+            "text": "The West Coast of Barbados offers beachfront spas where you can enjoy a massage while listening to the sound of the waves."
+          }
+        ]
+      }
+    ]
   }
 ]
