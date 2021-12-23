@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import DescriptionCard from "./DescriptionCard";
 import LocationMap from "./LocationMap";
 import "../styles/locationDetails.css";
-import europe from "../europe.jpg";
+import europe from "../imgs/europe.jpg";
 
 const LocationDetails = () => {
   const { locationID } = useParams();

@@ -3,7 +3,7 @@
     "name": "Austria",
     "description": "Austria blends the best of old-world charm, cosmopolitan city life, and breathtaking Alpine landscapes. Our Austria vacation packages can take you wandering the old town of Salzburg or tracing the footsteps of Mozart. Step onto the living set of the Sound of Music. Vienna’s Baroque and Rococo architecture rings with classical music. Feel the spirit of Klimt, Mozart, Freud, and Mahler in the city’s cafés. Beyond Vienna, journey to the Danube Valley, and visit Austria’s national parks for alpine hiking. In the winter, the mountain resorts come alive.",
     "currency": "Euro",
-    "region": "Europe",
+    "region": "61c388f55e30579bf9db156f",
     "language": "German",
     "weather": "Depends on the season. Spring and fall bring temperatures in the mid 40s to high 60s. June to August brings temperatures in the 70s. And winter brings chilly weather in the 30s and 40s.",
     "bestTimeToVisit": "Fall and spring are quieter times to visit and offer milder temperatures, while winter brings crowds to the Alpine resorts",
@@ -103,7 +103,7 @@
     "name": "Czech Republic",
     "description": "Located in the heart of Central Europe, the Czech Republic is one of the most sought-after destinations. This modern little country with an exciting history and deep-rooted traditions boasts of castles and chateaux, elegant spas resorts and stunning national parks, and of course, the world’s finest Pilsner beer. Whether you want to experience the magic of Prague or explore the country's medieval towns, our consultants can customize your trip with just the right Czech Republic vacation package to make it a one-of-a-kind trip",
     "currency": "Koruna",
-    "region": "Europe",
+    "region": "61c388f55e30579bf9db156f",
     "language": "Czech",
     "weather": "Overall, it is moderately continental, with cold winters (December-February being the coldest) and warm summers. Always check local weather before traveling.",
     "bestTimeToVisit": "May-September is considered the busiest season, as most festivals and activities are held to make the most of the good weather.",
@@ -237,7 +237,7 @@
     "name": "England",
     "description": "Welcome to England. A land steeped in history, royalty, and culture. Head over to London’s most vibrant, cosmopolitan streets. Marvel at the wonder of Stonehenge. Explore Leeds Castle or spend an idyllic day on the south coast by Brighton Beach. Take a tour to the rolling countryside and charismatic villages. No matter which vacation package you choose, one thing’s certain, you will leave smitten by England’s charm.",
     "currency": "British Pound",
-    "region": "Europe",
+    "region": "61c388f55e30579bf9db156f",
     "language": "English",
     "weather": "Relatively temperate and temperamental. While it doesn't experience extremes during either summer or winter, it’s best to pack an umbrella.",
     "bestTimeToVisit": "Any time of the year. Overall, spring (late March to early June) and autumn (September to November) are most popular, when it's usually warm and dry.",
@@ -334,7 +334,7 @@
     "description": "France is the world’s leading travel destination and for good reason. With us, you can stroll Paris’s bohemian Latin Quarter, see the Mona Lisa at the Louvre, and view the glittering Eiffel Tower. Glamour meets the coast in the sun-drenched French Riviera. Bask in the sun in the Côte d’Azur’s St. Tropez, Nice, and Cannes. Ski the French Alps, follow the Michelin Guide to some of the world’s most renowned three-star restaurants, or journey to a Château in Bordeaux or Burgundy, and taste the local wines.",
     "currency": "Euro",
     "language": "French",
-    "region": "Europe",
+    "region": "61c388f55e30579bf9db156f",
     "weather": "Temperatures vary from average lows in the mid-thirties in the winter to highs in the mid-seventies in the summer. Pack an umbrella for July.",
     "bestTimeToVisit": "June to August brings ideal weather, and the crowds. September to October is beautiful and less crowded.",
     "thingsToDo": [
@@ -410,11 +410,11 @@
     "coverImage": "france.png"
   },
   {
-    "name": "italy",
+    "name": "Italy",
     "description": "Language and culture, food and fashion, art and architecture, history and myths... all fill your senses as you set foot in bella Italia. Whether it’s the gondola rides and soft sunsets at Venice, the sweeping landscape and vineyards in Tuscany or the iconic larger-than-life sites in Rome—Italy invites you to slow down and soak it all in.",
     "currency": "Euro",
     "language": "Italian",
-    "region": "Europe",
+    "region": "61c388f55e30579bf9db156f",
     "weather": "The climate varies considerably from the north to the south of Italy. North has extreme winters and summer. Central is milder, as is the South. Always check local weather.",
     "bestTimeToVisit": " Any time of the year. Overall, April to June and September to October are most popular, when it’s comfortably warm.",
     "thingsToDo": [
@@ -510,7 +510,7 @@
         "text": "In Arizona, many of the spa experiences come with stunning views of the desert or the red rocks, and incorporate native traditions and New Age healing rituals."
       }
     ],
-    "region": "USA",
+    "region": "61c388f55e30579bf9db1575",
     "places": [
       {
         "name": "Grand Canyon",
@@ -584,7 +584,7 @@
         "text": "Los Angeles is still the land where movies are made. Visit Hollywood or Disneyland in nearby Anaheim."
       }
     ],
-    "region": "USA",
+    "region": "61c388f55e30579bf9db1575",
     "places": [
       {
         "name": "Los Angeles",
@@ -649,7 +649,7 @@
     "currency": "U.S. Dollar",
     "language": "English",
     "weather": "Mild weather most of the year, with hot and humid summers.",
-    "region": "USA",
+    "region": "61c388f55e30579bf9db1575",
     "bestTimeToVisit": "Winter brings milder temperatures. Summers can be quite hot, though popular.",
     "coverImage": "florida.png",
     "thingsToDo": [
@@ -736,7 +736,7 @@
     "description": "After you’ve visited New York City’s landmarks, venture beyond to the wonders of New York State. See the New York side of Niagara Falls. Go boating, swimming, or climbing at Lake George in the Adirondacks. Visit the Hudson Valley’s Catskills for fall foliage, hiking, and biking. The Storm King Art Center and the Women’s Rights National Historic Park in Seneca Falls are museums off the beaten path. Long Island boasts State Park beaches and wineries.",
     "currency": "U.S. Dollar",
     "language": "English",
-    "region": "USA",
+    "region": "61c388f55e30579bf9db1575",
     "coverImage": "ny.png",
     "weather": "New York has all four seasons. In the summer, temperatures are in the 80s (but are warmer in New York City). Fall and spring bring milder temperatures, with winter temperatures ranging from the teens to the high thirties.",
     "bestTimeToVisit": "Year-round",
@@ -823,7 +823,7 @@
     "currency": "U.S. Dollar",
     "language": "English",
     "coverImage": "hawaii.png",
-    "region": "USA",
+    "region": "61c388f55e30579bf9db1575",
     "weather": "Temperatures are consistently warm but comfortable throughout the year.",
     "bestTimeToVisit": "Year-round",
     "thingsToDo": [
@@ -889,7 +889,7 @@
     "currency": "U.S. Dollar",
     "language": "English",
     "coverImage": "texas.png",
-    "region": "USA",
+    "region": "61c388f55e30579bf9db1575",
     "weather": "Weather varies depending on where you’re going in the state. South Texas sees year-round mild weather, while the north gets cooler.",
     "bestTimeToVisit": "Year-round",
     "thingsToDo": [
@@ -983,7 +983,7 @@
     "weather": "Chinese climate varies from region to region. Always check weather based on destination.",
     "bestTimeToVisit": "April-October, when the weather is warm and dry.",
     "coverImage": "china.png",
-    "region": "Asia",
+    "region": "61c388f55e30579bf9db157c",
     "thingsToDo": [
       {
         "name": "Visit the Beijing Opera",
@@ -1078,7 +1078,7 @@
     "language": "Japanese",
     "weather": "Generally temperate, with four distinct seasons.",
     "bestTimeToVisit": "March-May and from September-November.",
-    "region": "Asia",
+    "region": "61c388f55e30579bf9db157c",
     "coverImage": "japan.png",
     "thingsToDo": [
       {
@@ -1211,7 +1211,7 @@
     "name": "Thailand",
     "description": "From glittering temples to gorgeous tropical beaches, Thailand is a fascinating land of culture, history, and charm. There’s plenty to do in this enchanting nation of gilded Buddhas, Royal palaces and the ever-welcoming Thai smile and grace. You could enjoy Bangkok's Siam Square by day and night. Relax on the tropical beaches of Phuket. Try authentic Thai cuisine with only the freshest local ingredients, and spend some up-close time with elephants—the choices are aplenty.",
     "currency": "Thai Baht",
-    "region": "Asia",
+    "region": "61c388f55e30579bf9db157c",
     "language": "Thai",
     "coverImage": "thailand.png",
     "weather": "Tropical, with hot, cold and rainy seasons.",
@@ -1297,7 +1297,7 @@
     "name": "Brazil",
     "language": "Portuguese",
     "currency": "Brazillian real",
-    "region": "South America",
+    "region": "61c388f55e30579bf9db1580",
     "weather": "In general, Brazil is a year-round destination with temperatures rarely dip below 20°C (68°F), apart from in the mountains and southern regions. The climate varies from hot and dry in the arid interior to humid and sticky in the tropical rainforests of the Amazon jungle.",
     "coverImage": "brazil.png",
     "description": "Brazil boasts more than 70 national parks and dozens of monuments, including one of the Seven New Wonders of the World – Christ the Redeemer, in Rio de Janeiro. Together, these attractions create one of the most appealing and exciting destinations in South America. People come from every corner of the world to discover the superlative coastline, sprawling metropolises and thick jungles, which are home to monkeys, jaguars and river dolphins. The vast Brazilian landscape holds many prized spots, yet the places below are some of the very best destinations in the country.",
@@ -1401,7 +1401,7 @@
     "name": "Colombia",
     "currency": "Colombian peso",
     "coverImage": "colombia.png",
-    "region": "South America",
+    "region": "61c388f55e30579bf9db1580",
     "weather": "Colombia's weather offers all four seasons and they remain generally unchanged throughout the year due to Colombia's proximity to the equator.",
     "language": "Spanish",
     "description": "Colombia has something that will please most travelers, from sandy beaches of the Caribbean and Pacific coasts, to the Andes Mountains and the Amazon rainforests. Its heritage reflects the culture of its indigenous peoples as well as the Spanish who began settling here in the early 15th century.",
@@ -1525,7 +1525,7 @@
     "language": "Spanish",
     "weather": "It is warm all year round. There is a very large daily range of temperate, up to 30 degrees celsius. Central Chile has a mediterranean type climate with long, hot summers and cool, wet winters.",
     "bestTimeToVisit": "The best time to visit Chile depends on the region you’re traveling to. October to March are the warmest and most accessible months for visitors heading to Patagonia, in the south of the country. This is summer in the Southern Hemisphere and the weather is very pleasant, with warm temperatures of around 72°F.",
-    "region": "South America",
+    "region": "61c388f55e30579bf9db1580",
     "thingsToDo": [
       {
         "name": "Valparaiso",
@@ -1601,7 +1601,7 @@
   },
   {
     "name": "Egypt",
-    "region": "Africa",
+    "region": "61c388f55e30579bf9db1584",
     "coverImage": "egypt.png",
     "description": "Magnificent monuments, ancient wonders, boundless sandy deserts, the mighty Nile, and the chaotic allure of Cairo are just some of the many things that make Egypt a classic travel destination. From the mystery of the Pyramids and the imposing Great Sphinx of Giza to the turquoise waters of the Red Sea and the endless sand dunes of the Sahara, Egypt’s landscapes are incredibly inspiring.",
     "currency": "Egyptian Pound",
@@ -1712,7 +1712,7 @@
     "coverImage": "southafrica.png",
     "currency": "South African Rand",
     "language": "English",
-    "region": "Africa",
+    "region": "61c388f55e30579bf9db1584",
     "weather": "Mostly temperate, though temperatures vary by region and season.",
     "bestTimeToVisit": "All year round. May-September for Safari. November-February for birdwatching. July-November for whale-watching.",
     "description": "South Africa is a country unlike any other. From the world’s best safaris, to the most dramatic landscapes and amazing history and culture, this is a country that will enthrall and surprise you at every turn. Hike up the famous Table Mountain. Go on a luxury safari. Fly high in a hot-air balloon over the countryside. Re-visit the place Nelson Mandela made history—the choices are aplenty on your South African vacation.",
@@ -1789,7 +1789,7 @@
     "name": "Tanzania",
     "description": "From Mt. Kilimanjaro and Zanzibar, to the vast Serengeti, a visit to East Africa's largest country is sure to delight. You'll find nature's most majestic wildlife, the planet's most incredible landscapes, and the continent's most welcoming people in Tanzania. Whether you’re in search of “The Big Five” or the stunning Wildebeest Migration, you'll be spoiled for choice when choosing a safari. Plus, the idyllic beaches and the centuries old Swahili culture add to its magic.",
     "currency": "Tanzanian Shilling",
-    "region": "Africa",
+    "region": "61c388f55e30579bf9db1584",
     "weather": "The climate is diverse with two rainy seasons.",
     "coverImage": "tanzania.png",
     "language": "Swahili and English",
@@ -1834,5 +1834,237 @@
         "description": "As of yet undiscovered Pemba sits out in to the swells of the Indian Ocean, picking up on the tropical beauty front where the white beaches of the Swahili Coast left of on mainland Tanzania. A part of the same island chain as impossibly-beautiful Zanzibar, the spot comes imbued with some of East Africa’s most colourful coral gardens, each teeming with a kaleidoscope of marine life."
       }
     ]
+  },
+  {
+    "name": "Antarctica",
+    "bestTimeToVisit": " The best time to visit Antarctica is February and early March, which brings the best weather for crossing the Drake Passage, the warmest weather on the continent, and the best time for wildlife viewing.",
+    "currency": "",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/antarctica.jpg",
+    "description": "Antarctica is the world’s last great wilderness. Uninhabited by humans, to get to this continent, travelers journey the way that Cook, Amundsen, and Shackleton did—by boat. Even in the austral summer, this is a land vulnerable to extremes. The days are long, and the sun might not set at all near the solstice. View whales, seals, penguins, and migratory birds in abundance. The drama of nature is on full display here: witness melting glaciers, marvel at blue ice floes, and trek over ice deserts.",
+    "weather": "Visitors to Antarctica should prepare for cold and changing weather conditions. While temperatures in the austral summer can get as warm as 60 degrees Fahrenheit, visitors should prepare for temperatures that average around freezing and days that can drop well below freezing.",
+    "language": "",
+    "places": "",
+    "region": "Antarctica",
+    "thingsToDo": [
+      {
+        "name": "Bird-Watchers’ Paradise",
+        "text": "Antarctica is home to Gentoo, Adélie, and chinstrap penguins. You can also see albatrosses, terns, as well as migratory birds that travel to the continent to nest every year."
+      },
+      {
+        "name": "Wildlife Viewing",
+        "text": "From whale-watching to seal sightings, Antarctica is home to killer whales and the Weddell seal."
+      },
+      {
+        "name": "Paddle a Sea Kayak",
+        "text": "Get up close to icebergs and wildlife by paddling a sea kayak along the coast, where you might glimpse penguins, seals, and whales."
+      },
+      {
+        "name": "Hike in the Footsteps of Explorers",
+        "text": "Hike to Ernest Shackleton’s lodge and see a historic site preserved by the cold and ice."
+      },
+      {
+        "name": "Watch the Calving Ice",
+        "text": "A cruise to Antarctica includes many quiet moments where you’ll pass icebergs and the frozen coast, and moments where you can observe the melting glaciers—evidence of how human impact continues to change the continent."
+      }
+    ]
+  },
+  {
+    "name": "Australia",
+    "currency": "Australian Dollar",
+    "language": "English",
+    "weather": "December – February is summertime, and June to August is winter, but the climate varies across the continent",
+    "bestTimeToVisit": "Depends on where you’re going, but the Great Barrier Reef area offers year-round warmth",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/australia.jpg",
+    "description": "Australia offers beautiful beaches, a wilderness that spans from the Outback to the rugged coast, and incredible dining and cultural opportunities in its cosmopolitan cities. Snorkel or dive the Great Barrier Reef, the largest coral reef on the planet. On the coast, you’ll find the vibrant city of Sydney with its iconic Opera House, and the seaside culture and turquoise water of Bondi Beach. Explore Australia’s wine regions, Daintree Rainforest, its breathtaking deserts, or meet a koala and kangaroo in the city or wild.",
+    "region": "Oceania",
+    "thingsToDo": [
+      {
+        "name": "Snorkel or Dive the Great Barrier Reef",
+        "text": "The Great Barrier Reef is one of the natural wonders of the world and you can explore it by diving, snorkeling, or even spend a night on a pontoon under the stars."
+      },
+      {
+        "name": "Sip Your Way Through South Australia",
+        "text": "Just outside Adelaide, you’ll find a land of vineyards and wineries, perfect for a wine tasting adventure or tour."
+      },
+      {
+        "name": "Drive Victoria’s Great Ocean Road",
+        "text": "Whale watch, paddle Lower Glenelg National Park, discover quiet beaches, taste incredible cuisine, and shop; there are destinations and views for the whole family to enjoy."
+      },
+      {
+        "name": "Hang Ten at Bondi Beach",
+        "text": "After you’ve visited the Sydney Opera House and other iconic landmarks, make your way to the restaurants, shops, and surf culture of Bondi Beach."
+      }
+    ],
+    "places": [
+      {
+        "name": "Sydney",
+        "description": "After you’ve visited the Sydney Opera House and the Sydney Harbour Bridge, spend some time exploring Sydney’s beaches. Snorkel the waters of Coogee Beach, surf the legendary waves of Manly Beach, or sunbathe with the locals and surfers at Bondi Beach. After you’ve gotten your sunshine, visit some of Sydney’s spectacular museums, most notably, the Hyde Park Barracks Museum and the Australian Museum.",
+        "thingsToDo": [
+          {
+            "name": "Catch a Performance at the Sydney Opera House",
+            "text": "Watch a show or book a fascinating backstage tour that will take you behind the curtains."
+          },
+          {
+            "name": "Visit Mrs. Macquarie’s Chair",
+            "text": "For spectacular views of the Sydney Harbour Bridge, visit Mrs. Macquarie’s Chair."
+          },
+          {
+            "name": "City of Museums",
+            "text": "Beyond the UNESCO World Heritage Listed Hyde Park Barracks Museum, there’s the Harbourside Museum of Contemporary Art Australia, the Art Gallery of NSW, the Australian National Maritime Museum, the Powerhouse Museum, and the Nicholson Museum, just to name a few."
+          },
+          {
+            "name": "Learn to Surf or Go for a Snorkel",
+            "text": "Sydney is known for its surf culture at Bondi and Manly Beach, but there are also many opportunities to snorkel and sunbathe on the city’s miles of coast."
+          }
+        ]
+      },
+      {
+        "name": "Melbourne",
+        "description": "Walk through Melbourne’s laneways and narrow streets, and discover the city’s vibrant restaurants, art galleries, and shops. Enjoy the multicultural cuisine, internationally-renowned art, and uniquely Australian culture. Visit the National Gallery of Victoria, where you’ll find local artists displayed alongside renowned masters like René Magritte. Wander the Royal Botanic Gardens in Melbourne and view rare and local plants.",
+        "thingsToDo": [
+          {
+            "name": "Walk the Royal Botanic Gardens",
+            "text": "See rare plants and local species at this 94-acre botanic garden."
+          },
+          {
+            "name": "Discover Australian Masters at National Gallery of Victoria",
+            "text": "From local artists to well-known masters like René Magritte and Claude Monet, the National Gallery of Victoria offers a survey of both Australian and world art."
+          },
+          {
+            "name": "Get Lost in Melbourne’s Laneways",
+            "text": "Both families and adults-only travelers can discover something new in Melbourne’s laneways—narrow passageways open only to pedestrians."
+          },
+          {
+            "name": "City of Architecture and Memorials",
+            "text": "From the Shrine of Remembrance to the Block Arcade, Melbourne offers something for every architecture enthusiast."
+          }
+        ]
+      },
+      {
+        "name": "Brisbane",
+        "description": "With year-round beautiful weather, spend your vacation outside in Brisbane. At the River Quay Green, find the city’s most renowned restaurants overlooking views of the Brisbane River and enjoy outdoor music in the evenings. Swim at Streets Beach, an artificial beach in the middle of the city. Go kayaking on the river, take a river cruise, or enjoy a picnic in the city’s lush parks. Meet a koala at the Lone Pine Koala Sanctuary.",
+        "thingsToDo": [
+          {
+            "name": "Visit the Queensland Art Gallery",
+            "text": "See aboriginal and local Australian art as well as an internationally-renowned collection of Asian and Pacific art."
+          },
+          {
+            "name": "Take the Ferry",
+            "text": "One of the best ways to explore the city is on the free CityHopper ferry that stops at some of the city’s iconic riverfront shopping and restaurant destinations."
+          },
+          {
+            "name": "Stroll the Botanic Gardens",
+            "text": "See views of the city from the Mount Coot-tha lookout, and wander among the rainforest trees at the Brisbane Botanic Garden."
+          },
+          {
+            "name": "Hug a Koala at the Lone Pine Koala Sanctuary",
+            "text": "See Australia’s iconic animal at this sanctuary committed to conservation, education, and rehabilitation of native Australian animals."
+          },
+          {
+            "name": "Climb or Cross the Story Bridge",
+            "text": "Walk across a catwalk high above the city on the Story Bridge Adventure Climb."
+          }
+        ]
+      },
+      {
+        "name": "Port Douglas",
+        "description": "Outdoor adventures abound in Port Douglas. Hike the Daintree Rainforest and soak in hidden swimming holes surrounded by exotic flora and fauna. Take a cruise or catamaran to the Great Barrier Reef and explore one of the world’s most diverse ecosystems. Stroll Four Mile Beach’s pristine coastline. In Port Douglas, the wilderness is never far from the comforts of indulgent all-inclusive resorts and restaurants serving exquisite cuisine.",
+        "thingsToDo": [
+          {
+            "name": "Bask on Four Mile Beach",
+            "text": "Walk or swim at Four Mile Beach, a pristine beach with no human development."
+          },
+          {
+            "name": "Snorkel or SCUBA the Great Barrier Reef",
+            "text": "The Great Barrier Reef is just a short cruise from Port Douglas’s marina; tours that leave from the marina can take you into the heart of this natural wonder."
+          },
+          {
+            "name": "Hike the Oldest Rainforest in the World",
+            "text": "Daintree Rainforest is home to unique plants, like the King Fern, and animals like the cassowary and crocodile."
+          },
+          {
+            "name": "Waterfront Art",
+            "text": "From waterfront art markets to charming local galleries, Port Douglas brings artisans, indigenous artists, and photographers to its vibrant cultural landscape."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bahamas",
+    "description": "While vibrant Nassau and Paradise Island are among the more popular Bahamas destinations, the Bahamas boasts over 700 islands offering white-sand beaches and remote escapes. Let your Paradise Travel consultant connect you with diving, snorkeling, or fishing adventures. If a resort is more your style, Atlantis Paradise Island is a world onto itself, with its own casino, water park, shopping, spas, beaches, marine exhibits, and incredible dining. Then there’s Grand Bahama Island, which offers everything from a National Park to Freeport’s glitz, gambling, and golf.",
+    "currency": "Bahamian Dollar",
+    "bestTimeToVisit": "Mid-December to Mid-April brings the best weather",
+    "language": "English",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/bahamas.jpg",
+    "weather": "The subtropical climate brings cool trade winds in the summer and warm Gulf Stream breezes in the winter. Temperatures average 75˚ in the winter and 84˚ in the summer. June 1 – November 30 is hurricane season.",
+    "region": "Caribbean",
+    "thingsToDo": [
+      {
+        "name": "Swim with the Pigs of the Exumas",
+        "text": "Cruise to the remote and beautiful Exumas where you can swim with seafaring pigs."
+      },
+      {
+        "name": "Get in Touch with Nature at Lucayan National Park",
+        "text": "If you visit in the winter, hike the mangroves, explore Burial Mound Cave (the park boasts the largest underwater cave system in the world), and bask on the beautiful Gold Rock Beach."
+      },
+      {
+        "name": "Explore Nassau",
+        "text": "Nassau is rich with Bahamian history and culture: stroll the Nassau Straw Market, step back in time at Fort Charlotte, or sip Bahamian rum at John Watling’s Distillery."
+      },
+      {
+        "name": "Take a Sunset Cruise",
+        "text": "The Bahamas are best experienced at sea, either by catamaran or by sailboat."
+      }
+    ],
+    "places": [
+      {
+        "name": "Paradise Island",
+        "description": "Paradise Island is most famous for its Atlantis Resort & Casino, but tucked away from the crowds, amenities, and activities, you’ll also find some hidden gems. Bask on the soft white sand of Cabbage Beach. Walk along the stone terraces of Versailles Gardens, a beautiful, lush landscape of flowers and tropical plants. Here, you can explore the remains of a French monastery built by Augustinian monks.",
+        "thingsToDo": [
+          {
+            "name": "Island Augustinian Monastery",
+            "text": "You wouldn’t expect to find the remains of a French Augustinian monastery in the Bahamas, but one of the highlights of Paradise Island’s Versailles Gardens is a cloister that was imported to the island by William Randolph Hearst. It is known to have spectacular sunset views."
+          },
+          {
+            "name": "Bask on Cabbage Beach",
+            "text": "Snorkel the famously crystal-clear water or lie on the soft white sand."
+          },
+          {
+            "name": "Get Your Thrills at Aquaventure",
+            "text": "Plunge down water slides, relax on a mile-long lazy river, or soak in over 20 swimming areas."
+          },
+          {
+            "name": "Golf, Spa, and Casino Fun",
+            "text": "In addition to being a luxurious resort, Atlantis boasts a championship ocean-front golf course, a spa incorporating ancient healing techniques and European therapies, and a world-class casino."
+          }
+        ]
+      },
+      {
+        "name": "Nassau",
+        "description": "Nassau is known for beautiful beaches, rich culture, and vibrant history. Be dazzled by the white sands and turquoise waters of Cable Beach. Cross the bridge to Paradise Island and bask on Cabbage Beach. Delve into Nassau’s history with a visit to Fort Charlotte, Fort Fincastle, the Government House, or the Queen’s Staircase. After a day at the beach, explore the Straw Market and then sip some rum at the John Watling’s Distillery.",
+        "thingsToDo": [
+          {
+            "name": "White-Sands, Turquoise Waters",
+            "text": "There’s a beach in Nassau for every mood: Cable Beach is known for its pristine sand and water, Arawak Cay is known for its seafood shacks, and Junkanoo Beach gives you views of the cruise ships."
+          },
+          {
+            "name": "Step into 18th Century Nassau at Fort Charlotte",
+            "text": "A tour guide in period costume will lead you around this 18th century fort, giving you a glimpse into Nassau’s history."
+          },
+          {
+            "name": "Sip A Bahama Mama at John Watling’s Distillery",
+            "text": "Learn how the rum is made and how to make classic Bahamian cocktails."
+          },
+          {
+            "name": "Golf by the Sea",
+            "text": "Tee-off on the Ocean Club’s championship green, boasting spectacular views of the Atlantic and Nassau Harbour, or play on the Royal Blue designed by Jack Nicklaus, with its ocean views and rolling green."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Barbados"
   }
 ]

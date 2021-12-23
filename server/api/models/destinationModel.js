@@ -22,10 +22,11 @@ const destinationSchema = new Schema({
     type: String,
     required: [true, "Destination must have a language"],
   },
-  region: {
-    type: String,
-    required: [true, "Destination must have a region"],
-  },
+  // region: {
+  //   type: String,
+  //   required: [true, "Destination must have a region"],
+  // },
+  region: { type: Schema.Types.ObjectId, ref: "Region" },
   thingsToDo: [{ title: String, text: String }],
   places: [
     {

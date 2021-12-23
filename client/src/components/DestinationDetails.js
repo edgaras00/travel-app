@@ -4,7 +4,7 @@ import DestinationCard from "./DestinationCard";
 import DescriptionCard from "./DescriptionCard";
 import LocationMap from "./LocationMap";
 import london from "../images/london.jpg";
-import europe from "../europe.jpg";
+import europe from "../imgs/europe.jpg";
 import "../styles/destinationDetails.css";
 
 const DestinationDetails = () => {

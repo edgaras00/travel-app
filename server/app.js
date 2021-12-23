@@ -1,6 +1,7 @@
 const express = require("express");
 const cookieParser = require("cookie-parser");
 const destinationRouter = require("./api/routes/destinationsRouter");
+const regionRouter = require("./api/routes/regionRouter");
 const userRouter = require("./api/routes/userRouter");
 const bookingRouter = require("./api/routes/bookingRouter");
 const reviewRouter = require("./api/routes/reviewRouter");
@@ -16,6 +17,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 app.use("/api/destinations", destinationRouter);
+app.use("/api/regions", regionRouter);
 app.use("/api/users", userRouter);
 app.use("/api/reviews", reviewRouter);
 app.use("/api/tours", tourRouter);

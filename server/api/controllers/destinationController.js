@@ -8,7 +8,7 @@ exports.getAllDestinations = catchAsync(async (req, res, next) => {
     .filter()
     .limitFields()
     .paginate();
-  const destinations = await features.query;
+  const destinations = await features.query.populate("region", "name");
   res.status(200).json({
     status: "Success",
     results: destinations.length,

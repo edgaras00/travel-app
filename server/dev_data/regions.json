@@ -1,0 +1,155 @@
+[
+  {
+    "name": "Europe",
+    "description": "Visiting Europe? Welcome to a continent that’s rich in history and modern charisma. Whether you’re traveling solo, with family, or friends, Europe offers countless opportunities to mesmerize you. With easy access to so many diverse countries and cultures, you can wine and dine in the hills of Tuscany one day, and dance the Sardana through the streets of Barcelona the next. Bathe in the baths of Budapest or marvel in the beauty of the Northern Lights in Iceland. There are endless experiences, and Paradise Travel has just the right vacation packages to make it a trip you’ll never forget.",
+    "regionAtGlance": "European countries welcome almost a half-billion international visitors per year. Not only is it the most popular destination for Americans traveling overseas, it’s also the easiest, thanks to an open borders policy, efficient travel infrastructure, a common currency, Euro in most of the individual countries. Traveling to Europe is quite simple for American citizens as a visa is not required for countries of the European Union and/or the 26 countries that fall under the Schengen Area (your Paradise Travel consultant will be happy to assist you with this). Once you land in any of these countries, your passport is stamped, leaving you free to travel across borders—so you can go from London to Paris to Netherlands seamlessly. Trains, budget airlines, and cars are the most popular ways to travel around this beautiful continent.",
+    "regionCoordinates": ["53", "12"],
+    "destinationCoordinates": [
+      { "name": "Italy", "coordinates": ["", ""] },
+      { "name": "Austria", "coordinates": ["", ""] },
+      { "name": "England", "coordinates": ["", ""] },
+      { "name": "France", "coordinates": ["", ""] },
+      { "name": "Czech Republic", "coordinates": ["", ""] }
+    ],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/europe.jpg",
+    "images": []
+  },
+  {
+    "name": "USA",
+    "description": "America is multicultural, vibrant, and rugged. From the golden shores of California to the towering Rockies, from the deserts of Arizona to the turquoise waters of Hawaii, America preserves its natural treasures through its 62 National Parks. From conservation to culture, the U.S. has it all. There’s New York’s skyline, Washington, D.C.’s National Mall, and Boston’s Revolutionary spirit. Florida boasts 1,197 miles of coastline and attractions include the Keys and Orlando’s theme parks. Paradise Travel’s vacation consultants can match you with a United States trip that matches your style.",
+    "regionAtGlance": "America is multicultural, vibrant, and rugged. From the golden shores of California to the towering Rockies, from the deserts of Arizona to the turquoise waters of Hawaii, America preserves its natural treasures through its 62 National Parks. From conservation to culture, the U.S. has it all. There’s New York’s skyline, Washington, D.C.’s National Mall, and Boston’s Revolutionary spirit. Florida boasts 1,197 miles of coastline and attractions include the Keys and Orlando’s theme parks. Paradise Travel’s vacation consultants can match you with a United States trip that matches your style.",
+    "regionCoordinates": ["43.000000", "-75.000000"],
+    "destinationCoordinates": [
+      { "name": "New York", "coordinates": ["", ""] },
+      { "name": "California", "coordinates": ["", ""] },
+      { "name": "Arizona", "coordinates": ["", ""] },
+      { "name": "Florida", "coordinates": ["", ""] },
+      { "name": "Hawaii", "coordinates": ["", ""] },
+      { "name": "Texas", "coordinates": ["", ""] }
+    ],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/usa.jpg",
+    "images": []
+  },
+  {
+    "name": "Asia",
+    "description": "The Great Wall, Angkor Wat, Singapore skyscrapers, Mt. Fuji, Balinese dancers…welcome to Asia. A continent so vast and diverse in its regions, cultures, and peoples that it belies any single description. It is not one destination, but many, encompassing tropical rainforests and gorgeous beaches, magnificent ancient monuments and stunning man-made achievements, timeless villages and some of the world's fastest-growing modern cities. And that's why so many savvy vacationers just can’t get enough of it. Let Paradise Travel customize your vacation package so you can get the most of it.",
+    "regionAtGlance": "When traveling to Asia you could focus on one destination at a time, or given the time you have on hand, make it a multiple-destination vacation. There are abundant destination options offering all the makings for a fantastic vacation for single travelers, couples, and entire families. Due to the vast distances and expanses of water separating Asia's different regions, air travel is likely to be the preferred mode of transport.",
+    "regionCoordinates": ["39.916668", "116.383331"],
+    "destinationCoordinates": [
+      { "name": "China", "coordinates": ["", ""] },
+      { "name": "Japan", "coordinates": ["", ""] },
+      { "name": "Thailand", "coordinates": ["", ""] }
+    ],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/asia.jpg",
+    "images": []
+  },
+  {
+    "name": "South America",
+    "description": "Explore the diverse cultures, ancient history, and the natural beauty of South America with Paradise Travel. Visit the lost city of the Incas in Machu Picchu, trek into the Amazon, see Iguazú Falls, experience Rio’s Carnival celebrations, marvel at Patagonia’s granite towers and glaciers, or travel to the Beagle Channel and Tierra del Fuego, the gateway to Antarctica. Journey to colonial cities where cathedrals sit on the ruins of ancient temples. Beautiful beaches, tango nights, and thrilling adventures await with a Paradise Travel South America vacation package.",
+    "regionAtGlance": "Visas may be required for travel to Bolivia, Brazil, Paraguay, Suriname, and Venezuela. Some countries require visitors to pay fees upon entry, and may require that visitors pay fees for tourist cards. Travelers to South America should carry passports that are valid for at least 6 months. Furthermore, some countries have onward or return ticket requirements that must be met upon entry. South America is vast and diverse. Travelers can focus on individual regions for each trip. Some of South America’s most popular regions include: the Andes, the Amazon River Basin, the Atacama Desert, the Pampas, Patagonia. From the mountains to the desert to the beaches of the South American Caribbean, let Paradise Travel match you with a vacation to a region in South America that matches your interests.",
+    "regionCoordinates": ["-23.533773", "-46.625290"],
+    "destinationCoordinates": [
+      { "name": "Brazil", "coordinates": ["", ""] },
+      { "name": "Colombia", "coordinates": ["", ""] },
+      { "name": "Chile", "coordinates": ["", ""] }
+    ],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/south-america.jpg",
+    "images": []
+  },
+  {
+    "name": "Africa",
+    "description": "Welcome to Africa. A continent with over 50 countries, numerous cultural experiences, vibrant cities, stunning landscapes and a diverse range of wildlife. Whether it’s observing the larger-than-life African sunset in the savannas, seeing the legendary Egyptian pyramids at sunrise, being a part of the hustle bustle in the iconic markets of Marrakech or doing a meet and greet with chimpanzees in Liberia’s Monkey Island…adventure awaits you at every turn. And Paradise Travel has just the right vacation package to make it a trip you’ll never forget.",
+    "regionAtGlance": "In Africa it’s best to focus on one region at a time. Within each region, you could enjoy a multiple-destination vacation. Regions, destinations, and peak seasons: North Africa (Egypt, Morocco), November–March, East Africa (Tanzania, Kenya, Uganda), December–February, June–September, West Africa (Mali, Senegal, Liberia), November–April, Central Africa (Zambia, Zimbabwe, Botswana), June–September, Southern Africa (South Africa, Namibia), December–March",
+    "regionCoordinates": ["-6.776012", "39.178326"],
+    "destinationCoordinates": [
+      { "name": "Egypt", "coordinates": ["", ""] },
+      { "name": "South Africa", "coordinates": ["", ""] },
+      { "name": "Tanzania", "coordinates": ["", ""] }
+    ],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/africa.jpg",
+    "images": []
+  },
+  {
+    "name": "Oceania",
+    "description": "Oceania is a region made up of thousands of islands throughout the Central and South Pacific Ocean. It includes Australia, the smallest continent in terms of total land area. Most of Australia and Oceania is under the Pacific, a vast body of water that is larger than all the Earth’s continental landmasses and islands combined. The name 'Oceania' justly establishes the Pacific Ocean as the defining characteristic of the continent.",
+    "regionAtGlance": "Visitors to French Polynesia and Tahiti should have a valid passport, a return airline ticket, and proof of sufficient funds for a stay. When visiting Fiji, make sure you have a passport that is valid for 6 months beyond your planned stay, plus a return airline ticket. To visit the South Pacific islands, you won’t need a visa if you plan to stay for less than 30 days. You will need a passport that is valid for at least 6 months beyond your intended stay and scheduled return. If you plan to island hop, onward tickets are also sufficient to show that you don’t plan to stay forever.",
+    "regionCoordinates": ["-33.865143", "151.209900"],
+    "destinationCoordinates": [
+      { "name": "Australia", "coordinates": ["", ""] },
+      { "name": "New Zealand", "coordinates": ["", ""] },
+      { "name": "Tahiti", "coordinates": ["", ""] }
+    ],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/oceania.jpg",
+    "images": []
+  },
+  {
+    "name": "Antarctica",
+    "description": "Antarctica is the world’s last great wilderness. Uninhabited by humans, to get to this continent, travelers journey the way that Cook, Amundsen, and Shackleton did—by boat. Even in the austral summer, this is a land vulnerable to extremes. The days are long, and the sun might not set at all near the solstice. View whales, seals, penguins, and migratory birds in abundance. The drama of nature is on full display here: witness melting glaciers, marvel at blue ice floes, and trek over ice deserts. Paradise Travel can match you with an Antarctica cruise vacation package that’s just right for you.",
+    "regionAtGlance": "There are no commercial flights to Antarctica. Travel to the continent typically begins with a cruise from Ushuaia, Argentina that crosses the Drake Passage (where three ocean currents converge), with arrival in Antarctica dictated largely by weather and sea conditions. Antarctica is the only continent that is not inhabited by humans. There are no cities, only research stations and bases. Visitors to Antarctica remain with their cruise ships and expedition guides throughout their journey.",
+    "regionCoordinates": ["-69", "0"],
+    "destinationCoordinates": [],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/antarctica.jpg",
+    "images": []
+  },
+  {
+    "name": "Central America",
+    "description": "Tropical rainforests, smoldering volcanoes, and Mayan ruins; Caribbean and Pacific beaches with crashing surf and vibrant coral reefs—this is Central America. By sea, view whales and turtles; by land, watch for sloths and monkeys. Costa Rica is known for its national parks and eco-tourism; Panama has the Panama Canal, one of the world’s great feats of engineering. Take a cruise between the Pacific and Atlantic Oceans, or visit Panama City for some shopping.",
+    "regionAtGlance": "U.S. Citizens are not required to acquire a visa for short vacations to Panama and Costa Rica. To visit Costa Rica, bring your valid passport and return tickets (or travel documentation for your next destination). You’ll need to show proof of funds for your stay and will need to pay a departure tax of $29 U.S. dollars when you leave. The rules are similar in Panama, but make sure your passport is valid for at least three months and bring proof that you have at least $500 in your bank account. Panama’s departure tax is frequently raised. Check before you go.",
+    "regionCoordinates": ["12.136389", "-86.251389"],
+    "destinationCoordinates": [
+      { "name": "Panama", "coordinates": ["", ""] },
+      { "name": "Costa Rica", "coordinates": ["", ""] }
+    ],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/central-america.jpg",
+    "images": []
+  },
+  {
+    "name": "Indian Ocean",
+    "description": "With stunning beaches, blue waters, and pure air, the isles of the Indian Ocean leave its visitors speechless. Seychelles’ untouched beauty will enhance your appreciation of the planet. The unhurried lifestyle and the warmth of the locals in Mauritius will immerse you in the island’s culture. And the sun-soaked Maldives with 1,192 coral islands and unrivaled luxury will leave you asking for more.",
+    "regionAtGlance": "The Indian Ocean is home to some of the most amazing getaways on the planet. Fortunately, these unique destinations are quite easily accessible. US citizens need only a valid passport, an onward/return ticket, and sufficient funds to cover their stay. A visa is not required. Modes of transportation within the islands include buses, taxis, flights, speedboats, seaplane, or local dhoni (a multipurpose sailboat).",
+    "regionCoordinates": ["1.924992", "73.399658"],
+    "destinationCoordinates": [
+      { "name": "Maldives", "coordinates": ["", ""] },
+      { "name": "Mauritius", "coordinates": ["", ""] },
+      { "name": "Seychelles", "coordinates": ["", ""] }
+    ],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/indian-ocean.jpg",
+    "images": []
+  },
+  {
+    "name": "Middle East",
+    "description": "Whether you’re cruising the dunes of the Arabian desert or basking in luxury at the Burj Al Arab in Dubai, the Middle East brings the best of the old world and the new. In the United Arab Emirates, visit the Abu Dhabi Falcon Hospital and learn about the ancient art of Falconry, a popular UAE pastime. Then, fast forward to the present day and visit Abu Dhabi’s Ferrari World and feel the city’s Grand Prix spirit. Oman offers lush valleys, and cities of forts and minarets. Wherever you’re going in the Middle East, Paradise Travel can connect you with a tailor-made vacation package or deal.",
+    "regionAtGlance": "When visiting the Middle East, consider applying for your visa in advance if you want to travel to Egypt, Qatar or Oman. If you are from the United States, or several other approved countries, you can receive a visa to enter the United Arab Emirates upon your arrival. Finally, if you plan to visit Israel during your Middle East trip, it is important to note that some Middle Eastern countries will not admit visitors who have Israeli visas or stamps in their passports.",
+    "regionCoordinates": ["25.276987", "55.296249"],
+    "destinationCoordinates": [
+      { "name": "United Arab Emirates", "coordinates": ["", ""] },
+      { "name": "Qatar", "coordinates": ["", ""] }
+    ],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/middle-east.jpg",
+    "images": []
+  },
+  {
+    "name": "North America",
+    "description": "North America is vast, diverse, and stunning and your Liberty Travel consultant can help you explore it. Go from the peaks of Banff and Lake Louise to the charming seaside towns of Nova Scotia in Canada. Enjoy a vacation in cities like Toronto and Montréal, or head to the United States and discover New York, San Francisco, or Las Vegas. Escape to Honolulu, the Grand Canyon, and Sonoma, or take an epic road trip.",
+    "regionCoordinates": ["50.000000", "-85.000000"],
+    "destinationCoordinates": [{ "name": "Canada", "coordinates": ["", ""] }],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/north-america.jpg",
+    "images": []
+  },
+  {
+    "name": "Caribbean",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/caribbean.jpg",
+    "description": "Turquoise water, brilliant coral reefs, white-sand beaches, and sun-soaked adventures await you in the Caribbean. From Latin beats to relaxing reggae, the cultures of the Caribbean are astonishingly diverse. Taste Creole flavors, delicious BBQ, and the fresh catch of the day. Learn to dance salsa, escape to a pirate cove, or unwind with yoga on the sand.",
+    "images": [],
+    "regionCoordinates": ["25.025885", "-78.035889"],
+    "regionAtGlance": "U.S. Dollar ($) is widely accepted, though island nations do have their own currencies; islands in the French Caribbean accept Euros. Languages: Spanish, French, or Dutch, though English is often a second language",
+    "destinationCoordinates": [
+      { "name": "Bahamas", "coordinates": ["", ""] },
+      { "name": "Puerto Rico", "coordinates": ["", ""] },
+      { "name": "Barbados", "coordinates": ["", ""] },
+      { "name": "Bermuda", "coordinates": ["", ""] },
+      { "name": "Jamaica", "coordinates": ["", ""] },
+      { "name": "Dominican Republic", "coordinates": ["", ""] }
+    ]
+  }
+]

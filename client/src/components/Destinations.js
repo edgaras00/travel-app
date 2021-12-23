@@ -3,8 +3,8 @@ import DescriptionCard from "./DescriptionCard";
 import DestinationCard from "./DestinationCard";
 import LocationMap from "./LocationMap";
 import { Link, useParams, useLocation } from "react-router-dom";
-import london from "../images/london.jpg";
-import europe from "../europe.jpg";
+import england from "../imgs/england.jpg";
+import europe from "../imgs/europe.jpg";
 import "../styles/destinations.css";
 
 const Destinations = () => {
@@ -22,7 +22,7 @@ const Destinations = () => {
   for (let i = 0; i < 12; i++) {
     destinations.push(
       <Link to={`${location.pathname}/England`}>
-        <DestinationCard image={london} name="England" />
+        <DestinationCard image={england} name="England" />
       </Link>
     );
   }

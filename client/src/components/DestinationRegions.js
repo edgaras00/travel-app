@@ -2,14 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import DestinationCard from "./DestinationCard";
 import "../styles/destinationRegions.css";
-import london from "../images/london.jpg";
+// import london from "../images/london.jpg";
+import europe from "../imgs/middle-east.jpg";
 
 const DestinationRegions = () => {
   const destinationCards = [];
   for (let i = 0; i < 12; i++) {
     destinationCards.push(
       <Link to="/destinations/Europe">
-        <DestinationCard name="Europe" image={london} />
+        <DestinationCard name="Europe" image={europe} />
       </Link>
     );
   }
