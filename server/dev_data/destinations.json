@@ -3,7 +3,7 @@
     "name": "Austria",
     "description": "Austria blends the best of old-world charm, cosmopolitan city life, and breathtaking Alpine landscapes. Our Austria vacation packages can take you wandering the old town of Salzburg or tracing the footsteps of Mozart. Step onto the living set of the Sound of Music. Vienna’s Baroque and Rococo architecture rings with classical music. Feel the spirit of Klimt, Mozart, Freud, and Mahler in the city’s cafés. Beyond Vienna, journey to the Danube Valley, and visit Austria’s national parks for alpine hiking. In the winter, the mountain resorts come alive.",
     "currency": "Euro",
-    "region": "61c388f55e30579bf9db156f",
+    "region": "61c4df06d3ca4efeea605b5b",
     "language": "German",
     "weather": "Depends on the season. Spring and fall bring temperatures in the mid 40s to high 60s. June to August brings temperatures in the 70s. And winter brings chilly weather in the 30s and 40s.",
     "bestTimeToVisit": "Fall and spring are quieter times to visit and offer milder temperatures, while winter brings crowds to the Alpine resorts",
@@ -32,6 +32,8 @@
     "places": [
       {
         "name": "Vienna",
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/vienna.jpg",
+        "coordinates": ["48.210033", "16.363449"],
         "description": "Whether you want to see the Bruegel masterpieces at the Museum of Fine Arts, listen to Mozart at the Vienna State Opera, or delve into Vienna’s culinary scene at the Naschmarkt, our vacation consultant can match you with a Vienna vacation package that’s just your style. Explore this city of palaces with a local guide or enjoy one of our insider experiences at a neighborhood tavern.",
         "thingsToDo": [
           {
@@ -54,6 +56,8 @@
       },
       {
         "name": "Salzburg",
+        "coordinates": ["47.811195", "13.033229"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/salzburg.jpg",
         "description": "Situated in central Austria, near the German border, Salzburg is probably best known as the birthplace of Wolfgang Amadeus Mozart. Travelers come to Austria’s fourth-largest city to view the sights that inspired such unforgettable music. With its hill-topped medieval fortress, picturesque Altstadt old town and breath-taking Alpine scenery, Salzburg’s beauty is sure to enchant visitors in every season of the year.",
         "thingsToDo": [
           {
@@ -76,6 +80,8 @@
       },
       {
         "name": "Zell am See",
+        "coordinates": ["47.323521", "12.796850"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/zellamsee.jpg",
         "description": "Tucked away in an idyllic valley among the majestic Kitzbuhel Alps, the alpine city of Zell am See is as picture-perfect as they come. The small city is set on the shores of a vividly blue lake, from which it draws its name, with cosy chalets and flower-filled meadows coating the slopes.",
         "thingsToDo": [
           {
@@ -97,13 +103,13 @@
         ]
       }
     ],
-    "coverImage": "austria.png"
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/austria.jpg"
   },
   {
     "name": "Czech Republic",
     "description": "Located in the heart of Central Europe, the Czech Republic is one of the most sought-after destinations. This modern little country with an exciting history and deep-rooted traditions boasts of castles and chateaux, elegant spas resorts and stunning national parks, and of course, the world’s finest Pilsner beer. Whether you want to experience the magic of Prague or explore the country's medieval towns, our consultants can customize your trip with just the right Czech Republic vacation package to make it a one-of-a-kind trip",
     "currency": "Koruna",
-    "region": "61c388f55e30579bf9db156f",
+    "region": "61c4df06d3ca4efeea605b5b",
     "language": "Czech",
     "weather": "Overall, it is moderately continental, with cold winters (December-February being the coldest) and warm summers. Always check local weather before traveling.",
     "bestTimeToVisit": "May-September is considered the busiest season, as most festivals and activities are held to make the most of the good weather.",
@@ -132,6 +138,8 @@
     "places": [
       {
         "name": "Prague",
+        "coordinates": ["50.073658", "14.418540"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/prague.jpg",
         "description": "One of Europe’s most fascinating cities, Prague has a skyline of cathedrals, fairy-tale castles and soaring towers. And down below, a vibrant urban center, nestled amidst ancient monuments and bridges, offers a plethora of dining options, bustling markets and jazz clubs. Explore the past and the present with our guided tour for a truly surreal experience.",
         "thingsToDo": [
           {
@@ -158,6 +166,8 @@
       },
       {
         "name": "Cesky Krumlov",
+        "coordinates": ["48.812737", "14.317466"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/cesky.jpg",
         "description": "A fairy-tale pop-up of a town that crowns a series of bluffs on the edge of the Vltava River south of Ceske Budejovice, Cesky Krumlov is one of the veritable jewels of South Bohemia. Its Old Town bears a well-deserved UNESCO tag for its maze of medieval streets, 13th century relics and layers of architectural history – much of which has remained unspoilt by conflict and war.",
         "thingsToDo": [
           {
@@ -180,6 +190,8 @@
       },
       {
         "name": "Brno",
+        "coordinates": ["49.195061", "16.606836"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/brno.jpg",
         "description": "Pulsing with an indelible student energy during term times from its place in the southern depths of the Czech Republic, Brno – the regional capital of South Moravia – belies its local rep as a rather sleepy place with some of the country’s top drum and bass clubs and a booming café culture to rival both Prague and Vienna. There’s also a gorgeous Old Town district to see; the second largest in the country, where the spiked Neo-gothic towers of the Cathedral of St Peter and Paul stand watch over cobbled squares and the eerie tunnels of the Brno Ossuary lurk underground. Spilberk Castle crowns a bluff in the midst of the town too, while Brno Reservoir is a hubbub of recreational activity during the summer, offering boating, swimming and al fresco drinking opportunities aplenty.",
         "thingsToDo": [
           {
@@ -202,6 +214,8 @@
       },
       {
         "name": "Ostrava",
+        "coordinates": ["49.820923", "18.262524"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/ostrava.jpg",
         "description": "Sat just on the northern edge of Moravia, where the Czech Republic gives way to Silesia and the Polish borderlands, Ostrava is a down-to-earth gem of a city that fuses historical beauty and Baroque brilliance in its old town with an interesting mix of Soviet Realism, Russian Brutalism and post-industrial sprawl.",
         "thingsToDo": [
           {
@@ -224,20 +238,24 @@
       },
       {
         "name": "Moravian Karst",
+        "coordinates": ["49.183239", "15.454273"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/moravian.jpg",
         "description": "A land of more than 1,000 caves and grottoes, gorges and canyons, the Moravian Karst sprawls out over a whopping 92 square kilometers just north of the city of Brno. It’s famed for its array of breathtaking geological wonders, going from the sculpted stalactites and colossal stalagmites, underground rivers and sinkholes of the Punkva Caves to the domed chambers and winding corridors of the vast Amaterska system. The place is also home to the great Macocha Gorge – the largest sinkhole canyon of its kind in all of Central Europe that plays host to the bubbling headwaters of the Punkva River. Hiking, caving and biking opportunities abound here, and travelers can also seek out the Josefov blast furnaces and Chateau of Rajec nad Svitavou nearby."
       },
       {
         "name": "Bohemian Paradise",
+        "coordinates": ["50.58356", "15.15186"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/bohemian.jpg",
         "description": "The first ever natural reserve in the Czech Republic is an enchanting land of towering hoodoos and canyons, curious chiselled cliffs, cascading gores and rugged hills, all dressed in sweeping dashes of pine forest, crisscrossed by winding hiking trails and dotted with the romantic silhouettes of castles like the precipitous Trosky keep. Visitors touring the region can delve into ancient rock towns that protrude almost organically from the sandstone ridges they stand on, explore dramatic dolomite caverns at Bozkov, see folksy timber architecture between the rustic villages, go lake hopping, kayaking or canyon scaling, enjoy horse riding in the shadow of ancestral chateaux – the list goes on!"
       }
     ],
-    "coverImage": "czech.png"
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/czech.jpg"
   },
   {
     "name": "England",
     "description": "Welcome to England. A land steeped in history, royalty, and culture. Head over to London’s most vibrant, cosmopolitan streets. Marvel at the wonder of Stonehenge. Explore Leeds Castle or spend an idyllic day on the south coast by Brighton Beach. Take a tour to the rolling countryside and charismatic villages. No matter which vacation package you choose, one thing’s certain, you will leave smitten by England’s charm.",
     "currency": "British Pound",
-    "region": "61c388f55e30579bf9db156f",
+    "region": "61c4df06d3ca4efeea605b5b",
     "language": "English",
     "weather": "Relatively temperate and temperamental. While it doesn't experience extremes during either summer or winter, it’s best to pack an umbrella.",
     "bestTimeToVisit": "Any time of the year. Overall, spring (late March to early June) and autumn (September to November) are most popular, when it's usually warm and dry.",
@@ -266,6 +284,8 @@
     "places": [
       {
         "name": "London",
+        "coordinates": ["51.509865", "-0.118092"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/london.jpg",
         "description": "Planning a trip across the pond? From finding Abbey Road to catching the changing of the guards at Buckingham Palace, we can help you revel in London’s endless activities. Take exciting tours of iconic landmarks like Westminster Abbey and the Tower Bridge. Then, follow it up by exploring the famous Portobello street market in Notting Hill. The possibilities are endless in this capital city.",
         "thingsToDo": [
           {
@@ -288,6 +308,8 @@
       },
       {
         "name": "Manchester",
+        "coordinates": ["53.483959", "-2.244644"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/manchester.jpg",
         "description": "Manchester is England’s second biggest city, having been settled since 79 AD by the Romans. Manchester is a vibrant urban hotspot with excellent nightlife, arts and culture. The city is surrounded by countryside and the gorgeous Pennine mountains, making it a great base for exploring wilder regions of the country. Manchester has an extensive history and is important in many fields, including music, science and transport.",
         "thingsToDo": [
           {
@@ -310,6 +332,8 @@
       },
       {
         "name": "Oxford",
+        "coordinates": ["51.752022", "-1.257677"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/oxford.jpg",
         "description": "From the glorious Bodleian Library to the Ashmolean Museum, Oxford is jam-packed with fantastic things to see and do. It has incredible architecture, superb art and a storied past dating back to Anglo-Saxon times – here, you can follow in the footsteps of Prime Ministers, poets and, of course, Harry Potter.",
         "thingsToDo": [
           {
@@ -327,14 +351,14 @@
         ]
       }
     ],
-    "coverImage": "england.png"
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/england.jpg"
   },
   {
     "name": "France",
     "description": "France is the world’s leading travel destination and for good reason. With us, you can stroll Paris’s bohemian Latin Quarter, see the Mona Lisa at the Louvre, and view the glittering Eiffel Tower. Glamour meets the coast in the sun-drenched French Riviera. Bask in the sun in the Côte d’Azur’s St. Tropez, Nice, and Cannes. Ski the French Alps, follow the Michelin Guide to some of the world’s most renowned three-star restaurants, or journey to a Château in Bordeaux or Burgundy, and taste the local wines.",
     "currency": "Euro",
     "language": "French",
-    "region": "61c388f55e30579bf9db156f",
+    "region": "61c4df06d3ca4efeea605b5b",
     "weather": "Temperatures vary from average lows in the mid-thirties in the winter to highs in the mid-seventies in the summer. Pack an umbrella for July.",
     "bestTimeToVisit": "June to August brings ideal weather, and the crowds. September to October is beautiful and less crowded.",
     "thingsToDo": [
@@ -354,6 +378,8 @@
     "places": [
       {
         "name": "Paris",
+        "coordinates": ["48.864716", "2.349014"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/paris.jpg",
         "description": "With so many gorgeous things to do in Paris, it’s no wonder that the French capital is on the top of so many people’s bucket lists. Some of the must-do unique experiences in Paris include photographing the Eiffel Tower, exploring the Louvre, admiring the stunning Notre Dame, and seeing the world-famous cabaret at the Moulin Rouge, but there’s much more!",
         "thingsToDo": [
           {
@@ -372,6 +398,8 @@
       },
       {
         "name": "Nice",
+        "coordinates": ["43.675819", "7.289429"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/nice.jpg",
         "description": "Nice’s unofficial anthem is Nissa La Bella, and you can’t help but agree with this sentiment when you visit the French Riviera’s largest city.",
         "thingsToDo": [
           {
@@ -390,6 +418,8 @@
       },
       {
         "name": "Marseille",
+        "coordinates": ["43.296398", "5.370000"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/marseille.jpg",
         "description": "Marseille is one of the top places to visit in Southern France. The capital of Provence (and pastis!) boasts an interesting cultural scene, beautiful landmarks, and 300 days of sunshine.",
         "thingsToDo": [
           {
@@ -407,14 +437,14 @@
         ]
       }
     ],
-    "coverImage": "france.png"
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/france.jpg"
   },
   {
     "name": "Italy",
     "description": "Language and culture, food and fashion, art and architecture, history and myths... all fill your senses as you set foot in bella Italia. Whether it’s the gondola rides and soft sunsets at Venice, the sweeping landscape and vineyards in Tuscany or the iconic larger-than-life sites in Rome—Italy invites you to slow down and soak it all in.",
     "currency": "Euro",
     "language": "Italian",
-    "region": "61c388f55e30579bf9db156f",
+    "region": "61c4df06d3ca4efeea605b5b",
     "weather": "The climate varies considerably from the north to the south of Italy. North has extreme winters and summer. Central is milder, as is the South. Always check local weather.",
     "bestTimeToVisit": " Any time of the year. Overall, April to June and September to October are most popular, when it’s comfortably warm.",
     "thingsToDo": [
@@ -434,6 +464,8 @@
     "places": [
       {
         "name": "Rome",
+        "coordinates": ["41.902782", "12.496366"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/rome.jpg",
         "description": "Italy’s vibrant capital has all the evidence of once being the Caput Mundi or capital of the world. From the Roman Forum and the Colosseum, to the Pantheon, these ancient sites intertwine effortlessly with present-day Rome. In addition to marveling at the relics of the golden age, lap up the current dolce vita lifestyle.",
         "thingsToDo": [
           {
@@ -452,6 +484,8 @@
       },
       {
         "name": "Milan",
+        "coordinates": ["45.464664", "9.188540"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/milan.jpg",
         "description": "From historic attractions, like The Last Supper painting, the world’s largest Gothic cathedral, and the famous La Scala Opera, to A-list fashion houses like Prada, Versace, and Armani, Milan offers its visitors a blend of the traditional and the ultra-modern. Whether you want to soak in some history at the Duomo; indulge in retail therapy at the Quadrilatero district; take in some culture at the Pinacoteca di Brera, or head to Navigli for a cocktail, we can customize your vacation package with insider insights to experience the best of Milan.",
         "thingsToDo": [
           {
@@ -470,6 +504,8 @@
       },
       {
         "name": "Venice",
+        "coordinates": ["45.438759", "12.327145"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/venice.jpg",
         "description": "With its spectacular setting and architectural heritage, Venice always enchants. Virtually unchanged for over 600 years, this city on a lagoon is famed for its weathered buildings, picturesque canals, arched bridges, pedestrian streets, soft sunsets and an old-world charm.",
         "thingsToDo": [
           {
@@ -487,7 +523,7 @@
         ]
       }
     ],
-    "coverImage": "Italy.png"
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/italy.jpg"
   },
   {
     "name": "Arizona",
@@ -510,18 +546,24 @@
         "text": "In Arizona, many of the spa experiences come with stunning views of the desert or the red rocks, and incorporate native traditions and New Age healing rituals."
       }
     ],
-    "region": "61c388f55e30579bf9db1575",
+    "region": "61c4df06d3ca4efeea605b61",
     "places": [
       {
         "name": "Grand Canyon",
+        "coordinates": ["36.056595", "-112.125092"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/grand-canyon.jpg",
         "description": "This massive natural wonder gives Arizona its nickname as The Grand Canyon State, and it's understandable why the attraction is a source of pride for the state. Former President Theodore Roosevelt was right when he said, 'In the Grand Canyon, Arizona has a natural wonder which is in kind absolutely unparalleled throughout the rest of the world.' Travelers can hike or ride mules around the North Rim or raft the Colorado River to explore this national park."
       },
       {
         "name": "Sedona",
+        "coordinates": ["34.871002", "-111.760826"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/sedona.jpg",
         "description": "Outdoor enthusiasts flock to this central Arizona town to enjoy its stunning scenery. Regularly described as one of the most beautiful places in America, Sedona dazzles with its famous red rocks and hiking trails (found in Red Rock State Park), as well as its vortexes."
       },
       {
         "name": "Tucson",
+        "coordinates": ["32.253460", "-110.911789"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/tucson.jpg",
         "description": "With an average of more than 350 days of sunshine per year, Tucson draws sun-seekers in droves. When you're not lounging by the pool, you can spot native animals like coyotes and prairie dogs at the 98-acre Arizona-Sonora Desert Museum or take a drive along the Mount Lemmon Scenic Byway for stunning photo-ops.",
         "thingsToDo": [
           {
@@ -544,6 +586,8 @@
       },
       {
         "name": "Phoenix",
+        "coordinates": ["33.448376", "-112.074036"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/phoenix.jpg",
         "description": "Being one of the most beautiful places in America, Phoenix is a charming capital city of Arizona. Throughout the year, it boasts beaming sun and delightfully warm temperatures, and its expanses of dry desert are among the reasons it is so well-loved.",
         "thingsToDo": [
           {
@@ -561,7 +605,7 @@
         ]
       }
     ],
-    "coverImage": "arizona.png"
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/arizona.jpg"
   },
   {
     "name": "California",
@@ -584,10 +628,12 @@
         "text": "Los Angeles is still the land where movies are made. Visit Hollywood or Disneyland in nearby Anaheim."
       }
     ],
-    "region": "61c388f55e30579bf9db1575",
+    "region": "61c4df06d3ca4efeea605b61",
     "places": [
       {
         "name": "Los Angeles",
+        "coordinates": ["34.052235", "-118.243683"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/los-angeles.jpg",
         "description": "Los Angeles draws immigrants and dreamers from across the country and the world, creating a melting pot of cuisines and cultures. Only in LA can world-class cuisine be found hidden in a strip mall restaurant. Visit the city’s world-class museums, follow the stars to the Hollywood Hills, browse the shops on Rodeo Drive, or bask on one of the city’s beaches.",
         "thingsToDo": [
           {
@@ -606,6 +652,8 @@
       },
       {
         "name": "San Francisco",
+        "coordinates": ["37.773972", "-122.431297"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/san-francisco.jpg",
         "description": "Take iconic photographs of the Golden Gate Bridge from the park. Ride a cable car down the city’s sweeping hills. Mingle with the tourists at Fisherman’s Wharf and take a ride out to Alcatraz.",
         "thingsToDo": [
           {
@@ -624,6 +672,8 @@
       },
       {
         "name": "Palm Springs",
+        "coordinates": ["33.830517", "-116.545601"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/palm-springs.jpg",
         "description": "A lush green oasis in the picturesque California desert, romantic Palm Springs is all about sun-worshipping, unrivaled recreation, world-class spas, spectacular natural landscapes, awesome Mid-Century Modern architecture, great entertainment, and fabulous shopping.",
         "thingsToDo": [
           {
@@ -641,7 +691,7 @@
         ]
       }
     ],
-    "coverImage": "california.png"
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/california.jpg"
   },
   {
     "name": "Florida",
@@ -649,9 +699,9 @@
     "currency": "U.S. Dollar",
     "language": "English",
     "weather": "Mild weather most of the year, with hot and humid summers.",
-    "region": "61c388f55e30579bf9db1575",
+    "region": "61c4df06d3ca4efeea605b61",
     "bestTimeToVisit": "Winter brings milder temperatures. Summers can be quite hot, though popular.",
-    "coverImage": "florida.png",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/florida.jpg",
     "thingsToDo": [
       {
         "name": "Snorkel John Pennekamp State Park",
@@ -669,6 +719,8 @@
     "places": [
       {
         "name": "Miami",
+        "coordinates": ["25.761681", "-80.191788"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/miami.jpg",
         "description": "Miami is a city where you can spend your morning working on your tan on South Beach, explore the Art Deco architecture after lunch, and party into the night. Marvel at the blend of Latin American and Caribbean cultural influences, with cuisine to match. Sip a margarita the size of your head while sitting on Ocean Drive, and watch the parade of fashion, bling, and fancy cars. Still, nature is never far away. Miami is surrounded by the sea and the Everglades.",
         "thingsToDo": [
           {
@@ -691,6 +743,8 @@
       },
       {
         "name": "Orlando",
+        "coordinates": ["28.538336", "-81.379234"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/orlando.jpg",
         "description": "Orlando is best known for its glittering theme parks. Meet your favorite characters at the Magic Kingdom, explore the world of tomorrow at Epcot, and journey into the savannah at Disney’s Animal Kingdom. Enter the Wizarding World of Harry Potter at Universal or ride the coasters at Islands of Adventure™. Beyond the thrills of the parks, Orlando is a vibrant city in its own right.",
         "thingsToDo": [
           {
@@ -709,6 +763,8 @@
       },
       {
         "name": "Key West",
+        "coordinates": ["24.555059", "-81.779984"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/keywest.jpg",
         "description": "Key West is quirky, charismatic, and unique. On Duval Street, find rowdy bars beside high-end art galleries. Get a photo of the “southernmost point in the United States” landmark. When sunset rolls around, walk to Mallory Square for a sunset celebration like no other. Visit the Ernest Hemingway house and meet the author’s famous six-toed cats. After exploring the island, the beach awaits.",
         "thingsToDo": [
           {
@@ -736,8 +792,8 @@
     "description": "After you’ve visited New York City’s landmarks, venture beyond to the wonders of New York State. See the New York side of Niagara Falls. Go boating, swimming, or climbing at Lake George in the Adirondacks. Visit the Hudson Valley’s Catskills for fall foliage, hiking, and biking. The Storm King Art Center and the Women’s Rights National Historic Park in Seneca Falls are museums off the beaten path. Long Island boasts State Park beaches and wineries.",
     "currency": "U.S. Dollar",
     "language": "English",
-    "region": "61c388f55e30579bf9db1575",
-    "coverImage": "ny.png",
+    "region": "61c4df06d3ca4efeea605b61",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/newyork.jpg",
     "weather": "New York has all four seasons. In the summer, temperatures are in the 80s (but are warmer in New York City). Fall and spring bring milder temperatures, with winter temperatures ranging from the teens to the high thirties.",
     "bestTimeToVisit": "Year-round",
     "thingsToDo": [
@@ -757,6 +813,8 @@
     "places": [
       {
         "name": "New York City",
+        "coordinates": ["40.730610", "-73.935242"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/nyc.jpg",
         "description": "One of the greatest cities in the world, New York is always a whirlwind of activity, with famous sites at every turn and never enough time to see them all. Some people come here to enjoy the Broadway shows; others come specifically to shop and dine; and many come simply to see the sites: the Statue of Liberty, Empire State Building, Brooklyn Bridge, Central Park, historic neighborhoods, and numerous world famous museums.",
         "thingsToDo": [
           {
@@ -791,6 +849,8 @@
       },
       {
         "name": "Catskill",
+        "coordinates": ["42.217312", "-73.864571"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/catskill.jpg",
         "description": "Bid adieu to the hustle and bustle and say hello to Catskill, NY, where you’ll find limitless acres of landscapes, ripe with opportunities for outdoor adventure and festivals and events that can rival any big-city lineup. Catskill is the perfect getaway from the city or for a week-long vacation with family or friends.",
         "thingsToDo": [
           {
@@ -809,6 +869,8 @@
       },
       {
         "name": "Niagara Falls",
+        "coordinates": ["43.092461", "-79.047150"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/niagara.jpg",
         "description": "The Niagara Falls are among the most impressive and best-known falls in the world. They lie in the extreme northwest of New York State along the U.S./Canadian border, which is formed by the Niagara River. Here, masses of water from Lake Erie plunge over an almost 200-foot drop to flow into Lake Ontario, attracting more than 12 million visitors a year."
       },
       {
@@ -822,8 +884,8 @@
     "description": "Golden-sand beaches, cascading waterfalls, lush rainforests, rugged canyons, and spectacular sunsets… Hawaii is the paradise destination that exceeds expectations.",
     "currency": "U.S. Dollar",
     "language": "English",
-    "coverImage": "hawaii.png",
-    "region": "61c388f55e30579bf9db1575",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/hawaii.jpg",
+    "region": "61c4df06d3ca4efeea605b61",
     "weather": "Temperatures are consistently warm but comfortable throughout the year.",
     "bestTimeToVisit": "Year-round",
     "thingsToDo": [
@@ -843,6 +905,8 @@
     "places": [
       {
         "name": "Honolulu",
+        "coordinates": ["21.315603", "-157.858093"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/honolulu.jpg",
         "description": "A town of rolling surf and seaside cocktail shacks that represents the cultural kingpin of Hawaii as a whole, this Polynesian-flavored American state capital rarely fails to impress.",
         "thingsToDo": [
           {
@@ -861,6 +925,8 @@
       },
       {
         "name": "Maui",
+        "coordinates": ["20.798363", "-156.331924"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/maui.jpg",
         "description": "Whether you come to Maui for its natural beauty, stellar sunsets, prime whale watching or 81 gorgeous beaches, there’s never a lack of things to do on Maui.",
         "thingsToDo": [
           {
@@ -888,8 +954,8 @@
     "description": "Texas is ranch country, deserts, big cities, and remote wilderness. There’s Austin’s live music scene, Dallas’ museums, and Houston’s NASA Johnson Space Center. While in the big city, grab some delicious Tex-Mex. Visit the Alamo outside San Antonio. Beyond the cities, you’ll find miles of coastline and the natural splendor of Big Bend National Park.",
     "currency": "U.S. Dollar",
     "language": "English",
-    "coverImage": "texas.png",
-    "region": "61c388f55e30579bf9db1575",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/texas.jpg",
+    "region": "61c4df06d3ca4efeea605b61",
     "weather": "Weather varies depending on where you’re going in the state. South Texas sees year-round mild weather, while the north gets cooler.",
     "bestTimeToVisit": "Year-round",
     "thingsToDo": [
@@ -909,6 +975,8 @@
     "places": [
       {
         "name": "Dallas",
+        "coordinates": ["32.779167", "-96.808891"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/dallas.jpg",
         "description": "A well-rounded city growing out of the stark North Texas prairie, Dallas has a jumble of ultramodern skyscrapers, the largest arts district in the United States, museums of the highest quality and pulsating nightlife.",
         "thingsToDo": [
           {
@@ -931,6 +999,8 @@
       },
       {
         "name": "Austin",
+        "coordinates": ["30.266666", "-97.733330"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/austin.jpg",
         "description": "With everything from wild mountain ranges to hip and trendy bars, Austin is one of the most vibrant cities in Texas.",
         "thingsToDo": [
           {
@@ -953,6 +1023,8 @@
       },
       {
         "name": "Houston",
+        "coordinates": ["29.749907", "-95.358421"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/houston.jpg",
         "description": "Houston, named after former General Sam Houston who, in 1836, won the Battle of San Jacinto which gained Texas its independence from Mexico, is the fourth most populated city in North America and home to approximately two and a half million residents. It is a magnet for tourism, being closely linked with the Space Center Houston, and NASA’s astronaut training and flight control complex together with many other interesting attractions.",
         "thingsToDo": [
           {
@@ -982,8 +1054,8 @@
     "language": "Mandarin",
     "weather": "Chinese climate varies from region to region. Always check weather based on destination.",
     "bestTimeToVisit": "April-October, when the weather is warm and dry.",
-    "coverImage": "china.png",
-    "region": "61c388f55e30579bf9db157c",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/china.jpg",
+    "region": "61c4df06d3ca4efeea605b68",
     "thingsToDo": [
       {
         "name": "Visit the Beijing Opera",
@@ -1005,6 +1077,8 @@
     "places": [
       {
         "name": "Beijing",
+        "coordinates": ["39.916668", "116.383331"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/beijing.jpg",
         "description": "Behind the bustle and buzz of modernity, Beijing’s iconic destinations invite you to delve into this capital city’s amazing past. From the historic Forbidden City, and the awe-inspiring Great Wall, to the 100-acre Tiananmen Square, and the enchanting hutong alleys, you’re in for a cultural treat in Beijing. With opera and punk rock, sidewalk food vendors and elegant restaurants, Beijing fuses contradictions and contrasts into one remarkable experience.",
         "thingsToDo": [
           {
@@ -1027,6 +1101,8 @@
       },
       {
         "name": "Shanghai",
+        "coordinates": ["31.224361", "121.469170"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/shanghai.jpg",
         "description": "The introduction to China's largest city often begins with a ride on the world's fastest passenger train, which symbolizes this rapidly growing destination. Now home to over 25 million people, this “Paris of the East” is prized for its retail therapy and Western-style entertainment, while giving a nod to its centuries-old history and traditions.",
         "thingsToDo": [
           {
@@ -1049,6 +1125,8 @@
       },
       {
         "name": "Xi'an",
+        "coordinates": ["34.341568", "108.940178"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/xian.jpg",
         "description": "Located in central-northwest China, 3,000-year-old Xi'an was the capital for 13 Chinese dynasties and 73 emperors, and is the acknowledged root of Chinese civilization. Bearing witness to the great changes within the country, it’s today a treasure trove of history and culture. From the being the eastern terminal of the Silk Road, home to the famed Terracotta Warriors, museums, historical ruins, and cultural relics, Xi’an has a special place in your China itinerary.",
         "thingsToDo": [
           {
@@ -1078,8 +1156,8 @@
     "language": "Japanese",
     "weather": "Generally temperate, with four distinct seasons.",
     "bestTimeToVisit": "March-May and from September-November.",
-    "region": "61c388f55e30579bf9db157c",
-    "coverImage": "japan.png",
+    "region": "61c4df06d3ca4efeea605b68",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/japan.jpg",
     "thingsToDo": [
       {
         "name": "Visit Mt. Fuji",
@@ -1101,6 +1179,8 @@
     "places": [
       {
         "name": "Tokyo",
+        "coordinates": ["35.652832", "139.839478"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/tokyo.jpg",
         "description": "Tokyo is a city that needs almost no introduction, having been featured in countless films, TV shows and music videos. An icon of popular culture, Tokyo is also a city that never sleeps, so you will never be short of things to do when you are in town.",
         "thingsToDo": [
           {
@@ -1143,6 +1223,8 @@
       },
       {
         "name": "Kyoto",
+        "coordinates": ["35.011665", "135.768326"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/kyoto.jpg",
         "description": "Japan is a land of dichotomy, always maintaining a balanced approach to modern advancement and tradition. Where other cities in Japan have technology, Kyoto has temples, reigning as the country’s cultural capital. Those who venture to Kyoto can expect magical sights of bamboo forests, ornate shrines and temples, impeccably dressed geishas, theatre performances, rambunctious monkeys, and blooming cherry trees when the season permits. Travelers can learn all about art, tea, Zen Buddhism, and other pillars of Japanese culture all within the borders of this easily-accessible city.",
         "thingsToDo": [
           {
@@ -1177,6 +1259,8 @@
       },
       {
         "name": "Osaka",
+        "coordinates": ["34.672314", "135.484802"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/osaka.jpg",
         "description": "Osaka is one of the main cities in Japan after Tokyo and is located on the island of Honshu. It is not as traditional or picturesque as other spots in the country like Kyoto, but it is still well worth a visit if you are planning a tour of Japan. Many locals will tell you that Osaka is one of the most laid back cities in the country and the people here are known for their warm hospitality, which means that you will have the chance to learn all about Japanese culture here.",
         "thingsToDo": [
           {
@@ -1211,9 +1295,9 @@
     "name": "Thailand",
     "description": "From glittering temples to gorgeous tropical beaches, Thailand is a fascinating land of culture, history, and charm. There’s plenty to do in this enchanting nation of gilded Buddhas, Royal palaces and the ever-welcoming Thai smile and grace. You could enjoy Bangkok's Siam Square by day and night. Relax on the tropical beaches of Phuket. Try authentic Thai cuisine with only the freshest local ingredients, and spend some up-close time with elephants—the choices are aplenty.",
     "currency": "Thai Baht",
-    "region": "61c388f55e30579bf9db157c",
+    "region": "61c4df06d3ca4efeea605b68",
     "language": "Thai",
-    "coverImage": "thailand.png",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/thailand.jpg",
     "weather": "Tropical, with hot, cold and rainy seasons.",
     "bestTimeToVisit": "November-early April, when it’s cooler and dry.",
     "thingsToDo": [
@@ -1241,6 +1325,8 @@
     "places": [
       {
         "name": "Bangkok",
+        "coordinates": ["13.736717", "100.523186"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/bangkok.jpg",
         "description": "Welcome to Bangkok—the sprawling, vibrant capital city of the Kingdom of Thailand. Here action and adventure await you at every turn. Whether you take a tuk tuk across town or the longtail boat through the floating market. Bathe and feed Asian elephants or marvel at golden hued temples and palaces. Indulge in local dishes at the night market or haute cuisine at rooftop restaurants, Bangkok is bustling with activity by day and night.",
         "thingsToDo": [
           {
@@ -1267,6 +1353,8 @@
       },
       {
         "name": "Chiang Mai",
+        "coordinates": ["18.796143", "98.979263"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/chiangmai.jpg",
         "description": "Chiang Mai blends ancient traditions with modern design and cuisine. Those with an interest in Buddhist practice can join the locals as they give alms to the temple monks or visit the International Buddhist Center at Wat Phra That Doi Suthep with its chanting and meditation services. For a more rustic temple experience, journey to the forest temple of Wat Umong. Then, browse the colorful Chiang Mai Night Bazaar. Take a walk on the wild side at the Elephant Nature Park.",
         "thingsToDo": [
           {
@@ -1297,9 +1385,9 @@
     "name": "Brazil",
     "language": "Portuguese",
     "currency": "Brazillian real",
-    "region": "61c388f55e30579bf9db1580",
+    "region": "61c4df06d3ca4efeea605b6c",
     "weather": "In general, Brazil is a year-round destination with temperatures rarely dip below 20°C (68°F), apart from in the mountains and southern regions. The climate varies from hot and dry in the arid interior to humid and sticky in the tropical rainforests of the Amazon jungle.",
-    "coverImage": "brazil.png",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/brazil.jpg",
     "description": "Brazil boasts more than 70 national parks and dozens of monuments, including one of the Seven New Wonders of the World – Christ the Redeemer, in Rio de Janeiro. Together, these attractions create one of the most appealing and exciting destinations in South America. People come from every corner of the world to discover the superlative coastline, sprawling metropolises and thick jungles, which are home to monkeys, jaguars and river dolphins. The vast Brazilian landscape holds many prized spots, yet the places below are some of the very best destinations in the country.",
     "bestTimeToVisit": "Overall, the months of September and October are the best time to vacation in Brazil, as you will avoid the major holiday periods as well as the chilly southern winter and the rainy season in the Pantanal",
     "thingsToDo": [
@@ -1327,6 +1415,8 @@
     "places": [
       {
         "name": "Rio de Janeiro",
+        "coordinates": ["-22.908333", "-43.196388"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/rio.jpg",
         "description": "Striking coastlines and exotic forests, thriving nightlife and mesmerizing samba schools – these are just some of the unique elements of Rio de Janeiro, a city with a startling identity unlike any other in the world.",
         "thingsToDo": [
           {
@@ -1353,6 +1443,8 @@
       },
       {
         "name": "Sao Paulo",
+        "coordinates": ["-23.533773", "-46.625290"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/saopaulo.jpg",
         "description": "The largest city in Brazil, Sao Paulo (or Sampa as it is also often called), offers an intense cultural experience. Tropical plants, charismatic people, and lively, bright colors, sounds and scents surround every traveler here, from the moment they step from the plane. It is a melting pot city, and has large, integrated populations of Italian and Japanese cultures among others. This fusion of culture has created beautiful combination art, culinary scene, and music that are well worth exploring.",
         "thingsToDo": [
           {
@@ -1375,6 +1467,8 @@
       },
       {
         "name": "Salvador",
+        "coordinates": ["-12.974722", "-38.476665"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/salvador.jpg",
         "description": "Located in the great state of Bahia, Salvador is a city filled with culture, history, and food. If you’re planning a trip there, you’re in luck; there are so many fun things to do in Salvador, no matter what type of traveler you are.",
         "thingsToDo": [
           {
@@ -1400,8 +1494,8 @@
   {
     "name": "Colombia",
     "currency": "Colombian peso",
-    "coverImage": "colombia.png",
-    "region": "61c388f55e30579bf9db1580",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/colombia.jpg",
+    "region": "61c4df06d3ca4efeea605b6c",
     "weather": "Colombia's weather offers all four seasons and they remain generally unchanged throughout the year due to Colombia's proximity to the equator.",
     "language": "Spanish",
     "description": "Colombia has something that will please most travelers, from sandy beaches of the Caribbean and Pacific coasts, to the Andes Mountains and the Amazon rainforests. Its heritage reflects the culture of its indigenous peoples as well as the Spanish who began settling here in the early 15th century.",
@@ -1431,6 +1525,8 @@
     "places": [
       {
         "name": "Cartagena",
+        "coordinates": ["10.39972", "-75.51444"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/cartagena.jpg",
         "description": "One of the most gorgeous, romantic, and colorful cities in the world, Cartagena is packed with history, friendly Colombians, and of course, tourists. The walled city is made up of pastel colonial buildings lined with flowers, cobblestone streets, horse carriages, and plenty of restaurants and boutiques to satisfy all of its many visitors.",
         "thingsToDo": [
           {
@@ -1457,6 +1553,8 @@
       },
       {
         "name": "Bogota",
+        "coordinates": ["4.624335", "-74.063644"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/bogota.jpg",
         "description": "Don’t be intimidated by the sprawling, bustling city of Bogotá. Colombia’s capital is truly historic and packed with touristy things to do, but it’s also got a cool, hip, and even chic side to it as well. From its weekly Ciclovía bike route through the streets to its upscale neighborhoods filled with great restaurants, parks, and excellent nightlife, Bogotá is a real cosmopolitan city.",
         "thingsToDo": [
           {
@@ -1487,6 +1585,8 @@
       },
       {
         "name": "Medellin",
+        "coordinates": ["6.230833", "-75.590553"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/medellin.jpg",
         "description": "The second city of Colombia, Medelliin has transformed itself perhaps more than any other city in the world. Though its violent, tumultuous past is well-known, today the city is modern, innovative, and just generally lovely. Nicknamed the “City of Eternal Spring” for its nearly perfect weather, you’ll find plenty of parks and plazas where you can enjoy the sunshine with a fresh juice from a street food vendor and a couple of empanadas.",
         "thingsToDo": [
           {
@@ -1520,12 +1620,12 @@
   {
     "name": "Chile",
     "description": "Most of the guidebooks will tell you to take your time with Chile.  It’s made for slow adventure and best suited for those who travel with a heart and mind open to experiencing the moment. Chile is uniquely shaped, long and narrow, which can make travelling the country a little challenging. With over 4,000km from one end to the other, you can expect long and always interesting bus rides on your way to explore deserts, fertile valleys, volcanoes, lakes, fjords, glaciers, the Andes mountain range, dunes, and incredible coastline.",
-    "coverImage": "chile.png",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/chile.jpg",
     "currency": "Chilean peso",
     "language": "Spanish",
     "weather": "It is warm all year round. There is a very large daily range of temperate, up to 30 degrees celsius. Central Chile has a mediterranean type climate with long, hot summers and cool, wet winters.",
     "bestTimeToVisit": "The best time to visit Chile depends on the region you’re traveling to. October to March are the warmest and most accessible months for visitors heading to Patagonia, in the south of the country. This is summer in the Southern Hemisphere and the weather is very pleasant, with warm temperatures of around 72°F.",
-    "region": "61c388f55e30579bf9db1580",
+    "region": "61c4df06d3ca4efeea605b6c",
     "thingsToDo": [
       {
         "name": "Valparaiso",
@@ -1547,6 +1647,8 @@
     "places": [
       {
         "name": "Santiago",
+        "coordinates": ["-33.447487", "-70.673676"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/santiago.jpg",
         "description": "Santiago de Chile, more commonly known as just Santiago, was founded by the Spanish in 1541, and has served as Chile’s capital since the colonial days. It’s a bustling city of more than six million people, but you’ll still find traces of its heritage in the colonial and 19th century neoclassical buildings.",
         "thingsToDo": [
           {
@@ -1573,6 +1675,8 @@
       },
       {
         "name": "Easter Island",
+        "coordinates": ["-27.104671", "-109.360481"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/easter.jpg",
         "description": "Easter Island is famous for its mysterious background and the Moai statues that accompany it. A plethora of theories surround the origins and construction of these giant, monolithic stone statues, but the truth is that they are the legacy left behind by the Rapa Nui civilization that once inhabited the island.",
         "thingsToDo": [
           {
@@ -1601,8 +1705,8 @@
   },
   {
     "name": "Egypt",
-    "region": "61c388f55e30579bf9db1584",
-    "coverImage": "egypt.png",
+    "region": "61c4df06d3ca4efeea605b70",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/egypt.jpg",
     "description": "Magnificent monuments, ancient wonders, boundless sandy deserts, the mighty Nile, and the chaotic allure of Cairo are just some of the many things that make Egypt a classic travel destination. From the mystery of the Pyramids and the imposing Great Sphinx of Giza to the turquoise waters of the Red Sea and the endless sand dunes of the Sahara, Egypt’s landscapes are incredibly inspiring.",
     "currency": "Egyptian Pound",
     "language": "Arabic",
@@ -1629,6 +1733,8 @@
     "places": [
       {
         "name": "Cairo",
+        "coordinates": ["30.033333", "31.233334"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/cairo.jpg",
         "description": "Headlined by the infamous World Wonder, the architectural marvel that is the Great Pyramids of Giza, Cairo is one of the most fascinating cities in the world. It’s a city of contrasts, where old and new stand side by side, where alive and deceased share land (in the so-called City of the Dead), and where luxurious hotels stand alongside cramped (yet vibrant) souks.",
         "thingsToDo": [
           {
@@ -1651,6 +1757,8 @@
       },
       {
         "name": "Luxor",
+        "coordinates": ["25.687243", "32.639637"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/luxor.jpg",
         "description": "Luxor is one of the most ancient cities in Egypt. For many thousands of years, this southern region of the country was home to the most famous Kings and Queens in Egyptian history.",
         "thingsToDo": [
           {
@@ -1681,6 +1789,8 @@
       },
       {
         "name": "Hurghada",
+        "coordinates": ["27.25738", "33.81291"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/hurghada.jpg",
         "description": "With the crystalline waters of the Red Sea to the east and the sands of Egypt’s vast desert to the west, Hurghada attracts vacationers from across the globe who want to relax on its endless beaches, explore its spectacular dive sites, and take day trips to the historic cities along the Nile River.",
         "thingsToDo": [
           {
@@ -1709,10 +1819,10 @@
   },
   {
     "name": "South Africa",
-    "coverImage": "southafrica.png",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/south-africa.jpg",
     "currency": "South African Rand",
     "language": "English",
-    "region": "61c388f55e30579bf9db1584",
+    "region": "61c4df06d3ca4efeea605b70",
     "weather": "Mostly temperate, though temperatures vary by region and season.",
     "bestTimeToVisit": "All year round. May-September for Safari. November-February for birdwatching. July-November for whale-watching.",
     "description": "South Africa is a country unlike any other. From the world’s best safaris, to the most dramatic landscapes and amazing history and culture, this is a country that will enthrall and surprise you at every turn. Hike up the famous Table Mountain. Go on a luxury safari. Fly high in a hot-air balloon over the countryside. Re-visit the place Nelson Mandela made history—the choices are aplenty on your South African vacation.",
@@ -1741,6 +1851,8 @@
     "places": [
       {
         "name": "Cape Town",
+        "coordinates": ["-33.918861", "18.423300"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/capetown.jpg",
         "description": "Trace the legacy of Nelson Mandela and learn about Cape Town’s history of apartheid at Robben Island and the District Six Museum. Bustling Greenmarket Square is known for its buskers and for its selection of African crafts. Taste fresh-caught tuna, try Cape Malay cuisine, or sample African flavors that span the continent at the city’s restaurants.",
         "thingsToDo": [
           {
@@ -1763,6 +1875,8 @@
       },
       {
         "name": "Western Cape",
+        "coordinates": ["-33.227792", "21.856859"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/westerncape.jpg",
         "description": "The Western Cape is known for its rugged coast, incredible wildlife, and rich history. Soar to new heights with a ride to the summit of Table Mountain on the Aerial Cableway, or lace up your hiking boots and trek one of the mountain’s many trails. Journey to Cape Point where you can admire breathtaking views of the Cape of Good Hope and learn about the Cape’s significance to maritime history.",
         "thingsToDo": [
           {
@@ -1789,9 +1903,9 @@
     "name": "Tanzania",
     "description": "From Mt. Kilimanjaro and Zanzibar, to the vast Serengeti, a visit to East Africa's largest country is sure to delight. You'll find nature's most majestic wildlife, the planet's most incredible landscapes, and the continent's most welcoming people in Tanzania. Whether you’re in search of “The Big Five” or the stunning Wildebeest Migration, you'll be spoiled for choice when choosing a safari. Plus, the idyllic beaches and the centuries old Swahili culture add to its magic.",
     "currency": "Tanzanian Shilling",
-    "region": "61c388f55e30579bf9db1584",
+    "region": "61c4df06d3ca4efeea605b70",
     "weather": "The climate is diverse with two rainy seasons.",
-    "coverImage": "tanzania.png",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/tanzania.jpg",
     "language": "Swahili and English",
     "bestTimeToVisit": "June-September when it’s cooler and dry is considered the popular season for animal-sighting.",
     "thingsToDo": [
@@ -1815,36 +1929,34 @@
     "places": [
       {
         "name": "Unguja",
+        "coordinates": ["-6.13573", "39.36212"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/unguja.jpg",
         "description": "Once trodden by sultans and British imperialists, the capital of Stone Town here bursts with coral-stone forts, Persian palaces, and European frontispieces. And then there are the beaches, from seaweed-spattered Kendwa to whiter-than-white Nungwi and its salt-washed bungalows on the shore."
       },
       {
         "name": "Mount Kilimanjaro National Park",
+        "coordinates": ["-3.065653", "37.352013"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/kilimanjaro.jpg",
         "description": "A reserve that surely needs no introduction, the exotic reaches of the Mount Kilimanjaro National Park have been a symbol of Africa’s rich biodiversity and eye-popping backcountry since they were first inaugurated by the German colonists back in the 1920s. Today, they magnetise backpackers and intrepid walkers, who flock to strap on the hiking boots and scale the summit of Africa’s highest peak."
       },
       {
         "name": "Ruaha National Park",
+        "coordinates": ["-7.5", "35"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/ruaha.jpg",
         "description": "Sprawled out over an area almost exactly the size of Wales, the Ruaha National Park has expanded and expanded over the years to become the single largest game reserve in the entire of East Africa. Today, it ranges more than 20,000 square kilometers over baobab forests, gallery woods and acacia-dotted plains. And despite its size, Ruaha’s relative inaccessibility ensures there are no booming crowds of safari-goers here. Instead, the game experience is up-close-and-personal, with cheetahs and leopards and wild dogs all part of the action."
-      },
-      {
-        "name": "Selous Game Reserve",
-        "description": "UNESCO-attested and hailed by loyal safari-goers the world over, the Selous Game Reserve is a real monster of an area. It encompasses no less than 54,000 square kilometers in the heart of south-eastern Tanzania, and boasts a biodiversity to match. There are hippos in the ox-bow lakes, swaying baobab trees, wandering elephants at the mud fords, marauding wild dogs, and Cape buffalos to name just a few of the eye-catching fauna."
-      },
-      {
-        "name": "Pemba Island",
-        "description": "As of yet undiscovered Pemba sits out in to the swells of the Indian Ocean, picking up on the tropical beauty front where the white beaches of the Swahili Coast left of on mainland Tanzania. A part of the same island chain as impossibly-beautiful Zanzibar, the spot comes imbued with some of East Africa’s most colourful coral gardens, each teeming with a kaleidoscope of marine life."
       }
     ]
   },
   {
     "name": "Antarctica",
     "bestTimeToVisit": " The best time to visit Antarctica is February and early March, which brings the best weather for crossing the Drake Passage, the warmest weather on the continent, and the best time for wildlife viewing.",
-    "currency": "",
+    "currency": "NA",
     "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/antarctica.jpg",
     "description": "Antarctica is the world’s last great wilderness. Uninhabited by humans, to get to this continent, travelers journey the way that Cook, Amundsen, and Shackleton did—by boat. Even in the austral summer, this is a land vulnerable to extremes. The days are long, and the sun might not set at all near the solstice. View whales, seals, penguins, and migratory birds in abundance. The drama of nature is on full display here: witness melting glaciers, marvel at blue ice floes, and trek over ice deserts.",
     "weather": "Visitors to Antarctica should prepare for cold and changing weather conditions. While temperatures in the austral summer can get as warm as 60 degrees Fahrenheit, visitors should prepare for temperatures that average around freezing and days that can drop well below freezing.",
-    "language": "",
-    "places": "",
-    "region": "Antarctica",
+    "language": "NA",
+    "places": [],
+    "region": "61c4df06d3ca4efeea605b78",
     "thingsToDo": [
       {
         "name": "Bird-Watchers’ Paradise",
@@ -1876,7 +1988,7 @@
     "bestTimeToVisit": "Depends on where you’re going, but the Great Barrier Reef area offers year-round warmth",
     "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/australia.jpg",
     "description": "Australia offers beautiful beaches, a wilderness that spans from the Outback to the rugged coast, and incredible dining and cultural opportunities in its cosmopolitan cities. Snorkel or dive the Great Barrier Reef, the largest coral reef on the planet. On the coast, you’ll find the vibrant city of Sydney with its iconic Opera House, and the seaside culture and turquoise water of Bondi Beach. Explore Australia’s wine regions, Daintree Rainforest, its breathtaking deserts, or meet a koala and kangaroo in the city or wild.",
-    "region": "Oceania",
+    "region": "61c4df06d3ca4efeea605b74",
     "thingsToDo": [
       {
         "name": "Snorkel or Dive the Great Barrier Reef",
@@ -1898,6 +2010,8 @@
     "places": [
       {
         "name": "Sydney",
+        "coordinates": ["-33.865143", "151.209900"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/sydney.jpg",
         "description": "After you’ve visited the Sydney Opera House and the Sydney Harbour Bridge, spend some time exploring Sydney’s beaches. Snorkel the waters of Coogee Beach, surf the legendary waves of Manly Beach, or sunbathe with the locals and surfers at Bondi Beach. After you’ve gotten your sunshine, visit some of Sydney’s spectacular museums, most notably, the Hyde Park Barracks Museum and the Australian Museum.",
         "thingsToDo": [
           {
@@ -1920,6 +2034,8 @@
       },
       {
         "name": "Melbourne",
+        "coordinates": ["-37.840935", "144.946457"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/melbourne.jpg",
         "description": "Walk through Melbourne’s laneways and narrow streets, and discover the city’s vibrant restaurants, art galleries, and shops. Enjoy the multicultural cuisine, internationally-renowned art, and uniquely Australian culture. Visit the National Gallery of Victoria, where you’ll find local artists displayed alongside renowned masters like René Magritte. Wander the Royal Botanic Gardens in Melbourne and view rare and local plants.",
         "thingsToDo": [
           {
@@ -1942,6 +2058,8 @@
       },
       {
         "name": "Brisbane",
+        "coordinates": ["-27.470125", "153.021072"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/brisbane.jpg",
         "description": "With year-round beautiful weather, spend your vacation outside in Brisbane. At the River Quay Green, find the city’s most renowned restaurants overlooking views of the Brisbane River and enjoy outdoor music in the evenings. Swim at Streets Beach, an artificial beach in the middle of the city. Go kayaking on the river, take a river cruise, or enjoy a picnic in the city’s lush parks. Meet a koala at the Lone Pine Koala Sanctuary.",
         "thingsToDo": [
           {
@@ -1968,6 +2086,8 @@
       },
       {
         "name": "Port Douglas",
+        "coordinates": ["-16.48397850", "145.46583270"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/port-douglas.jpg",
         "description": "Outdoor adventures abound in Port Douglas. Hike the Daintree Rainforest and soak in hidden swimming holes surrounded by exotic flora and fauna. Take a cruise or catamaran to the Great Barrier Reef and explore one of the world’s most diverse ecosystems. Stroll Four Mile Beach’s pristine coastline. In Port Douglas, the wilderness is never far from the comforts of indulgent all-inclusive resorts and restaurants serving exquisite cuisine.",
         "thingsToDo": [
           {
@@ -1998,7 +2118,7 @@
     "language": "English",
     "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/bahamas.jpg",
     "weather": "The subtropical climate brings cool trade winds in the summer and warm Gulf Stream breezes in the winter. Temperatures average 75˚ in the winter and 84˚ in the summer. June 1 – November 30 is hurricane season.",
-    "region": "Caribbean",
+    "region": "61c4df06d3ca4efeea605b85",
     "thingsToDo": [
       {
         "name": "Swim with the Pigs of the Exumas",
@@ -2020,6 +2140,8 @@
     "places": [
       {
         "name": "Paradise Island",
+        "coordinates": ["25.0826502", "-77.3180836"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/paradise.jpg",
         "description": "Paradise Island is most famous for its Atlantis Resort & Casino, but tucked away from the crowds, amenities, and activities, you’ll also find some hidden gems. Bask on the soft white sand of Cabbage Beach. Walk along the stone terraces of Versailles Gardens, a beautiful, lush landscape of flowers and tropical plants. Here, you can explore the remains of a French monastery built by Augustinian monks.",
         "thingsToDo": [
           {
@@ -2042,6 +2164,8 @@
       },
       {
         "name": "Nassau",
+        "coordinates": ["25.059999", "-77.345001"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/nassau.jpg",
         "description": "Nassau is known for beautiful beaches, rich culture, and vibrant history. Be dazzled by the white sands and turquoise waters of Cable Beach. Cross the bridge to Paradise Island and bask on Cabbage Beach. Delve into Nassau’s history with a visit to Fort Charlotte, Fort Fincastle, the Government House, or the Queen’s Staircase. After a day at the beach, explore the Straw Market and then sip some rum at the John Watling’s Distillery.",
         "thingsToDo": [
           {
@@ -2072,7 +2196,7 @@
     "bestTimeToVisit": "December-June is a popular time to visit as it is dry, though February-April is considered as the peak season.",
     "weather": " It’s generally warm and sunny all year round with an average daytime high of 75-85°F, cooled by trade winds.",
     "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/barbados.jpg",
-    "region": "Caribbean",
+    "region": "61c4df06d3ca4efeea605b85",
     "thingsToDo": [
       {
         "name": "Tour the island",
@@ -2090,6 +2214,8 @@
     "places": [
       {
         "name": "South Coast",
+        "coordinates": ["13.103562", "-59.603226"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/south-coast.jpg",
         "description": "The South Coast of Barbados is home to the island’s capital city, Bridgetown. This UNESCO World Heritage city is known for its historic British colonial buildings, its stunning Parliament Building, and the oldest Jewish synagogue in the Western Hemisphere. Enjoy the duty-free shopping on Swan Street and Broad Street. Snorkel the shipwrecks of Carlisle Bay, and watch for sea turtles.",
         "thingsToDo": [
           {
@@ -2108,6 +2234,8 @@
       },
       {
         "name": "West Coast",
+        "coordinates": ["13.1", "-59.6167"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/west-coast.jpg",
         "description": "Whether you’re looking for world-class waves, diving or snorkeling adventures, or want to sit back, relax, and sip rum on a white-sand beach, the West Coast of Barbados has it all. Hidden surf spots can be found all along Barbados’ West Coast. Bathsheba Beach is known for its rock formations. Snorkel in the emerald blue water of Brandons Beach and look for sea turtles, or make your way north to Mullins Beach and sip a drink under an umbrella.",
         "thingsToDo": [
           {
@@ -2129,5 +2257,483 @@
         ]
       }
     ]
+  },
+  {
+    "name": "Puerto Rico",
+    "currency": "U.S. Dollar",
+    "description": "Puerto Rico offers a distinctive blend of Spanish, European, native, and American culture. Trade wind breezes temper the Caribbean sun, and natural marvels abound. Whether you’re strolling San Juan’s old world-style streets, discovering its 500-year-old San Felipe del Morro citadel, or partying the night away at San Juan’s clubs and casinos, there’s a little something for everyone.",
+    "language": "Spanish and English",
+    "weather": "Temperatures average in the mid-80s, but weather can be cooler in the mountains. June 1 – November 30 is hurricane season.",
+    "bestTimeToVisit": "The busiest time to visit is in the winter; mid-April to the end of May are less crowded and offer beautiful weather.",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/puerto-rico.jpg",
+    "region": "61c4df06d3ca4efeea605b85",
+    "thingsToDo": [
+      {
+        "name": "Paddle the Brightest Bioluminescent Bay in the World",
+        "text": "The brightest bioluminescent bay in Puerto Rico (and the world) is Mosquito Bay on the island of Vieques, (or explore the two mainland bays in Fajardo and La Parguera)."
+      },
+      {
+        "name": "Take the Ferry to Culebra Island",
+        "text": "On Culebra, you can visit the remote white-sand Flamenco Beach, celebrated as one of the most beautiful beaches in the world."
+      },
+      {
+        "name": "Stroll Old San Juan",
+        "text": "Wander the narrow, European-style streets of Old San Juan, admire the colorful architecture, and visit the 16th century citadel of San Felipe del Morro."
+      },
+      {
+        "name": "Dry Forest, Rainforest",
+        "text": "Puerto Rico is a land of diverse ecosystems: visit El Yunque rainforest and then travel to the island’s south coast and hike the Guánica Dry Forest, with its cacti and bird-watching opportunities."
+      }
+    ],
+    "places": [
+      {
+        "name": "Old San Juan",
+        "coordinates": ["18.466333", "-66.105721"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/old-san-juan.jpg",
+        "description": "Old San Juan has no beaches, no resort hotels, and not a whole lot of natural beauty—yet it's still one of the best places to visit in Puerto Rico. For all that it lacks, Old San Juan has an incredible 500 years of history, beautiful colonial architecture liberally splashed with tropical colors and timeless magic that makes it one of the most enchanting destinations in the Caribbean. You could spend many happy hours just walking around the walled city.",
+        "thingsToDo": [
+          {
+            "name": "Visit the Forts",
+            "text": "Perhaps nothing captures the history of Puerto Rico more than Old San Juan's massive fortresses. El Morro and Castillo de San Cristobal are among the most visited attractions on the island for a good reason. Their cannons, ramparts, and layered defenses have guarded the walled city for centuries. Even the governor's mansion, La Fortaleza, is called 'The Fortress' because it was one of the settlement's early defensive structures."
+          },
+          {
+            "name": "Dine Out on Fortaleza Street",
+            "text": "Dining in Puerto Rico is usually a rewarding experience, whether you're after local classics, gourmet international cuisine, or a delightfully inventive fusion of the Caribbean and global flavors. In Old San Juan, Fortaleza Street has carved out a reputation as a Restaurant Row that includes some of the best restaurants in town. In fact, South Fortaleza, or 'SoFo,' as it's known, even has its own biannual culinary festival."
+          },
+          {
+            "name": "Take a Sunset Stroll Along Paseo La Princesa",
+            "text": "Paseo La Princesa is a broad promenade that stretches from near the docks at the foot of the city and leads to the lovely Raíces Fountain. On weekends, you're likely to find all kinds of stalls lining the road, and maybe even a free cultural performance to enjoy. Paseo La Princesa hugs the old perimeter wall of the city, and beyond the fountain continues around Old San Juan to the San Juan Gate, the only remaining of five original entry points into the old town."
+          },
+          {
+            "name": "Go Salsa Dancing",
+            "text": "Salsa dancing and Puerto Rico go hand in hand, but surprisingly, the island isn't exactly crawling with hallowed halls of salsa. While old favorites like the Nuyorican Café (where Mick Jagger once danced the night away) have closed, newer spots like La Factoría have stepped up to the plate."
+          },
+          {
+            "name": "Enjoy the City at Night",
+            "text": "Take a look at the best lounges, bars, and clubs in San Juan. You'll find several of them in Old San Juan, a city known for its active nightlife. Whether you prefer the chic lounge scene (try Marmalade), grungy and funky bars (El Batey Bar leads that pack) or multi-level discos, Old San Juan doesn't feel so old once the sun goes down."
+          }
+        ]
+      },
+      {
+        "name": "Culebra",
+        "coordinates": ["18.303013", "-65.300987"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/culebro.jpg",
+        "description": "Culebra is one of the most beautiful places to visit in Puerto Rico because of its tropical island atmosphere and laid-back state of mind. It’s just over 10 square miles in size and an ideal place to relax on the beach, get active in the water, and enjoy a tranquil pace of life. Here are some of the best things to do when you visit Culebra and fun suggestions on how to spend your vacation days here.",
+        "thingsToDo": [
+          {
+            "name": "Enjoy Flamenco Beach",
+            "text": "Flamenco Beach is the most popular places to visit in Culebra and also one of the best beaches in the entire Caribbean. It features lovely sand and water, as well as restrooms, shade trees, picnic tables, and equipment for rent."
+          },
+          {
+            "name": "Go on a Snorkeling Tour",
+            "text": " Snorkeling is a popular activity on Culebra and definitely worth trying while you’re here. Culebra is a common day trip destination from Fajardo for tourists to go snorkeling."
+          },
+          {
+            "name": "Learn About the Native Plants",
+            "text": "There are beautiful plants that naturally flourish on Culebra because of its unique tropical and semi-arid environment."
+          },
+          {
+            "name": "Check Out Culebrita",
+            "text": "Isla Culebrita is a smaller and uninhabited island that accessible from Culebra via water taxi. It is part of the Culebra National Wildlife Refuge and a fun place to visit on a day trip."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dominican Republic",
+    "description": "The Dominican Republic boasts 1000 miles of coastline and cities as unique as the landscape. Sip a Caribbean rum punch on the white sands of an exclusive Punta Cana resort. Travel to the protected bay of Samaná, where thousands of humpback whales mate in the winter. Splash around in Samaná’s waterfalls surrounded by lush tropical plants. Soak in the sunshine on the shores of Puerto Plata at the foot of Mount Isabel de Torres.",
+    "currency": "Dominican Peso",
+    "language": "Spanish",
+    "weather": "Year-round warm, tropical weather. June 1 – November 30 is hurricane season.",
+    "bestTimeToVisit": "Peak season runs from December – May, which brings northern crowds escaping the winter. Pack an umbrella for October.",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/dr.jpg",
+    "region": "61c4df06d3ca4efeea605b85",
+    "thingsToDo": [
+      {
+        "name": "Visit the Tallest Waterfall in the Caribbean",
+        "text": "Samana is home to the Caribbean’s tallest waterfall, the Salto La Jalda, a stunning 400-foot tall cascade."
+      },
+      {
+        "name": "Ride a Horse into the Surf",
+        "text": "After a day of lounging on the beach, experience the shore from another perspective—on horseback."
+      },
+      {
+        "name": "Ride a Cable Car to the Peak of Mount Isabel de Torres",
+        "text": "From Puerto Plata, take a spectacular cable car ride to the peak of Mount Isabel de Torres and admire views of the sea and city from the summit."
+      },
+      {
+        "name": "Get Your Thrills Parasailing or Zip Lining in Punta Cana",
+        "text": "When you’re in the mood for a thrill, go on a parasailing adventure over the water or soar on a zip line over the lush tropical landscape."
+      }
+    ],
+    "places": [
+      {
+        "name": "Punta Cana",
+        "coordinates": ["18.58182", "-68.40431"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/punta-cana.jpg",
+        "description": "Punta Cana is known for its white-sand beaches, incredible golf courses, and for its stunning resorts that cater to your every whim. With 10 different courses to choose from, you’ll be sure to find a green that matches your skill. If the beach is more your pace, Playa Bávaro is one of Punta Cana’s most popular beaches for its soft white sand, restaurants, and water activities.",
+        "thingsToDo": [
+          {
+            "name": "Tee-Off at the Punta Espada Golf Course",
+            "text": "This course, designed by Jack Nicklaus, hosts the PGA Champions Tour—when you factor in the ocean wind, this seaside course offers a breathtaking combination of challenge and views."
+          },
+          {
+            "name": "Swim in the Otherworldly Blue Water of the Hoyo Azul",
+            "text": "Hoyo Azul’s dazzling aquamarine water is absolutely breathtaking; Scape Park offers eco-tours of the area as well as cave and cenote tours."
+          },
+          {
+            "name": "Meet Dominican Republic Wildlife at Manatí Park",
+            "text": "See flamingos, parrots, monkeys, dolphins, and 150 other species at Manatí Park."
+          },
+          {
+            "name": "Snorkel or Dive Punta Cana’s Shipwrecks",
+            "text": "Take a snorkel lesson or dive Punta Cana’s shipwrecks teeming with marine life."
+          }
+        ]
+      },
+      {
+        "name": "Puerto Plata",
+        "coordinates": ["19.780769", "-70.687111"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/puerto-plata.jpg",
+        "description": "Puerto Plata delivers the best of a traditional Dominican Republic port town while boasting the amenities of its all-inclusive beachside resorts. Christopher Columbus set foot on this land, and in good time, Puerto Plata became an important trading port with its own fort. Visit Fortaleza San Felipe, ride the aerial tramway, and explore the Amber Museum.",
+        "thingsToDo": [
+          {
+            "name": "Visit Fortaleza San Felipe",
+            "text": "Step foot in one of the most important colonial forts of the Caribbean; this 16th century fort still has its original cannons and offers stunning views of the Dominican Republic coast."
+          },
+          {
+            "name": "Ride the Aerial Tram to the Summit of Mount Isabel de Torres",
+            "text": "Feel the thrill of riding an aerial tram that will take you to the gardens and statue of Christ that stands on this summit."
+          },
+          {
+            "name": "Find Amber Treasure",
+            "text": "Visit the Amber Museum and admire the collection of amber or browse its shop for authentic amber jewelry."
+          },
+          {
+            "name": "Get Your Thrills",
+            "text": "Take a short drive to Cabarete where the conditions for kitesurfing and windsurfing are ideal, go cliff-jumping at Damajaqua Cascades, or take a leisurely horseback ride through Puerto Plata’s lush landscape."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Costa Rica",
+    "description": "From rainforests to volcanic highlands; from the bird-populated wetlands to the breathtaking surf of the Caribbean and Pacific beaches—Costa Rica is a nation that puts conservation first. Active adventures abound: surf, zip line, golf, hike, bird watch, paddle, fish, and dive. Costa Rica is also known for its luxury spas and yoga retreats.",
+    "currency": "Costa Rican Colon",
+    "language": "Spanish",
+    "weather": "The forecast is sunny and 72˚, though mountain temperatures can be cooler.",
+    "bestTimeToVisit": "November through April is the dry season and the best time to visit.",
+    "region": "61c4df06d3ca4efeea605b79",
+    "places": [],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/costa-rica.jpg",
+    "thingsToDo": [
+      {
+        "name": "In Touch with Nature",
+        "text": "One of the world’s great eco-tourism hotspots—a quarter of Costa Rica’s land is designated nature reserve; visit the Arenal Volcano, Manuel Antonio, Palo Verde, Corcovado, and Carara National Parks."
+      },
+      {
+        "name": "Catch a Wave",
+        "text": "Costa Rica is a world-renowned surf destination; there’s Tamarindo, Jaco, and Malpais on the Pacific, and Westfalia on the Caribbean coast."
+      },
+      {
+        "name": "Find Your Beach",
+        "text": "With 750 miles of Caribbean and Pacific coastline, discover your beach—there’s Puntarenas, Playa Tambor, Playa Montezuma, and Manuel Antonio National Park—to name just a few."
+      },
+      {
+        "name": "Go on a Yoga Retreat",
+        "text": "Rejuvenate your body and spirit at a spa and yoga retreat where you can expand your practice and enjoy a massage by the sea."
+      }
+    ]
+  },
+  {
+    "name": "Panama",
+    "description": "Panama is a land of rainforests, exotic wildlife, and stunning Caribbean and Pacific beaches. While many visitors come to Panama for its wilderness escapes, most come for the Panama Canal, a 50-mile waterway that links the Pacific and Atlantic Oceans. Don’t let the canal’s relatively short distance fool you. This stretch of water is an engineering wonder. The Gatun, the Pedro Miguel, and the Miraflores locks flood with water, lifting ships above sea level, allowing them to complete their journey between two oceans.",
+    "bestTimeToVisit": "Visit during the dry season, mid-December to April",
+    "currency": "Panamian Balboa",
+    "language": "Spanish",
+    "weather": "The forecast is 82˚ and sunny, with high humidity",
+    "places": [],
+    "region": "61c4df06d3ca4efeea605b79",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/panama.jpg",
+    "thingsToDo": [
+      {
+        "name": "Visit the Locks",
+        "text": "Learn about the Panama Canal’s engineering marvels at the Miraflores, Gatun, or Pedro Miguel locks, where you can see massive ships navigating this impressive technological feat."
+      },
+      {
+        "name": "Walk or Bike the Amador Causeway",
+        "text": "The Amador Causeway connects Panama City to the islands of Naos, Culebra, Perico, and Flamenco—walk or bike it for the best views."
+      },
+      {
+        "name": "Escape to the Islands of Guna Yala",
+        "text": "If you’re looking for an exotic Caribbean beach escape—the 365 islands of Guna Yala deliver talcum-powder soft sand, technicolor bright water, and stunning coral reefs."
+      }
+    ]
+  },
+  {
+    "name": "Maldives",
+    "description": "In the Maldives, each resort is on its own private island and it’s the law that all resort guests enjoy beachfront views, meaning that honeymooners can enjoy incredible privacy. Explore white-sand beaches and plunge into technicolor blue seas. Diving and snorkeling in the Maldives is world-renown. And then, there’s the fresh catch of the day.",
+    "bestTimeToVisit": "Visit between January and April for the best weather",
+    "places": [],
+    "currency": "Maldivian Rufiyaa",
+    "language": "Dhivehi",
+    "weather": "The forecast is warm and sunny between January and April, with May to November bringing the rainy season and monsoons",
+    "region": "61c4df06d3ca4efeea605b7c",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/maldives.jpg",
+    "thingsToDo": [
+      {
+        "name": "Dive with Manta Rays",
+        "text": "The Maldives are famous for the incredible diving and snorkeling opportunities the islands offer; bring your waterproof camera for breathtaking underwater photos."
+      },
+      {
+        "name": "A Beach of Your Own",
+        "text": "White-sands, shallow waters, brilliant turquoise waves—with thousands of islands, there’s a private beach just for you in the Maldives."
+      },
+      {
+        "name": "Go Fishing",
+        "text": "Catch the big one on a sport fishing cruise; giant trevally, sailfish, marlin, barracuda, yellowfin tuna, wahoo, swordfish, and other species can be found in the waters around the Maldives."
+      }
+    ]
+  },
+  {
+    "name": "Mauritius",
+    "description": "Mauritius was shaped by volcanoes, but this charming island seems designed for honeymooners, nature enthusiasts, and those looking for a little luxury under the sun. Venture to the otherworldly Seven Colored Earths of Chamarel. At Black River Gorges National Park, view some of the rarest bird species on earth.",
+    "language": "English",
+    "currency": "Mauritian Rupee",
+    "region": "61c4df06d3ca4efeea605b7c",
+    "weather": " May through September bring warm and dry weather; October through April are hot and humid with the risk of cyclones between January through March",
+    "bestTimeToVisit": "May through August bring the best weather.",
+    "places": [],
+    "thingsToDo": [
+      {
+        "name": "Island of Markets",
+        "text": "Shop for fresh fruit, vegetables, and spices at Port Louis’s Central Market; admire the silks, textiles, and taste the street food at Mahébourg’s Monday Market, or browse the duty-free shops for some tax-free souvenirs."
+      },
+      {
+        "name": "Afternoon Tea at Bois Chéri",
+        "text": "Visit the Bois Chéri tea estate where you can enjoy a tea tasting or afternoon tea service."
+      },
+      {
+        "name": "Go in Search of Rare Species",
+        "text": "After the Dodo went extinct, Mauritius takes its conservation seriously; Black River Gorges National Park is home to the endemic echo parakeet and other rare bird species."
+      }
+    ],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/mauritius.jpg"
+  },
+  {
+    "name": "Qatar",
+    "description": "Discover the authentic Arabic culture in Qatar, one of the world’s fastest-growing destinations. In Doha, shimmering new skyscrapers rise around bustling souqs. Wander the stalls of Souq Waqif, shopping for traditional clothing, spices, perfumes, and incense. Visit the Falcon Souq and see the falcons. No visit to Qatar is complete without spending a night in a traditional Bedouin camp under the stars.",
+    "currency": "Qatari Riyal",
+    "weather": "Enjoy warm and dry weather year-round",
+    "bestTimeToVisit": "Year-round",
+    "language": "Arabic",
+    "region": "61c4df06d3ca4efeea605b80",
+    "places": [],
+    "thingsToDo": [
+      {
+        "name": "Go Dune Bashing",
+        "text": "Feel the thrill of riding a 4x4 over the desert dunes. Choose your thrill—high-speed roller coaster ride or scenic drive?"
+      },
+      {
+        "name": "Spend a Night in a Bedouin Camp",
+        "text": "See beautiful camels up close, enjoy a traditional Arabian meal, and fall asleep under the desert stars. You’ll feel like you stepped back in time."
+      },
+      {
+        "name": "Stroll Doha’s Corniche",
+        "text": "Glimpse Doha’s blend of ancient traditions and cosmopolitan style with a stroll on the Corniche. Ride a traditional dhow boat, visit the Museum of Islamic Art, fly a kite, and admire the brilliant skyscrapers rising over the Persian Gulf."
+      },
+      {
+        "name": "Visit Al Zubara Fort",
+        "text": "Learn about Qatar’s ancient role in the Persian Gulf at the UNESCO World Heritage Al Zubara Fort."
+      }
+    ],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/qatar.jpg"
+  },
+  {
+    "name": "United Arab Emirates",
+    "description": "Experience the magic of Arabia when you travel to the United Arab Emirates with Liberty Travel. Explore Dubai, a cosmopolitan city with iconic skyscrapers and palm-shaped islands. Visit Abu Dhabi, the ultra-modern capital with spectacular mosques and award-winning amusement parks. Discover Sharjah, the hub of art and heritage with its museums and galleries dedicated to the Emirati culture.",
+    "currency": "Dirham",
+    "language": "Arabic",
+    "weather": "Scorching hot in the summer to mild and pleasant in the winter.",
+    "bestTimeToVisit": "In the winter when the temperatures are milder.",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/uae.jpg",
+    "region": "61c4df06d3ca4efeea605b80",
+    "thingsToDo": [
+      {
+        "name": "Visit the Sheikh Zayed Grand Mosque",
+        "text": "This masterpiece of contemporary Islamic architecture in Abu Dhabi boasts of more than 80 domes, 1000 pillars, 100,000 tons of pure white Greek marble, and the world’s largest chandelier."
+      },
+      {
+        "name": "Hop on a desert safari tour",
+        "text": "Go dune bashing in a 4x4, ride a camel in the desert, then go sand boarding down a sand dune…Dubai doesn’t get more thrilling than this."
+      },
+      {
+        "name": "Break at the Sharjah Car Museum",
+        "text": "A must for car buffs, the Museum hosts some of the most beautiful and rare classic cars in the world."
+      }
+    ],
+    "places": [
+      {
+        "name": "Dubai",
+        "coordinates": ["25.276987", "55.296249"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/dubai.jpg",
+        "description": "Be prepared to get dazzled by Dubai. Everything in this second largest Emirate in the U.A.E. is super-sized, super luxurious and state-of-the-art. A cosmopolitan metropolis, Dubai attracts the most seasoned travelers from the world over. You could catch a show at the Dubai Opera, take a 4x4 ride over rippling sand dunes, dine at an upscale restaurant at Jumeriah Beach, ascend the world's tallest building, the Burj al Khalifa or ride a hot-air balloon over the Arabian desert.",
+        "thingsToDo": [
+          {
+            "name": "Tour traditional Dubai",
+            "text": "Get fascinated by Dubai's rich history and tradition as you visit the Al Fahidi Historical Neighborhood, Dubai Creek, and the Gold and Spice Souks."
+          },
+          {
+            "name": "Dine in style",
+            "text": "Sit down to a magical six-course dinner at Al Mahara at the Burj Al Arab Jumeirah, created by a Michelin-starred chef."
+          },
+          {
+            "name": "Top it off with Burj Khalifa",
+            "text": "Head 160 stories up to the observation deck of the tallest building in the world for stunning, panoramic views of magnificent Dubai."
+          }
+        ]
+      },
+      {
+        "name": "Abu Dhabi",
+        "coordinates": ["24.466667", "54.366669"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/abudhabi.jpg",
+        "description": "If it’s culture and adventure you’re seeking, there couldn't be a better time to visit Abu Dhabi. An elegant fusion of sand and sea, UAE’s slick capital graces its visitors with a rich cultural heritage and warm hospitality, skyscrapers and shopping malls, pristine waters and the planet's most spectacular sand dunes. Experience a desert safari. Sail on a catamaran. Enjoy spectacular views from a seaplane. The possibilities are endless.",
+        "thingsToDo": [
+          {
+            "name": "Visit the Sheikh Zayed Grand Mosque",
+            "text": "This masterpiece of contemporary Islamic architecture boasts of more than 80 domes, 1000 pillars, 100,000 tons of pure white Greek marble, and the world’s largest chandelier."
+          },
+          {
+            "name": "Get the thrill of Formula 1",
+            "text": "Visit Yas Island for roaring Formula 1 excitement at Abu Dhabi's Grand Prix, the largest sporting event in the Middle East."
+          },
+          {
+            "name": "Visit Ferrari World",
+            "text": "Experience adrenaline-pumping action in the world's largest indoor theme park with 3D & 4D adventures, exhilarating simulation races, and Formula Rossa, the fastest roller coaster in the world."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Canada",
+    "currency": "Canadian Dollar",
+    "bestTimeToVisit": "Winter brings skiers to the slopes, and summer brings tourists to the cities and main attractions. Spring brings blossoms to Canada’s many gardens, and fall foliage is spectacular, though these seasons can be cold and rainy.",
+    "language": "English",
+    "description": "From the skyscrapers of Toronto, to the west coast vibe of Vancouver, Canada’s cities offer exquisite gardens, world-class museums, and multicultural cuisine. Beyond the cities is the rugged country. From the ski slopes of Whistler to the fairy tale hotel of Chateau Lake Louise in Banff, the west coast is ideal for hikers, skiers, and sightseers. The east coast has iconic Niagara Falls and the wineries of Niagara-on-the-Lake.",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/canada.jpg",
+    "region": "61c4df06d3ca4efeea605b83",
+    "weather": " West coast climate is temperate and mild, but wet. The east coast can get quite cool in the winter, and quite hot in the summer.",
+    "thingsToDo": [
+      {
+        "name": "Ride the Maid of the Mist at Niagara Falls",
+        "text": "Book yourself a ticket on the Maid of the Mist—the views are truly spectacular."
+      },
+      {
+        "name": "Eat at the Revolving Restaurant in the CN Tower",
+        "text": "See Toronto from the top of the CN Tower; North America’s tallest free-standing structure boasts a revolving restaurant, offering 360-degree views."
+      },
+      {
+        "name": "Ski Canada",
+        "text": "Mont Tremblant brings European-style alpine charm to the east coast, while the west boasts Whistler, which hosted the 2010 Olympic Games."
+      }
+    ],
+    "places": [
+      {
+        "name": "Toronto",
+        "coordinates": ["43.651070", "-79.347015"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/toronto.jpg",
+        "description": "Toronto is the sum of its multicultural neighborhoods and marketplaces. Taste your way through Greektown, Little Italy, Koreatown, Chinatown, Kensington Market, and the renowned St. Lawrence Market. Ferry to the Toronto Islands for family-friendly fun on the beaches, bike paths, and rides at Centreville Amusement Park, or see the dinosaur bones and Egyptian treasures at the Royal Ontario Museum. The CN Tower is a must-see with dizzying views of the city and lake below.",
+        "thingsToDo": [
+          {
+            "name": "Catch a Festival",
+            "text": "See the Toronto International Film Festival, the largest film festival in the world open to the public; stroll the city streets during Nuit Blanche; catch an indie play at the Toronto Fringe Festival, or explore the city’s restaurants during Summerlicious and Winterlicious."
+          },
+          {
+            "name": "Eat at 360 Restaurant",
+            "text": "Take an elevator to the top of the CN Tower and eat at 360, a revolving restaurant featuring fresh Canadian cuisine."
+          },
+          {
+            "name": "Browse the Boutiques and Studios of the Distillery District",
+            "text": "Discover local artists and artisans housed in beautiful Victorian industrial buildings."
+          }
+        ]
+      },
+      {
+        "name": "Vancouver",
+        "coordinates": ["49.246292", "-123.116226"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/vancouver.jpg",
+        "description": "Vancouver is nestled between the ocean and the North Shore Mountains. Go whale watching, hike a mountain, ski, or discover the city’s multicultural culinary scene. Bike at Stanley Park, passing totem poles, or tee-off at the park’s golf course. For an adrenaline rush, experience the Sky to Sea Gondola over Howe Sound or trek across the Capilano Suspension Bridge. Visit Kitsilano Beach to catch some rays with the locals.",
+        "thingsToDo": [
+          {
+            "name": "Take a Cruise",
+            "text": "Want to cruise to Alaska? Vancouver is one of the leading ports from which to begin your adventure north."
+          },
+          {
+            "name": "Explore Stanley Park",
+            "text": "Rent a bike and cycle the seawall that runs 20 miles along Vancouver’s waterfront. The park boasts family-friendly playgrounds, a water park, and the Vancouver Aquarium. Admire stately cedars, maples, and Douglas fir."
+          },
+          {
+            "name": "Art and Culture at Granville Island",
+            "text": "Find Vancouver’s design studios, galleries, leading cuisine, and vibrant market."
+          },
+          {
+            "name": "Visit VanDusen Botanical Garden",
+            "text": "If you’re visiting Vancouver in the spring, be sure to take the famous Laburnum Walk; the garden boasts year-round blooms."
+          }
+        ]
+      },
+      {
+        "name": "Niagara Falls",
+        "coordinates": ["43.060001", "-79.106667"],
+        "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/niagara.jpg",
+        "description": "Three different waterfalls make up Niagara Falls: Horseshoe Falls, the American Falls, and the Bridal Veil Falls. Horseshoe Falls is arguably the most dramatic and is best viewed from the Canadian city of Niagara Falls. The city’s glittering entertainment district boasts a range of attractions, including the Maid of the Mist boat ride, the Journey Behind the Falls, Niagara Skywheel, Skylon Tower, and Niagara Casino.",
+        "thingsToDo": [
+          {
+            "name": "Ride the Maid of the Mist",
+            "text": "You’ll get so close to the falls on this boat ride, you’ll have to wear a poncho. The views are stunning."
+          },
+          {
+            "name": "Niagara Glen Nature Reserve",
+            "text": "Hike through the reserve, weaving through natural boulders and the Niagara Escarpment, enjoying breathtaking views of the rushing Niagara River."
+          },
+          {
+            "name": "Skylon Tower",
+            "text": "There are many ways to experience the falls, but for a truly unique view, ride to the observation deck of the Skylon Tower to see the falls from above."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "New Zealand",
+    "description": "New Zealand is a land of lush forests, glacier-covered peaks, and beautiful beaches. Travel for the scenery, and explore the charming cities—from Auckland in the north to Wellington and Christchurch in the south. Lord of the Rings fans can discover the natural setting where the movies were filmed. Enjoy a warm Māori welcome and visit a marae—a Māori meeting place—where you can watch a war dance and learn about Māori art and culture.",
+    "currency": "New Zealand Dollar",
+    "weather": "Enjoy the mild subtropical climate year-round, but pack a jacket if you plan to travel into alpine areas or want to go far south in the winter",
+    "bestTimeToVisit": "Come for the New Zealand summer (January, February, and early March) for the best weather",
+    "language": "English",
+    "places": [],
+    "region": "61c4df06d3ca4efeea605b74",
+    "thingsToDo": [
+      {
+        "name": "Vineyards and Scenery",
+        "text": "Travel to the celebrated Hawke’s Bay, home to New Zealand’s oldest wineries, or venture into the more remote mountain wine regions of Nelson or Waitaki Valley."
+      },
+      {
+        "name": "Feast with the Maori",
+        "text": "After soaking in the hot springs of Rotorua, visit the Maori village and partake in a traditional Hangi meal, cooked in an earthen pit and steamed to perfection over heated rocks."
+      },
+      {
+        "name": "Hike a Glacier",
+        "text": "Put on your crampons and take a guided hike on the spectacular Franz Josef Glacier."
+      },
+      {
+        "name": "Galaxies of Glowworms",
+        "text": "Journey beneath the earth and view the breathtakingly beautiful glowworms at the Waitomo Glowworm Caves."
+      }
+    ],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/nz.jpg"
   }
 ]

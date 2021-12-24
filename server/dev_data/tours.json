@@ -5,6 +5,40 @@
     "description": "All roads may lead to Rome, but we know the scenic avenues to reach all the enchanting cities on your Italy bucket list. That serene passageway in Assisi, that chic leather boutique in Florence, that off-the-beaten-path bridge in Venice—we know the way! We’ve mapped out the iconic experiences of Italy, leading you through the historic streets and piazzas of the “Eternal City,” the vine and olive-clad hills of Tuscany, and the romantic canals of the “Floating City” so you can experience the art, architecture, vino, and espresso you’ve long imagined. On this dreamy tour of Italy’s great cities, you’ll wake up to lush gardens in San Martino in Campo, stroll through the medieval-walled city of Siena, ponder the curious tilt at the Tower of Pisa, and happily lean into the delicious plates of pasta, pizza, and pastries along the way.",
     "duration": 9,
     "tags": ["culture", "general", "romantic", "family"],
+    "locations": [
+      {
+        "name": "Rome",
+        "coordinates": ["41.902782", "12.496366"]
+      },
+      {
+        "name": "San Martino",
+        "coordinates": ["42.331078", "13.536189"]
+      },
+      {
+        "name": "Assisi",
+        "coordinates": ["43.070702", "12.619597"]
+      },
+      {
+        "name": "Venice",
+        "coordinates": ["45.438759", "12.327145"]
+      },
+      {
+        "name": "Pisa",
+        "coordinates": ["43.716667", "10.400000"]
+      },
+      {
+        "name": "Florence",
+        "coordinates": ["43.769562", "11.255814"]
+      },
+      {
+        "name": "Siena",
+        "coordinates": ["43.318611", "11.330556"]
+      },
+      {
+        "name": "Castel Gandolfo",
+        "coordinates": ["41.7497932", "12.6485192"]
+      }
+    ],
     "itineraries": {
       "day1": {
         "title": "Arrive in Rome, Italy",
@@ -18,7 +52,7 @@
         ]
       },
       "day3": {
-        "title": "San Martino in Campo–Assisi–Venice island",
+        "title": "San Martino in Campo–Assisi–Venice Island",
         "description": "ASSISI See the Basilica of St. Francis. Scenic drive en route to Venice."
       },
       "day4": {
@@ -34,7 +68,7 @@
         "description": "FLORENCE Guided sightseeing includes Michelangelo’s masterpiece, David, at the Academy of Fine Arts, Giotto’s Bell Tower, the Baptistry’s heavy bronze “Gates of Paradise,” and Signoria Square. Free time this afternoon and evening."
       },
       "day7": {
-        "title": "Florence-Sienna-Rome",
+        "title": "Florence-Siena-Rome",
         "description": "SIENA Orientation walk includes Piazza del Campo. Taste traditional panforte and ricciarelli (local specialties) before returning to Rome."
       },
       "day8": {
@@ -53,6 +87,56 @@
   },
   {
     "name": "9-night Northern Italy’s Highlights & Cinque Terre",
+    "locations": [
+      {
+        "name": "Milan",
+        "coordinates": ["45.464664", "9.188540"]
+      },
+      {
+        "name": "Buseto",
+        "coordinates": ["44.9816", "10.0431"]
+      },
+      {
+        "name": "Parma",
+        "coordinates": ["44.801472", "10.328000"]
+      },
+      {
+        "name": "Lucca",
+        "coordinates": ["43.838490", "10.507736"]
+      },
+      {
+        "name": "Modena",
+        "coordinates": ["44.647129", "10.925227"]
+      },
+      {
+        "name": "Maranello",
+        "coordinates": ["44.526302", "10.866683"]
+      },
+      {
+        "name": "Cinque Terre",
+        "coordinates": ["44.146094", "9.643879"]
+      },
+      {
+        "name": "Rapallo",
+        "coordinates": ["44.349821", "9.233889"]
+      },
+      {
+        "name": "Portofino",
+        "coordinates": ["44.303890", "9.207778"]
+      },
+      {
+        "name": "Gabiano",
+        "coordinates": ["45.1578", "8.1964"]
+      },
+      {
+        "name": "Turin",
+        "coordinates": ["45.116177", "7.742615"]
+      },
+      {
+        "name": "Vercelli",
+        "coordinates": ["45.32163", "8.41989"]
+      }
+    ],
     "price": 2915,
     "description": "Parmesan and prosciutto. Ferraris and Fiats. Ruins and the Riviera. Some of Italy’s greatest indulgences can be found up north. Italy’s “Fabulous Five,” the nickname for the gelato-colored, cliffside fishing villages along the Mediterranean, start the count of the numerous joys you’ll experience on this Undiscovered Tour of Northern Italy. In addition to savoring the freshest seafood along the coast, you’ll relish a balsamic vinegar tasting in the epicurean city of Modena, a parmesan cheese tasting near Verdi’s hometown of Busseto, a risotto lunch at a Vercelli rice factory, and a wine tasting in vineyard-dotted Gabiano. To spice things up, you’ll speed over to the Ferrari Museum in Maranello, cruise to the yacht-filled harbor of Portofino, and strut your stuff down the streets of Milan. Leading you to the fabulous, the famous, and the fashionable, this tour is the way to see Northern Italy in style.",
     "duration": 10,
@@ -79,7 +163,7 @@
         ]
       },
       "day4": {
-        "title": "Parma-Luca",
+        "title": "Parma-Lucca",
         "description": "Orientation walk. Free time this afternoon and evening."
       },
       "day5": {
@@ -121,6 +205,48 @@
     "duration": 10,
     "coverImage": "10night-croatia.png",
     "tags": ["culture", "family", "general"],
+    "locations": [
+      {
+        "name": "Zagreb",
+        "coordinates": ["45.815399", "15.966568"]
+      },
+      {
+        "name": "Ljubljana",
+        "coordinates": ["46.056946", "14.505751"]
+      },
+      {
+        "name": "Postojna",
+        "coordinates": ["45.783031", "14.203842"]
+      },
+      {
+        "name": "Opatija",
+        "coordinates": ["45.3376197", "14.3051960"]
+      },
+      {
+        "name": "Pula",
+        "coordinates": ["44.86833", "13.84806"]
+      },
+      {
+        "name": "Plitvice",
+        "coordinates": ["44.870750", "15.600487"]
+      },
+      {
+        "name": "Zadar",
+        "coordinates": ["44.11578", "15.22514"]
+      },
+      {
+        "name": "Trogir",
+        "coordinates": ["43.516387", "16.250189"]
+      },
+      {
+        "name": "Split",
+        "coordinates": ["43.508133", "16.440193"]
+      },
+      {
+        "name": "Dubrovnik",
+        "coordinates": ["42.640278", "18.108334"]
+      }
+    ],
     "itineraries": {
       "day1": {
         "title": "Zagreb",
@@ -182,6 +308,52 @@
     "price": 3359,
     "description": "The mining boom may have been more than a century ago, but it’s never too late to strike gold in America’s West. Filled with dazzling nuggets of wonder, this National Parks vacation takes you deep into the golden wilderness of untamed South Dakota, Wyoming, and Montana. Back-to-back visits to some of the country’s most renowned national parks bring you face-to-face with the monumental sculptures of Mount Rushmore, the explosive geysers of Yellowstone National Park, and the towering spires of Grand Teton National Park. Plus, visits to the Crazy Horse Memorial, the Little Bighorn Battlefield, and the gold rush towns of Cody, Jackson, and Deadwood shed light on some of the 19th century’s most famous battles and barroom brawls. After meeting herds of elk, bison, and other area locals, city slickers can get their fix with a visit to lively Salt Lake City.",
     "tags": ["culture", "family", "adventure", "general"],
+    "locations": [
+      {
+        "name": "Rapid City",
+        "coordinates": ["44.080544", "-103.231018"]
+      },
+      {
+        "name": "Crazy Horse Memorial",
+        "coordinates": ["43.836568", "-103.623416"]
+      },
+      {
+        "name": "Mount Rushmore",
+        "coordinates": ["43.9685522", "-103.381834499"]
+      },
+      {
+        "name": "Deadwood",
+        "coordinates": ["44.376651", "-103.7296416"]
+      },
+      {
+        "name": "Sheridan",
+        "coordinates": ["44.7971939", "-106.9561792"]
+      },
+      {
+        "name": "Little Bighorn Battlefield National Monument",
+        "coordinates": ["45.5605", "-107.4272"]
+      },
+      {
+        "name": "Cody",
+        "coordinates": ["44.526340", "-109.056534"]
+      },
+      {
+        "name": "Yellowstone National Park",
+        "coordinates": ["44.423691", "-110.588516"]
+      },
+      {
+        "name": "Grand Teton National Park",
+        "coordinates": ["43.8332687", "-110.7007671"]
+      },
+      {
+        "name": "Jackson",
+        "coordinates": ["43.4799291", "-110.7624282"]
+      },
+      {
+        "name": "Salt Lake City",
+        "coordinates": ["40.758701", "-111.876183"]
+      }
+    ],
     "itineraries": {
       "day1": {
         "title": "Rapid city",
@@ -254,6 +426,36 @@
     "coverImage": "thailand-island-hopper.png",
     "duration": 14,
     "tags": ["adventure", "family", "general", "group"],
+    "locations": [
+      {
+        "name": "Bangkok",
+        "coordinates": ["13.736717", "100.523186"]
+      },
+      {
+        "name": "Surat Thani",
+        "coordinates": ["9.14011", "99.33311"]
+      },
+      {
+        "name": "Koh Pha Ngan",
+        "coordinates": ["9.731875", "100.013593"]
+      },
+      {
+        "name": "Koh Tao",
+        "coordinates": ["10.09561", "99.840396"]
+      },
+      {
+        "name": "Koh Nang Yuan",
+        "coordinates": ["10.122005", "99.813191"]
+      },
+      {
+        "name": "Phi Phi Islands",
+        "coordinates": ["7.678889", "98.764999"]
+      },
+      {
+        "name": "Phuket",
+        "coordinates": ["7.878978", "98.398392"]
+      }
+    ],
     "itineraries": {
       "day1": {
         "title": "Airport Pickup",
@@ -269,10 +471,10 @@
       },
       "day4": {
         "title": "Khao Sok National Park",
-        "description": "Head via longtail boat, into Khao Sok National Park to our floating bungalows, stopping for a quick dip along the way at a couple of Instagram-worthy locations. Try your hand at some kayaking or chill with a cold beer in a tube in front of the absolutely stunning backdrop of the surrounding limestone mountain range. You’ll soon see why this place is, and always will be, a TruTravels favourite destination."
+        "description": "Head via longtail boat, into Khao Sok National Park to our floating bungalows, stopping for a quick dip along the way at a couple of Instagram-worthy locations. Try your hand at some kayaking or chill with a cold beer in a tube in front of the absolutely stunning backdrop of the surrounding limestone mountain range. You’ll soon see why this place is, and always will be, a Paradise Travel favourite destination."
       },
       "day5": {
-        "title": "Travel to Koh Phangan",
+        "title": "Travel to Koh Pha Ngan",
         "description": "Wake up in your floating bungalow and why not take a quick dip in the freshwater lake before breakfast. After a relaxed morning, we make our way over to Koh Phangan; an island to the east. Once we get there, we go straight to a place called Bottle Beach, another one of our favourite locations! It’s beautiful, quiet, accessible only by boat, and to make it even better, we get the whole place pretty much to ourselves, staying in beach bungalows pretty much right on the water. Relax here for the rest of the day on the beach or in the bar. After dinner, we’ll all enjoy a bonfire on the beach, complete with a fire show."
       },
       "day6": {
@@ -315,11 +517,32 @@
   },
   {
     "name": "Japan Adventures",
-    "description": "Lorem ipsum",
+    "description": "Soak up the unique atmosphere of Japan. Grasp simple Japanese phrases and learn to make sushi. Travel by bullet train and spend a night in a temple. Stroll the streets of Takayama and visit the Gion district. Explore Osaka and wrap up your tour with a karaoke.",
     "duration": 10,
     "coverImage": "japan-adventures.png",
     "price": 2459,
     "tags": ["culture", "group", "family", "adventure"],
+    "locations": [
+      {
+        "name": "Tokyo",
+        "coordinates": ["35.652832", "139.839478"]
+      },
+      {
+        "name": "Hakone",
+        "coordinates": ["35.2323553", "139.1069375"]
+      },
+      {
+        "name": "Kyoto",
+        "coordinates": ["35.011665", "135.768326"]
+      },
+      {
+        "name": "Osaka",
+        "coordinates": ["34.672314", "135.484802"]
+      },
+      {
+        "name": ""
+      }
+    ],
     "itineraries": {
       "day1": {
         "title": "Welcome to Japan!",
@@ -366,10 +589,36 @@
   {
     "name": "Pandas and Palaces",
     "duration": 13,
-    "description": "Lorem ipsum",
+    "description": "Start in Beijing and end in Chengdu! With the tour Pandas and Palaces, you have a 11 days tour package taking you through Beijing, China and 4 other destinations in China. Pandas and Palaces includes accommodation, an expert guide, meals, transport and more.",
     "price": 2800,
     "coverImage": "pandas-palaces.png",
     "tags": ["group", "general", "culture"],
+    "locations": [
+      {
+        "name": "Beijing",
+        "coordinates": ["39.916668", "116.383331"]
+      },
+      {
+        "name": "Xi'an",
+        "coordinates": ["34.25833", "108.92861"]
+      },
+      {
+        "name": "Yichang",
+        "coordinates": ["30.691967", "111.28472."]
+      },
+      {
+        "name": "Fuling",
+        "coordinates": ["29.703113", "107.389298"]
+      },
+      {
+        "name": "Chongqing",
+        "coordinates": ["29.439325", "106.887703"]
+      },
+      {
+        "name": "Chengdu",
+        "coordinates": ["30.657000", "104.066002"]
+      }
+    ],
     "itineraries": {
       "day1": {
         "title": "Beijing",
@@ -408,7 +657,7 @@
         "description": "Explore the dramatic Bamboo Gorge and Shennong Stream by longboat (sampan) and then visit a local village of rowers. Later, traverse Wu Gorge, known for its sheer rock walls, and Qutang Gorge, the most dramatic of the three gorges."
       },
       "day10": {
-        "title": "Yangtze River Cruise - Fulling",
+        "title": "Yangtze River Cruise - Fuling",
         "description": "Enjoy an insightful excursion in Fuling to the ‘816 Underground Project’. This afternoon is at leisure in Fuling. Tonight, mingle at the Taste of China gala dinner. Be sure to dress in your finest Chinese outfit."
       },
       "day11": {
@@ -432,6 +681,28 @@
     "description": "Uncover the jewels of the Nile. Visit the Valley of The Kings. Discover the 'City of the Dead' Take a cruise down the Nile",
     "duration": 9,
     "tags": ["culture", "group", "adventure"],
+    "locations": [
+      {
+        "name": "Cairo",
+        "coordinates": ["30.033333", "31.233334"]
+      },
+      {
+        "name": "Aswan",
+        "coordinates": ["24.088938", "32.899830"]
+      },
+      {
+        "name": "Edfu",
+        "coordinates": ["24.978548", "32.875820"]
+      },
+      {
+        "name": "Luxor",
+        "coordinates": ["25.687243", "32.639637"]
+      },
+      {
+        "name": "Kom Ombo",
+        "coordinates": ["24.469803", "32.938132"]
+      }
+    ],
     "itineraries": {
       "day1": {
         "title": "Cairo",
@@ -454,7 +725,7 @@
         "description": "Today is a chill-day sailing down the Nile, watching beautiful scenery and waving to the locals and fishermen. Whilst absorbing the stunning temples along the coast, sit back and enjoy the relaxing breeze. Have a dip in the Nile, play volleyball with the local kids and prepare for a local feast on the riverbanks as you watch the sunset with a cold drink in hand."
       },
       "day6": {
-        "title": "Felluca Cruise on the Nile, Edfu, Komombo, Luxor",
+        "title": "Felluca Cruise on the Nile, Edfu, Kom Ombo, Luxor",
         "description": "Time to bid farewell to our lovely felucca as we hop back onboard the coach and drive north towards Kom Ombo. Visit the Kom Ombo Temple, dedicated to the crocodile god Sobek. Next stop will be Edfu, home to one of the largest and best-preserved temples in Egypt. Dedicated to the falcon god Horus, the temple was built over 180-years from 237 BC to 57 BC. We’ll arrive in Luxor in the late afternoon, before checking out the Luxor Temple in the evening. Explore the dim-light temple after dark and learn from your guide of the temple complexes ancient history, dating back to the 14th century B.C"
       },
       "day7": {
@@ -472,12 +743,50 @@
     }
   },
   {
-    "name": "6-Day Group Garden Route & Addo Adcenture Tour",
+    "name": "6-Day Group Garden Route & Addo Adventure Tour",
     "price": 980,
     "description": "Winner Tour of the Year Award 2019 - South Africa. Spot colonies endangered penguins. Relax in the seaside town of Hermanus. Be brave and go shark cage diving. Enjoy unforgettable wine tastings.",
     "duration": 6,
     "coverImage": "6-day-sa.png",
     "tags": ["adventure", "group", "safari", "wildlife"],
+    "locations": [
+      {
+        "name": "Cape Town",
+        "coordinates": ["-33.918861", "18.423300"]
+      },
+      {
+        "name": "Hermanus",
+        "coordinates": ["-34.414272", "19.248734"]
+      },
+      {
+        "name": "Cape Agulhas",
+        "coordinates": ["-34.831111", "20.013056"]
+      },
+      {
+        "name": "Oudtshoorn",
+        "coordinates": ["-33.600723", "22.202635"]
+      },
+      {
+        "name": "Knynsa",
+        "coordinates": ["-34.035088", "23.046469"]
+      },
+      {
+        "name": "Sedgefield",
+        "coordinates": ["-34.022647", "22.807572."]
+      },
+      {
+        "name": "Tsitsikamma",
+        "coordinates": ["-32.217872", "26.577205"]
+      },
+      {
+        "name": "Addo",
+        "coordinates": ["-33.526714", "25.711658"]
+      },
+      {
+        "name": "Mossel Bay",
+        "coordinates": ["-34.181133", "22.105865"]
+      }
+    ],
     "itineraries": {
       "day1": {
         "title": "Cape Town - Hermanus - Cape Agulhas",
@@ -512,6 +821,24 @@
     "duration": 6,
     "coverImage": "north-arizona.png",
     "tags": ["adventure", "group"],
+    "locations": [
+      {
+        "name": "Flagstaff",
+        "coordinates": ["35.198284", "-111.651299"]
+      },
+      {
+        "name": "Grand Canyon",
+        "coordinates": ["36.056595", "-112.125092"]
+      },
+      {
+        "name": "South Rim",
+        "coordinates": ["36.056198", "-112.125198"]
+      },
+      {
+        "name": "Sedona",
+        "coordinates": ["34.871002", "-111.760826"]
+      }
+    ],
     "itineraries": {
       "day1": {
         "title": "Flagstaff",
@@ -546,6 +873,12 @@
     "coverImage": "ny-explorer.png",
     "price": 900,
     "tags": ["culture", "group", "general", "city"],
+    "locations": [
+      {
+        "name": "New York City",
+        "coordinates": ["40.730610", "-73.935242"]
+      }
+    ],
     "itineraries": {
       "day1": {
         "title": "New York",

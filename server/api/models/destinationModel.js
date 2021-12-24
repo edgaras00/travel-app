@@ -16,7 +16,7 @@ const destinationSchema = new Schema({
   weather: String,
   currency: {
     type: String,
-    required: [true, "Destination must have a currency"],
+    // required: [true, "Destination must have a currency"],
   },
   language: {
     type: String,

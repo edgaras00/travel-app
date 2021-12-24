@@ -53,6 +53,7 @@ const importData = async () => {
     // Clear collections
     await clearDB(Destination);
     await clearDB(Tour);
+    // await clearDB(Region);
     console.log("DB cleared");
 
     // Upload new data to DB

@@ -5,11 +5,11 @@
     "regionAtGlance": "European countries welcome almost a half-billion international visitors per year. Not only is it the most popular destination for Americans traveling overseas, it’s also the easiest, thanks to an open borders policy, efficient travel infrastructure, a common currency, Euro in most of the individual countries. Traveling to Europe is quite simple for American citizens as a visa is not required for countries of the European Union and/or the 26 countries that fall under the Schengen Area (your Paradise Travel consultant will be happy to assist you with this). Once you land in any of these countries, your passport is stamped, leaving you free to travel across borders—so you can go from London to Paris to Netherlands seamlessly. Trains, budget airlines, and cars are the most popular ways to travel around this beautiful continent.",
     "regionCoordinates": ["53", "12"],
     "destinationCoordinates": [
-      { "name": "Italy", "coordinates": ["", ""] },
-      { "name": "Austria", "coordinates": ["", ""] },
-      { "name": "England", "coordinates": ["", ""] },
-      { "name": "France", "coordinates": ["", ""] },
-      { "name": "Czech Republic", "coordinates": ["", ""] }
+      { "name": "Italy", "coordinates": ["41.902782", "12.496366"] },
+      { "name": "Austria", "coordinates": ["48.210033", "16.363449"] },
+      { "name": "England", "coordinates": ["51.509865", "-0.118092"] },
+      { "name": "France", "coordinates": ["48.864716", "2.349014"] },
+      { "name": "Czech Republic", "coordinates": ["50.073658", "14.418540"] }
     ],
     "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/europe.jpg",
     "images": []
@@ -20,12 +20,12 @@
     "regionAtGlance": "America is multicultural, vibrant, and rugged. From the golden shores of California to the towering Rockies, from the deserts of Arizona to the turquoise waters of Hawaii, America preserves its natural treasures through its 62 National Parks. From conservation to culture, the U.S. has it all. There’s New York’s skyline, Washington, D.C.’s National Mall, and Boston’s Revolutionary spirit. Florida boasts 1,197 miles of coastline and attractions include the Keys and Orlando’s theme parks. Paradise Travel’s vacation consultants can match you with a United States trip that matches your style.",
     "regionCoordinates": ["43.000000", "-75.000000"],
     "destinationCoordinates": [
-      { "name": "New York", "coordinates": ["", ""] },
-      { "name": "California", "coordinates": ["", ""] },
-      { "name": "Arizona", "coordinates": ["", ""] },
-      { "name": "Florida", "coordinates": ["", ""] },
-      { "name": "Hawaii", "coordinates": ["", ""] },
-      { "name": "Texas", "coordinates": ["", ""] }
+      { "name": "New York", "coordinates": ["40.730610", "-73.935242"] },
+      { "name": "California", "coordinates": ["36.778259", "-119.417931"] },
+      { "name": "Arizona", "coordinates": ["34.048927", "-111.093735"] },
+      { "name": "Florida", "coordinates": ["27.994402", "-81.760254"] },
+      { "name": "Hawaii", "coordinates": ["19.741755", "-155.844437"] },
+      { "name": "Texas", "coordinates": ["31.000000", "-100.000000"] }
     ],
     "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/usa.jpg",
     "images": []
@@ -36,9 +36,9 @@
     "regionAtGlance": "When traveling to Asia you could focus on one destination at a time, or given the time you have on hand, make it a multiple-destination vacation. There are abundant destination options offering all the makings for a fantastic vacation for single travelers, couples, and entire families. Due to the vast distances and expanses of water separating Asia's different regions, air travel is likely to be the preferred mode of transport.",
     "regionCoordinates": ["39.916668", "116.383331"],
     "destinationCoordinates": [
-      { "name": "China", "coordinates": ["", ""] },
-      { "name": "Japan", "coordinates": ["", ""] },
-      { "name": "Thailand", "coordinates": ["", ""] }
+      { "name": "China", "coordinates": ["39.916668", "116.383331"] },
+      { "name": "Japan", "coordinates": ["35.652832", "139.839478"] },
+      { "name": "Thailand", "coordinates": ["13.736717", "100.523186"] }
     ],
     "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/asia.jpg",
     "images": []
@@ -49,9 +49,9 @@
     "regionAtGlance": "Visas may be required for travel to Bolivia, Brazil, Paraguay, Suriname, and Venezuela. Some countries require visitors to pay fees upon entry, and may require that visitors pay fees for tourist cards. Travelers to South America should carry passports that are valid for at least 6 months. Furthermore, some countries have onward or return ticket requirements that must be met upon entry. South America is vast and diverse. Travelers can focus on individual regions for each trip. Some of South America’s most popular regions include: the Andes, the Amazon River Basin, the Atacama Desert, the Pampas, Patagonia. From the mountains to the desert to the beaches of the South American Caribbean, let Paradise Travel match you with a vacation to a region in South America that matches your interests.",
     "regionCoordinates": ["-23.533773", "-46.625290"],
     "destinationCoordinates": [
-      { "name": "Brazil", "coordinates": ["", ""] },
-      { "name": "Colombia", "coordinates": ["", ""] },
-      { "name": "Chile", "coordinates": ["", ""] }
+      { "name": "Brazil", "coordinates": ["-23.533773", "-46.625290"] },
+      { "name": "Colombia", "coordinates": ["4.624335", "-74.063644"] },
+      { "name": "Chile", "coordinates": ["-33.447487", "-70.673676"] }
     ],
     "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/south-america.jpg",
     "images": []
@@ -62,9 +62,9 @@
     "regionAtGlance": "In Africa it’s best to focus on one region at a time. Within each region, you could enjoy a multiple-destination vacation. Regions, destinations, and peak seasons: North Africa (Egypt, Morocco), November–March, East Africa (Tanzania, Kenya, Uganda), December–February, June–September, West Africa (Mali, Senegal, Liberia), November–April, Central Africa (Zambia, Zimbabwe, Botswana), June–September, Southern Africa (South Africa, Namibia), December–March",
     "regionCoordinates": ["-6.776012", "39.178326"],
     "destinationCoordinates": [
-      { "name": "Egypt", "coordinates": ["", ""] },
-      { "name": "South Africa", "coordinates": ["", ""] },
-      { "name": "Tanzania", "coordinates": ["", ""] }
+      { "name": "Egypt", "coordinates": ["30.033333", "31.233334"] },
+      { "name": "South Africa", "coordinates": ["-33.918861", "18.423300"] },
+      { "name": "Tanzania", "coordinates": ["-6.776012", "39.178326"] }
     ],
     "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/africa.jpg",
     "images": []
@@ -75,9 +75,8 @@
     "regionAtGlance": "Visitors to French Polynesia and Tahiti should have a valid passport, a return airline ticket, and proof of sufficient funds for a stay. When visiting Fiji, make sure you have a passport that is valid for 6 months beyond your planned stay, plus a return airline ticket. To visit the South Pacific islands, you won’t need a visa if you plan to stay for less than 30 days. You will need a passport that is valid for at least 6 months beyond your intended stay and scheduled return. If you plan to island hop, onward tickets are also sufficient to show that you don’t plan to stay forever.",
     "regionCoordinates": ["-33.865143", "151.209900"],
     "destinationCoordinates": [
-      { "name": "Australia", "coordinates": ["", ""] },
-      { "name": "New Zealand", "coordinates": ["", ""] },
-      { "name": "Tahiti", "coordinates": ["", ""] }
+      { "name": "Australia", "coordinates": ["-33.865143", "151.209900"] },
+      { "name": "New Zealand", "coordinates": ["-36.848461", "174.763336"] }
     ],
     "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/oceania.jpg",
     "images": []
@@ -97,8 +96,8 @@
     "regionAtGlance": "U.S. Citizens are not required to acquire a visa for short vacations to Panama and Costa Rica. To visit Costa Rica, bring your valid passport and return tickets (or travel documentation for your next destination). You’ll need to show proof of funds for your stay and will need to pay a departure tax of $29 U.S. dollars when you leave. The rules are similar in Panama, but make sure your passport is valid for at least three months and bring proof that you have at least $500 in your bank account. Panama’s departure tax is frequently raised. Check before you go.",
     "regionCoordinates": ["12.136389", "-86.251389"],
     "destinationCoordinates": [
-      { "name": "Panama", "coordinates": ["", ""] },
-      { "name": "Costa Rica", "coordinates": ["", ""] }
+      { "name": "Panama", "coordinates": ["8.983333", "-79.516670"] },
+      { "name": "Costa Rica", "coordinates": ["9.934739", "-84.087502"] }
     ],
     "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/central-america.jpg",
     "images": []
@@ -109,9 +108,8 @@
     "regionAtGlance": "The Indian Ocean is home to some of the most amazing getaways on the planet. Fortunately, these unique destinations are quite easily accessible. US citizens need only a valid passport, an onward/return ticket, and sufficient funds to cover their stay. A visa is not required. Modes of transportation within the islands include buses, taxis, flights, speedboats, seaplane, or local dhoni (a multipurpose sailboat).",
     "regionCoordinates": ["1.924992", "73.399658"],
     "destinationCoordinates": [
-      { "name": "Maldives", "coordinates": ["", ""] },
-      { "name": "Mauritius", "coordinates": ["", ""] },
-      { "name": "Seychelles", "coordinates": ["", ""] }
+      { "name": "Maldives", "coordinates": ["1.924992", "73.399658"] },
+      { "name": "Mauritius", "coordinates": ["-20.244959", "57.561768"] }
     ],
     "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/indian-ocean.jpg",
     "images": []
@@ -122,8 +120,11 @@
     "regionAtGlance": "When visiting the Middle East, consider applying for your visa in advance if you want to travel to Egypt, Qatar or Oman. If you are from the United States, or several other approved countries, you can receive a visa to enter the United Arab Emirates upon your arrival. Finally, if you plan to visit Israel during your Middle East trip, it is important to note that some Middle Eastern countries will not admit visitors who have Israeli visas or stamps in their passports.",
     "regionCoordinates": ["25.276987", "55.296249"],
     "destinationCoordinates": [
-      { "name": "United Arab Emirates", "coordinates": ["", ""] },
-      { "name": "Qatar", "coordinates": ["", ""] }
+      {
+        "name": "United Arab Emirates",
+        "coordinates": ["25.276987", "55.296249"]
+      },
+      { "name": "Qatar", "coordinates": ["25.286106", "51.534817"] }
     ],
     "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/middle-east.jpg",
     "images": []
@@ -132,7 +133,9 @@
     "name": "North America",
     "description": "North America is vast, diverse, and stunning and your Liberty Travel consultant can help you explore it. Go from the peaks of Banff and Lake Louise to the charming seaside towns of Nova Scotia in Canada. Enjoy a vacation in cities like Toronto and Montréal, or head to the United States and discover New York, San Francisco, or Las Vegas. Escape to Honolulu, the Grand Canyon, and Sonoma, or take an epic road trip.",
     "regionCoordinates": ["50.000000", "-85.000000"],
-    "destinationCoordinates": [{ "name": "Canada", "coordinates": ["", ""] }],
+    "destinationCoordinates": [
+      { "name": "Canada", "coordinates": ["43.651070", "-79.347015"] }
+    ],
     "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/north-america.jpg",
     "images": []
   },
@@ -144,12 +147,13 @@
     "regionCoordinates": ["25.025885", "-78.035889"],
     "regionAtGlance": "U.S. Dollar ($) is widely accepted, though island nations do have their own currencies; islands in the French Caribbean accept Euros. Languages: Spanish, French, or Dutch, though English is often a second language",
     "destinationCoordinates": [
-      { "name": "Bahamas", "coordinates": ["", ""] },
-      { "name": "Puerto Rico", "coordinates": ["", ""] },
-      { "name": "Barbados", "coordinates": ["", ""] },
-      { "name": "Bermuda", "coordinates": ["", ""] },
-      { "name": "Jamaica", "coordinates": ["", ""] },
-      { "name": "Dominican Republic", "coordinates": ["", ""] }
+      { "name": "Bahamas", "coordinates": ["25.025885", "-78.035889"] },
+      { "name": "Puerto Rico", "coordinates": ["18.200178", "-66.664513"] },
+      { "name": "Barbados", "coordinates": ["13.103562", "-59.603226"] },
+      {
+        "name": "Dominican Republic",
+        "coordinates": ["18.483402", "-69.929611"]
+      }
     ]
   }
 ]
