@@ -1,0 +1,12 @@
+.tours-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tour-card-container {
+  width: 96%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+}

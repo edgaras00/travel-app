@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const slugify = require("slugify");
 const Schema = mongoose.Schema;
 
 const tourSchema = new Schema({
@@ -10,6 +11,7 @@ const tourSchema = new Schema({
     minLength: [10, "Tour name must be at least 10 characters long"],
     maxLength: [50, "Tour name cannot be longer than 50 characters"],
   },
+  slug: String,
   price: {
     type: Number,
     required: [true, "Tour must have a price"],
@@ -54,11 +56,33 @@ const tourSchema = new Schema({
     type: String,
     required: [true, "Tour must have a cover image"],
   },
-  photos: [String],
+  images: [String],
   itineraries: {},
   specialNotes: {},
-  locations: [],
+  locations: [{ name: String, coordinates: [String] }],
   guides: [{ type: Schema.Types.ObjectId, ref: "User" }],
+  region: {
+    type: String,
+    enum: [
+      "USA",
+      "Europe",
+      "Asia",
+      "Oceania",
+      "Africa",
+      "Caribbean",
+      "Indian Ocean",
+      "Central America",
+      "South America",
+      "North America",
+      "Middle East",
+      "Antarctica",
+    ],
+  },
+});
+
+tourSchema.pre("save", function (next) {
+  this.slug = slugify(this.name, { lower: true });
+  next();
 });
 
 const Tour = mongoose.model("Tour", tourSchema);

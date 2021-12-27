@@ -1,0 +1,1746 @@
+[
+  {
+    "name": "Vienna",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/vienna.jpg",
+    "coordinates": ["48.210033", "16.363449"],
+    "description": "Whether you want to see the Bruegel masterpieces at the Museum of Fine Arts, listen to Mozart at the Vienna State Opera, or delve into Vienna’s culinary scene at the Naschmarkt, our vacation consultant can match you with a Vienna vacation package that’s just your style. Explore this city of palaces with a local guide or enjoy one of our insider experiences at a neighborhood tavern.",
+    "thingsToDo": [
+      {
+        "name": "Visit the Schonbrunn Palace",
+        "text": "Standing since the 1600’s and holding a major role of cultural importance in Austria, the Schonbrunn Palace is a colossal 1441 room structure and complex that is the main tourist attraction in Vienna. Inside the palace are an assortment of rooms all fully furnished and decorated in the original style – You can enjoy a tour through the rooms and admire the sumptuous furnishings and see how Austrian royalty lived."
+      },
+      {
+        "name": "Visit the St Stephen’s Cathedral",
+        "text": "This monolithic structure stands proud in the Stephensplatz and has been the most important church in Vienna and Austria since its construction. As an iconic building of Vienna, St Stephens cannot be missed!"
+      },
+      {
+        "name": "Explore the Schonbrunn Gardens",
+        "text": "Another exceptional part to the Schonbrunn Palace Complex and worthy of a separate visit in its own right, the gardens at Schonbrunn are simply magical. The crowning glory to all of this is the Gloriette which stands opposite the palace and features a pool and a classical colonnaded long building – Enjoy a drink here in the cafe or simple admire the views of the whole gardens in front of you."
+      },
+      {
+        "name": "Explore the Vienna Natural History Museum",
+        "text": "Housed in a sophisticated palace complex that is typical of the historical architecture in Vienna, the Natural History Museum has a huge collection of minerals, precious stones, meteorites, fossils, skeletons of animals, displays of various insects and mammals and even some taxidermy of extinct species. Adults and children alike will love the sheer amount of information and eye-boggling displays in this epic museum."
+      }
+    ]
+  },
+  {
+    "name": "Salzburg",
+    "coordinates": ["47.811195", "13.033229"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/salzburg.jpg",
+    "description": "Situated in central Austria, near the German border, Salzburg is probably best known as the birthplace of Wolfgang Amadeus Mozart. Travelers come to Austria’s fourth-largest city to view the sights that inspired such unforgettable music. With its hill-topped medieval fortress, picturesque Altstadt old town and breath-taking Alpine scenery, Salzburg’s beauty is sure to enchant visitors in every season of the year.",
+    "thingsToDo": [
+      {
+        "name": "See the Hoheensalzburg Fortress",
+        "text": "Wander around the medieval rooms and courtyard, enjoy panoramic views of the city spread out below, and see the Prince’s Chambers which is one of Europe’s most well-preserved secular Gothic buildings."
+      },
+      {
+        "name": "Visit Mozart's birtplace",
+        "text": "It’s hard to miss the building’s bright yellow façade in the town centre, which is now home to a museum dedicated to the famous composer and one of the most popular Salzburg attractions. Walk through what used to be his family’s apartment, admire his musical instruments, and see other memorabilia dating back to the 18th century."
+      },
+      {
+        "name": "See the Salzburg Cathedral",
+        "text": "Salzburg Cathedral (Dom zu Salzburg) is one of the city’s most beautiful landmarks and found in the historic centre. Dating back centuries, the whitewashed, baroque building features a crypt, seven bells, a baptismal font where famous composers where baptized, and even graffiti that’s about 400 years old."
+      },
+      {
+        "name": "Visit the Hellbrunn Palace",
+        "text": "Take a boat ride over to Hellbrunn Palace, the cheery, sunshine-yellow castle best known for its trick fountains. This ‘pleasure palace’ (get your mind out of the gutter!) was built in 1615 as a holiday spot, and the local archbishops loved wandering through the gardens to see the water features, geysers and grottos."
+      }
+    ]
+  },
+  {
+    "name": "Zell am See",
+    "coordinates": ["47.323521", "12.796850"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/zellamsee.jpg",
+    "description": "Tucked away in an idyllic valley among the majestic Kitzbuhel Alps, the alpine city of Zell am See is as picture-perfect as they come. The small city is set on the shores of a vividly blue lake, from which it draws its name, with cosy chalets and flower-filled meadows coating the slopes.",
+    "thingsToDo": [
+      {
+        "name": " Stay at a cottage overlooking the lake",
+        "text": "The lake with the same name as the village, Zeller See, has an area of about 5 square kilometers and is surrounded by chic chalets and the high peaks of the Alps. The view is fabulous at all times, so it would be a shame not to enjoy it right from your room window."
+      },
+      {
+        "name": "Explore the lake on a boat or water bike",
+        "text": "5 km of water, swans, boats, colorful cabins, greenery and the snowy ridges of the mountains. That’s what the beautiful lake near the village of Zell am See, the one you can explore long and wide, both on the shore and on the water, looks like."
+      },
+      {
+        "name": "Ride the Alpine Coaster",
+        "text": "Well, probably not even a serious ski session will give you the strong feelings you will feel when riding the roller coaster in Kaprun, the village neighboring Zell am See. In figures, it would translate to 730 meters to the top, 1300 meters back to the base and 40 km/h maximum speed. The good part is that the speed depends entirely on you, as you will have a lever to control it throughout the route."
+      },
+      {
+        "name": "Go hiking",
+        "text": " There are several walking and hiking tours, the most popular being Pinzgauer Spaziergang, 19 kilometers long. Starts in Zell am See and ends in Saalbach."
+      }
+    ]
+  },
+  {
+    "name": "Paris",
+    "coordinates": ["48.864716", "2.349014"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/paris.jpg",
+    "description": "With so many gorgeous things to do in Paris, it’s no wonder that the French capital is on the top of so many people’s bucket lists. Some of the must-do unique experiences in Paris include photographing the Eiffel Tower, exploring the Louvre, admiring the stunning Notre Dame, and seeing the world-famous cabaret at the Moulin Rouge, but there’s much more!",
+    "thingsToDo": [
+      {
+        "name": "Admire the Exterior of Beautiful Notre Dame",
+        "text": "Notre Dame Cathedral is and will always be the beating heart of Paris. Despite the devastating fire in April 2019, which destroyed part of the cathedral, a visit to Notre Dame is still one of the most iconic places in Paris for tourists to visit."
+      },
+      {
+        "name": "Explore the Iconic Artworks at the Louvre",
+        "text": "From the Royal Palace to the world’s most visited museum in the world, you cannot miss the Louvre, one of the most iconic sites in Paris!"
+      },
+      {
+        "name": "Walk through the Tuileries Gardens",
+        "text": "Either before or after you visit the Louvre, be sure to stop by the nearby Tuileries Gardens. This is a lovely place to relax with friends and family or to explore the beautiful gardens, particularly in spring and summer when the flowers are in full bloom."
+      }
+    ]
+  },
+  {
+    "name": "Nice",
+    "coordinates": ["43.675819", "7.289429"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/nice.jpg",
+    "description": "Nice’s unofficial anthem is Nissa La Bella, and you can’t help but agree with this sentiment when you visit the French Riviera’s largest city.",
+    "thingsToDo": [
+      {
+        "name": "Visit the Promenade des Anglais",
+        "text": "There are seaside walks, and then there’s the Promenade des Anglais, which is more than just a grand walkway next to the Mediterranean: It’s been an integral part of Nice city life (something the recent attack won’t change) since this embankment was built in the 1820s."
+      },
+      {
+        "name": "Explore the Vieille Ville",
+        "text": "The oldest part of the city is a change from Nice’s broad boulevards and expansive squares like Place Masséna."
+      },
+      {
+        "name": "Try the food",
+        "text": "This one city has contributed a lot to French cuisine, and there are a handful of local dishes you can’t leave Nice without trying."
+      }
+    ]
+  },
+  {
+    "name": "Marseille",
+    "coordinates": ["43.296398", "5.370000"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/marseille.jpg",
+    "description": "Marseille is one of the top places to visit in Southern France. The capital of Provence (and pastis!) boasts an interesting cultural scene, beautiful landmarks, and 300 days of sunshine.",
+    "thingsToDo": [
+      {
+        "name": "See the Basilica Notre Dame de la Garde",
+        "text": "This impressive stripped building with the perfect setting on the top of the Garde Hill represents one of the most iconic views of Marseille together with the Old Port."
+      },
+      {
+        "name": "Visit the Marseille’s Old Port",
+        "text": "The Old Port is Marseille’s beating heart, the city’s main gate to the Mediterranean Sea and the far East. In the 19th century, all the commercial port activities were moved further north, and today the Old Port is a lively picturesque marina and a popular gathering place amongst locals."
+      },
+      {
+        "name": "See the Cathédrale La Major",
+        "text": "Marseille’s Cathedral ‘La Major’ is the main religious building in the city. One of the top things to see in Marseille, the cathedral is located in the historic neighborhood of Le Panier, not far from the MuCEM."
+      }
+    ]
+  },
+  {
+    "name": "Rome",
+    "coordinates": ["41.902782", "12.496366"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/rome.jpg",
+    "description": "Italy’s vibrant capital has all the evidence of once being the Caput Mundi or capital of the world. From the Roman Forum and the Colosseum, to the Pantheon, these ancient sites intertwine effortlessly with present-day Rome. In addition to marveling at the relics of the golden age, lap up the current dolce vita lifestyle.",
+    "thingsToDo": [
+      {
+        "name": "Visit the Colosseum",
+        "text": "Take a guided tour of the great arena of gladiators and travel back to the time when man and beast were made to battle for entertainment."
+      },
+      {
+        "name": "Take a priority tour of Vatican City",
+        "text": "Avoid the long lines and enter the Sistine Chapel as a VIP. Admire Michelangelo's masterpiece at your own pace with an audio guided tour."
+      },
+      {
+        "name": "Explore the Roman Forum",
+        "text": "Step back two millennia into what was the center of ancient Roman religious and political life, now in the middle of modern Rome."
+      }
+    ]
+  },
+  {
+    "name": "Milan",
+    "coordinates": ["45.464664", "9.188540"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/milan.jpg",
+    "description": "From historic attractions, like The Last Supper painting, the world’s largest Gothic cathedral, and the famous La Scala Opera, to A-list fashion houses like Prada, Versace, and Armani, Milan offers its visitors a blend of the traditional and the ultra-modern. Whether you want to soak in some history at the Duomo; indulge in retail therapy at the Quadrilatero district; take in some culture at the Pinacoteca di Brera, or head to Navigli for a cocktail, we can customize your vacation package with insider insights to experience the best of Milan.",
+    "thingsToDo": [
+      {
+        "name": "Check out Milan’s Horizon",
+        "text": "Ride the elevator to the roof of the Duomo Cathedral. See the sculptures and church spires up-close against Milan’s skyline."
+      },
+      {
+        "name": "Take a walking food tour",
+        "text": "Savor the city’s famous cuisine while walking through the historic district of Brera–where old-world charm meets a youthful downtown vibe."
+      },
+      {
+        "name": "Take a day trip to Lake Como",
+        "text": "Explore the tranquil Lake Como, ringed by beautiful villages, exquisite villas, and snow-peaked Italian Alps."
+      }
+    ]
+  },
+  {
+    "name": "Venice",
+    "coordinates": ["45.438759", "12.327145"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/venice.jpg",
+    "description": "With its spectacular setting and architectural heritage, Venice always enchants. Virtually unchanged for over 600 years, this city on a lagoon is famed for its weathered buildings, picturesque canals, arched bridges, pedestrian streets, soft sunsets and an old-world charm.",
+    "thingsToDo": [
+      {
+        "name": "Go on a Gondola",
+        "text": "See Venice as it was intended to be seen, from the water. Let your gondolier take you through the quiet canals for an enchanting time."
+      },
+      {
+        "name": "Take a day trip to Burano",
+        "text": "Shop for locally-made lace items in this little town of hundreds of colorful houses."
+      },
+      {
+        "name": "Enjoy Venice by foot",
+        "text": "Explore the city’s mysterious past on a night tour through the backstreets."
+      }
+    ]
+  },
+  {
+    "name": "Grand Canyon",
+    "coordinates": ["36.056595", "-112.125092"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/grand-canyon.jpg",
+    "description": "This massive natural wonder gives Arizona its nickname as The Grand Canyon State, and it's understandable why the attraction is a source of pride for the state. Former President Theodore Roosevelt was right when he said, 'In the Grand Canyon, Arizona has a natural wonder which is in kind absolutely unparalleled throughout the rest of the world.' Travelers can hike or ride mules around the North Rim or raft the Colorado River to explore this national park."
+  },
+  {
+    "name": "Sedona",
+    "coordinates": ["34.871002", "-111.760826"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/sedona.jpg",
+    "description": "Outdoor enthusiasts flock to this central Arizona town to enjoy its stunning scenery. Regularly described as one of the most beautiful places in America, Sedona dazzles with its famous red rocks and hiking trails (found in Red Rock State Park), as well as its vortexes."
+  },
+  {
+    "name": "Tucson",
+    "coordinates": ["32.253460", "-110.911789"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/tucson.jpg",
+    "description": "With an average of more than 350 days of sunshine per year, Tucson draws sun-seekers in droves. When you're not lounging by the pool, you can spot native animals like coyotes and prairie dogs at the 98-acre Arizona-Sonora Desert Museum or take a drive along the Mount Lemmon Scenic Byway for stunning photo-ops.",
+    "thingsToDo": [
+      {
+        "name": "Head for the desert at the Arizona-Sonora Desert Museum",
+        "text": "Sprawling over 98 acres and featuring an aquarium, zoo, botanical garden, natural history museum, and art gallery, Arizona-Sonora Desert Museum can be found to the west of Tucson. The museum focuses on educating visitors regarding the various flora and fauna that can be found in the Sonoran Desert region, and houses of 200 species of desert animals and over 1,000 types of plants."
+      },
+      {
+        "name": "Hike the Sabino Canyon",
+        "text": "Located just north of Tucson, the Sabino Canyon is nestled in the Santa Catalina Mountains and the Coronado National Forest. The canyon offers magnificent trails, majestic views, and hiking and trekking opportunities."
+      },
+      {
+        "name": "Learn all about aerospace at the Pima Air & Space Museum",
+        "text": "Proudly known as one of the largest air and space museums in the world, aerospace buffs can see over 300 aircraft and spacecraft at the facility that has a span of over 80 acres."
+      },
+      {
+        "name": "Star gaze at Kitt Peak National Observatory",
+        "text": "For those visitors who want to get closer to the stars, Kitt Peak National Observatory offers the perfect views of the night sky. An astronomical observatory sits atop Kitt Peak in the Quinlan Mountains and boasts the largest and most diverse astronomical equipment in the world that includes 24 telescopes."
+      }
+    ]
+  },
+  {
+    "name": "Phoenix",
+    "coordinates": ["33.448376", "-112.074036"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/phoenix.jpg",
+    "description": "Being one of the most beautiful places in America, Phoenix is a charming capital city of Arizona. Throughout the year, it boasts beaming sun and delightfully warm temperatures, and its expanses of dry desert are among the reasons it is so well-loved.",
+    "thingsToDo": [
+      {
+        "name": "Visit the Arizona Science Center",
+        "text": "The Arizona Science Center is a public science museum and is widely considered the greatest in the state, so the fact that it’s in Phoenix – and right close to Heritage Park – makes it a great source of excitement for tourists!"
+      },
+      {
+        "name": "Visit the Camelback Mountain",
+        "text": "Camelback Mountain, rising 2,700 feet above the ground, is among the most beautiful and most scenic site seeing and hiking spots in Phoenix."
+      },
+      {
+        "name": "See the Tovrea Castle",
+        "text": "A castle is the last thing you’d expect to find in a desert, but Arizona aims to surprise its visitors every time. Located within easy reach of the Airport Gateway District of Phoenix, the Tovrea Castle was originally a high-end hotel built by Alessio Carraro and his son."
+      }
+    ]
+  },
+  {
+    "name": "Los Angeles",
+    "coordinates": ["34.052235", "-118.243683"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/los-angeles.jpg",
+    "description": "Los Angeles draws immigrants and dreamers from across the country and the world, creating a melting pot of cuisines and cultures. Only in LA can world-class cuisine be found hidden in a strip mall restaurant. Visit the city’s world-class museums, follow the stars to the Hollywood Hills, browse the shops on Rodeo Drive, or bask on one of the city’s beaches.",
+    "thingsToDo": [
+      {
+        "name": "Discover the Art Scene",
+        "text": "View contemporary art at the Broad, take in the view and masterpieces at the Getty Center, and discover art that spans the eras at the Los Angeles County Museum of Art."
+      },
+      {
+        "name": "Stroll the Hollywood Walk of Fame",
+        "text": "While the TCL Chinese Theatre is a tourist hot spot, this famous stretch of sidewalk is iconic."
+      },
+      {
+        "name": "Bike or Drive Sunset Boulevard",
+        "text": "From the gritty clubs of Sunset Strip, the star’s mansions of Bel Air and Beverly Hills, to the shores of Malibu, Sunset Boulevard embodies all that Los Angeles is and all that it aspires to be."
+      }
+    ]
+  },
+  {
+    "name": "San Francisco",
+    "coordinates": ["37.773972", "-122.431297"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/san-francisco.jpg",
+    "description": "Take iconic photographs of the Golden Gate Bridge from the park. Ride a cable car down the city’s sweeping hills. Mingle with the tourists at Fisherman’s Wharf and take a ride out to Alcatraz.",
+    "thingsToDo": [
+      {
+        "name": "Cross the Golden Gate Bridge",
+        "text": "Rent a bike or walk across the bridge, or visit Fort Point National Historic Site for the best photo."
+      },
+      {
+        "name": "Fisherman’s Wharf",
+        "text": "Fisherman’s Wharf is a must-see, but it’s bustling with tourists. From here, ride one of the city’s iconic cable cars or take a boat to Alcatraz for a glimpse back in time."
+      },
+      {
+        "name": "Find Your Neighborhood",
+        "text": "The murals of the Mission District, the culture of Chinatown, the history of the Castro, and the innovation of Silicon Valley—San Francisco’s neighborhoods are diverse and vibrant."
+      }
+    ]
+  },
+  {
+    "name": "Palm Springs",
+    "coordinates": ["33.830517", "-116.545601"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/palm-springs.jpg",
+    "description": "A lush green oasis in the picturesque California desert, romantic Palm Springs is all about sun-worshipping, unrivaled recreation, world-class spas, spectacular natural landscapes, awesome Mid-Century Modern architecture, great entertainment, and fabulous shopping.",
+    "thingsToDo": [
+      {
+        "name": "Tour Mid-Century Modern Homes & Buildings",
+        "text": "See and learn about hundreds of homes and buildings by extraordinary architects who transformed Palm Springs into the 'New Capital of Cool'."
+      },
+      {
+        "name": "Spectacular Vistas from Mount San Jacinto",
+        "text": "Ride the Palm Springs Aerial Tramway 8,500 feet up to the top of Mount San Jacinto for awesome views."
+      },
+      {
+        "name": "Hike in Joshua Tree National Park",
+        "text": "Home of the distinctive Joshua Tree yucca, this 800,000-acre park in the Mojave Desert encompasses two separate ecosystems at different altitudes."
+      }
+    ]
+  },
+  {
+    "name": "Miami",
+    "coordinates": ["25.761681", "-80.191788"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/miami.jpg",
+    "description": "Miami is a city where you can spend your morning working on your tan on South Beach, explore the Art Deco architecture after lunch, and party into the night. Marvel at the blend of Latin American and Caribbean cultural influences, with cuisine to match. Sip a margarita the size of your head while sitting on Ocean Drive, and watch the parade of fashion, bling, and fancy cars. Still, nature is never far away. Miami is surrounded by the sea and the Everglades.",
+    "thingsToDo": [
+      {
+        "name": "Experience Ocean Drive",
+        "text": "From the sparkling shores of South Beach to oversize margaritas and people-watching from the patios of the Art Deco hotels—Ocean Drive is quite an experience."
+      },
+      {
+        "name": "Hit the club",
+        "text": "The Miami party scene spans cultures and genres—from open-air salsa, velvet rope VIP clubs, to electronic dance music, indie rock, and rap clubs. Sip a craft beer over music in Wynwood, or put on your dancing shoes at South Beach."
+      },
+      {
+        "name": "Eat at Versailles Restaurant in Little Havana",
+        "text": "Visit the world’s most renowned Cuban restaurant for a café con leche and an authentic Cuban sandwich."
+      },
+      {
+        "name": "See the Alligators",
+        "text": "Take an airboat ride through Everglades National Park, and meet the alligators and incredible birds that call this wetland home."
+      }
+    ]
+  },
+  {
+    "name": "Orlando",
+    "coordinates": ["28.538336", "-81.379234"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/orlando.jpg",
+    "description": "Orlando is best known for its glittering theme parks. Meet your favorite characters at the Magic Kingdom, explore the world of tomorrow at Epcot, and journey into the savannah at Disney’s Animal Kingdom. Enter the Wizarding World of Harry Potter at Universal or ride the coasters at Islands of Adventure™. Beyond the thrills of the parks, Orlando is a vibrant city in its own right.",
+    "thingsToDo": [
+      {
+        "name": "Enter a World of Magic at Walt Disney World",
+        "text": "From the Magic Kingdom with Cinderella’s Castle to Animal Kingdom’s wild encounters, there’s something for the kids and for the kids at heart at Walt Disney World."
+      },
+      {
+        "name": "Splash Around at a Water Park",
+        "text": "Play at Disney’s Blizzard Beach and Typhoon Lagoon or enjoy Universal’s Volcano Bay."
+      },
+      {
+        "name": "See the Ballet or Broadway",
+        "text": "Enjoy a change of pace from the theme parks with a ballet or Broadway production at the Dr. Phillips Center for the Performing Arts."
+      }
+    ]
+  },
+  {
+    "name": "Key West",
+    "coordinates": ["24.555059", "-81.779984"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/keywest.jpg",
+    "description": "Key West is quirky, charismatic, and unique. On Duval Street, find rowdy bars beside high-end art galleries. Get a photo of the “southernmost point in the United States” landmark. When sunset rolls around, walk to Mallory Square for a sunset celebration like no other. Visit the Ernest Hemingway house and meet the author’s famous six-toed cats. After exploring the island, the beach awaits.",
+    "thingsToDo": [
+      {
+        "name": "Stroll Duval Street",
+        "text": "Walk Duval Street and experience Key West’s culture and nightlife—from the famous Sloppy Joe’s Bar to charming art galleries and drag shows—Duval Street offers a little something for everyone."
+      },
+      {
+        "name": "Celebrate the Sunset at Mallory Square",
+        "text": "As the sun sets, Mallory Square comes alive with street performers and music."
+      },
+      {
+        "name": "Key Lime Pie at Blue Heaven",
+        "text": "At Blue Heaven restaurant you can enjoy a delicious slice of key lime pie in the restaurant’s outdoor yard, where Key West’s chickens roam."
+      },
+      {
+        "name": "Beaches and Reefs",
+        "text": "Bask on the sand at Fort Zachary Taylor Historic State Park or take a catamaran to a coral reef off the coast."
+      }
+    ]
+  },
+  {
+    "name": "New York City",
+    "coordinates": ["40.730610", "-73.935242"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/nyc.jpg",
+    "description": "One of the greatest cities in the world, New York is always a whirlwind of activity, with famous sites at every turn and never enough time to see them all. Some people come here to enjoy the Broadway shows; others come specifically to shop and dine; and many come simply to see the sites: the Statue of Liberty, Empire State Building, Brooklyn Bridge, Central Park, historic neighborhoods, and numerous world famous museums.",
+    "thingsToDo": [
+      {
+        "name": "Statue of Liberty",
+        "text": "America's most iconic sight, the Statue of Liberty is at the top of every first-time visitor's list of things to do in New York. It was France's gift to America. Built in 1886, it remains a world symbol of freedom and is one of the top attractions in America."
+      },
+      {
+        "name": "Central Park",
+        "text": "A walk, peddle, or carriage ride through the crisscrossing pathways of Central Park is a must-do on anyone's New York City itinerary. In winter, you can even lace up your skates and glide across Wollman Rink. This huge park in the city center, a half-mile wide and 2.5 miles long, is one of the things that makes New York such a beautiful and livable city."
+      },
+      {
+        "name": "Rockefeller Center & Top of the Rock Observation Deck",
+        "text": "When it comes to New York attractions, Rockefeller Center is on almost all tourist's itineraries. This vast entertainment and shopping complex in the middle of Manhattan is home to NBC-TV and other media, but the centerpiece is the 70-story 30 Rockefeller Plaza, an Art Deco skyscraper that offers awesome views over Manhattan from the famous Top of the Rock Observation Deck."
+      },
+      {
+        "name": "Broadway and the Theater District",
+        "text": "Attending a Broadway show is one of the top things to do in New York City. Considered the pinnacle of American theater, this is the place to see the latest shows and the long-running classics."
+      },
+      {
+        "name": "Empire State Building",
+        "text": "The Empire State Building is one of New York's most famous landmark buildings and key tourist attractions. The 381-meter-tall, 102-storey building was the tallest in the world until the 1 World Trade Center tower rose higher, 41 years later. Topped with a mooring mast for airships, the Empire State Building immediately became a landmark and a symbol for NYC when it opened in 1931."
+      },
+      {
+        "name": "Times Square",
+        "text": "Lined with huge, brilliantly lit billboards and screens, Times Square is the place to go in New York in the evening, but still exciting at any time of day. This is the location of New York's New Year's Eve Celebrations and the famous 'ball drop' at midnight, when the square and surrounding streets are filled with people."
+      },
+      {
+        "name": "Bryant Park",
+        "text": "On a summer's day, it's hard to beat a leisurely afternoon at Bryant Park. The grounds feature monuments and gardens, and 'Le Carrousel,' a popular carousel. A games area makes available chess boards, checkers, and backgammon boards for a small fee."
+      }
+    ]
+  },
+  {
+    "name": "Catskill",
+    "coordinates": ["42.217312", "-73.864571"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/catskill.jpg",
+    "description": "Bid adieu to the hustle and bustle and say hello to Catskill, NY, where you’ll find limitless acres of landscapes, ripe with opportunities for outdoor adventure and festivals and events that can rival any big-city lineup. Catskill is the perfect getaway from the city or for a week-long vacation with family or friends.",
+    "thingsToDo": [
+      {
+        "name": "Kaaterskill Falls",
+        "text": "Just 22 minutes outside the city of Catskill, Kaaterskill Falls is one of the most popular hikes in the area, mainly because it is a short hike to a huge, 260-foot (80 meter) payoff, divided over two drops. This is the highest two-tiered waterfall in the state of New York. Its upper tier measures an impressive 175 feet (54 meters), while its lower tier is 85 feet (26 meters) tall."
+      },
+      {
+        "name": "Hunter Mountain",
+        "text": "Hunter Mountain is a true four-season resort, offering a wide variety of events, activities, and accommodations year-round, where the fun here doesn’t stop when the snow melts! Get away to the heart of the beautiful Northern Catksills and enjoy Hunter Mountain’s Scenic Skyride Chairlift, which brings you to the summit of Hunter Mountain."
+      },
+      {
+        "name": "Greene County Council on the Arts",
+        "text": "If you want to know anything about art, go to Greene County Council on the Arts for shows, exhibitions, and information. A well-oiled machine so to speak, the county council runs this place efficiently and have been cultivating, curating, presenting and advocating for the arts in Greene County for over 40 years, which is a remarkable achievement. The council maintains an active gallery on Main Street in Catskill, NY, a popular children’s arts program, and join forces on a wide selection of installation projects, for professionals and amateur enthusiasts alike."
+      }
+    ]
+  },
+  {
+    "name": "Niagara Falls",
+    "coordinates": ["43.092461", "-79.047150"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/niagara.jpg",
+    "description": "The Niagara Falls are among the most impressive and best-known falls in the world. They lie in the extreme northwest of New York State along the U.S./Canadian border, which is formed by the Niagara River. Here, masses of water from Lake Erie plunge over an almost 200-foot drop to flow into Lake Ontario, attracting more than 12 million visitors a year."
+  },
+  {
+    "name": "Honolulu",
+    "coordinates": ["21.315603", "-157.858093"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/honolulu.jpg",
+    "description": "A town of rolling surf and seaside cocktail shacks that represents the cultural kingpin of Hawaii as a whole, this Polynesian-flavored American state capital rarely fails to impress.",
+    "thingsToDo": [
+      {
+        "name": "Hit the sands of Waikiki Beach",
+        "text": "It’s hardly surprising that world-famous Waikiki Beach once drew the kings and queens of the Hawaiian archipelago to its sands."
+      },
+      {
+        "name": "Wax up the surf boards and hit the waves",
+        "text": "No trip to Hawaii’s fun-loving, surf-mad capital could possibly be complete without at least a mention of this most popular of local pastimes."
+      },
+      {
+        "name": "Keep company with Hawaiian kings at the glorious ʻIolani Palace",
+        "text": "The ancestral home of the revered Kalakaua Dynasty sits nestled in the midst of the Honolulu downtown. Contrasting with the modern builds all around, this 19th-century palace oozes a Francophone, Italianate charm from each of its terraces and Baroque come classical nooks and crannies."
+      }
+    ]
+  },
+  {
+    "name": "Maui",
+    "coordinates": ["20.798363", "-156.331924"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/maui.jpg",
+    "description": "Whether you come to Maui for its natural beauty, stellar sunsets, prime whale watching or 81 gorgeous beaches, there’s never a lack of things to do on Maui.",
+    "thingsToDo": [
+      {
+        "name": "Witness a Haleakala sunrise",
+        "text": "The highest point on Maui is atop Haleakala, the largest dormant volcano in the world, which reaches an impressive 10,023 feet and attracts hundreds of thousands of visitors each year. While a 2 a.m. wake up call may not sound like most people’s idea of a relaxing vacation activity, it’s worth it."
+      },
+      {
+        "name": "Explore the road to Hana",
+        "text": "A winding road of more than 600 turns and 50 one-lane bridges, the Road to Hana is unlike any other drive you’ll experience. Leading you through 68 miles of lush Maui rainforest, this is a drive that’s sure to surprise even the most avid nature-lovers. Enjoy hiking through bamboo forests, visiting organic fruit farms, standing in lava tubes, swimming in freshwater caves, frolicking in waterfalls, and discovering the true beauty of Hawaiian paradise."
+      },
+      {
+        "name": "Visit Molokini Crater",
+        "text": "Located two miles off of Maui’s South shore, Molokini Crater is a natural crescent and Marine Life Conservation District frequented by snorkelers and scuba divers from around the world. With visibility that exceeds 180 feet on good days and thousands of tropical reef fish swimming below and alongside you, Molokini is a can’t miss for those of you planning on exploring Maui’s underwater life."
+      },
+      {
+        "name": "Go whale watching",
+        "text": "If you’re in Maui between December and April, lucky you! Approximately 10,000 humpback whales swim from the Gulf of Alaska to Hawaii each year to birth and nurse their calves in the shallow, warm water before making the long journey back. The Auau Channel between Maui and Lana’i is one of the most popular spots to witness these majestic animals, which can be seen from shore, boat, kayak, outrigger canoe, stand up paddle board, helicopter and, for the lucky couple, even scuba diving."
+      }
+    ]
+  },
+  {
+    "name": "Dallas",
+    "coordinates": ["32.779167", "-96.808891"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/dallas.jpg",
+    "description": "A well-rounded city growing out of the stark North Texas prairie, Dallas has a jumble of ultramodern skyscrapers, the largest arts district in the United States, museums of the highest quality and pulsating nightlife.",
+    "thingsToDo": [
+      {
+        "name": "Dealey Plaza",
+        "text": "In Dallas you can visit a place where the course of history was changed forever. The landmarks at Dealey Plaza, like the Texas School Book Depository, the Grassy Knoll and Elm Street as it bends down to the railroad tracks, would be unremarkable were it not for the assassination of John F. Kennedy on November 22, 1963."
+      },
+      {
+        "name": "Arts District",
+        "text": "Dallas lays claim to the largest urban arts district in the United States, on 20 square blocks to the south-east of Uptown, and with a rare concentration of cultural attractions."
+      },
+      {
+        "name": "Nasher Sculpture Center",
+        "text": "Raymond Nasher (1921-2007), the developer behind the NorthPark Center mall, was a voracious art collector, and together with his wife Patsy assembled a jaw-dropping sculpture collection."
+      },
+      {
+        "name": "Reunion Tower",
+        "text": "One of the towers that make Dallas, Dallas arrived to the south of Dealey Plaza in 1978. Also known as The Ball, the 171-meter Reunion Tower is four narrow shafts (one cylindrical and thee rectangular) crowned with an openwork geodesic dome illuminated at night by 259 LEDs."
+      }
+    ]
+  },
+  {
+    "name": "Austin",
+    "coordinates": ["30.266666", "-97.733330"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/austin.jpg",
+    "description": "With everything from wild mountain ranges to hip and trendy bars, Austin is one of the most vibrant cities in Texas.",
+    "thingsToDo": [
+      {
+        "name": "Lady Bird Lake",
+        "text": "With glittering waters and tree-lined shores, Lady Bird Lake is one of the most beautiful attractions in Austin, and it can offer hours of entertainment for outdoor enthusiasts."
+      },
+      {
+        "name": "Museum of the Weird",
+        "text": "With its eye-popping colors and brain-bending oddities, the Museum of the Weird is one of the most unique things to see in Austin. t’s the only place in the city where you can find shrunken heads next to melted wax figures next to gigantic statues of movie monsters."
+      },
+      {
+        "name": "Downtown Austin",
+        "text": "With its gleaming buildings and waterfront views, Austin has one of the most recognizable skylines in the entire state of Texas. However, there are just as many fun things to see on the ground! Shops and restaurants line the sidewalks. Malls, museums, art galleries and performance theaters offer a fun night on the town."
+      },
+      {
+        "name": "Austin Nature and Science Center",
+        "text": "You won’t want to miss the Austin Nature and Science Center. While it offers family-friendly fun that can be enjoyed by all ages, it holds a special kind of magic for children. Maybe it’s because of the wildlife center that houses everything from birds to bobcats. Maybe it’s because of the “dino pit” where little paleontologists can dig up their own rocks, fossils and gemstones. At this destination, you can enjoy education and entertainment all rolled into one, so it should please parents and kids alike."
+      }
+    ]
+  },
+  {
+    "name": "Houston",
+    "coordinates": ["29.749907", "-95.358421"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/houston.jpg",
+    "description": "Houston, named after former General Sam Houston who, in 1836, won the Battle of San Jacinto which gained Texas its independence from Mexico, is the fourth most populated city in North America and home to approximately two and a half million residents. It is a magnet for tourism, being closely linked with the Space Center Houston, and NASA’s astronaut training and flight control complex together with many other interesting attractions.",
+    "thingsToDo": [
+      {
+        "name": "Museum of Natural Science",
+        "text": "The Houston Museum of Natural Science (abbreviated as HMNS) has an amazing collection of mineral specimens, space station models, 60 large skeleton mounts – which include four Tyrannosaurus Rex and three large Quetzalcoatlus – a planetarium, and lots more to occupy the family for the day."
+      },
+      {
+        "name": "Space Center Houston",
+        "text": "One of the city’s topmost attractions, the space center is home to more than 400 artifacts together with an abundance of both permanent and traveling exhibits as well as other displays relating to America’s awesome space flight programs."
+      },
+      {
+        "name": "Downtown Aquarium",
+        "text": "This splendid six acre dining and entertainment complex was made even more amazing by the amalgamated redevelopment of two of Houston’s landmarks, the Central Waterworks Building and Fire Station No.1."
+      },
+      {
+        "name": "Miller Outdoor Theatre",
+        "text": "This outstanding theater offers both culturally and artistically assorted daytime children’s programming as part of its free productions season as well as many other free plays, concerts, dances and shows to suit all ages."
+      }
+    ]
+  },
+  {
+    "name": "Beijing",
+    "coordinates": ["39.916668", "116.383331"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/beijing.jpg",
+    "description": "Behind the bustle and buzz of modernity, Beijing’s iconic destinations invite you to delve into this capital city’s amazing past. From the historic Forbidden City, and the awe-inspiring Great Wall, to the 100-acre Tiananmen Square, and the enchanting hutong alleys, you’re in for a cultural treat in Beijing. With opera and punk rock, sidewalk food vendors and elegant restaurants, Beijing fuses contradictions and contrasts into one remarkable experience.",
+    "thingsToDo": [
+      {
+        "name": "Visit the Beijing Opera",
+        "text": "Enjoy the fascinating music, singing, costumes and performance of a traditional opera. Then try on a few opera costumes and make-up, too."
+      },
+      {
+        "name": "Explore the Forbidden City",
+        "text": "Visit the Forbidden City with a local guide and learn about the Imperial Palace which was home to 24 emperors from 1420 until 1924."
+      },
+      {
+        "name": "Tour the silk factory",
+        "text": "From silkworms to cocoons, learn how silk is made and see beautiful silk bedding and garments."
+      },
+      {
+        "name": "Head to the Great Wall, China",
+        "text": "Take a tour of one of the great wonders of the world as it winds up and down across varied terrains like a dragon."
+      }
+    ]
+  },
+  {
+    "name": "Shanghai",
+    "coordinates": ["31.224361", "121.469170"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/shanghai.jpg",
+    "description": "The introduction to China's largest city often begins with a ride on the world's fastest passenger train, which symbolizes this rapidly growing destination. Now home to over 25 million people, this “Paris of the East” is prized for its retail therapy and Western-style entertainment, while giving a nod to its centuries-old history and traditions.",
+    "thingsToDo": [
+      {
+        "name": "Ride the Shanghai Maglev Train",
+        "text": "Take a ride on the world's fastest, most futuristic passenger train with a maximum cruising speed of 268 mph."
+      },
+      {
+        "name": "Get away from the hustle-bustle",
+        "text": "Visit the Ming Dynasty-era Yu Garden and Old Bazaar Yuyuan Garden, a place of peace and comfort in the heart of bustling Shanghai."
+      },
+      {
+        "name": "Visit a water village",
+        "text": "Take a tour of the village of Zhouzhuang, which is surrounded and divided by lakes and rivers, and dates back more than 900 years."
+      },
+      {
+        "name": "Head to the French Concession",
+        "text": "For a taste of old Shanghai check out the French Concession, lined with old villas and lane houses from the early 1900s."
+      }
+    ]
+  },
+  {
+    "name": "Xi'an",
+    "coordinates": ["34.341568", "108.940178"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/xian.jpg",
+    "description": "Located in central-northwest China, 3,000-year-old Xi'an was the capital for 13 Chinese dynasties and 73 emperors, and is the acknowledged root of Chinese civilization. Bearing witness to the great changes within the country, it’s today a treasure trove of history and culture. From the being the eastern terminal of the Silk Road, home to the famed Terracotta Warriors, museums, historical ruins, and cultural relics, Xi’an has a special place in your China itinerary.",
+    "thingsToDo": [
+      {
+        "name": "Make a trip to the Terracotta Warriors",
+        "text": "Discovered as recently as 1974, see the Terracotta Army of over 7,000 soldiers, horses and chariots that’s been guarding Emperor Qin's tomb since 210 BC."
+      },
+      {
+        "name": "Bike or stroll along the ancient City Wall",
+        "text": "Get a great view of the city from the top of this his massive city wall that’s been guarding the inner city for over 700 years."
+      },
+      {
+        "name": "Visit the Shaanxi History Museum",
+        "text": "Discover more than 1,700,000 cultural relics, including exhibits of ancient living from 115,000 years ago."
+      },
+      {
+        "name": "Take a tour of the Big Wild Goose Pagoda",
+        "text": "Located in the royal temple complex, it’s the earliest and largest square tower built of bricks during the Tang Dynasty."
+      }
+    ]
+  },
+  {
+    "name": "Tokyo",
+    "coordinates": ["35.652832", "139.839478"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/tokyo.jpg",
+    "description": "Tokyo is a city that needs almost no introduction, having been featured in countless films, TV shows and music videos. An icon of popular culture, Tokyo is also a city that never sleeps, so you will never be short of things to do when you are in town.",
+    "thingsToDo": [
+      {
+        "name": "Visit Asakusa",
+        "text": "The Asakusa District of Tokyo is known for being the home of the Senso-ji temple which is also one of the top sights in the city. The temple is covered in gorgeous design elements and carvings, and visitors flock here to pray and drink in the serene and relaxed vibes."
+      },
+      {
+        "name": "Tour the Imperial Palace",
+        "text": "One of the top spots in Tokyo for visitors is the Imperial Palace which is the home of the emperor and sprawls over 2,000,000 square meters. Located in the Marunouchi District close to central Tokyo Station, you need to book in advance if you want to visit."
+      },
+      {
+        "name": "Watch a baseball game",
+        "text": "Many people don’t realize that Japanese locals love the sport of baseball, so if you are in Tokyo then it makes sense to also watch a game when you are in town. There are a number of different teams here such as the Tokyo Swallows and the Yomiuri Giants, and you can watch a game at a number of stadiums around the city."
+      },
+      {
+        "name": "Go shopping in Akihabara",
+        "text": "The Akihabara District of Tokyo is located around Akihabara Station and is also called ‘Electric Town’ in English. It is known primarily for its quirky venues such as maid cafes and cosplay bars which many tourists want to visit as these kinds of attractions are unique to Japan and you can learn more about the otaku culture here."
+      },
+      {
+        "name": "Tour the Sumo Museum",
+        "text": "When people think of Japan they often also think of its national sport of Sumo wrestling. With that in mind, if you want to learn more about this amazing sport, then you need to head to the Sumo Museum which is free to enter and will fill you in on all the history."
+      },
+      {
+        "name": "Enjoy the Cherry Blossom Festival at Yasukuni Shrine",
+        "text": "Yasukuni Shrine is one of the top places to come if you are in Tokyo for the cherry blossom season from March to May. You can see cherry blossom trees in bloom all over the city but one of the best places to do so is at Yasukuni Shrine as this is also the home of the Sakura Festival and there are some 600 cherry trees here."
+      },
+      {
+        "name": "Have a night out singing karaoke",
+        "text": "Everyone knows that Japan is famous for karaoke bars and with that in mind you should make sure to spend some time singing along to some of you favorite tunes."
+      },
+      {
+        "name": "Visit a cat cafe",
+        "text": "Japan is now known for its unusual cafes and one of the most famous is the Cat Cafe in Nekorobi. f you love felines but don’t have your own pet, then you can come here and check out all the resident cats here as well as get a coffee or a bite to eat at the same time."
+      },
+      {
+        "name": "Tour Ghibli Museum",
+        "text": "Anyone who is a fan of Japanese cartoons Spirited Away and Princess Mononoke should make sure to head to the Ghibli Museum as it was Studio Ghibli who produced these iconic animated films. You can walk around a number of galleries here and check out some of the original sketches from the animations and you can also see models of some of the characters from the films."
+      }
+    ]
+  },
+  {
+    "name": "Kyoto",
+    "coordinates": ["35.011665", "135.768326"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/kyoto.jpg",
+    "description": "Japan is a land of dichotomy, always maintaining a balanced approach to modern advancement and tradition. Where other cities in Japan have technology, Kyoto has temples, reigning as the country’s cultural capital. Those who venture to Kyoto can expect magical sights of bamboo forests, ornate shrines and temples, impeccably dressed geishas, theatre performances, rambunctious monkeys, and blooming cherry trees when the season permits. Travelers can learn all about art, tea, Zen Buddhism, and other pillars of Japanese culture all within the borders of this easily-accessible city.",
+    "thingsToDo": [
+      {
+        "name": "Wander through the incredible Fushimi Inari-taisha Shrine",
+        "text": "Kyoto’s most iconic treasure, the Fushimi Inari-taisha Shrine is located at the end of a flamed colored walkway made up of thousands of traditional torii gates. Visitors can easily spend a day wandering through the trails surrounding the network of ornate shrines. Half way up the mountain, expect incredible views of Kyoto at the Yotsutsuji Intersection."
+      },
+      {
+        "name": "Visit the Kinkakuji Temple",
+        "text": "Amidst a placid lake and surrounded by trees is the golden Kinkakuji Temple, a Zen temple wrapped in gold leaf, with the top floor gilded both inside and out. It was originally built as a retirement home for a famous shogun, who sanctioned the building to become a temple after his death."
+      },
+      {
+        "name": "Participate in a tea ceremony",
+        "text": "Though tea ceremonies, known as chado or sado, are available all throughout Japan, experiencing one in Kyoto is especially sacred due to its strong Zen Buddhist roots. During a tea ceremony, the cup of tea is prepared artfully and carefully before serving it."
+      },
+      {
+        "name": "Enjoy a panoramic view of the city at the Kyoto Tower",
+        "text": "A modern structure in a city of temples, the Kyoto Tower is the tallest building in Kyoto. Visitors can view panoramic views of the city extending all the way to Osaka. On the platform, telescopes and LED touch screens highlight notable landmarks, so that you can put a name to what you’re seeing. Go at sunset for the best experience."
+      },
+      {
+        "name": "Climb to the top of Mt. Kurama and relax in the hot springs",
+        "text": "About 20 kilometers from the center of Kyoto is Kurama, a quaint town known for its traditional hotels and baths. Travelers can hike to the top of Mt. Kurama to Kurama-dera, an ornate Buddhist temple just above town. Those who want to save their energy for later can even take a cable car halfway up. Past the temple is a steep hiking trail surrounded by old trees with outstretched roots where its common to see songbirds, deer, monkeys, and other wildlife."
+      },
+      {
+        "name": "Enjoy the Kyoto International Manga Museum",
+        "text": "Japanese cartoonists have a unique style of drawing figures for their audience. Manga is created for adults and children alike, and is commonly seen all throughout Japanese pop culture – with a significant history that draws back to the late 19th century."
+      },
+      {
+        "name": "Smell cherry blossoms at Maruyama Park",
+        "text": "Maruyama Park is Kyoto’s best place to view cherry blossoms. In the evening, the central weeping cherry tree is even lit up for a spectacular display. The magical thing about this park is that it has many varieties of cherry blossoms, so visitors can witness a range of color, size, and texture. Enjoy a cup of tea or warm meal under the trees and watch the cranes float by on the nearby pond."
+      }
+    ]
+  },
+  {
+    "name": "Osaka",
+    "coordinates": ["34.672314", "135.484802"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/osaka.jpg",
+    "description": "Osaka is one of the main cities in Japan after Tokyo and is located on the island of Honshu. It is not as traditional or picturesque as other spots in the country like Kyoto, but it is still well worth a visit if you are planning a tour of Japan. Many locals will tell you that Osaka is one of the most laid back cities in the country and the people here are known for their warm hospitality, which means that you will have the chance to learn all about Japanese culture here.",
+    "thingsToDo": [
+      {
+        "name": "Visit Osaka-jo",
+        "text": "Osaka Castle dates from 1583 when it was first built using 100,000 workers to get the finished building. As with many castles in Japan however, it was destroyed and the structure that stands now was built in 1931 and has also been renovated over the years. Despite the fact that the castle is no longer the original, it is still one of the most impressive buildings in Osaka and is located in the middle of a leafy park and is encircled by a charming moat."
+      },
+      {
+        "name": "Tour Kamigata Ukiyoe Museum",
+        "text": "If you want to learn more about traditional art in Osaka then consider a trip to Kamigata Ukiyoe Museum where you can learn all about the art of ukiyoe which is a kind of Japanese print. The prints are made using blocks of wood and the museum itself is styled on a traditional Japanese house."
+      },
+      {
+        "name": "Explore Sumiyoshi Shrine",
+        "text": "Sumiyoshi Shrine has the claim to fame of being one of the oldest Shinto shrines not only in Osaka but also in wider Japan. The shrine was built over 1,800 years ago and it is said to be one of the prettiest Shinto shrines of its kind thanks to its ornate architecture and dainty design features."
+      },
+      {
+        "name": "Go out in Dotonbori",
+        "text": "Dotonbori is known is Osaka as the place to come if you want to go out and enjoy the best of the city. This part of Osaka is the central hub of bars, restaurants and cafes, and you can come here in the evening to enjoy the relaxed atmosphere. Many of the cafes and restaurants here also have their own roof terraces and this means that you can sit out, listen to some live music and look out across twinkling Osaka at the same time."
+      },
+      {
+        "name": "Try the local food",
+        "text": "Osaka is known in Japan for being something of a foodie paradise so if you like to eat then you have come to the right place! Some of the highlights here include the Okonomiyaki which is a kind of pancake made from shredded cabbage which is loaded with a range of toppings, as well as battera which is a style of sushi which features mackerel compressed with rice in a wooden box."
+      },
+      {
+        "name": "Ride the Tempozan Ferris Wheel",
+        "text": "The Tempozan Ferris Wheel is one of the most iconic sights in Osaka and is located on the edge of the scenic Osaka Bay. At one time this would have been the tallest Ferris wheel of its kind in the world and the main attraction here is the chance to take a spin on the wheel and check out the pretty sights across the city."
+      }
+    ]
+  },
+  {
+    "name": "Bangkok",
+    "coordinates": ["13.736717", "100.523186"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/bangkok.jpg",
+    "description": "Welcome to Bangkok—the sprawling, vibrant capital city of the Kingdom of Thailand. Here action and adventure await you at every turn. Whether you take a tuk tuk across town or the longtail boat through the floating market. Bathe and feed Asian elephants or marvel at golden hued temples and palaces. Indulge in local dishes at the night market or haute cuisine at rooftop restaurants, Bangkok is bustling with activity by day and night.",
+    "thingsToDo": [
+      {
+        "name": "Check out the Floating Market",
+        "text": "Ride a boat to this Bangkok market, where vendor boats sell everything from fresh fruits and flowers to clothing and souvenirs."
+      },
+      {
+        "name": "Explore Bangkok's Wat Pho temple",
+        "text": "Immerse yourself in the ancient past and marvel at the famed golden Reclining Buddha."
+      },
+      {
+        "name": "Get a bargain at the night market",
+        "text": "Shop, eat, drink, and have fun at the Suan Lum Night Bazaar, which boasts more than 2,000 stalls."
+      },
+      {
+        "name": "Experience the nightlife",
+        "text": "From swanky rooftop bars and lively nightclubs to hip cocktail bars, no visit to Bangkok would be complete without a glimpse of its famous nightlife."
+      },
+      {
+        "name": "Tour the Grand Place",
+        "text": "With its beautiful architecture and intricate detail, it’s been the home of the Thai King, the Royal court and the government for 150 years."
+      }
+    ]
+  },
+  {
+    "name": "Chiang Mai",
+    "coordinates": ["18.796143", "98.979263"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/chiangmai.jpg",
+    "description": "Chiang Mai blends ancient traditions with modern design and cuisine. Those with an interest in Buddhist practice can join the locals as they give alms to the temple monks or visit the International Buddhist Center at Wat Phra That Doi Suthep with its chanting and meditation services. For a more rustic temple experience, journey to the forest temple of Wat Umong. Then, browse the colorful Chiang Mai Night Bazaar. Take a walk on the wild side at the Elephant Nature Park.",
+    "thingsToDo": [
+      {
+        "name": "Browse the Chiang Mai Night Bazaar",
+        "text": "Search for the perfect souvenir at this bustling night bazaar that runs from sundown until late into the night."
+      },
+      {
+        "name": "Go on a Retreat at the International Buddhist Centre",
+        "text": "Visit the Wat Phra That Doi Suthep and marvel at the temple’s golden spires, or delve more deeply into Buddhist ways with a retreat that includes lunch with the monks, meditation, chanting, and discussions."
+      },
+      {
+        "name": "Visit the Elephants at the Elephant Nature Park",
+        "text": "Support the work at the Elephant Nature Park, an elephant rescue and rehabilitation center."
+      },
+      {
+        "name": "Choose Your Temple",
+        "text": "There are over 300 temples across the city. Wat Chedi Luang is home to the revered Emerald Buddha, and Wat Phra Singh is resplendent with its lavish mosaics."
+      },
+      {
+        "name": "Check out the Art Scene",
+        "text": "Chiang Mai boasts a bustling creative scene with modern day galleries and cosmopolitan restaurants."
+      }
+    ]
+  },
+  {
+    "name": "Rio de Janeiro",
+    "coordinates": ["-22.908333", "-43.196388"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/rio.jpg",
+    "description": "Striking coastlines and exotic forests, thriving nightlife and mesmerizing samba schools – these are just some of the unique elements of Rio de Janeiro, a city with a startling identity unlike any other in the world.",
+    "thingsToDo": [
+      {
+        "name": "Museum of Tomorrow",
+        "text": "One of the 2016 Olympics’ most successful legacies, this groundbreaking science museum poses big questions about mankind’s future, inside an extraordinary neo-futurist building."
+      },
+      {
+        "name": "Christ the Redeemer",
+        "text": "You’ll catch glimpses of this 98-feet-tall figure all around Rio, but don’t miss out on ascending Mount Corcovado to admire the iconic statue up-close."
+      },
+      {
+        "name": "Take the gondola up Sugarloaf Mountain",
+        "text": "Sugarloaf Mountain is the large peak you’ll see in just about every photo of Rio de Janeiro, and taking the gondola to the top is one of the best attractions in Rio de Janeiro. Once at the top, you can wander around and enjoy the views and even a meal or drink"
+      },
+      {
+        "name": "Copacabana Beach",
+        "text": "It’s the most famous beach in the world and a trip to Rio wouldn’t be complete without spending at day at Copacabana. This four km iconic beach is filled with energy and excitement. Vendors and restaurants line the sand and a wide paved pathway along the road makes for an easy stroll."
+      },
+      {
+        "name": "Helicopter Scenic Flight",
+        "text": "If there is one city you should do a scenic flight in this world, it is Rio. Rio’s landscape is spectacular with huge mountains framing the city. With a blend of urban sprawl, colourful hillside favelas, jungle, ocean, and beaches, this is one of the most beautiful cities on earth and a helicopter tour lets you truly take in the scope and scale of Rio’s landscape."
+      }
+    ]
+  },
+  {
+    "name": "Sao Paulo",
+    "coordinates": ["-23.533773", "-46.625290"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/saopaulo.jpg",
+    "description": "The largest city in Brazil, Sao Paulo (or Sampa as it is also often called), offers an intense cultural experience. Tropical plants, charismatic people, and lively, bright colors, sounds and scents surround every traveler here, from the moment they step from the plane. It is a melting pot city, and has large, integrated populations of Italian and Japanese cultures among others. This fusion of culture has created beautiful combination art, culinary scene, and music that are well worth exploring.",
+    "thingsToDo": [
+      {
+        "name": "Sao Paulo Cathedral",
+        "text": "This is the largest church in the city (but not the state) of Sao Paulo, and can seat 8,000 people. It is a large-domed 20th century cathedral of the neo-gothic style, and was constructed using over 800 tons of marble."
+      },
+      {
+        "name": "Museu do Futebol",
+        "text": "The ultimate museum for football (soccer) fans, the Museu do Futebol offers both traditional exhibits as well as video and interactive displays. From information on famous players and famous games to basic instruction on how the game is played, the museum has things for people at every level of fandom, and even those considering becoming fans."
+      },
+      {
+        "name": "Avenida Paulista",
+        "text": "The 2.8 km (1.7 miles) long Paulista Avenue was originally a residential street filled with large, ornate mansions belonging to coffee barons. Many of these were torn down in the 1950’s, and replaced with large, multi-story buildings. It remains a center of luxury and business, and is much like Park Avenue Meets Wall Street in New York City. Today, many of Sao Paulo’s major banks make their headquarters here, in addition to some of the finest prep schools in the country."
+      },
+      {
+        "name": "Ibirapuera Park",
+        "text": "Sampa’s answer to Central Park, Ibirapuera Park serves as a major recreational site and is one of the main tourist attractions in Sao Paulo. It has paths for walking and jogging, bikeways, woods, lakes, sport courts and areas for relaxation that attract city residents of all ages."
+      }
+    ]
+  },
+  {
+    "name": "Salvador",
+    "coordinates": ["-12.974722", "-38.476665"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/salvador.jpg",
+    "description": "Located in the great state of Bahia, Salvador is a city filled with culture, history, and food. If you’re planning a trip there, you’re in luck; there are so many fun things to do in Salvador, no matter what type of traveler you are.",
+    "thingsToDo": [
+      {
+        "name": "Farol da Barra Beach",
+        "text": "The Farol da Barra Beach is one of the most popular tourist destination in Salvador, Brazil. It offers a panoramic view of the ocean which, in turn, is simply a treat to the eyes. It is simply one of the best destinations to visit for all the tourists who are fond of witnessing nature in all her glory."
+      },
+      {
+        "name": "Sao Francisco Church and Convent",
+        "text": "The Sao Francisco Church and Convent is a great place to visit in Salvador. The architectural style is indeed a unique one and it is simply great to witness. The design in the interior portion of the church is splendid and it never fails to excite the tourists. It is also the richest church in Latin America."
+      },
+      {
+        "name": "Casa do Rio Vermelho",
+        "text": "The Casa do Rio Vermelho is one of the major tourist destinations in Salvador. It is a storehouse of art and is responsible for attracting tourists from all parts of the nation. The jaw-dropping architecture of the Casa do Rio Vermelho is simply a joy to witness. It houses many ancient pictures, arts, and sculptures which can simply take the tourists by surprise."
+      },
+      {
+        "name": "Santo Antonio da Barra Fort and Nautical Museum",
+        "text": "The Santo Antonio da Barra Fort and Nautical Museum reveals the history of Portuguese exploration in the fifteenth and the sixteenth centuries. The museum contains many historical artifacts which were once a part of an ancient ship that sank in the bay around the seventeenth century, only to be found three-hundred years later. There is also a lighthouse named Barra Lighthouse that provides wonderful scenic views of the ocean."
+      }
+    ]
+  },
+  {
+    "name": "Cartagena",
+    "coordinates": ["10.39972", "-75.51444"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/cartagena.jpg",
+    "description": "One of the most gorgeous, romantic, and colorful cities in the world, Cartagena is packed with history, friendly Colombians, and of course, tourists. The walled city is made up of pastel colonial buildings lined with flowers, cobblestone streets, horse carriages, and plenty of restaurants and boutiques to satisfy all of its many visitors.",
+    "thingsToDo": [
+      {
+        "name": "Explore the Old City",
+        "text": "Most tourists will stay in the old city of Cartagena, which includes the neighborhoods of Centro, San Diego, and Getsemani, and you should too. Here you’ll be close to the most historical parts of the city and its picturesque streets, particularly within the walled city (La Ciudad Amurallada), an UNESCO World Heritage Site."
+      },
+      {
+        "name": "Castillo de San Felipe de Barajas",
+        "text": "This might be the most incredible fortress ever built by the Spanish in any of their colonies and it’s a landmark within the city of Cartagena. Construction began in 1639, and it’s never been taken despite numerous attempts to attack the city. There are tunnels within it specifically designed to allow even small sounds to travel well so that any intruders would be detected easily."
+      },
+      {
+        "name": "Street Food Tour",
+        "text": "While you should definitely pick up some cheese-filled arepas and fresh lemonade from the food vendors in the plazas, you might want to sign up for a street food tour to taste even more local dishes. With a guide you’ll get to try things from carts, alleyways, and shops you’d never find on your own."
+      },
+      {
+        "name": "Visit a Mud Volcano",
+        "text": "El Totumo is a small volcano containing thick bubbling mud that you can bathe in and it’s located just outside of Cartagena. You climb inside the hill-like vat where you’ll float in the mud and even have the option of getting a quick massage."
+      },
+      {
+        "name": "Islas del Rosario",
+        "text": "A beautiful day trip while in Cartagena, the Islas del Rosario are 27 islands located in the crystal clear Caribbean waters just off the coast of the city. They’re filled with coral reefs that serve as a natural habitat for tons of aqualife, and you can spend a day here boating, swimming, or snorkeling."
+      }
+    ]
+  },
+  {
+    "name": "Bogota",
+    "coordinates": ["4.624335", "-74.063644"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/bogota.jpg",
+    "description": "Don’t be intimidated by the sprawling, bustling city of Bogotá. Colombia’s capital is truly historic and packed with touristy things to do, but it’s also got a cool, hip, and even chic side to it as well. From its weekly Ciclovía bike route through the streets to its upscale neighborhoods filled with great restaurants, parks, and excellent nightlife, Bogotá is a real cosmopolitan city.",
+    "thingsToDo": [
+      {
+        "name": "Stroll Through La Candelaria",
+        "text": "This is probably the first thing tourists do in Bogotá because La Candelaria the historic center of the city. Follow the cobblestone streets past colorful Spanish colonial buildings and university halls, check out the street art, and pop into a few cathedrals."
+      },
+      {
+        "name": "The Gold Museum",
+        "text": "Bogotá’s Museo del Oro is the most popular (and possibly the most interesting) museum in the city, and it’s home to more than 30,000 pieces of gold. There are three floors filled with artifacts collected from Colombia’s pre-Hispanic cultures, each focusing on a different theme. Learn how these people discovered, mined, and then worked the metals, making jewelry, masks, bowls, offerings, and armor."
+      },
+      {
+        "name": "Climb Monserrate",
+        "text": "Walk the steep steps up the hill (or take the funicular) to this incredible viewpoint of sprawling Bogotá."
+      },
+      {
+        "name": "Plaza Bolívar",
+        "text": "Head to the center of this capital city to see where government business gets done. This sprawling, pigeon-filled plaza is home to Colombia’s Palace of Justice, the Capitol Building, the Cathedral of Bogotá, and the city mayor’s office."
+      },
+      {
+        "name": "The Salt Cathedral of Zipaquira",
+        "text": "One of the most popular day trips from Bogota, the Salt Cathedral is located in the town of Zipaquirá about an hour outside the city. This whole cathedral was carved deep underground in a salt mine, and it contains alcoves for worshipping and beautifully lit crosses."
+      },
+      {
+        "name": "Take a Bicycle Tour of the City",
+        "text": "While it wouldn’t seem like the best thing to do in a big, bustling city, bike tours of Bogota are really popular. They’re also an excellent way to see a few neighborhoods that are rather spread out and some you wouldn’t stop by on your own."
+      }
+    ]
+  },
+  {
+    "name": "Medellin",
+    "coordinates": ["6.230833", "-75.590553"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/medellin.jpg",
+    "description": "The second city of Colombia, Medelliin has transformed itself perhaps more than any other city in the world. Though its violent, tumultuous past is well-known, today the city is modern, innovative, and just generally lovely. Nicknamed the “City of Eternal Spring” for its nearly perfect weather, you’ll find plenty of parks and plazas where you can enjoy the sunshine with a fresh juice from a street food vendor and a couple of empanadas.",
+    "thingsToDo": [
+      {
+        "name": "Museo de Antioquia",
+        "text": "A former city hall turned museum, this place houses a great collection of works by Fernando Botero. He’s one of Colombia’s most famous artists, and he had a penchant for painting all things chubby. Guides recommend starting on the top floor with his earlier pieces and making your way down to see his evolution as an artist."
+      },
+      {
+        "name": "Take the Metrocable Up to Parque Arvi",
+        "text": "The metro and metrocable system of Medellín has received lots of praise for bringing a city of many different neighborhoods together. You can get all over the city with your metro ticket, and if you want to venture up for great views and fresh air, pay a little more to take the metrocable from Santo Domingo to Parque Arvi."
+      },
+      {
+        "name": "The Botanical Gardens",
+        "text": "A natural oasis in the center of Medellin, they city’s botanical gardens contain more than 1,000 species of wildlife and 4,500 flowers. There’s a butterfly garden, a cactus garden, and a huge collection of orchids. Entry is free and you can go explore the area to find critters or just lie on the grass in the sun with a book."
+      },
+      {
+        "name": "Parque Explora",
+        "text": "Everybody loves Parque Explora, even adults and those folks without kids. It’s an interactive science museum combined with South America’s largest freshwater aquarium. There are over 300 interactive exhibits housed in the building’s four red cubes, plus a planetarium, 3D auditorium, and a television studio."
+      },
+      {
+        "name": "Casa de la Memoria",
+        "text": "This museum is both upsetting, enlightening, and informative, and it’s the place to go if you want more insight on Colombia’s dramatic and violent history. From drug cartels and gangs to a terrible civil war, Casa de la Memoria aims to amplify the voices of victims and preserve their history so that we might learn more about it and avoid these pitfalls in the future."
+      },
+      {
+        "name": "Parque Lleras",
+        "text": "Poblado is one of the biggest hotspots for nightlife in Medellin, and for locals and tourists alike, Parque Lleras is often the place where you start out the night. It’s just a little park filled with trees where you’ll find vendors selling art by day and crowds of folks drinking by night. The park is surrounded by bars, restaurants, and clubs, plus it’s close to many of the hostels in the area, so there’s always young people around."
+      }
+    ]
+  },
+  {
+    "name": "Santiago",
+    "coordinates": ["-33.447487", "-70.673676"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/santiago.jpg",
+    "description": "Santiago de Chile, more commonly known as just Santiago, was founded by the Spanish in 1541, and has served as Chile’s capital since the colonial days. It’s a bustling city of more than six million people, but you’ll still find traces of its heritage in the colonial and 19th century neoclassical buildings.",
+    "thingsToDo": [
+      {
+        "name": "La Moneda",
+        "text": "La Moneda, also known “Coin Palace” because it used to be a mint, is where the president of Chile has his offices. Several other key government officials also have offices in the neoclassical structure that takes up a whole block in downtown Santiago."
+      },
+      {
+        "name": "Gran Torre Santiago",
+        "text": "The Gran Torre Santiago towers over Santiago and is so high it can be seen from just about anywhere in the city. At 64 stories high, it is the largest skyscraper in Latin America and the highest occupied floor in the Southern Hemisphere. It’s 300 meters (984 feet) high and has six basements."
+      },
+      {
+        "name": "Cerro Santa Lucia",
+        "text": "Cerro Santa Lucia is a hill in central Santiago that represents the remains of a 15-million-year-old volcano. The hill was originally called Huelen but was renamed in 1543 in honor of Santa Lucia when the Spanish conquistadors took the hill. Over the centuries it’s been home to a fort or two, and many dissidents, who either weren’t Roman Catholic or other or others considered unworthy. The hill was remodeled in the 19th century. Today you’ll find a park, statuary, fountains and a castle that has been remodeled into an events center. You’ll also find some great views of Santiago."
+      },
+      {
+        "name": "Santiago Metropolitan Cathedral",
+        "text": "Where earlier cathedrals in Santiago have been destroyed by earthquakes, the Santiago Metropolitan Cathedral has stood on the Plaza de Armas for more than 260 years. Construction first began in 1748 and the cathedral has dominated the square ever since. The stone neoclassical cathedral is considered one of the best examples of religious architecture in South America."
+      },
+      {
+        "name": "Cerro San Cristobal",
+        "text": "Cerro San Cristobal is a hill in northern Santiago that rises over the city, providing some pretty great views. Spanish conquistadors named it for Saint Christopher. At the top you’ll find an observatory and a statue of the Virgin Mary, part of a sanctuary dedicated to the Immaculate Conception. Pope John Paul II blessed the Santiago at a small chapel at the sanctuary; there’s also an amphitheater where masses are held. Cerro San Cristobal also is home to Santiago’s biggest park, Santiago Metropolitan Park; the Chilean national zoo; a Japanese garden and two swimming pools."
+      }
+    ]
+  },
+  {
+    "name": "Easter Island",
+    "coordinates": ["-27.104671", "-109.360481"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/easter.jpg",
+    "description": "Easter Island is famous for its mysterious background and the Moai statues that accompany it. A plethora of theories surround the origins and construction of these giant, monolithic stone statues, but the truth is that they are the legacy left behind by the Rapa Nui civilization that once inhabited the island.",
+    "thingsToDo": [
+      {
+        "name": "See The Moais at Rano Raraku National Park",
+        "text": "This is the main attraction on Easter Island and the one place you shouldn’t miss. This was the main moai quarry and the place where you’ll see them in all their glory and in all stages of production. In fact, about half of the moai of Easter Island are located in this national park. The Moai are monolithic human statues carved between 1,250 and 1500 AD and are considered to be the “living faces” of deified ancestors. They look inland towards the clan that created them as a sign of protection."
+      },
+      {
+        "name": "Watch The Sunrise From Tongariki",
+        "text": "Here you’ll see its 15 moai statues stand next to each other on an Ahu (ceremonial platform) facing inland as you see the orange sun rise right behind them, creating a shadowy silhouette out of the statues."
+      },
+      {
+        "name": "Relax at Anakena Beach",
+        "text": "Anakena is one of the best beaches on the island, and it is easily accessible. It is a small beach, but that doesn’t matter since there aren’t a lot of people on Easter Island."
+      },
+      {
+        "name": "See The Ancient Petroglyphs At Papa Vaka",
+        "text": "While not a vast legacy, there are still traces of Rapa Nui petroglyphs all around the island, with some of the most important ones found in Papa Vaka, Ana Kai Tangata, and Orongo. These petroglyphs often depict several marine scenes that include fishing, the use of canoes, and various marine animals. Part of the daily life of the Rapa Nui."
+      },
+      {
+        "name": "Hike To The Top Of Terevaka",
+        "text": "Easter Island doesn’t have mountains, they are more like pronounced volcanic hills. Still, it is fun to hike these volcanoes, even if the highest one, Terevaka Volcano, is only 507 meters above sea level. Being the highest point on the island, from there you can get a perfect 360-degree view of all Easter Island."
+      }
+    ]
+  },
+  {
+    "name": "Cairo",
+    "coordinates": ["30.033333", "31.233334"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/cairo.jpg",
+    "description": "Headlined by the infamous World Wonder, the architectural marvel that is the Great Pyramids of Giza, Cairo is one of the most fascinating cities in the world. It’s a city of contrasts, where old and new stand side by side, where alive and deceased share land (in the so-called City of the Dead), and where luxurious hotels stand alongside cramped (yet vibrant) souks.",
+    "thingsToDo": [
+      {
+        "name": "Explore the massive Cairo Citadel",
+        "text": "Built in 1176, the Cairo Citadel has a coveted claim to fame as the largest medieval fortress in the world. Following a diverse history of medieval warfare, the stone fortress, now open to visitors, houses four main mosques — the beautiful more modern Mosque of Muhammad Ali, otherwise known as the Alabaster Mosque, the 14th-century Al-Nasir Muhammad Mosque, the Ottoman-style Mosque of Sulayman Pasha, and the lesser-known Mosque of al-‘Azab."
+      },
+      {
+        "name": "Visit a world wonder — the Giza Pyramids",
+        "text": "Standing at a peak of 138 meters tall, no other site in Egypt draws the masses quite like Giza’s Pyramids — the only remaining Wonder of the Ancient World. These three colossal structures (the Great Pyramid of Khufu, Khafre’s Pyramid and Menkaure) have attracted millions of annual visitors since their discovery. They are evidence of the incredible skill and innovation that went into ancient engineering."
+      },
+      {
+        "name": "Snap a selfie with the Great Sphinx of Giza",
+        "text": "Within walking distance of the infamous pyramids (and therefore often combined into the same tour), the 4,500-year-old Sphinx of Giza is another ancient wonder worthy of postcards and millions of travel selfies"
+      },
+      {
+        "name": "Get lost in the Egyptian Museum",
+        "text": "An unmissable attraction for history and archeology buffs alike, this downtown Cairo attraction is just next to the Nile. It boasts the world’s largest and most comprehensive collection of Pharaonic history."
+      }
+    ]
+  },
+  {
+    "name": "Luxor",
+    "coordinates": ["25.687243", "32.639637"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/luxor.jpg",
+    "description": "Luxor is one of the most ancient cities in Egypt. For many thousands of years, this southern region of the country was home to the most famous Kings and Queens in Egyptian history.",
+    "thingsToDo": [
+      {
+        "name": "Go to the Luxor Museum",
+        "text": "Start your journey to Luxor with a trip to the Luxor Museum, where you’ll be able to learn all about the region’s long and ancient history before you start exploring the multitude of archaeological sites."
+      },
+      {
+        "name": "Contemplate History at the Luxor Temple",
+        "text": "Take a quick walk south along the River Nile and you’ll soon arrive at one of the city’s most impressive ancient sites, the Luxor Temple. You’ll quickly realize just why the city is said to be one of the world’s greatest open-air museums, and that’s down to the fact that archaeological sites in Luxor are literally in the city center."
+      },
+      {
+        "name": "See the Massive Columns at Karnak ",
+        "text": "If you walk north along the Nile River from the Luxor Museum, then you’ll come to what is perhaps Luxor’s most famous temple complex, Karnak. Visiting Karnak is one of the best things to do in Luxor because this ancient religious site is one of the most important in Egpyt. The Karnak complex is huge and you’ll find a separate museum on site too, the Karnak Open-Air Museum, where you can enjoy a wealth of information and artifacts."
+      },
+      {
+        "name": "Learn About Mummies at the Mummification Museum",
+        "text": "It’s not always high up on lists of the best things to do in Luxor, but while you’re exploring the museums and temple complexes in the center of the city, you’ll want to pop into the fascinating Mummification Museum too."
+      },
+      {
+        "name": "Explore the Valley of the Kings",
+        "text": "The Valley of the Kings is one of the most iconic archaeological sites in Egypt, and it’s a must-visit when you are in Luxor. The Valley of the Kings, while being a dramatic outdoor attraction in its own right, is iconic because this is where Egyptian kings chose to have their lavish tombs and burial chambers built. Many have been opened, including that of Tutankhamun, and it’s in the Valley of the Kings where modern Egyptology really began to be popularised."
+      },
+      {
+        "name": "Don’t Forget the Valley of the Queens",
+        "text": "The Valley of the Queens is the next valley along from the Valley of the Kings, and as the name might suggest, this is where the Ancient Egyptian Queens were buried in their own lavish burial chambers. There hasn’t been as much excavation here as has been done in the Valley of the Kings, but it’s equally as dramatic and just as important. Not quite as many of the tombs and archaeological sites are open to the public though."
+      }
+    ]
+  },
+  {
+    "name": "Hurghada",
+    "coordinates": ["27.25738", "33.81291"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/hurghada.jpg",
+    "description": "With the crystalline waters of the Red Sea to the east and the sands of Egypt’s vast desert to the west, Hurghada attracts vacationers from across the globe who want to relax on its endless beaches, explore its spectacular dive sites, and take day trips to the historic cities along the Nile River.",
+    "thingsToDo": [
+      {
+        "name": "Go Diving in the Caves of the Careless Reef",
+        "text": "The appeal of this dive site is self-explanatory: it is a technicolour vision of coral forests wriggling with fish – tuna, jacks and even the occasional hammerhead shark. It’s best known – and loved – among divers, for the large population of giant morays lurking in the depths. Two coral towers brushing the water surface delineate the reef, and the chasm between, about 16m (53ft) deep, is your playground."
+      },
+      {
+        "name": "Visit the Abdel-Moneim Riad Mosque",
+        "text": "It’s dubbed the Big Mosque by all who know it, and it’s clear why: its impressive architecture stops passersby in their tracks. Its looks are classically and elegantly Islamic: the arches, domes and hallways are laced with delicate carvings, and the minarets can be seen from miles (kilometres) away. Every day, you’ll hear the call to prayer resonating from within the walls, drifting atmospherically over Hurghada – a reminder you’re in amazing Egypt."
+      },
+      {
+        "name": "Watch the sunset at the Hurghada Marina Boulevard",
+        "text": "Evenings in Hurghada inevitably end with a stroll along the Marina Boulevard. Here, multi-million dollar yachts glint in the late light, floating on transparent waters. You’ll be among visitors from all around the world – and everyone is in awe of the setting."
+      },
+      {
+        "name": "Marvel at sand sculptures at See Sand City",
+        "text": "This open-air museum, just outside Hurghada centre, has two distinct concepts. One focus is on historical and mythological art, borne out in ancient sand sculptures that depict various stories and celebrated military leaders among legendary characters. Contrastingly, there’s Wonderland Art, a display of Walt Disney statues and figures from children’s stories."
+      },
+      {
+        "name": "Learn to windsurf or kitesurf",
+        "text": "If you’re the type who can’t idle on holiday, wiggling your toes in the sand, try learning to windsurf or kitesurf for a breath of fresh air. Whichever activity you sign up for, Hurghada is one of the best locations in the world for beginners."
+      }
+    ]
+  },
+  {
+    "name": "Cape Town",
+    "coordinates": ["-33.918861", "18.423300"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/capetown.jpg",
+    "description": "Trace the legacy of Nelson Mandela and learn about Cape Town’s history of apartheid at Robben Island and the District Six Museum. Bustling Greenmarket Square is known for its buskers and for its selection of African crafts. Taste fresh-caught tuna, try Cape Malay cuisine, or sample African flavors that span the continent at the city’s restaurants.",
+    "thingsToDo": [
+      {
+        "name": "Reflect on the History of Apartheid",
+        "text": "Nelson Mandela was held captive during apartheid at Robben Island. Today, the island has a museum with exhibits on this dark chapter of South African life. Former inmates lead the tours. Visit District Six Museum for more apartheid history."
+      },
+      {
+        "name": "Swim with the Penguins at Boulders Beach",
+        "text": "See the colony of African Penguins at Boulders Beach and maybe go for a swim."
+      },
+      {
+        "name": "Find African Art and Handicrafts at Greenmarket Square",
+        "text": "The bustling stalls of Greenmarket Square offer a range of unique African souvenirs."
+      },
+      {
+        "name": "Visit the Victoria & Alfred Waterfront",
+        "text": "Restaurants, nightly music, cocktails, and the Two Oceans Aquarium can be found at this bustling shopping destination."
+      }
+    ]
+  },
+  {
+    "name": "Western Cape",
+    "coordinates": ["-33.227792", "21.856859"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/westerncape.jpg",
+    "description": "The Western Cape is known for its rugged coast, incredible wildlife, and rich history. Soar to new heights with a ride to the summit of Table Mountain on the Aerial Cableway, or lace up your hiking boots and trek one of the mountain’s many trails. Journey to Cape Point where you can admire breathtaking views of the Cape of Good Hope and learn about the Cape’s significance to maritime history.",
+    "thingsToDo": [
+      {
+        "name": "Visit Table Mountain National Park",
+        "text": "Enjoy spectacular views from the summit of Table Mountain, which you can access by cable car or by hiking, and then travel to Cape Point at the Cape of Good Hope for stunning views."
+      },
+      {
+        "name": "Stroll the Kirstenbosch National Botanical Gardens",
+        "text": "View indigenous species as you stroll the winding paths of this botanical garden."
+      },
+      {
+        "name": "Dive with Sharks in Gansbaai",
+        "text": "Gansbaai is known as the Great White Capital of the world. See the sharks from the safety of the boat, or if you’re feeling adventurous, dive with the sharks in a cage."
+      },
+      {
+        "name": "Whales and Dolphins at Tsitsikamma National Park",
+        "text": "See dolphins and whales at this national park that boasts diving, snorkeling, kayaking, swimming, sailing, and even bungee jumping opportunities."
+      }
+    ]
+  },
+  {
+    "name": "Unguja",
+    "coordinates": ["-6.13573", "39.36212"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/unguja.jpg",
+    "description": "Once trodden by sultans and British imperialists, the capital of Stone Town here bursts with coral-stone forts, Persian palaces, and European frontispieces. And then there are the beaches, from seaweed-spattered Kendwa to whiter-than-white Nungwi and its salt-washed bungalows on the shore."
+  },
+  {
+    "name": "Mount Kilimanjaro National Park",
+    "coordinates": ["-3.065653", "37.352013"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/kilimanjaro.jpg",
+    "description": "A reserve that surely needs no introduction, the exotic reaches of the Mount Kilimanjaro National Park have been a symbol of Africa’s rich biodiversity and eye-popping backcountry since they were first inaugurated by the German colonists back in the 1920s. Today, they magnetise backpackers and intrepid walkers, who flock to strap on the hiking boots and scale the summit of Africa’s highest peak."
+  },
+  {
+    "name": "Ruaha National Park",
+    "coordinates": ["-7.5", "35"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/ruaha.jpg",
+    "description": "Sprawled out over an area almost exactly the size of Wales, the Ruaha National Park has expanded and expanded over the years to become the single largest game reserve in the entire of East Africa. Today, it ranges more than 20,000 square kilometers over baobab forests, gallery woods and acacia-dotted plains. And despite its size, Ruaha’s relative inaccessibility ensures there are no booming crowds of safari-goers here. Instead, the game experience is up-close-and-personal, with cheetahs and leopards and wild dogs all part of the action."
+  },
+  {
+    "name": "Sydney",
+    "coordinates": ["-33.865143", "151.209900"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/sydney.jpg",
+    "description": "After you’ve visited the Sydney Opera House and the Sydney Harbour Bridge, spend some time exploring Sydney’s beaches. Snorkel the waters of Coogee Beach, surf the legendary waves of Manly Beach, or sunbathe with the locals and surfers at Bondi Beach. After you’ve gotten your sunshine, visit some of Sydney’s spectacular museums, most notably, the Hyde Park Barracks Museum and the Australian Museum.",
+    "thingsToDo": [
+      {
+        "name": "Catch a Performance at the Sydney Opera House",
+        "text": "Watch a show or book a fascinating backstage tour that will take you behind the curtains."
+      },
+      {
+        "name": "Visit Mrs. Macquarie’s Chair",
+        "text": "For spectacular views of the Sydney Harbour Bridge, visit Mrs. Macquarie’s Chair."
+      },
+      {
+        "name": "City of Museums",
+        "text": "Beyond the UNESCO World Heritage Listed Hyde Park Barracks Museum, there’s the Harbourside Museum of Contemporary Art Australia, the Art Gallery of NSW, the Australian National Maritime Museum, the Powerhouse Museum, and the Nicholson Museum, just to name a few."
+      },
+      {
+        "name": "Learn to Surf or Go for a Snorkel",
+        "text": "Sydney is known for its surf culture at Bondi and Manly Beach, but there are also many opportunities to snorkel and sunbathe on the city’s miles of coast."
+      }
+    ]
+  },
+  {
+    "name": "Melbourne",
+    "coordinates": ["-37.840935", "144.946457"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/melbourne.jpg",
+    "description": "Walk through Melbourne’s laneways and narrow streets, and discover the city’s vibrant restaurants, art galleries, and shops. Enjoy the multicultural cuisine, internationally-renowned art, and uniquely Australian culture. Visit the National Gallery of Victoria, where you’ll find local artists displayed alongside renowned masters like René Magritte. Wander the Royal Botanic Gardens in Melbourne and view rare and local plants.",
+    "thingsToDo": [
+      {
+        "name": "Walk the Royal Botanic Gardens",
+        "text": "See rare plants and local species at this 94-acre botanic garden."
+      },
+      {
+        "name": "Discover Australian Masters at National Gallery of Victoria",
+        "text": "From local artists to well-known masters like René Magritte and Claude Monet, the National Gallery of Victoria offers a survey of both Australian and world art."
+      },
+      {
+        "name": "Get Lost in Melbourne’s Laneways",
+        "text": "Both families and adults-only travelers can discover something new in Melbourne’s laneways—narrow passageways open only to pedestrians."
+      },
+      {
+        "name": "City of Architecture and Memorials",
+        "text": "From the Shrine of Remembrance to the Block Arcade, Melbourne offers something for every architecture enthusiast."
+      }
+    ]
+  },
+  {
+    "name": "Brisbane",
+    "coordinates": ["-27.470125", "153.021072"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/brisbane.jpg",
+    "description": "With year-round beautiful weather, spend your vacation outside in Brisbane. At the River Quay Green, find the city’s most renowned restaurants overlooking views of the Brisbane River and enjoy outdoor music in the evenings. Swim at Streets Beach, an artificial beach in the middle of the city. Go kayaking on the river, take a river cruise, or enjoy a picnic in the city’s lush parks. Meet a koala at the Lone Pine Koala Sanctuary.",
+    "thingsToDo": [
+      {
+        "name": "Visit the Queensland Art Gallery",
+        "text": "See aboriginal and local Australian art as well as an internationally-renowned collection of Asian and Pacific art."
+      },
+      {
+        "name": "Take the Ferry",
+        "text": "One of the best ways to explore the city is on the free CityHopper ferry that stops at some of the city’s iconic riverfront shopping and restaurant destinations."
+      },
+      {
+        "name": "Stroll the Botanic Gardens",
+        "text": "See views of the city from the Mount Coot-tha lookout, and wander among the rainforest trees at the Brisbane Botanic Garden."
+      },
+      {
+        "name": "Hug a Koala at the Lone Pine Koala Sanctuary",
+        "text": "See Australia’s iconic animal at this sanctuary committed to conservation, education, and rehabilitation of native Australian animals."
+      },
+      {
+        "name": "Climb or Cross the Story Bridge",
+        "text": "Walk across a catwalk high above the city on the Story Bridge Adventure Climb."
+      }
+    ]
+  },
+  {
+    "name": "Port Douglas",
+    "coordinates": ["-16.48397850", "145.46583270"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/port-douglas.jpg",
+    "description": "Outdoor adventures abound in Port Douglas. Hike the Daintree Rainforest and soak in hidden swimming holes surrounded by exotic flora and fauna. Take a cruise or catamaran to the Great Barrier Reef and explore one of the world’s most diverse ecosystems. Stroll Four Mile Beach’s pristine coastline. In Port Douglas, the wilderness is never far from the comforts of indulgent all-inclusive resorts and restaurants serving exquisite cuisine.",
+    "thingsToDo": [
+      {
+        "name": "Bask on Four Mile Beach",
+        "text": "Walk or swim at Four Mile Beach, a pristine beach with no human development."
+      },
+      {
+        "name": "Snorkel or SCUBA the Great Barrier Reef",
+        "text": "The Great Barrier Reef is just a short cruise from Port Douglas’s marina; tours that leave from the marina can take you into the heart of this natural wonder."
+      },
+      {
+        "name": "Hike the Oldest Rainforest in the World",
+        "text": "Daintree Rainforest is home to unique plants, like the King Fern, and animals like the cassowary and crocodile."
+      },
+      {
+        "name": "Waterfront Art",
+        "text": "From waterfront art markets to charming local galleries, Port Douglas brings artisans, indigenous artists, and photographers to its vibrant cultural landscape."
+      }
+    ]
+  },
+  {
+    "name": "Paradise Island",
+    "coordinates": ["25.0826502", "-77.3180836"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/paradise.jpg",
+    "description": "Paradise Island is most famous for its Atlantis Resort & Casino, but tucked away from the crowds, amenities, and activities, you’ll also find some hidden gems. Bask on the soft white sand of Cabbage Beach. Walk along the stone terraces of Versailles Gardens, a beautiful, lush landscape of flowers and tropical plants. Here, you can explore the remains of a French monastery built by Augustinian monks.",
+    "thingsToDo": [
+      {
+        "name": "Island Augustinian Monastery",
+        "text": "You wouldn’t expect to find the remains of a French Augustinian monastery in the Bahamas, but one of the highlights of Paradise Island’s Versailles Gardens is a cloister that was imported to the island by William Randolph Hearst. It is known to have spectacular sunset views."
+      },
+      {
+        "name": "Bask on Cabbage Beach",
+        "text": "Snorkel the famously crystal-clear water or lie on the soft white sand."
+      },
+      {
+        "name": "Get Your Thrills at Aquaventure",
+        "text": "Plunge down water slides, relax on a mile-long lazy river, or soak in over 20 swimming areas."
+      },
+      {
+        "name": "Golf, Spa, and Casino Fun",
+        "text": "In addition to being a luxurious resort, Atlantis boasts a championship ocean-front golf course, a spa incorporating ancient healing techniques and European therapies, and a world-class casino."
+      }
+    ]
+  },
+  {
+    "name": "Nassau",
+    "coordinates": ["25.059999", "-77.345001"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/nassau.jpg",
+    "description": "Nassau is known for beautiful beaches, rich culture, and vibrant history. Be dazzled by the white sands and turquoise waters of Cable Beach. Cross the bridge to Paradise Island and bask on Cabbage Beach. Delve into Nassau’s history with a visit to Fort Charlotte, Fort Fincastle, the Government House, or the Queen’s Staircase. After a day at the beach, explore the Straw Market and then sip some rum at the John Watling’s Distillery.",
+    "thingsToDo": [
+      {
+        "name": "White-Sands, Turquoise Waters",
+        "text": "There’s a beach in Nassau for every mood: Cable Beach is known for its pristine sand and water, Arawak Cay is known for its seafood shacks, and Junkanoo Beach gives you views of the cruise ships."
+      },
+      {
+        "name": "Step into 18th Century Nassau at Fort Charlotte",
+        "text": "A tour guide in period costume will lead you around this 18th century fort, giving you a glimpse into Nassau’s history."
+      },
+      {
+        "name": "Sip A Bahama Mama at John Watling’s Distillery",
+        "text": "Learn how the rum is made and how to make classic Bahamian cocktails."
+      },
+      {
+        "name": "Golf by the Sea",
+        "text": "Tee-off on the Ocean Club’s championship green, boasting spectacular views of the Atlantic and Nassau Harbour, or play on the Royal Blue designed by Jack Nicklaus, with its ocean views and rolling green."
+      }
+    ]
+  },
+  {
+    "name": "South Coast",
+    "coordinates": ["13.103562", "-59.603226"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/south-coast.jpg",
+    "description": "The South Coast of Barbados is home to the island’s capital city, Bridgetown. This UNESCO World Heritage city is known for its historic British colonial buildings, its stunning Parliament Building, and the oldest Jewish synagogue in the Western Hemisphere. Enjoy the duty-free shopping on Swan Street and Broad Street. Snorkel the shipwrecks of Carlisle Bay, and watch for sea turtles.",
+    "thingsToDo": [
+      {
+        "name": "Snorkel or Dive a Shipwreck",
+        "text": "The shipwrecks in Carlisle Bay draw a range of marine animals, from sea turtles, to octopus, eels, and tropical fish."
+      },
+      {
+        "name": "Shop Tax-Free",
+        "text": "Barbados is a tax-free shopping haven; browse Broad Street, where you’ll find jewelers and boutiques; find fashions on Swan Street, or visit the Pelican Craft Centre for local handicrafts."
+      },
+      {
+        "name": "Take a Walk Through Historic Bridgetown",
+        "text": "Bridgetown is a UNESCO World Heritage Site. Stroll the historic architecture, visiting the Parliament Building, the Jewish synagogue, St. Mary’s Church, and the Chamberlain Bridge."
+      }
+    ]
+  },
+  {
+    "name": "West Coast",
+    "coordinates": ["13.1", "-59.6167"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/west-coast.jpg",
+    "description": "Whether you’re looking for world-class waves, diving or snorkeling adventures, or want to sit back, relax, and sip rum on a white-sand beach, the West Coast of Barbados has it all. Hidden surf spots can be found all along Barbados’ West Coast. Bathsheba Beach is known for its rock formations. Snorkel in the emerald blue water of Brandons Beach and look for sea turtles, or make your way north to Mullins Beach and sip a drink under an umbrella.",
+    "thingsToDo": [
+      {
+        "name": "Relax at Mullins Beach",
+        "text": "Get a tan on the soft white sand or go for a swim in the clear blue water of Mullins Beach."
+      },
+      {
+        "name": "Surf Barbados",
+        "text": "Barbados is known for its surfing, and Bathsheba is a great beach where you can learn to catch your first wave."
+      },
+      {
+        "name": "Snorkel or Dive the West Coast",
+        "text": "Batts Rock is a West Coast Beach known to be frequented by sea turtles."
+      },
+      {
+        "name": "Get a Massage",
+        "text": "The West Coast of Barbados offers beachfront spas where you can enjoy a massage while listening to the sound of the waves."
+      }
+    ]
+  },
+  {
+    "name": "Old San Juan",
+    "coordinates": ["18.466333", "-66.105721"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/old-san-juan.jpg",
+    "description": "Old San Juan has no beaches, no resort hotels, and not a whole lot of natural beauty—yet it's still one of the best places to visit in Puerto Rico. For all that it lacks, Old San Juan has an incredible 500 years of history, beautiful colonial architecture liberally splashed with tropical colors and timeless magic that makes it one of the most enchanting destinations in the Caribbean. You could spend many happy hours just walking around the walled city.",
+    "thingsToDo": [
+      {
+        "name": "Visit the Forts",
+        "text": "Perhaps nothing captures the history of Puerto Rico more than Old San Juan's massive fortresses. El Morro and Castillo de San Cristobal are among the most visited attractions on the island for a good reason. Their cannons, ramparts, and layered defenses have guarded the walled city for centuries. Even the governor's mansion, La Fortaleza, is called 'The Fortress' because it was one of the settlement's early defensive structures."
+      },
+      {
+        "name": "Dine Out on Fortaleza Street",
+        "text": "Dining in Puerto Rico is usually a rewarding experience, whether you're after local classics, gourmet international cuisine, or a delightfully inventive fusion of the Caribbean and global flavors. In Old San Juan, Fortaleza Street has carved out a reputation as a Restaurant Row that includes some of the best restaurants in town. In fact, South Fortaleza, or 'SoFo,' as it's known, even has its own biannual culinary festival."
+      },
+      {
+        "name": "Take a Sunset Stroll Along Paseo La Princesa",
+        "text": "Paseo La Princesa is a broad promenade that stretches from near the docks at the foot of the city and leads to the lovely Raíces Fountain. On weekends, you're likely to find all kinds of stalls lining the road, and maybe even a free cultural performance to enjoy. Paseo La Princesa hugs the old perimeter wall of the city, and beyond the fountain continues around Old San Juan to the San Juan Gate, the only remaining of five original entry points into the old town."
+      },
+      {
+        "name": "Go Salsa Dancing",
+        "text": "Salsa dancing and Puerto Rico go hand in hand, but surprisingly, the island isn't exactly crawling with hallowed halls of salsa. While old favorites like the Nuyorican Café (where Mick Jagger once danced the night away) have closed, newer spots like La Factoría have stepped up to the plate."
+      },
+      {
+        "name": "Enjoy the City at Night",
+        "text": "Take a look at the best lounges, bars, and clubs in San Juan. You'll find several of them in Old San Juan, a city known for its active nightlife. Whether you prefer the chic lounge scene (try Marmalade), grungy and funky bars (El Batey Bar leads that pack) or multi-level discos, Old San Juan doesn't feel so old once the sun goes down."
+      }
+    ]
+  },
+  {
+    "name": "Culebra",
+    "coordinates": ["18.303013", "-65.300987"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/culebro.jpg",
+    "description": "Culebra is one of the most beautiful places to visit in Puerto Rico because of its tropical island atmosphere and laid-back state of mind. It’s just over 10 square miles in size and an ideal place to relax on the beach, get active in the water, and enjoy a tranquil pace of life. Here are some of the best things to do when you visit Culebra and fun suggestions on how to spend your vacation days here.",
+    "thingsToDo": [
+      {
+        "name": "Enjoy Flamenco Beach",
+        "text": "Flamenco Beach is the most popular places to visit in Culebra and also one of the best beaches in the entire Caribbean. It features lovely sand and water, as well as restrooms, shade trees, picnic tables, and equipment for rent."
+      },
+      {
+        "name": "Go on a Snorkeling Tour",
+        "text": " Snorkeling is a popular activity on Culebra and definitely worth trying while you’re here. Culebra is a common day trip destination from Fajardo for tourists to go snorkeling."
+      },
+      {
+        "name": "Learn About the Native Plants",
+        "text": "There are beautiful plants that naturally flourish on Culebra because of its unique tropical and semi-arid environment."
+      },
+      {
+        "name": "Check Out Culebrita",
+        "text": "Isla Culebrita is a smaller and uninhabited island that accessible from Culebra via water taxi. It is part of the Culebra National Wildlife Refuge and a fun place to visit on a day trip."
+      }
+    ]
+  },
+  {
+    "name": "Punta Cana",
+    "coordinates": ["18.58182", "-68.40431"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/punta-cana.jpg",
+    "description": "Punta Cana is known for its white-sand beaches, incredible golf courses, and for its stunning resorts that cater to your every whim. With 10 different courses to choose from, you’ll be sure to find a green that matches your skill. If the beach is more your pace, Playa Bávaro is one of Punta Cana’s most popular beaches for its soft white sand, restaurants, and water activities.",
+    "thingsToDo": [
+      {
+        "name": "Tee-Off at the Punta Espada Golf Course",
+        "text": "This course, designed by Jack Nicklaus, hosts the PGA Champions Tour—when you factor in the ocean wind, this seaside course offers a breathtaking combination of challenge and views."
+      },
+      {
+        "name": "Swim in the Otherworldly Blue Water of the Hoyo Azul",
+        "text": "Hoyo Azul’s dazzling aquamarine water is absolutely breathtaking; Scape Park offers eco-tours of the area as well as cave and cenote tours."
+      },
+      {
+        "name": "Meet Dominican Republic Wildlife at Manatí Park",
+        "text": "See flamingos, parrots, monkeys, dolphins, and 150 other species at Manatí Park."
+      },
+      {
+        "name": "Snorkel or Dive Punta Cana’s Shipwrecks",
+        "text": "Take a snorkel lesson or dive Punta Cana’s shipwrecks teeming with marine life."
+      }
+    ]
+  },
+  {
+    "name": "Puerto Plata",
+    "coordinates": ["19.780769", "-70.687111"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/puerto-plata.jpg",
+    "description": "Puerto Plata delivers the best of a traditional Dominican Republic port town while boasting the amenities of its all-inclusive beachside resorts. Christopher Columbus set foot on this land, and in good time, Puerto Plata became an important trading port with its own fort. Visit Fortaleza San Felipe, ride the aerial tramway, and explore the Amber Museum.",
+    "thingsToDo": [
+      {
+        "name": "Visit Fortaleza San Felipe",
+        "text": "Step foot in one of the most important colonial forts of the Caribbean; this 16th century fort still has its original cannons and offers stunning views of the Dominican Republic coast."
+      },
+      {
+        "name": "Ride the Aerial Tram to the Summit of Mount Isabel de Torres",
+        "text": "Feel the thrill of riding an aerial tram that will take you to the gardens and statue of Christ that stands on this summit."
+      },
+      {
+        "name": "Find Amber Treasure",
+        "text": "Visit the Amber Museum and admire the collection of amber or browse its shop for authentic amber jewelry."
+      },
+      {
+        "name": "Get Your Thrills",
+        "text": "Take a short drive to Cabarete where the conditions for kitesurfing and windsurfing are ideal, go cliff-jumping at Damajaqua Cascades, or take a leisurely horseback ride through Puerto Plata’s lush landscape."
+      }
+    ]
+  },
+  {
+    "name": "Dubai",
+    "coordinates": ["25.276987", "55.296249"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/dubai.jpg",
+    "description": "Be prepared to get dazzled by Dubai. Everything in this second largest Emirate in the U.A.E. is super-sized, super luxurious and state-of-the-art. A cosmopolitan metropolis, Dubai attracts the most seasoned travelers from the world over. You could catch a show at the Dubai Opera, take a 4x4 ride over rippling sand dunes, dine at an upscale restaurant at Jumeriah Beach, ascend the world's tallest building, the Burj al Khalifa or ride a hot-air balloon over the Arabian desert.",
+    "thingsToDo": [
+      {
+        "name": "Tour traditional Dubai",
+        "text": "Get fascinated by Dubai's rich history and tradition as you visit the Al Fahidi Historical Neighborhood, Dubai Creek, and the Gold and Spice Souks."
+      },
+      {
+        "name": "Dine in style",
+        "text": "Sit down to a magical six-course dinner at Al Mahara at the Burj Al Arab Jumeirah, created by a Michelin-starred chef."
+      },
+      {
+        "name": "Top it off with Burj Khalifa",
+        "text": "Head 160 stories up to the observation deck of the tallest building in the world for stunning, panoramic views of magnificent Dubai."
+      }
+    ]
+  },
+  {
+    "name": "Abu Dhabi",
+    "coordinates": ["24.466667", "54.366669"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/abudhabi.jpg",
+    "description": "If it’s culture and adventure you’re seeking, there couldn't be a better time to visit Abu Dhabi. An elegant fusion of sand and sea, UAE’s slick capital graces its visitors with a rich cultural heritage and warm hospitality, skyscrapers and shopping malls, pristine waters and the planet's most spectacular sand dunes. Experience a desert safari. Sail on a catamaran. Enjoy spectacular views from a seaplane. The possibilities are endless.",
+    "thingsToDo": [
+      {
+        "name": "Visit the Sheikh Zayed Grand Mosque",
+        "text": "This masterpiece of contemporary Islamic architecture boasts of more than 80 domes, 1000 pillars, 100,000 tons of pure white Greek marble, and the world’s largest chandelier."
+      },
+      {
+        "name": "Get the thrill of Formula 1",
+        "text": "Visit Yas Island for roaring Formula 1 excitement at Abu Dhabi's Grand Prix, the largest sporting event in the Middle East."
+      },
+      {
+        "name": "Visit Ferrari World",
+        "text": "Experience adrenaline-pumping action in the world's largest indoor theme park with 3D & 4D adventures, exhilarating simulation races, and Formula Rossa, the fastest roller coaster in the world."
+      }
+    ]
+  },
+  {
+    "name": "Toronto",
+    "coordinates": ["43.651070", "-79.347015"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/toronto.jpg",
+    "description": "Toronto is the sum of its multicultural neighborhoods and marketplaces. Taste your way through Greektown, Little Italy, Koreatown, Chinatown, Kensington Market, and the renowned St. Lawrence Market. Ferry to the Toronto Islands for family-friendly fun on the beaches, bike paths, and rides at Centreville Amusement Park, or see the dinosaur bones and Egyptian treasures at the Royal Ontario Museum. The CN Tower is a must-see with dizzying views of the city and lake below.",
+    "thingsToDo": [
+      {
+        "name": "Catch a Festival",
+        "text": "See the Toronto International Film Festival, the largest film festival in the world open to the public; stroll the city streets during Nuit Blanche; catch an indie play at the Toronto Fringe Festival, or explore the city’s restaurants during Summerlicious and Winterlicious."
+      },
+      {
+        "name": "Eat at 360 Restaurant",
+        "text": "Take an elevator to the top of the CN Tower and eat at 360, a revolving restaurant featuring fresh Canadian cuisine."
+      },
+      {
+        "name": "Browse the Boutiques and Studios of the Distillery District",
+        "text": "Discover local artists and artisans housed in beautiful Victorian industrial buildings."
+      }
+    ]
+  },
+  {
+    "name": "Vancouver",
+    "coordinates": ["49.246292", "-123.116226"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/vancouver.jpg",
+    "description": "Vancouver is nestled between the ocean and the North Shore Mountains. Go whale watching, hike a mountain, ski, or discover the city’s multicultural culinary scene. Bike at Stanley Park, passing totem poles, or tee-off at the park’s golf course. For an adrenaline rush, experience the Sky to Sea Gondola over Howe Sound or trek across the Capilano Suspension Bridge. Visit Kitsilano Beach to catch some rays with the locals.",
+    "thingsToDo": [
+      {
+        "name": "Take a Cruise",
+        "text": "Want to cruise to Alaska? Vancouver is one of the leading ports from which to begin your adventure north."
+      },
+      {
+        "name": "Explore Stanley Park",
+        "text": "Rent a bike and cycle the seawall that runs 20 miles along Vancouver’s waterfront. The park boasts family-friendly playgrounds, a water park, and the Vancouver Aquarium. Admire stately cedars, maples, and Douglas fir."
+      },
+      {
+        "name": "Art and Culture at Granville Island",
+        "text": "Find Vancouver’s design studios, galleries, leading cuisine, and vibrant market."
+      },
+      {
+        "name": "Visit VanDusen Botanical Garden",
+        "text": "If you’re visiting Vancouver in the spring, be sure to take the famous Laburnum Walk; the garden boasts year-round blooms."
+      }
+    ]
+  },
+  {
+    "name": "Niagara Falls",
+    "coordinates": ["43.060001", "-79.106667"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/niagara.jpg",
+    "description": "Three different waterfalls make up Niagara Falls: Horseshoe Falls, the American Falls, and the Bridal Veil Falls. Horseshoe Falls is arguably the most dramatic and is best viewed from the Canadian city of Niagara Falls. The city’s glittering entertainment district boasts a range of attractions, including the Maid of the Mist boat ride, the Journey Behind the Falls, Niagara Skywheel, Skylon Tower, and Niagara Casino.",
+    "thingsToDo": [
+      {
+        "name": "Ride the Maid of the Mist",
+        "text": "You’ll get so close to the falls on this boat ride, you’ll have to wear a poncho. The views are stunning."
+      },
+      {
+        "name": "Niagara Glen Nature Reserve",
+        "text": "Hike through the reserve, weaving through natural boulders and the Niagara Escarpment, enjoying breathtaking views of the rushing Niagara River."
+      },
+      {
+        "name": "Skylon Tower",
+        "text": "There are many ways to experience the falls, but for a truly unique view, ride to the observation deck of the Skylon Tower to see the falls from above."
+      }
+    ]
+  },
+  {
+    "name": "Prague",
+    "coordinates": ["50.073658", "14.418540"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/prague.jpg",
+    "description": "One of Europe’s most fascinating cities, Prague has a skyline of cathedrals, fairy-tale castles and soaring towers. And down below, a vibrant urban center, nestled amidst ancient monuments and bridges, offers a plethora of dining options, bustling markets and jazz clubs. Explore the past and the present with our guided tour for a truly surreal experience.",
+    "thingsToDo": [
+      {
+        "name": "Explore the Old Town Square",
+        "text": "Despite Prague’s lively history of invasions, the Old Town Square has remained relatively untouched since the 10th Century. Swarms of tourists crowd the historical streets, packing out the alfresco restaurants everyday. The square itself is the perfect place to admire the wonderful architecture Prague has to offer and if that isn’t your thing then the various street performers, musicians and merchants that line the streets here will certainly keep you entertained."
+      },
+      {
+        "name": "Stroll across the Charles Bridge",
+        "text": "Whoever said that “the best things in life are free” may well have been referring to the Charles Bridge in Prague. A simple walk across the 14th Century bridge is one of the most enjoyable and memorable experiences of visiting Prague. The bridge was commissioned in 1357 by Charles IV to replace an older bridge that had been washed away by floods. Although completed in 1390, with the striking statues added in the 17th century, the bridge did not take Charles’ name until the 19th century."
+      },
+      {
+        "name": "Visit Prague Castle",
+        "text": "Located in Hradcany (the Castle district), Prague Castle is without a doubt the city’s most popular tourist attraction and it is easy to see why. The breath-taking castle has traditionally been the seat of Czech rulers and is today the official residence of the president."
+      },
+      {
+        "name": "Drink a world famous beer (or two)",
+        "text": "The Czechs claim to have the best beer (pivo) in the world and Prague is a great place to test their claim. The huge choice of bars in the city offer famous Czech lagers such as Budvar and Staropramen alongside craft beers from the top microbreweries in the country. Most Czech beers are light beers, brewed naturally from hand-picked hops."
+      },
+      {
+        "name": "Immerse yourself in the Prague nightlife",
+        "text": "Prague’s nightlife has it all. World renowned for its jazz and classical music, there are many live music venues in Prague that can provide a good evening of entertainment. Take a stroll down the riverside and arrive at JazzDock which draws some of the best local jazz musicians. For serious clubbers, the Cross Club is an industrial nightclub in every sense of the word."
+      }
+    ]
+  },
+  {
+    "name": "Cesky Krumlov",
+    "coordinates": ["48.812737", "14.317466"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/cesky.jpg",
+    "description": "A fairy-tale pop-up of a town that crowns a series of bluffs on the edge of the Vltava River south of Ceske Budejovice, Cesky Krumlov is one of the veritable jewels of South Bohemia. Its Old Town bears a well-deserved UNESCO tag for its maze of medieval streets, 13th century relics and layers of architectural history – much of which has remained unspoilt by conflict and war.",
+    "thingsToDo": [
+      {
+        "name": "Take in the Sights at the Ceský Krumlov Castle",
+        "text": "The massive Ceský Krumlov Castle complex – the largest in Eastern Europe – dominates the old town and offers a fascinating look into the lives of the aristocratic rulers of Bohemia through the centuries. Although tracing its roots back to 1240, much of what's seen today was built in the 17th century, including the fine Rosenberg Ballroom, the splendid Chapel of St. George, the Renaissance Hall, and the Royal Apartments."
+      },
+      {
+        "name": "Explore Art City: Fine Frescoes and the Egon Schiele Art Centrum",
+        "text": "A highlight of a visit to Ceský Krumlov is simply walking its many old streets and soaking up the splendid artwork that is everywhere around you. The city is famous for its many frescoes, a tradition that dates back centuries."
+      },
+      {
+        "name": "Experience Rafting Down the Vltava River",
+        "text": "The fairytale town of Cesky Krumlov is perfect to be enjoyed from the water, as you raft down the Vltava River and past stunning architecture. You can hop on a raft just steps from the castle and go downstream towards Ceske Budejovice, another dreamy town with its own magical Old Town. On the way you'll pass by the town of Zlata Koruna and its old monastery and have a chance to stop by waterfront snack stands to grab a bite or a cold drink."
+      },
+      {
+        "name": "Climb Mount Klet",
+        "text": "Located on the outskirts of Ceský Krumlov, the 1,084-meter-high Mount Klet' makes an excellent diversion after all that sightseeing in the historic old city. Getting there is half the fun, and reaching the summit can be done on foot by following the well-marked trails, or aboard a fast chairlift"
+      }
+    ]
+  },
+  {
+    "name": "Brno",
+    "coordinates": ["49.195061", "16.606836"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/brno.jpg",
+    "description": "Pulsing with an indelible student energy during term times from its place in the southern depths of the Czech Republic, Brno – the regional capital of South Moravia – belies its local rep as a rather sleepy place with some of the country’s top drum and bass clubs and a booming café culture to rival both Prague and Vienna. There’s also a gorgeous Old Town district to see; the second largest in the country, where the spiked Neo-gothic towers of the Cathedral of St Peter and Paul stand watch over cobbled squares and the eerie tunnels of the Brno Ossuary lurk underground. Spilberk Castle crowns a bluff in the midst of the town too, while Brno Reservoir is a hubbub of recreational activity during the summer, offering boating, swimming and al fresco drinking opportunities aplenty.",
+    "thingsToDo": [
+      {
+        "name": "Visit the Old Town Hall",
+        "text": "Here you get an idea of Brno’s enduring sense of fun, as well as a neat view of the city from the roost of the tower. On approach you might notice that one of the turrets on the Town Hall’s decorative facade looks a bit skewed. The story goes that Anton Pilgram, the building’s architect was screwed out of money by Brno’s City Council and his payback was to mess with the design. The other version holds that he was simply too drunk to get it right. The building goes back to the 1200s, and formed part of the city defences during the famous siege by Swedish forces in 1645."
+      },
+      {
+        "name": "Visit Freedom Square – Namesti Svobody",
+        "text": "Freedom Square (Náměstí Svobody in Czech) is one of the main hubs of activity and interest in the city. It’s also among the top things to do in Brno. The triangular square is surrounded by a number of stunning Renaissance and functionalist style buildings. Sure to please any architecture enthusiast!"
+      },
+      {
+        "name": "Visit Zelny trh aka the Cabbage Market",
+        "text": "Vegetables, Mozart, hidden underground labyrinths, fabulous vegan ice cream, and Baroque architecture. This and more can be found in Brno’s Zelny trh square."
+      },
+      {
+        "name": "Visit the Capuchin Crypt",
+        "text": "The Capuchin Crypt in central Brno is the final resting places of the mummified remains of Capuchin monks. A self-guided tour with an English pamphlet is a good way to kill half an hour, especially on a rainy day."
+      }
+    ]
+  },
+  {
+    "name": "Ostrava",
+    "coordinates": ["49.820923", "18.262524"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/ostrava.jpg",
+    "description": "Sat just on the northern edge of Moravia, where the Czech Republic gives way to Silesia and the Polish borderlands, Ostrava is a down-to-earth gem of a city that fuses historical beauty and Baroque brilliance in its old town with an interesting mix of Soviet Realism, Russian Brutalism and post-industrial sprawl.",
+    "thingsToDo": [
+      {
+        "name": "Vitkovice",
+        "text": "In case you need proof of Ostrava’s pride in its industrial roots the vast industrial remnants of the Vitkovice metallurgy district have been cherished and transformed into modern attractions. The cavernous gasometer is a concert hall, while the 19th-century blast furnace is part of a tour that includes a 60-metre-high lookout accessed by an industrial elevator. The whole district is on the European cultural heritage list."
+      },
+      {
+        "name": "Landek Park",
+        "text": "It’s fitting that Ostrava should boast the Czech Republic’s premier mining attraction, because people have been making use of the mineral deposits in Landek Park since time immemorial. Landek Park puts you right in the boots of a miner, to experience the good and not so good sides of industrialised mining in Ostrava over the last two centuries."
+      },
+      {
+        "name": "Miniuni Miniature Park",
+        "text": "This is a fun diversion for families with younger children. In a landscaped 1.5-hectare park are some 30 models of famous landmarks from around the world. The Brandenburg Gate, The Eiffel Tower and London’s Houses of Parliament are all here, carefully constructed at a scale of 1:25. A recent update has brought the Wonders of the Ancient World to this corner of the Czech Republic."
+      },
+      {
+        "name": "Ostravar Brewery",
+        "text": "Ostravar, which comes in light beer and light lager varieties (Original and Premium), isn’t a household name outside of upper Moravia, but has a big local market. Beer is of course the Czech Republic’s national drink, and at this 19th-century brewery you’ll be walked through the brewing process, from the brewhouse with its large copper vats, to the cellar where the beer develops its depth."
+      }
+    ]
+  },
+  {
+    "name": "Moravian Karst",
+    "coordinates": ["49.183239", "15.454273"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/moravian.jpg",
+    "description": "A land of more than 1,000 caves and grottoes, gorges and canyons, the Moravian Karst sprawls out over a whopping 92 square kilometers just north of the city of Brno. It’s famed for its array of breathtaking geological wonders, going from the sculpted stalactites and colossal stalagmites, underground rivers and sinkholes of the Punkva Caves to the domed chambers and winding corridors of the vast Amaterska system. The place is also home to the great Macocha Gorge – the largest sinkhole canyon of its kind in all of Central Europe that plays host to the bubbling headwaters of the Punkva River. Hiking, caving and biking opportunities abound here, and travelers can also seek out the Josefov blast furnaces and Chateau of Rajec nad Svitavou nearby."
+  },
+  {
+    "name": "Bohemian Paradise",
+    "coordinates": ["50.58356", "15.15186"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/bohemian.jpg",
+    "description": "The first ever natural reserve in the Czech Republic is an enchanting land of towering hoodoos and canyons, curious chiselled cliffs, cascading gores and rugged hills, all dressed in sweeping dashes of pine forest, crisscrossed by winding hiking trails and dotted with the romantic silhouettes of castles like the precipitous Trosky keep. Visitors touring the region can delve into ancient rock towns that protrude almost organically from the sandstone ridges they stand on, explore dramatic dolomite caverns at Bozkov, see folksy timber architecture between the rustic villages, go lake hopping, kayaking or canyon scaling, enjoy horse riding in the shadow of ancestral chateaux – the list goes on!"
+  },
+  {
+    "name": "London",
+    "coordinates": ["51.509865", "-0.118092"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/london.jpg",
+    "description": "Planning a trip across the pond? From finding Abbey Road to catching the changing of the guards at Buckingham Palace, we can help you revel in London’s endless activities. Take exciting tours of iconic landmarks like Westminster Abbey and the Tower Bridge. Then, follow it up by exploring the famous Portobello street market in Notting Hill. The possibilities are endless in this capital city.",
+    "thingsToDo": [
+      {
+        "name": "See the Buckingham Palace",
+        "text": "A trip to London is incomplete without strolling through Green Park to catch a glimpse of Buckingham Palace. The palace has been home to the British Royal Family since 1837. It features 775 rooms and the largest private garden in London."
+      },
+      {
+        "name": "Take the Thames Cruise",
+        "text": "The Thames is the lifeblood of London, bringing industry to the city for centuries. It is England’s longest river, leading into the North Sea at its end. It has been the base for settlements since prehistoric times, and was a strategic importance to the Romans and English Kings, as well as during both World Wars."
+      },
+      {
+        "name": "Visit the London Eye",
+        "text": "A trip to London isn’t complete without a visit to the iconic London Eye. Originally constructed to celebrate the millennium, the Eye is a giant ferris wheel offering gorgeous views across the city. At night, the wheel is lit up in seasonal colors and is the centerpiece of London’s annual New Year’s fireworks display."
+      },
+      {
+        "name": "Explore the Hyde Park",
+        "text": "Hyde Park is possibly the most famous park in London, and it is one of the largest. The park has historical significance, having hosted a number of demonstrations and protests including protests by the Suffragettes."
+      }
+    ]
+  },
+  {
+    "name": "Manchester",
+    "coordinates": ["53.483959", "-2.244644"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/manchester.jpg",
+    "description": "Manchester is England’s second biggest city, having been settled since 79 AD by the Romans. Manchester is a vibrant urban hotspot with excellent nightlife, arts and culture. The city is surrounded by countryside and the gorgeous Pennine mountains, making it a great base for exploring wilder regions of the country. Manchester has an extensive history and is important in many fields, including music, science and transport.",
+    "thingsToDo": [
+      {
+        "name": "Visit the Manchester Museum",
+        "text": "The Manchester Museum is the country’s biggest university museum with a collection of 4,500,000 items from all around the world. The museum is housed within a striking gothic-style building and showcases the best in archaeology and natural history."
+      },
+      {
+        "name": "Explore the Manchester Art Gallery",
+        "text": "Manchester Art Gallery is situated in the city centre, in a building that has stood on this space since 1823. The gallery celebrates local and international work with an extensive collection that spans centuries. Here you will find paintings by artists such as Gainsborough, Turner and Pissarro. The gallery also features collections of crafts, from ceramics to metalwork and home items, as well as clothing and accessories dating from 1600 to the modern day."
+      },
+      {
+        "name": "See the Old Trafford",
+        "text": "For football fans, a visit to Old Trafford football stadium is a must. Home to Manchester United FC since 1910, the stadium is the largest in the country and one of its most iconic. Book a tour for a unique experience through the football grounds, backstage, and into the on-site museum."
+      },
+      {
+        "name": "Experience Manchester’s Craft Beer",
+        "text": "Manchester is well-known for its craft beer scene which has sprung up over the past few years. There are many pubs and bars offering real ale and home-brewed craft beer, and even annual festivals celebrating the city’s beer."
+      }
+    ]
+  },
+  {
+    "name": "Oxford",
+    "coordinates": ["51.752022", "-1.257677"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/oxford.jpg",
+    "description": "From the glorious Bodleian Library to the Ashmolean Museum, Oxford is jam-packed with fantastic things to see and do. It has incredible architecture, superb art and a storied past dating back to Anglo-Saxon times – here, you can follow in the footsteps of Prime Ministers, poets and, of course, Harry Potter.",
+    "thingsToDo": [
+      {
+        "name": "Tour the Bodleian Library",
+        "text": "The Bodleian is the historic heart of the University of Oxford. It’s the institute’s main research library and one of the oldest in Europe, dating back over 400 years. It sits in Radcliffe Square and houses ancient manuscripts, rare books, printed ephemera and maps."
+      },
+      {
+        "name": "Smell the roses at the University of Oxford Botanic Garden",
+        "text": "The oldest of its kind in England, Oxford’s small botanic garden was founded in 1621 for the study of medicinal plants, and remains a department of the university today. It is run more for research purposes than for display, but it’s in a tranquil and colourful spot beside the River Cherwell."
+      },
+      {
+        "name": "Visit the Oxford University Museum of Natural History",
+        "text": "Here, you can see specimens from all over the world, including a 150-year-old Japanese spider crab, a stunning example of neogothic architecture and a meteorite that fell from space 4.5 billion years ago. But it’s the dinosaurs that really draw the crowds. As well as a towering T-Rex skeleton – ‘Stan’, the second most complete ever found – you’ll see pieces of Megalosaurus, which, in 1677, was the first dinosaur ever mentioned in a written text."
+      }
+    ]
+  }
+]

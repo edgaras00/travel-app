@@ -1,9 +1,16 @@
 [
   {
     "name": "8-night Italy's Great Cities",
+    "region": "Europe",
     "price": 2579,
     "description": "All roads may lead to Rome, but we know the scenic avenues to reach all the enchanting cities on your Italy bucket list. That serene passageway in Assisi, that chic leather boutique in Florence, that off-the-beaten-path bridge in Venice—we know the way! We’ve mapped out the iconic experiences of Italy, leading you through the historic streets and piazzas of the “Eternal City,” the vine and olive-clad hills of Tuscany, and the romantic canals of the “Floating City” so you can experience the art, architecture, vino, and espresso you’ve long imagined. On this dreamy tour of Italy’s great cities, you’ll wake up to lush gardens in San Martino in Campo, stroll through the medieval-walled city of Siena, ponder the curious tilt at the Tower of Pisa, and happily lean into the delicious plates of pasta, pizza, and pastries along the way.",
     "duration": 9,
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/tour-venice.jpg",
+    "images": [
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-rome.jpg",
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-pisa.jpg",
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-florence.jpg"
+    ],
     "tags": ["culture", "general", "romantic", "family"],
     "locations": [
       {
@@ -82,11 +89,11 @@
         "title": "Vacation ends",
         "description": "Your vacation ends with breakfast this morning."
       }
-    },
-    "coverImage": "8nights.png"
+    }
   },
   {
     "name": "9-night Northern Italy’s Highlights & Cinque Terre",
+    "region": "Europe",
     "locations": [
       {
         "name": "Milan",
@@ -140,7 +147,12 @@
     "price": 2915,
     "description": "Parmesan and prosciutto. Ferraris and Fiats. Ruins and the Riviera. Some of Italy’s greatest indulgences can be found up north. Italy’s “Fabulous Five,” the nickname for the gelato-colored, cliffside fishing villages along the Mediterranean, start the count of the numerous joys you’ll experience on this Undiscovered Tour of Northern Italy. In addition to savoring the freshest seafood along the coast, you’ll relish a balsamic vinegar tasting in the epicurean city of Modena, a parmesan cheese tasting near Verdi’s hometown of Busseto, a risotto lunch at a Vercelli rice factory, and a wine tasting in vineyard-dotted Gabiano. To spice things up, you’ll speed over to the Ferrari Museum in Maranello, cruise to the yacht-filled harbor of Portofino, and strut your stuff down the streets of Milan. Leading you to the fabulous, the famous, and the fashionable, this tour is the way to see Northern Italy in style.",
     "duration": 10,
-    "coverImage": "9night-italy.png",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/tour-milan.jpg",
+    "images": [
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-parma.jpg",
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-lucca.jpg",
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-turin.jpg"
+    ],
     "tags": ["culture", "romantic", "family", "general"],
     "itineraries": {
       "day1": {
@@ -200,10 +212,16 @@
   },
   {
     "name": "10-Nights The Croatian",
+    "region": "Europe",
     "price": 6215,
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/tour-zagreb.jpg",
+    "images": [
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-zadar.jpg",
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-pula.jpg",
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-trogir.jpg"
+    ],
     "description": "When you stroll through Croatia’s leafy towns, enjoy a walk in a national park, and marvel at its sparkling emerald lakes, it’s easy to see why other countries are green with envy. With its glorious coastal cities, ancient Roman ruins, magnificent medieval architecture, and stunning natural wonders, Croatia has it all. On this Undiscovered Tour of Croatia and Slovenia, you will see what European vacationers have long tried to keep secret from the rest of the world—impressive caves and castles, spectacular waterfalls and walled cities, picture-perfect shorelines and famous film locations. Game of Thrones fans will recognize Old Town Dubrovnik as the medieval setting for the fictional city of King’s Landing, yet at the end of this dramatic vacation to Croatia, you’ll be perfectly happy with the start-to-finish storyline.",
     "duration": 10,
-    "coverImage": "10night-croatia.png",
     "tags": ["culture", "family", "general"],
     "locations": [
       {
@@ -303,8 +321,14 @@
   },
   {
     "name": "9-night America's National Parks",
+    "region": "USA",
     "duration": "10",
-    "coverImage": "9-night-america.png",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/tour-rushmore.jpg",
+    "images": [
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-yellowstone.jpg",
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-salt-lake-city.jpg",
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-horn.jpg"
+    ],
     "price": 3359,
     "description": "The mining boom may have been more than a century ago, but it’s never too late to strike gold in America’s West. Filled with dazzling nuggets of wonder, this National Parks vacation takes you deep into the golden wilderness of untamed South Dakota, Wyoming, and Montana. Back-to-back visits to some of the country’s most renowned national parks bring you face-to-face with the monumental sculptures of Mount Rushmore, the explosive geysers of Yellowstone National Park, and the towering spires of Grand Teton National Park. Plus, visits to the Crazy Horse Memorial, the Little Bighorn Battlefield, and the gold rush towns of Cody, Jackson, and Deadwood shed light on some of the 19th century’s most famous battles and barroom brawls. After meeting herds of elk, bison, and other area locals, city slickers can get their fix with a visit to lively Salt Lake City.",
     "tags": ["culture", "family", "adventure", "general"],
@@ -421,9 +445,15 @@
   },
   {
     "name": "Thailand Island Hopper",
+    "region": "Asia",
     "description": "Lorem ipsum",
     "price": 1670,
-    "coverImage": "thailand-island-hopper.png",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/tour-kohtao.jpg",
+    "images": [
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-bangkok.jpg",
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-phi.jpg",
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-phuket.jpg"
+    ],
     "duration": 14,
     "tags": ["adventure", "family", "general", "group"],
     "locations": [
@@ -517,9 +547,15 @@
   },
   {
     "name": "Japan Adventures",
+    "region": "Asia",
     "description": "Soak up the unique atmosphere of Japan. Grasp simple Japanese phrases and learn to make sushi. Travel by bullet train and spend a night in a temple. Stroll the streets of Takayama and visit the Gion district. Explore Osaka and wrap up your tour with a karaoke.",
     "duration": 10,
-    "coverImage": "japan-adventures.png",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/tour-tokyo.jpg",
+    "images": [
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-kyoto.jpg",
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-hakone.jpg",
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-osaka.jpg"
+    ],
     "price": 2459,
     "tags": ["culture", "group", "family", "adventure"],
     "locations": [
@@ -538,9 +574,6 @@
       {
         "name": "Osaka",
         "coordinates": ["34.672314", "135.484802"]
-      },
-      {
-        "name": ""
       }
     ],
     "itineraries": {
@@ -588,10 +621,16 @@
   },
   {
     "name": "Pandas and Palaces",
+    "region": "Asia",
     "duration": 13,
     "description": "Start in Beijing and end in Chengdu! With the tour Pandas and Palaces, you have a 11 days tour package taking you through Beijing, China and 4 other destinations in China. Pandas and Palaces includes accommodation, an expert guide, meals, transport and more.",
     "price": 2800,
-    "coverImage": "pandas-palaces.png",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/tour-panda.jpg",
+    "images": [
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-chongqing.jpg",
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-beijing.jpg",
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-xian.jpg"
+    ],
     "tags": ["group", "general", "culture"],
     "locations": [
       {
@@ -676,8 +715,14 @@
   },
   {
     "name": "Felluca Odyssey",
+    "region": "Africa",
     "price": 2100,
-    "coverImage": "felluca.png",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/tour-aswan.jpg",
+    "images": [
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-edfu.jpg",
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-komombo.jpg",
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-cairo.jpg"
+    ],
     "description": "Uncover the jewels of the Nile. Visit the Valley of The Kings. Discover the 'City of the Dead' Take a cruise down the Nile",
     "duration": 9,
     "tags": ["culture", "group", "adventure"],
@@ -744,10 +789,17 @@
   },
   {
     "name": "6-Day Group Garden Route & Addo Adventure Tour",
+    "region": "Africa",
     "price": 980,
     "description": "Winner Tour of the Year Award 2019 - South Africa. Spot colonies endangered penguins. Relax in the seaside town of Hermanus. Be brave and go shark cage diving. Enjoy unforgettable wine tastings.",
     "duration": 6,
-    "coverImage": "6-day-sa.png",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/tour-capetown.jpg",
+    "images": [
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-hermanus.jpg",
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-addo.jpg",
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-cape-agulhas.jpg",
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-africa-penguin.jpg"
+    ],
     "tags": ["adventure", "group", "safari", "wildlife"],
     "locations": [
       {
@@ -816,10 +868,16 @@
   },
   {
     "name": "Best of Northern Arizona",
+    "region": "USA",
     "description": "Start and end in Flagstaff! With the Hiking & Trekking tour Best of Northern Arizona, you have a 6 days tour package taking you through Flagstaff, USA and 2 other destinations in USA. Best of Northern Arizona includes accommodation in a hotel as well as an expert guide, meals, transport and more.",
     "price": 2839,
     "duration": 6,
-    "coverImage": "north-arizona.png",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/tour-sedona.jpg",
+    "images": [
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-grandcanyon.jpg",
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-flagstaff.jpg",
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-sedona2.jpg"
+    ],
     "tags": ["adventure", "group"],
     "locations": [
       {
@@ -868,9 +926,16 @@
   },
   {
     "name": "New York Explorer",
+    "region": "USA",
     "description": "Start and end in New York City! With the In-depth Cultural tour New York Explorer (5 Days), you have a 5 days tour package taking you through New York City, USA. New York Explorer (5 Days) includes accommodation, an expert guide, meals.",
     "duration": 5,
-    "coverImage": "ny-explorer.png",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/tour-manhattan.jpg",
+    "images": [
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-wallst.jpg",
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-liberty.jpg",
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-empire-state.jpg",
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-brooklyn-bridge.jpg"
+    ],
     "price": 900,
     "tags": ["culture", "group", "general", "city"],
     "locations": [

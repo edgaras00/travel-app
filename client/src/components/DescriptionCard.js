@@ -9,8 +9,8 @@ const DescriptionCard = ({ image, title, text }) => {
       </div>
       <div className="description-card-text-container">
         <h2>{title}</h2>
-        {/* <p>{text}</p> */}
-        <p>
+        <p>{text}</p>
+        {/* <p>
           Visiting Europe? Welcome to a continent that’s rich in history and
           modern charisma. Whether you’re traveling solo, with family, or
           friends, Europe offers countless opportunities to mesmerize you. With
@@ -20,7 +20,7 @@ const DescriptionCard = ({ image, title, text }) => {
           Budapest or marvel in the beauty of the Northern Lights in Iceland.
           There are endless experiences, and Paradise Travel has just the right
           vacation packages to make it a trip you’ll never forget.
-        </p>
+        </p> */}
       </div>
     </div>
   );

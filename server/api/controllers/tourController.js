@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const Tour = require("../models/tourModel");
 const APIFeatures = require("../utils/apiFeatures");
 const catchAsync = require("../utils/catchAsync");
+const ObjectId = mongoose.ObjectId;
 
 exports.getAllTours = catchAsync(async (req, res, next) => {
   const features = new APIFeatures(Tour.find(), req.query)
@@ -10,7 +11,7 @@ exports.getAllTours = catchAsync(async (req, res, next) => {
     .limitFields()
     .paginate();
 
-  const tours = await features.query.populate("guides name");
+  const tours = await features.query.populate("guides region", "name");
 
   res.status(200).json({
     status: "Success",
@@ -22,7 +23,14 @@ exports.getAllTours = catchAsync(async (req, res, next) => {
 });
 
 exports.getTour = catchAsync(async (req, res, next) => {
-  const tour = await Tour.findById(req.params.tourID);
+  const id = req.params.tourID;
+
+  // Find by slug or ID
+  const tour = mongoose.isValidObjectId(id)
+    ? await Tour.findById(req.params.tourID)
+    : await Tour.findOne({ slug: id });
+
+  // const tour = await Tour.findById(req.params.tourID);
 
   if (!tour) {
     return next(new AppError("Tour not found", 404));

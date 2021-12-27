@@ -1,25 +1,37 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import DestinationCard from "./DestinationCard";
 import "../styles/destinationRegions.css";
-// import london from "../images/london.jpg";
-import europe from "../imgs/middle-east.jpg";
 
 const DestinationRegions = () => {
-  const destinationCards = [];
-  for (let i = 0; i < 12; i++) {
-    destinationCards.push(
-      <Link to="/destinations/Europe">
-        <DestinationCard name="Europe" image={europe} />
+  const [regionData, setRegionData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("http://localhost:5000/api/regions");
+        const data = await response.json();
+        setRegionData(data.data.regions);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fetchData();
+  }, []);
+
+  const regionCards = regionData.map((region) => {
+    return (
+      <Link to={`/destinations/${region.name.toLowerCase()}`} key={region.name}>
+        <DestinationCard name={region.name} image={region.coverImage} />
       </Link>
     );
-  }
+  });
 
   return (
     <div className="destinations">
       <h1>Where Would You Like To Go?</h1>
       {/* <div className="top-row">{destinationCards.slice(0, 3)}</div> */}
-      <div className="destination-card-container">{destinationCards}</div>
+      <div className="destination-card-container">{regionCards}</div>
     </div>
   );
 };

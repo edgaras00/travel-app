@@ -1,65 +1,74 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import DescriptionCard from "./DescriptionCard";
 import LocationMap from "./LocationMap";
+import { capitalizeAll } from "../utils/capitalize";
 import "../styles/locationDetails.css";
-import europe from "../imgs/europe.jpg";
 
 const LocationDetails = () => {
+  const [locationData, setLocationData] = useState(null);
   const { locationID } = useParams();
   console.log(locationID);
-  const locationCoordinates = { London: [51.509865, -0.118092] };
+
+  useEffect(() => {
+    let locationStr = capitalizeAll(locationID, "+");
+
+    if (locationID.toLowerCase() === "zell am see") {
+      const locationArr = locationStr.split("+");
+      locationArr[1] = locationArr[1].toLowerCase();
+      locationStr = locationArr.join("+");
+    }
+
+    const fetchLocationData = async () => {
+      const response = await fetch(
+        `http://localhost:5000/api/places?name=${locationStr}`
+      );
+      const data = await response.json();
+      setLocationData(data.data.places[0]);
+    };
+    fetchLocationData();
+  }, [locationID]);
+
+  let thingsToDo = [];
+  let coordinates = [];
+  if (locationData) {
+    if (locationData.thingsToDo) {
+      thingsToDo = locationData.thingsToDo.map((activity) => {
+        return (
+          <li key={activity.name}>
+            <h3>{activity.name}</h3>
+            <p>{activity.text}</p>
+          </li>
+        );
+      });
+    }
+    if (locationData.coordinates) {
+      coordinates = [
+        { name: locationData.name, coordinates: locationData.coordinates },
+      ];
+    }
+  }
+
   return (
     <div>
       <div className="location-description">
-        <DescriptionCard image={europe} />
+        <DescriptionCard
+          image={locationData ? locationData.coverImage : null}
+          text={locationData ? locationData.description : null}
+        />
       </div>
       <div className="location-map">
         <LocationMap
-          lat={51.509865}
-          lon={-0.118092}
-          zoom={7}
-          coordinates={locationCoordinates}
+          center={locationData ? locationData.coordinates : ["", ""]}
+          zoom={3}
+          coordinates={coordinates}
         />
       </div>
       <div className="things-to-do">
         <div className="things-to-do-image"></div>
         <div className="things-list">
           <h2>Top Things to Do in {locationID}</h2>
-          <ul>
-            <li>
-              <h3>Thing 1</h3>
-              <p>
-                in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut
-                lectus arcu bibendum at varius vel pharetra vel turpis nunc eget
-                lorem dolor sed viverra ipsum nunc aliquet bibendum
-              </p>
-            </li>
-            <li>
-              <h3>Thing 2</h3>
-              <p>
-                in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut
-                lectus arcu bibendum at varius vel pharetra vel turpis nunc eget
-                lorem dolor sed viverra ipsum nunc aliquet bibendum
-              </p>
-            </li>
-            <li>
-              <h3>Thing 3</h3>
-              <p>
-                in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut
-                lectus arcu bibendum at varius vel pharetra vel turpis nunc eget
-                lorem dolor sed viverra ipsum nunc aliquet bibendum
-              </p>
-            </li>
-            <li>
-              <h3>Thing 4</h3>
-              <p>
-                in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut
-                lectus arcu bibendum at varius vel pharetra vel turpis nunc eget
-                lorem dolor sed viverra ipsum nunc aliquet bibendum
-              </p>
-            </li>
-          </ul>
+          <ul>{thingsToDo}</ul>
         </div>
       </div>
     </div>

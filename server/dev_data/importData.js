@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const Destination = require("../api/models/destinationModel");
 const Tour = require("../api/models/tourModel");
 const Region = require("../api/models/regionModel");
+const Place = require("../api/models/placeModel");
 require("dotenv").config({ path: "../.env" });
 
 // Read data
@@ -46,20 +47,23 @@ const importData = async () => {
     const destinationData = readData(path.join(__dirname, "destinations.json"));
     const tourData = readData(path.join(__dirname, "tours.json"));
     const regionData = readData(path.join(__dirname, "regions.json"));
+    const placeData = readData(path.join(__dirname, "places.json"));
 
     // Connect to DB
     await connectToDB();
 
     // Clear collections
-    await clearDB(Destination);
+    // await clearDB(Destination);
     await clearDB(Tour);
     // await clearDB(Region);
+    // await clearDB(Place);
     console.log("DB cleared");
 
     // Upload new data to DB
-    await uploadData(Destination, destinationData);
+    // await uploadData(Destination, destinationData);
     await uploadData(Tour, tourData);
     // await uploadData(Region, regionData);
+    // await uploadData(Place, placeData);
     console.log("Data imported successfully!");
     process.exit(0);
   } catch (error) {

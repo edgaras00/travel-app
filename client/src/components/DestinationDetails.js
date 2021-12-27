@@ -1,87 +1,102 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useParams, useLocation } from "react-router-dom";
 import DestinationCard from "./DestinationCard";
 import DescriptionCard from "./DescriptionCard";
 import LocationMap from "./LocationMap";
-import london from "../images/london.jpg";
-import europe from "../imgs/europe.jpg";
+
+import { capitalizeAll } from "../utils/capitalize";
 import "../styles/destinationDetails.css";
 
 const DestinationDetails = () => {
+  const [destinationData, setDestinationData] = useState(null);
   const { destinationID } = useParams();
-  console.log(destinationID);
-  const location = useLocation();
-  const locations = [];
-  for (let i = 0; i < 4; i++) {
-    locations.push(
-      <Link to={`${location.pathname}/london`}>
-        <DestinationCard name="London" image={london} size="large" />
-      </Link>
-    );
-  }
+  const pathLocation = useLocation();
 
-  const locationCoordinates = {
-    London: [51.509865, -0.118092],
-    Oxford: [51.752022, -1.257677],
-  };
+  useEffect(() => {
+    const destinationStr = capitalizeAll(destinationID, "+");
+    const fetchDestinationData = async () => {
+      try {
+        const response = await fetch(
+          `http://localhost:5000/api/destinations?name=${destinationStr}`
+        );
+        const data = await response.json();
+        setDestinationData(data.data.destinations[0]);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fetchDestinationData();
+  }, [destinationID]);
+
+  console.log(destinationData);
+
+  let locations = [];
+  let locationCoordinates = [];
+  let mapCenter = ["", ""];
+  let thingsToDo = [];
+  if (destinationData) {
+    if (destinationData.places.length > 0) {
+      locations = destinationData.places.map((location) => {
+        return (
+          <Link
+            to={`${pathLocation.pathname}/${location.name.toLowerCase()}`}
+            key={location.name}
+          >
+            <DestinationCard name={location.name} image={location.coverImage} />
+          </Link>
+        );
+      });
+
+      locationCoordinates = destinationData.places.map((location) => {
+        return { name: location.name, coordinates: location.coordinates };
+      });
+
+      mapCenter = destinationData.places
+        ? destinationData.places[0].coordinates
+        : ["", ""];
+    }
+
+    thingsToDo = destinationData.thingsToDo.map((activity) => {
+      return (
+        <li key={activity.name}>
+          <h3>{activity.name}</h3>
+          <p>{activity.text}</p>
+        </li>
+      );
+    });
+  }
 
   return (
     <div className="destination-details">
       <div className="destination-description">
-        <DescriptionCard image={europe} title={destinationID} />
+        <DescriptionCard
+          image={destinationData ? destinationData.coverImage : null}
+          title={destinationData ? destinationData.name : null}
+          text={destinationData ? destinationData.description : null}
+        />
       </div>
       <div className="destination-at-glance region-at-glance">
         <div className="destination-at-glance-text region-description-text">
-          <h2>{destinationID} at a Glance</h2>
+          <h2>{destinationData ? destinationData.name : null} at a Glance</h2>
+          <div>{destinationData ? destinationData.weather : null}</div>
+          <div>{destinationData ? destinationData.currency : null}</div>
+          <div>{destinationData ? destinationData.language : null}</div>
+          <div>{destinationData ? destinationData.bestTimeToVisit : null}</div>
         </div>
         <div className="destination-map region-map">
           <LocationMap
-            lat={51.509865}
-            lon={-0.118092}
+            center={mapCenter}
             zoom={6}
             coordinates={locationCoordinates}
-            pathname={location.pathname}
+            pathname={pathLocation.pathname}
           />
         </div>
       </div>
       <div className="things-to-do">
         <div className="things-to-do-image"></div>
         <div className="things-list">
-          <h2>Top Things to Do in {destinationID}</h2>
-          <ul>
-            <li>
-              <h3>Thing 1</h3>
-              <p>
-                in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut
-                lectus arcu bibendum at varius vel pharetra vel turpis nunc eget
-                lorem dolor sed viverra ipsum nunc aliquet bibendum
-              </p>
-            </li>
-            <li>
-              <h3>Thing 2</h3>
-              <p>
-                in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut
-                lectus arcu bibendum at varius vel pharetra vel turpis nunc eget
-                lorem dolor sed viverra ipsum nunc aliquet bibendum
-              </p>
-            </li>
-            <li>
-              <h3>Thing 3</h3>
-              <p>
-                in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut
-                lectus arcu bibendum at varius vel pharetra vel turpis nunc eget
-                lorem dolor sed viverra ipsum nunc aliquet bibendum
-              </p>
-            </li>
-            <li>
-              <h3>Thing 4</h3>
-              <p>
-                in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut
-                lectus arcu bibendum at varius vel pharetra vel turpis nunc eget
-                lorem dolor sed viverra ipsum nunc aliquet bibendum
-              </p>
-            </li>
-          </ul>
+          <h2>Top Things to Do in {capitalizeAll(destinationID)}</h2>
+          <ul>{thingsToDo}</ul>
         </div>
       </div>
       <div className="destination-card-container">{locations}</div>

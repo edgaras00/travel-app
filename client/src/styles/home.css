@@ -10,6 +10,19 @@
   object-fit: cover;
 }
 
+/* .carousel-card {
+  height: 600px;
+  background: url("https://travelappbucket.s3.amazonaws.com/imgs/cropped-japan.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+
+.carousel-card img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
 .card-container {
   height: 250px;
   margin-top: 10em;

@@ -7,6 +7,8 @@ import DestinationRegions from "./components/DestinationRegions";
 import Destinations from "./components/Destinations";
 import DestinationDetails from "./components/DestinationDetails";
 import LocationDetails from "./components/LocationDetails";
+import Tours from "./components/Tours";
+import TourDetails from "./components/TourDetails";
 
 const App = () => {
   return (
@@ -27,8 +29,8 @@ const App = () => {
         <Route path="/vacations" />
         <Route path="/vacations/:vacationType" />
         <Route path="/vacations/:vacationType/:vacationID" />
-        <Route path="/tours" />
-        <Route path="tours/:tourType/:tourID" />
+        <Route path="/tours" element={<Tours />} />
+        <Route path="/tours/:tourID" element={<TourDetails />} />
         <Route path="/blog" />
       </Routes>
       <Footer />

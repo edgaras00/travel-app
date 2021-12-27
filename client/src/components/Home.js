@@ -27,11 +27,23 @@ const Home = () => {
           //   infiniteLoop={true}
           //   interval={2000}
         >
-          <div>
-            <img src={vacation} alt="vacation" />
+          <div className="carousel-card">
+            <img
+              src="https://travelappbucket.s3.amazonaws.com/imgs/cropped-japan.jpg"
+              alt="vacation"
+            />
           </div>
           <div>
-            <img src={vacation2} alt="vacation" />
+            <img
+              src="https://travelappbucket.s3.amazonaws.com/imgs/cropped-vacation.jpg"
+              alt="vacation"
+            />
+          </div>
+          <div>
+            <img
+              src="https://travelappbucket.s3.amazonaws.com/imgs/cropped-adventure.jpg"
+              alt="vacation"
+            />
           </div>
         </Carousel>
       </div>

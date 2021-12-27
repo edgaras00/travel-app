@@ -14,7 +14,7 @@ router
   );
 
 router
-  .route("/:packageID")
+  .route("/:tourID")
   .get(tourController.getTour)
   .patch(
     authController.protectRoute,
