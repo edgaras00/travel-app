@@ -5,6 +5,10 @@
   display: flex;
 }
 
+.offer-card-reverse {
+  flex-direction: row-reverse;
+}
+
 .offer-card img {
   width: 100%;
 }

@@ -4,6 +4,12 @@
   align-items: center;
 }
 
+.tours-header {
+  font-size: 2em;
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
 .tour-card-container {
   width: 96%;
   display: grid;

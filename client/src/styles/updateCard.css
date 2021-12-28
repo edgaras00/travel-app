@@ -1,0 +1,35 @@
+.update-card {
+  height: 400px;
+  width: 44%;
+  background-size: cover;
+  color: #fff;
+  font-size: 1.5em;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.update-card-content {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 1em;
+}
+
+.update-card-text {
+  width: 80%;
+}
+
+.update-button-container {
+  width: 18%;
+  margin-bottom: 2px;
+}
+
+.update-button {
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  background-color: transparent;
+  font-size: 0.7em;
+  border: 3px solid #fff;
+}

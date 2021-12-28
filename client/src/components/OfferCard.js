@@ -1,9 +1,10 @@
 import React from "react";
 import "../styles/offerCard.css";
 
-const OfferCard = ({ image, title, text }) => {
+const OfferCard = ({ image, title, text, reverse }) => {
+  const directionClass = reverse ? "offer-card-reverse" : null;
   return (
-    <div className="offer-card">
+    <div className={`offer-card ${directionClass}`}>
       <div className="offer-card-img-container">
         <img src={image} alt="offer" />
       </div>
