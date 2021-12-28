@@ -2,6 +2,7 @@ const Region = require("../models/regionModel");
 const APIFeatures = require("../utils/apiFeatures");
 const AppError = require("../utils/appError");
 const catchAsync = require("../utils/catchAsync");
+const mongoose = require("mongoose");
 
 exports.getAllRegions = catchAsync(async (req, res, next) => {
   const features = new APIFeatures(Region.find(), req.query)
@@ -20,7 +21,11 @@ exports.getAllRegions = catchAsync(async (req, res, next) => {
 });
 
 exports.getRegion = catchAsync(async (req, res, next) => {
-  const region = await Region.findById(req.params.regionID);
+  const id = req.params.regionID;
+
+  const region = mongoose.isValidObjectId(id)
+    ? await Region.findById(id)
+    : await Region.findOne({ slug: id });
 
   if (!region) {
     return next(new AppError("Region not found", 404));

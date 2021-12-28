@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
-const Region = require("./regionModel");
+const slugify = require("slugify");
 
 const destinationSchema = new Schema({
   // _id: Schema.Types.ObjectId,
@@ -10,6 +10,7 @@ const destinationSchema = new Schema({
     unique: true,
     maxLength: [50, "Destination name cannot be longer than 50 characters"],
   },
+  slug: String,
   description: {
     type: String,
     required: [true, "Destination must have a description"],
@@ -49,6 +50,11 @@ const destinationSchema = new Schema({
     required: [true, "Destination must have a cover image"],
   },
   tours: [{ type: Schema.Types.ObjectId, ref: "Tour" }],
+});
+
+destinationSchema.pre("save", function (next) {
+  this.slug = slugify(this.name);
+  next();
 });
 
 const Destination = mongoose.model("Destination", destinationSchema);

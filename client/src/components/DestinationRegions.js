@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import DestinationCard from "./DestinationCard";
 import DescriptionCard from "./DescriptionCard";
+import slugify from "../utils/slugify";
 import "../styles/destinationRegions.css";
 
 const DestinationRegions = () => {
@@ -22,7 +23,7 @@ const DestinationRegions = () => {
 
   const regionCards = regionData.map((region) => {
     return (
-      <Link to={`/destinations/${region.name.toLowerCase()}`} key={region.name}>
+      <Link to={`/destinations/${slugify(region.name)}`} key={region.name}>
         <DestinationCard name={region.name} image={region.coverImage} />
       </Link>
     );

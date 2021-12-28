@@ -13,14 +13,14 @@ const DestinationDetails = () => {
   const pathLocation = useLocation();
 
   useEffect(() => {
-    const destinationStr = capitalizeAll(destinationID, "+");
+    // const destinationStr = capitalizeAll(destinationID, "+");
     const fetchDestinationData = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/destinations?name=${destinationStr}`
+          `http://localhost:5000/api/destinations/${destinationID}`
         );
         const data = await response.json();
-        setDestinationData(data.data.destinations[0]);
+        setDestinationData(data.data.destination);
       } catch (error) {
         console.log(error);
       }

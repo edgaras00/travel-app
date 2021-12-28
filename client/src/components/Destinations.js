@@ -4,6 +4,7 @@ import DestinationCard from "./DestinationCard";
 import LocationMap from "./LocationMap";
 import { Link, useParams, useLocation } from "react-router-dom";
 import { capitalizeAll } from "../utils/capitalize";
+import slugify from "../utils/slugify";
 import "../styles/destinations.css";
 
 const Destinations = () => {
@@ -18,10 +19,10 @@ const Destinations = () => {
     const fetchRegionData = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/regions?name=${regionStr}`
+          `http://localhost:5000/api/regions/${regionID}`
         );
         const data = await response.json();
-        setRegionData(data.data.regions[0]);
+        setRegionData(data.data.region);
       } catch (error) {
         console.log(error);
       }
@@ -44,7 +45,7 @@ const Destinations = () => {
   const destinationCards = destinationData.map((destination) => {
     return (
       <Link
-        to={`${pathLocation.pathname}/${destination.name.toLowerCase()}`}
+        to={`${pathLocation.pathname}/${slugify(destination.name)}`}
         key={destination.name}
       >
         <DestinationCard
