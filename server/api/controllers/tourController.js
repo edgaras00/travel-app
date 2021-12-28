@@ -1,8 +1,7 @@
-const mongoose = require("mongoose");
 const Tour = require("../models/tourModel");
 const APIFeatures = require("../utils/apiFeatures");
 const catchAsync = require("../utils/catchAsync");
-const ObjectId = mongoose.ObjectId;
+const validateID = require("../utils/validateID");
 
 exports.getAllTours = catchAsync(async (req, res, next) => {
   const features = new APIFeatures(Tour.find(), req.query)
@@ -26,7 +25,7 @@ exports.getTour = catchAsync(async (req, res, next) => {
   const id = req.params.tourID;
 
   // Find by slug or ID
-  const tour = mongoose.isValidObjectId(id)
+  const tour = validateID(id)
     ? await Tour.findById(req.params.tourID)
     : await Tour.findOne({ slug: id });
 

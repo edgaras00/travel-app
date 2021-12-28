@@ -5,6 +5,7 @@ import DescriptionCard from "./DescriptionCard";
 import LocationMap from "./LocationMap";
 
 import { capitalizeAll } from "../utils/capitalize";
+// import slugify from "../utils/slugify";
 import "../styles/destinationDetails.css";
 
 const DestinationDetails = () => {
@@ -13,7 +14,6 @@ const DestinationDetails = () => {
   const pathLocation = useLocation();
 
   useEffect(() => {
-    // const destinationStr = capitalizeAll(destinationID, "+");
     const fetchDestinationData = async () => {
       try {
         const response = await fetch(
@@ -28,8 +28,6 @@ const DestinationDetails = () => {
     fetchDestinationData();
   }, [destinationID]);
 
-  console.log(destinationData);
-
   let locations = [];
   let locationCoordinates = [];
   let mapCenter = ["", ""];
@@ -39,7 +37,7 @@ const DestinationDetails = () => {
       locations = destinationData.places.map((location) => {
         return (
           <Link
-            to={`${pathLocation.pathname}/${location.name.toLowerCase()}`}
+            to={`${pathLocation.pathname}/${location.slug}`}
             key={location.name}
           >
             <DestinationCard name={location.name} image={location.coverImage} />

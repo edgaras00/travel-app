@@ -1,8 +1,8 @@
-const mongoose = require("mongoose");
 const Destination = require("../models/destinationModel");
 const APIFeatures = require("../utils/apiFeatures");
 const AppError = require("../utils/appError");
 const catchAsync = require("../utils/catchAsync");
+const validateID = require("../utils/validateID");
 
 exports.getAllDestinations = catchAsync(async (req, res, next) => {
   const features = new APIFeatures(Destination.find(), req.query)
@@ -25,14 +25,14 @@ exports.getAllDestinations = catchAsync(async (req, res, next) => {
 exports.getDestination = catchAsync(async (req, res, next) => {
   const id = req.params.destinationID;
 
-  const destination = mongoose.isValidObjectId(id)
+  const destination = validateID(id)
     ? await Destination.findById(id).populate(
         "places",
-        "name coverImage coordinates"
+        "name coverImage coordinates slug"
       )
     : await Destination.findOne({ slug: id }).populate(
         "places",
-        "name coverImage coordinates"
+        "name coverImage coordinates slug"
       );
 
   if (!destination) {

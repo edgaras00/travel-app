@@ -6,6 +6,7 @@ const placeSchema = new Schema({
     type: String,
     required: [true, "A place must have a name"],
   },
+  slug: String,
   description: {
     type: String,
     required: [true, "A place must have a description"],

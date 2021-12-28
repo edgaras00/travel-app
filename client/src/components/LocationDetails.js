@@ -2,29 +2,22 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import DescriptionCard from "./DescriptionCard";
 import LocationMap from "./LocationMap";
-import { capitalizeAll } from "../utils/capitalize";
+// import { capitalizeAll } from "../utils/capitalize";
 import "../styles/locationDetails.css";
 
 const LocationDetails = () => {
   const [locationData, setLocationData] = useState(null);
   const { locationID } = useParams();
-  console.log(locationID);
 
   useEffect(() => {
-    let locationStr = capitalizeAll(locationID, "+");
-
-    if (locationID.toLowerCase() === "zell am see") {
-      const locationArr = locationStr.split("+");
-      locationArr[1] = locationArr[1].toLowerCase();
-      locationStr = locationArr.join("+");
-    }
+    // let locationStr = capitalizeAll(locationID, "+");
 
     const fetchLocationData = async () => {
       const response = await fetch(
-        `http://localhost:5000/api/places?name=${locationStr}`
+        `http://localhost:5000/api/places/${locationID}`
       );
       const data = await response.json();
-      setLocationData(data.data.places[0]);
+      setLocationData(data.data.place);
     };
     fetchLocationData();
   }, [locationID]);

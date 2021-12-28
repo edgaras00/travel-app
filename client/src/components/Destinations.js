@@ -15,7 +15,8 @@ const Destinations = () => {
   const pathLocation = useLocation();
 
   useEffect(() => {
-    const regionStr = capitalizeAll(regionID, "+");
+    let regionStr = capitalizeAll(regionID, "+");
+    if (regionID === "usa") regionStr = regionID.toUpperCase();
     const fetchRegionData = async () => {
       try {
         const response = await fetch(
