@@ -1,0 +1,86 @@
+.login-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7f7;
+}
+
+.login-form,
+.signup-form {
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 44%;
+  height: 430px;
+}
+
+.signup-form {
+  height: 500px;
+  padding: 1em 0;
+}
+
+.login-header {
+  width: 70%;
+  margin-bottom: 2em;
+}
+
+.login-labels {
+  width: 70%;
+  margin-bottom: 0.5em;
+}
+
+.login-form input,
+.signup-form input {
+  width: 70%;
+  height: 2.9em;
+  margin-bottom: 2em;
+}
+
+#password-input {
+  margin-bottom: 0.5em;
+}
+
+.login-button-container {
+  width: 70%;
+}
+
+.login-form button,
+.signup-form button {
+  height: 44px;
+  width: 28%;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.login-form button:focus,
+.signup-form button:focus {
+  outline: none;
+}
+
+.link-signup {
+  width: 68%;
+  margin-top: 1.1em;
+}
+
+.link-signup a {
+  color: #000;
+}
+
+.link-signup span {
+  cursor: pointer;
+}
+
+.link-signup span:hover {
+  text-decoration: underline;
+}
+
+.pass-length {
+  width: 70%;
+  margin-bottom: 1.5em;
+}

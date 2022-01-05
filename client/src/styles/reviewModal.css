@@ -1,0 +1,26 @@
+.review-form-wrapper {
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+}
+
+.review-inputs {
+}
+
+.review-text-wrapper {
+  width: 100%;
+}
+
+.review-text-wrapper textarea {
+  width: 99%;
+  height: 200px;
+}

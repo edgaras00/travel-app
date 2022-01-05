@@ -1,7 +1,63 @@
 const Review = require("../models/reviewModel");
+const Booking = require("../models/bookingModel");
+const Tour = require("../models/tourModel");
 const APIFeatures = require("../utils/apiFeatures");
 const AppError = require("../utils/appError");
 const catchAsync = require("../utils/catchAsync");
+
+exports.submitReview = catchAsync(async (req, res, next) => {
+  const { tour, user } = req.body;
+
+  // Check if booking exists
+  const booking = await Booking.find({ user, tour });
+  if (booking.length === 0) {
+    return next(new AppError("No tour purchased by the user found", 400));
+  }
+
+  // Check if the user has already reviewed this tour
+  const prevReview = await Review.findOne({ tour, user });
+  if (prevReview) {
+    return next(
+      new AppError(
+        "User has already reviewed this tour. Use PATCH to update a review",
+        400
+      )
+    );
+  }
+
+  // Create review
+  const review = await Review.create(req.body);
+
+  // Recalculate tour average rating
+  let tourDoc = await Tour.findById(tour);
+  await tourDoc.calculateAverage();
+
+  res.status(201).json({
+    status: "Success",
+    data: {
+      review,
+    },
+  });
+});
+
+exports.userUpdateReview = catchAsync(async (req, res, next) => {
+  const review = await Review.findOneAndUpdate(
+    { _id: req.params.reviewID, user: req.user._id },
+    req.body,
+    { new: true }
+  );
+
+  if (!review) {
+    return next(new AppError("Review does not belong to user", 400));
+  }
+
+  res.status(200).json({
+    status: "Success",
+    data: {
+      review,
+    },
+  });
+});
 
 exports.getAllReviews = catchAsync(async (req, res, next) => {
   const features = new APIFeatures(Review.find(), req.query)
@@ -10,7 +66,7 @@ exports.getAllReviews = catchAsync(async (req, res, next) => {
     .limitFields()
     .paginate();
 
-  const reviews = await features.query.populate("tour user", "name");
+  const reviews = await features.query;
 
   res.status(200).json({
     status: "Success",
@@ -29,18 +85,6 @@ exports.getReview = catchAsync(async (req, res, next) => {
   }
 
   res.status(200).json({
-    status: "Success",
-    data: {
-      review,
-    },
-  });
-});
-
-exports.createReview = catchAsync(async (req, res, next) => {
-  const newReview = { ...req.body, user: req.user._id };
-  const review = await Review.create(newReview);
-
-  res.status(201).json({
     status: "Success",
     data: {
       review,

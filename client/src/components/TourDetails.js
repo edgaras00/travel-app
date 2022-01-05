@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import DescriptionCard from "./DescriptionCard";
 import LocationMap from "./LocationMap";
 import Accordion from "react-bootstrap/Accordion";
+import TourReviews from "./TourReviews";
 
 const TourDetails = () => {
   const [tourDetailsData, setTourDetailsData] = useState(null);
@@ -40,6 +41,8 @@ const TourDetails = () => {
     });
   }
 
+  console.log(tourDetailsData);
+
   return (
     <div className="tour-details">
       <div className="tour-description">
@@ -59,6 +62,13 @@ const TourDetails = () => {
         <Accordion>{itinerary}</Accordion>
       </div>
       <div className="images"></div>
+      <div className="reviews">
+        <TourReviews
+          reviewData={tourDetailsData ? tourDetailsData.reviews : null}
+          averageRating={tourDetailsData ? tourDetailsData.averageRating : null}
+          tourID={tourDetailsData ? tourDetailsData._id : null}
+        />
+      </div>
     </div>
   );
 };

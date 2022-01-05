@@ -1,9 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFlag, faHeart } from "@fortawesome/free-solid-svg-icons";
+// import { AppContext } from "../context/appContext";
 import "../styles/tourCard.css";
 
-const TourCard = ({ image, name, location, duration, price, rating }) => {
+const TourCard = ({
+  tourID,
+  image,
+  name,
+  location,
+  duration,
+  price,
+  path,
+  // totalPrice,
+  rating,
+}) => {
+  // const { addToCart } = useContext(AppContext);
+
   return (
     <div className="tour-card">
       <div className="tour-card-image">
@@ -27,8 +41,16 @@ const TourCard = ({ image, name, location, duration, price, rating }) => {
       <div className="tour-card-footer">
         <hr />
         <div className="tour-card-icons">
-          <FontAwesomeIcon icon={faFlag} className="flag-icon" />
-          <FontAwesomeIcon icon={faHeart} className="flag-icon" />
+          <Link to={path}>
+            <FontAwesomeIcon icon={faFlag} className="flag-icon" />
+          </Link>
+          <FontAwesomeIcon
+            icon={faHeart}
+            className="flag-icon"
+            // onClick={() =>
+            //   addToCart({ tourID, name, image, price, totalPrice })
+            // }
+          />
         </div>
       </div>
     </div>

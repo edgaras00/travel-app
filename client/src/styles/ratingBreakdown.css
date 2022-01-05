@@ -1,0 +1,14 @@
+.rating-breakdown {
+  display: flex;
+  /* align-items: center; */
+  font-size: 1.2em;
+  justify-content: space-evenly;
+}
+
+.value-wrapper {
+  display: flex;
+}
+
+.rating-value {
+  margin-right: 0.3em;
+}

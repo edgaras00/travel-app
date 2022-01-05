@@ -1,0 +1,38 @@
+.total-review {
+  border: 1px solid red;
+  width: 40%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.total-review-summary {
+  width: 40%;
+  height: 90%;
+}
+
+.average-rating {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.number-reviews {
+  margin-top: 0.08em;
+  margin-bottom: 1.3em;
+}
+
+.review-button {
+  border: none;
+  font-size: 1em;
+  padding: 0.3em 0.5em;
+  cursor: pointer;
+}
+
+.total-review-breakdown {
+  width: 50%;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}

@@ -9,6 +9,10 @@ import DestinationDetails from "./components/DestinationDetails";
 import LocationDetails from "./components/LocationDetails";
 import Tours from "./components/Tours";
 import TourDetails from "./components/TourDetails";
+import Login from "./components/Login";
+import Signup from "./components/Signup";
+
+import CheckoutLayout from "./components/CheckoutLayout";
 
 const App = () => {
   return (
@@ -32,6 +36,10 @@ const App = () => {
         <Route path="/tours" element={<Tours />} />
         <Route path="/tours/:tourID" element={<TourDetails />} />
         <Route path="/blog" />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/book" element={<CheckoutLayout />} />
+        {/* <Route path="/cart" element={<ShoppingCart />} /> */}
       </Routes>
       <Footer />
     </div>

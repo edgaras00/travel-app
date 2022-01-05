@@ -1,5 +1,6 @@
 const Tour = require("../models/tourModel");
 const APIFeatures = require("../utils/apiFeatures");
+const AppError = require("../utils/appError");
 const catchAsync = require("../utils/catchAsync");
 const validateID = require("../utils/validateID");
 
@@ -10,7 +11,7 @@ exports.getAllTours = catchAsync(async (req, res, next) => {
     .limitFields()
     .paginate();
 
-  const tours = await features.query.populate("guides region", "name");
+  const tours = await features.query;
 
   res.status(200).json({
     status: "Success",
@@ -23,13 +24,16 @@ exports.getAllTours = catchAsync(async (req, res, next) => {
 
 exports.getTour = catchAsync(async (req, res, next) => {
   const id = req.params.tourID;
-
   // Find by slug or ID
   const tour = validateID(id)
-    ? await Tour.findById(req.params.tourID)
-    : await Tour.findOne({ slug: id });
-
-  // const tour = await Tour.findById(req.params.tourID);
+    ? await Tour.findById(req.params.tourID).populate(
+        "reviews",
+        "name header text rating -tour"
+      )
+    : await Tour.findOne({ slug: id }).populate(
+        "reviews",
+        "name header text rating -tour"
+      );
 
   if (!tour) {
     return next(new AppError("Tour not found", 404));

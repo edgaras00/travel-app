@@ -10,7 +10,7 @@ const DestinationRegions = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/regions");
+        const response = await fetch("/api/regions");
         const data = await response.json();
         setRegionData(data.data.regions);
       } catch (error) {

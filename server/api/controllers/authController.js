@@ -26,6 +26,8 @@ exports.signup = catchAsync(async (req, res, next) => {
 
   const token = await signToken(user._id);
 
+  const userObject = { name: user.name, email: user.email, cart: user.cart };
+
   res.cookie("jwt", token, {
     httpOnly: true,
     maxAge: process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000,
@@ -34,7 +36,7 @@ exports.signup = catchAsync(async (req, res, next) => {
     status: "Success",
     token,
     data: {
-      user,
+      user: userObject,
     },
   });
 });
@@ -57,6 +59,8 @@ exports.login = catchAsync(async (req, res, next) => {
 
   const token = await signToken(user._id);
 
+  const userObject = { name: user.name, email: user.email, cart: user.cart };
+
   res.cookie("jwt", token, {
     httpOnly: true,
     maxAge: process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000,
@@ -66,7 +70,7 @@ exports.login = catchAsync(async (req, res, next) => {
     status: "Success",
     token,
     data: {
-      user,
+      user: userObject,
     },
   });
 });

@@ -6,15 +6,22 @@ const authController = require("../controllers/authController");
 router
   .route("/")
   .get(
-    authController.protectRoute,
-    authController.restrictRouteTo("admin", "guide"),
+    // authController.protectRoute,
+    // authController.restrictRouteTo("admin", "guide"),
     reviewController.getAllReviews
   )
-  .post(
-    authController.protectRoute,
-    authController.restrictRouteTo("user"),
-    reviewController.createReview
-  );
+  .post(reviewController.submitReview);
+// .post(
+//   authController.protectRoute,
+//   authController.restrictRouteTo("user"),
+//   reviewController.createReview
+// );
+
+router.patch(
+  "/update/:reviewID",
+  authController.protectRoute,
+  reviewController.userUpdateReview
+);
 
 router
   .route("/:reviewID")

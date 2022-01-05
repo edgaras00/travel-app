@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import TourCard from "./TourCard";
 import DescriptionCard from "./DescriptionCard";
+// import { AppContext } from "../context/appContext";
 import "../styles/tours.css";
 
 const Tours = () => {
   const [tourData, setTourData] = useState([]);
+
+  // const { cart } = useContext(AppContext);
 
   useEffect(() => {
     const fetchTourData = async () => {
@@ -22,15 +25,19 @@ const Tours = () => {
       .map((string) => string.toLowerCase())
       .join("-");
     return (
-      <Link to={`/tours/${tourStr}`} key={tour.name}>
-        <TourCard
-          name={tour.name}
-          image={tour.coverImage}
-          duration={tour.duration}
-          price={tour.price}
-          location={tour.region}
-        />
-      </Link>
+      // <Link to={`/tours/${tourStr}`} key={tour.name}>
+      <TourCard
+        key={tour.name}
+        tourID={tour._id}
+        name={tour.name}
+        image={tour.coverImage}
+        duration={tour.duration}
+        price={tour.price}
+        // totalPrice={tour.price}
+        location={tour.region}
+        path={`/tours/${tourStr}`}
+      />
+      // </Link>
     );
   });
 

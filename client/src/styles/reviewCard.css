@@ -1,0 +1,21 @@
+.review-card {
+  width: 700px;
+  margin-bottom: 2.5em;
+}
+
+.review-user {
+  margin-bottom: 0.6em;
+  font-size: 1.1em;
+}
+
+.rating-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.7em;
+}
+
+.review-header {
+  margin-left: 1em;
+  font-size: 1.1em;
+  font-weight: 600;
+}
