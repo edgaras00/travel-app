@@ -1,5 +1,71 @@
 [
   {
+    "name": "Spain",
+    "description": "The land of Gaudí, Picasso, and Dalí. Mediterranean beaches. The Alcázar and the Great Mosque of Córdoba. The snow-capped Sierra Nevada. The flavor of Spain can be tasted in its tapas, felt in its flamenco, and experienced through its fiestas. The country is a blend of cultures, from its unique Basque region to its Muslim-influenced south. Spain’s cosmopolitan cities exude an elegance all their own, from Madrid’s Prado to Gaudí’s Barcelona—there’s an essence to Spain that can only be captured by being there—and we can help you experience it.",
+    "coverImage": "spain.jpg",
+    "bestTimeToVisit": "Fall is the best time to visit, when the crowds have dispersed and the weather is cooler. Summer is the most popular time, but prepare for heat.",
+    "currency": "Euro",
+    "language": "Spanish",
+    "weather": "Spain’s sheer size means that the weather forecast depends on where you’re going. The north is wetter and cooler than the south, which is dry and quite hot.",
+    "region": "Europe",
+    "thingsToDo": [
+      {
+        "name": "Spanish Masters at the Prado",
+        "text": "Visit the Prado, truly one of the world’s greatest museums, boasting a collection that includes El Greco, Velázquez, Caravaggio, Dürer, and Botticelli."
+      },
+      {
+        "name": "Michelin Stars in the Basque Region",
+        "text": "The Basque region has its own language, cuisine, and culture, and is known for its world-renown Michelin-starred restaurants."
+      },
+      {
+        "name": "Gaudí’s Barcelona",
+        "text": "After strolling Las Ramblas and the Gothic Quarter, visit Barcelona’s La Sagrada Familia and Casa Batlló by Gaudí, which blend in nicely with the city’s Mediterranean spirit."
+      },
+      {
+        "name": "Discover Spain’s Islamic Past",
+        "text": "Spain has a rich Muslim history which can be explored if you head south to the Great Mosque in Córdoba, a World Heritage Site, and to the Alcázar in Seville."
+      },
+      {
+        "name": "Go Island Hopping",
+        "text": "Made glamourous by jet-setting celebrities, Mallorca and Ibiza offer spectacular beaches, a lively nightlife, and charming towns."
+      }
+    ],
+    "places": []
+  },
+  {
+    "name": "Greece",
+    "description": "Welcome to Greece. Where the water and sky are spectacular shades of crystal blue, the sun-bleached ruins are reminders of ancient heroes and history, and the cobblestone streets filled with music and local cuisine are an introduction to a culture that’s rich in tradition.",
+    "currency": "Euro",
+    "region": "Europe",
+    "language": "Greek",
+    "weather": "Overall Greece has a Mediterranean climate with plenty of sunshine and mild temperatures. Always check local weather before you go.",
+    "bestTimeToVisit": "Any time of the year. May to August is considered the peak season, and September and October are also popular as it’s not too hot.",
+    "coverImage": "greece.jpg",
+    "thingsToDo": [
+      {
+        "name": "Travel back in time at the Acropolis",
+        "text": "Athens is the birthplace of democracy and Western civilization, and the Acropolis and Parthenon are its iconic reminders."
+      },
+      {
+        "name": "See a Santorini sunset",
+        "text": "Grab a seat and witness a truly surreal sunset with stunning views from several cliff-side vantage points."
+      },
+      {
+        "name": "Make the most of Mykonos",
+        "text": "Famous for its glamorous nightlife and gorgeous beaches, the island is bustling with activities all day and night."
+      },
+      {
+        "name": "Day trip to Delphi",
+        "text": "Overlooking a dramatic ravine, this sanctuary of Apollo was considered the center of the world. With ruins of temples, theater, and a magnificent stadium, it brings Greek myths to life."
+      },
+      {
+        "name": "Discover Crete",
+        "text": "Enjoy the local-feel of a small village, drive along the breathtaking rugged south coast, bask in luxurious spas—options are aplenty in this largest Greek island."
+      }
+    ],
+    "places": []
+  },
+  {
     "name": "Austria",
     "description": "Austria blends the best of old-world charm, cosmopolitan city life, and breathtaking Alpine landscapes. Our Austria vacation packages can take you wandering the old town of Salzburg or tracing the footsteps of Mozart. Step onto the living set of the Sound of Music. Vienna’s Baroque and Rococo architecture rings with classical music. Feel the spirit of Klimt, Mozart, Freud, and Mahler in the city’s cafés. Beyond Vienna, journey to the Danube Valley, and visit Austria’s national parks for alpine hiking. In the winter, the mountain resorts come alive.",
     "currency": "Euro",

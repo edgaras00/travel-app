@@ -1,5 +1,68 @@
 [
   {
+    "name": "London Explorer",
+    "region": "Europe",
+    "price": 2150,
+    "description": "Start and end in London! With the In-depth Cultural tour London Explorer, you have a 8 days tour package taking you through London, England and 3 other destinations in England. London Explorer includes accommodation, an expert guide, meals, transport and more.",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/london-2.jpg",
+    "duration": 8,
+    "images": [
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-windsor.jpg",
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-stonehenge.jpg",
+      "https://travelappbucket.s3.amazonaws.com/imgs/tour-ben.jpg"
+    ],
+    "tags": ["culture", "city", "family", "group"],
+    "itineraries": {
+      "day1": {
+        "title": "Welcome to London!",
+        "description": "Embrace the pomp and pageantry of a city that marches to its very own vibrant tune - yours to explore before meeting your Travel Director and fellow travellers later this evening for a Welcome Reception to kick-start your grand exploration of London."
+      },
+      "day2": {
+        "title": "Discover Multicultural London",
+        "description": "Ease into London's energetic pace before embarking on an included half-day sightseeing tour with your Travel Director, which features Big Ben, the Houses of Parliament, Buckingham Palace and Westminster Abbey. See the stately Changing of the Guard before your sightseeing tour finishes in central London. Spend the rest of the day enjoying a slice of London culture, or join an Optional Experience to St. Paul’s Cathedral and the Tower of London to see the magnificent Crown Jewels and meet the Yeoman Wardens of Her Majesty's Royal Palace and Fortress."
+      },
+      "day3": {
+        "title": "Journey to Prehistoric Stonehenge and Windsor",
+        "description": "Regal traditions and ancient monuments take centre stage today as we embark on a full-day excursion from London. Our first stop sees us delve into the history of the best-known prehistoric monument in Europe - the ancient stone circle at Stonehenge. Then enjoy some free time for lunch before visiting Windsor Castle, one of the Queen's elegant homes, including the superb Georgian State Apartments and St. George's Chapel."
+      },
+      "day4": {
+        "title": "London Your Way",
+        "description": "Armed with your 3-day travel pass, London truly is your oyster. Your Travel Director will give you suggestions on how to make the most of your full day at leisure. Walk through 'The City' exploring the oldest part of London - the imposing dome of Christopher Wren's St. Paul's Cathedral, Leadenhall Market's ornate façades and the Tower of London, with its grim history and extraordinary royal heritage. Pay tribute to Admiral Nelson in Trafalgar Square and wander down The Mall to Buckingham Palace, the official London residence of the UK's sovereigns since 1837. Alternatively, consider a full-day Optional Experience to the enchanting Cotswolds, visiting Shakespeare's Stratford-upon-Avon, with a stop in the university town of Oxford to admire the towering spires of cathedrals, churches and colleges."
+      },
+      "day5": {
+        "title": "Experience London's Markets and Museums",
+        "description": "Saunter past the buzzing stalls of Borough Market, London's most renowned food market which has been feeding locals for centuries. Dive Into Culture and rub shoulders with the locals who buy the best of British produce here. Spend the rest of the day visiting London's extraordinary museums, many of which are free to visit. Use your London Oyster Card to traverse the length and breadth of London. Perhaps visit the British Museum, whose global treasures are symbolic of the extent of the Empire in centuries past, or the Imperial War Museum, sharing the story of modern warfare from World War I to today. This evening you'll enjoy a dinner and Connect With Locals at an exclusive Be My Guest experience."
+      },
+      "day6": {
+        "title": "Explore Westminster Abbey and Kensington Palace",
+        "description": "Imagine the kings and queens who have glided gracefully up the 13th-century mosaic floor of Westminster Abbey. We'll have an opportunity to explore this architectural wonder on a guided visit with a Local Specialist. Find out why this church lost its cathedral status and pay your respects at the Tomb of the Unknown Soldier. Later, visit Kensington Palace and Dive Into Culture, gaining insights into the lives of the Royal Family. Tour the Royal Palace, which was once home to Diana, Princess of Wales, and now houses the private apartments of her son Prince William and his wife Kate. Indulge in a delicious English cream tea in The Pavillion surrounded by beautiful formal gardens before returning to your hotel."
+      },
+      "day7": {
+        "title": "Cruise the Thames to Greenwich",
+        "description": "Enjoy one last full day in the lively city streets of London. Consider taking a trip up the Shard - Europe's tallest building, admire England's proud history reflected in its monuments to great men and victories, or see the treasures of the British Library. This afternoon meet with your Travel Director and travel companions for a leisurely cruise down the Thames to Greenwich. Sail under the famous Tower Bridge before enjoying a Farewell Dinner at a historic pub to toast to your unforgettable week."
+      },
+      "day8": {
+        "title": "Cheerio London",
+        "description": "After breakfast, say a fond farewell to London and newfound friends as you prepare to return home after a memorable holiday in one of the world's greatest cities. Airport Transfers to London Airports are available to purchase."
+      }
+    },
+    "locations": [
+      {
+        "name": "London",
+        "coordinates": ["51.509865", "-0.118092"]
+      },
+      {
+        "name": "Stonehenge",
+        "coordinates": ["51.178882", "-1.826215"]
+      },
+      {
+        "name": "Windsor",
+        "coordinates": ["51.481728", "-0.613576"]
+      }
+    ]
+  },
+
+  {
     "name": "8-night Italy's Great Cities",
     "region": "Europe",
     "price": 2579,

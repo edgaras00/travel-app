@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/updateCard.css";
 
 const UpdateCard = ({ image, text, buttonText }) => {
@@ -9,7 +10,9 @@ const UpdateCard = ({ image, text, buttonText }) => {
       <div className="update-card-content">
         <div className="update-card-text">{text}</div>
         <div className="update-button-container">
-          <button className="update-button">{buttonText}</button>
+          <Link to="/tours">
+            <button className="update-button">{buttonText}</button>
+          </Link>
         </div>
       </div>
     </div>

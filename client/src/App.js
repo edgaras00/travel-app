@@ -13,6 +13,7 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 
 import CheckoutLayout from "./components/CheckoutLayout";
+import "./styles/app.css";
 
 const App = () => {
   return (

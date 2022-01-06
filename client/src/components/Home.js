@@ -3,18 +3,22 @@ import Card from "./Card";
 import FavoritesCard from "./FavoritesCard";
 import OfferCard from "./OfferCard";
 import UpdateCard from "./UpdateCard";
+import CompanyReviews from "./CompanyReviews";
+import Partners from "./Partners";
 import { Carousel } from "react-responsive-carousel";
 import "../styles/home.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import reviewData from "../utils/companyReviewData";
 import guidance from "../images/tour-guide.png";
 import value from "../images/diamond.png";
 import service from "../images/customer.png";
 import peace from "../images/peace-of-mind.png";
-import adventure from "../images/adventure.jpg";
+import adventure from "../adventure-offer.jpg";
+import caribbean from "../caribbean-offer.jpg";
 
 const Home = () => {
   return (
-    <div>
+    <div className="home">
       <div className="carousel-container">
         <Carousel
           showThumbs={false}
@@ -90,8 +94,10 @@ const Home = () => {
         <OfferCard
           reverse={true}
           image={adventure}
+          buttonText="Explore!"
+          path="/tours"
           title="Plan Your Next Adventure"
-          text="Answer the call of adventure with Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus odio ac odio condimentum pellentesque. Quisque a pharetra justo. Mauris."
+          text="Answer the call of adventure with Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus odio ac odio condimentum pellentesque. Quisque a pharetra justo. Mauris. Etiam rhoncus odio ac odio condimentum pellentesque."
         />
       </div>
       <div className="favorites-header">
@@ -109,14 +115,16 @@ const Home = () => {
           title="The London Tour"
           travelPackage="Air and Vacation package"
           duration="5 nights"
+          path="/tours/london-explorer"
         />
         <FavoritesCard
           image="https://travelappbucket.s3.amazonaws.com/imgs/milan-2.jpg"
-          city="Rome"
+          city="Milan"
           country="Italy"
           title="Italy's Greatest Cities"
           travelPackage="Air and Vacation package"
           duration="9 nights"
+          path="/tours/9-night-northern-italy’s-highlights-and-cinque-terre"
         />
         <FavoritesCard
           image="https://travelappbucket.s3.amazonaws.com/imgs/japan-2.jpg"
@@ -125,14 +133,23 @@ const Home = () => {
           title="Japan Adventures"
           travelPackage="Air and Vacation package"
           duration="10 nights"
+          path="/tours/japan-adventures"
         />
       </div>
       <div className="offer-container">
         <OfferCard
-          image={adventure}
-          title="Plan Your Next Adventure"
-          text="Answer the call of adventure with Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus odio ac odio condimentum pellentesque. Quisque a pharetra justo. Mauris."
+          image={caribbean}
+          buttonText="Start Planning"
+          path="/destinations/caribbean"
+          title="Caribbean Adventure Awaits"
+          text="Turquoise water, brilliant coral reefs, white-sand beaches, and sun-soaked adventures await you in the Caribbean. Taste Creole flavors, delicious BBQ, and the fresh catch of the day. Learn to dance salsa, escape to a pirate cove, or unwind with yoga on the sand."
         />
+      </div>
+      <div className="company-reviews-home">
+        <CompanyReviews companyReviewData={reviewData} />
+      </div>
+      <div className="partners-home">
+        <Partners />
       </div>
     </div>
   );

@@ -13,6 +13,8 @@ const Footer = () => {
     console.log(emailInput);
   };
 
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className="footer">
       <div className="company-description">
@@ -53,7 +55,7 @@ const Footer = () => {
         </form>
         <div className="copyright">
           {" "}
-          &copy; 2021 Paradise Travel. All rights reserved.
+          &copy; {currentYear} Paradise Travel. All rights reserved.
         </div>
       </div>
       <div className="footer-links">

@@ -43,6 +43,19 @@ const Destinations = () => {
     fetchRegionData();
   }, [regionID]);
 
+  let cardContainerClass;
+  let cardSize = "small";
+  if (destinationData.length === 1 || destinationData.length === 2) {
+    cardContainerClass = "single-card";
+    cardSize = "large";
+  } else if (destinationData.length === 3) {
+    cardContainerClass = "three-cards";
+    cardSize = "medium";
+  } else if (destinationData.length === 4) {
+    cardContainerClass = "four-cards";
+    cardSize = "large";
+  }
+
   const destinationCards = destinationData.map((destination) => {
     return (
       <Link
@@ -52,6 +65,7 @@ const Destinations = () => {
         <DestinationCard
           image={destination.coverImage}
           name={destination.name}
+          size={cardSize}
         />
       </Link>
     );
@@ -92,7 +106,9 @@ const Destinations = () => {
       <h2 className="destination-list-header">
         Popular {regionData ? regionData.name : ""} Destinations
       </h2>
-      <div className="destination-card-container">{destinationCards}</div>
+      <div className={`destination-card-container ${cardContainerClass}`}>
+        {destinationCards}
+      </div>
     </div>
   );
 };

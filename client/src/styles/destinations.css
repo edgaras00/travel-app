@@ -45,3 +45,17 @@
   height: 450px;
   width: 50%;
 }
+
+.single-card,
+.three-cards {
+  display: flex;
+  justify-content: center;
+}
+
+.four-cards {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2em;
+  row-gap: 2em;
+}

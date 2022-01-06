@@ -9,22 +9,25 @@ const FavoritesCard = ({
   title,
   travelPackage,
   duration,
+  path,
 }) => {
   return (
     <div className="favorites-card">
-      <div>
-        <img src={image} alt="Traveler favorite destination" />
-      </div>
-      <Link to="/tours">
-        <div className="favorites-text-container">
-          <div className="favorites-title">
-            <div className="title-top">{city}</div>
-            <div>{country}</div>
+      <Link to={path}>
+        <div className="favorite-card-content">
+          <div className="favorite-image-wrapper">
+            <img src={image} alt="Traveler favorite destination" />
           </div>
-          <div className="favorites-text">
-            <div>{title}</div>
-            <div>{travelPackage}</div>
-            <div>{duration}</div>
+          <div className="favorites-text-container">
+            <div className="favorites-title">
+              <div className="title-top">{city}</div>
+              <div>{country}</div>
+            </div>
+            <div className="favorites-text">
+              <div>{title}</div>
+              <div>{travelPackage}</div>
+              <div>{duration}</div>
+            </div>
           </div>
         </div>
       </Link>

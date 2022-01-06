@@ -1,5 +1,145 @@
 [
   {
+    "name": "Barcelona",
+    "coordinates": ["41.390205", "2.154007"],
+    "description": "Pass through thousands of years of history as you explore Barcelona’s ancient Roman walls, its Gothic quarter, and its modern Gaudì masterpieces, including the Sagrada Família and Casa Batlló. Bask beside the Mediterranean by day, and by night enjoy paella and tapas at a seaside bar. Walk down Las Ramblas for people-watching and shopping.",
+    "coverImage": "barcelona.jpg",
+    "thingsToDo": [
+      {
+        "name": "See Nature Written in Stone in Gaudì’s Masterpieces",
+        "text": "Barcelona is home to some of Gaudì’s most famous masterpieces, including the Sagrada Família and the Casa Batlló, works which blend Gaudì’s interest in architecture and natural forms."
+      },
+      {
+        "name": "See Picasso’s Formative Works",
+        "text": "Picasso spent his early years in Barcelona; see works of art that span Picasso’s career at the impressive Museu Picasso."
+      },
+      {
+        "name": "Eat Your Way Through Barcelona",
+        "text": "From Pintxos (Basque tapas) to beautiful paellas, Barcelona is a city of culinary masterpieces."
+      },
+      {
+        "name": "Soak in the Mediterranean Sun at Barceloneta Beach",
+        "text": "The sea is never far away from Barcelona’s historic center; Barceloneta Beach offers people-watching, amenities, and proximity to the Gothic Quarter."
+      },
+      {
+        "name": "Explore the Gothic Quarter",
+        "text": "Barcelona’s history goes back to Roman times; get a glimpse of the past while wandering the old quarter’s ancient cobblestone streets."
+      }
+    ]
+  },
+  {
+    "name": "Madrid",
+    "coverImage": "madrid.jpg",
+    "description": "Madrid is known for its vibrant culinary scene, its bustling city squares, its beautiful parks, and legendary Prado Museum. Spend a day in Madrid strolling the Parque del Buen Retiro. Visit Plaza Mayor to sample an Iberian ham bocadillo, and then browse the shops at Las Salinas. Set aside a day or two for the Prado Museum with its stunning collection that spans the eras.",
+    "thingsToDo": [
+      {
+        "name": "Meet the Masters at the Prado",
+        "text": "Must-see paintings at this world-renowned museum include “Las Meninas” by Velázquez, Goya’s “The Third of May,” Hieronymus Bosch’s “Garden of Earthly Delights,” and van der Weyden’s “Descent from the Cross.”"
+      },
+      {
+        "name": "Marvelous Markets",
+        "text": "Search for hidden treasures at the El Rastro flea market, browse the local produce at the Mercado San Miguel, wander the shops of the Puerta del Sol, or stroll down the Gran Vía."
+      },
+      {
+        "name": "Find Your Park",
+        "text": "Retiro Park is known for its gardens, which includes a beautiful rose garden; the Casa de Campo rents kayaks at its lake."
+      },
+      {
+        "name": "Soak in the Ambiance of Plaza Mayor",
+        "text": "From cafés to street performers, Plaza Mayor brings together people, food, and fun."
+      },
+      {
+        "name": "Savor the Culinary Scene",
+        "text": "Madrid is home to Michelin-starred restaurants, charming cafés serving chocolate-drizzled churros, hearty stews, and markets selling Iberian ham."
+      }
+    ],
+    "coordinates": ["40.416775", "-3.703790"]
+  },
+  {
+    "name": "Athens",
+    "coverImage": "athens.jpg",
+    "coordinates": ["37.983810", "23.727539"],
+    "description": "Welcome to Athens, a modern metropolis with a glorious past. From fancy restaurants and traditional tavernas, to magnificent museums and historical sites, you’ll find a blend of the new and the old almost everywhere you go. Crowning the city are the majestic, marbled columns of the Acropolis, reminding the world of its role as the birthplace of democracy and Western civilization. Whether you choose to explore its historic past, enjoy its vibrant nightlife, or soak in the charm of this Greek capital, Liberty Travel can customize a vacation with authentic experiences just for you.",
+    "thingsToDo": [
+      {
+        "name": "Witness the Acropolis",
+        "text": "Perched above the Greek capital, the Acropolis with its Parthenon temple is a reminder of the glory of ancient Athens... and a sight to behold."
+      },
+      {
+        "name": "Take a guided tour of the Acropolis Museum",
+        "text": "This dazzling modern museum showcases ancient archaeological treasures unearthed on the Acropolis dating back to 5th century BC."
+      },
+      {
+        "name": "Visit the Temple of Olympian Zeus",
+        "text": "Dedicated to the Olympian god, this colossal temple at the center of Athens featured 104 majestic Corinthian columns of which 15 remain standing."
+      },
+      {
+        "name": "See the changing of the guards",
+        "text": "An exciting and memorable experience, the changing of the Presidential Guards takes place in Syntagma Square daily."
+      },
+      {
+        "name": "Explore the Plaka Quarter",
+        "text": "This historic area has a charming village ambience with narrow pedestrian streets, cheerful squares, and authentic cafés and tavernas."
+      }
+    ]
+  },
+  {
+    "name": "Mykonos",
+    "coverImage": "mykonos.jpg",
+    "description": "One of the smallest Greek Cyclades islands, Mykonos is fast becoming one of the most glamorous destinations in the world. This beautiful island is all about enjoying the good life. Couture shops, swanky restaurants, upscale clubs, golden sandy beaches, and a plethora of land and water activities ensure there’s never a dull moment by day or night. Add to it breathtaking mountainous landscape, clear waters, turquoise skies, and whitewashed alleyways, and you have an amazing vacation destination.",
+    "coordinates": ["37.450001", "25.350000"],
+    "thingsToDo": [
+      {
+        "name": "Visit Little Venice",
+        "text": "Bright-colored Venetian houses with wooden porches and balconies line the seafront with restaurants, bars, shops, and nightclubs."
+      },
+      {
+        "name": "Check out the windmills",
+        "text": "Dating back to the 16th century, these 16 iconic windmills were once used by islanders to grind grain using wind power. Today, they offer great views and photo ops."
+      },
+      {
+        "name": "Tour the Panagia Paraportiani",
+        "text": "The most photographed monument on the island, it’s four little churches that look like one. Visit it at sunset for best views."
+      },
+      {
+        "name": "Take a day trip to Delos",
+        "text": "A shrine of Apollo and a trading center of the early Greeks and Romans, Delos is part of the World Cultural Heritage and protected by UNESCO."
+      },
+      {
+        "name": "Enjoy the glamour",
+        "text": "Famous for its vibrant nightlife and gorgeous beaches, enjoy the island and its many activities by day and night."
+      }
+    ]
+  },
+  {
+    "name": "Santorini",
+    "coverImage": "santorini.jpg",
+    "coordinates": ["36.393154", "25.461510"],
+    "description": "A bucket-list destination for many, Santorini lives up to the hype. This crescent-shaped volcanic island is one of the most popular in the Greek Cyclades. Famous for its pristine beaches, crystal-blue sea, iconic caldera views, whitewashed cliff-side homes and stunning sunsets, Santorini is indeed a scenic marvel in the Aegean Sea.",
+    "thingsToDo": [
+      {
+        "name": "Head up to the capital, Fira",
+        "text": "Perched on the cliffs above the caldera, Firá can be reached either by walking, riding mules, or by taking the cable-car."
+      },
+      {
+        "name": "See a Santorini sunset",
+        "text": "Grab a seat and witness a truly surreal sunset with stunning views from several cliff-side vantage points at the picture-perfect village of Oia."
+      },
+      {
+        "name": "Marvel at the Caldera",
+        "text": "Take a tour of this sea-filled volcanic crater formed by a massive volcanic explosion some 3,600 years ago."
+      },
+      {
+        "name": "Take a Catamaran tour",
+        "text": "Discover Santorini's beautiful coastline on this delightful cruise. Explore secluded volcanic beaches, experience the hot springs, or simply relax on deck."
+      },
+      {
+        "name": "Visit the Akrotíri Archaeological Site",
+        "text": "Explore this ancient settlement that was buried below the lava following the 16th-century BC volcanic explosion."
+      }
+    ]
+  },
+  {
     "name": "Vienna",
     "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/vienna.jpg",
     "coordinates": ["48.210033", "16.363449"],
