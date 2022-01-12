@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import DescriptionCard from "./DescriptionCard";
 import LocationMap from "./LocationMap";
-// import { capitalizeAll } from "../utils/capitalize";
+import Activities from "./Activities";
 import "../styles/locationDetails.css";
 
 const LocationDetails = () => {
@@ -22,19 +22,8 @@ const LocationDetails = () => {
     fetchLocationData();
   }, [locationID]);
 
-  let thingsToDo = [];
   let coordinates = [];
   if (locationData) {
-    if (locationData.thingsToDo) {
-      thingsToDo = locationData.thingsToDo.map((activity) => {
-        return (
-          <li key={activity.name}>
-            <h3>{activity.name}</h3>
-            <p>{activity.text}</p>
-          </li>
-        );
-      });
-    }
     if (locationData.coordinates) {
       coordinates = [
         { name: locationData.name, coordinates: locationData.coordinates },
@@ -42,27 +31,40 @@ const LocationDetails = () => {
     }
   }
 
+  console.log(locationData);
+
   return (
-    <div>
+    <div className="location-details">
       <div className="location-description">
         <DescriptionCard
           image={locationData ? locationData.coverImage : null}
           text={locationData ? locationData.description : null}
         />
       </div>
-      <div className="location-map">
-        <LocationMap
-          center={locationData ? locationData.coordinates : ["", ""]}
-          zoom={3}
-          coordinates={coordinates}
-        />
-      </div>
-      <div className="things-to-do">
-        <div className="things-to-do-image"></div>
-        <div className="things-list">
-          <h2>Top Things to Do in {locationID}</h2>
-          <ul>{thingsToDo}</ul>
+      <div className="location-map-wrapper">
+        <div className="location-map">
+          <LocationMap
+            center={locationData ? locationData.coordinates : ["", ""]}
+            zoom={8}
+            coordinates={coordinates}
+          />
         </div>
+      </div>
+      <div className="activity-container">
+        {locationData && locationData.thingsToDo.length > 0 ? (
+          <Activities
+            activityData={locationData.thingsToDo}
+            destinationID={locationID}
+          />
+        ) : null}
+
+        {/* <div className="things-to-do-image"></div>
+        {thingsToDo.length > 0 ? (
+          <div className="things-list">
+            <h2>Top Things to Do in {locationID}</h2>
+            <ul>{thingsToDo}</ul>
+          </div>
+        ) : null} */}
       </div>
     </div>
   );

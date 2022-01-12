@@ -4,14 +4,11 @@ const authController = require("../controllers/authController");
 
 const router = express.Router();
 
-router
-  .route("/")
-  .get(destinationController.getAllDestinations)
-  .post(
-    authController.protectRoute,
-    authController.restrictRouteTo("admin", "guide"),
-    destinationController.createDestination
-  );
+router.route("/").get(destinationController.getAllDestinations).post(
+  // authController.protectRoute,
+  // authController.restrictRouteTo("admin", "guide"),
+  destinationController.createDestination
+);
 
 router
   .route("/:destinationID")

@@ -1,8 +1,111 @@
 [
   {
+    "name": "Louisiana",
+    "description": "In Louisiana, you're never far from incredible food, live music or rich history. Whether it’s a small-town experience or big-city excitement you’re craving, you’ll find it all here. From New Orleans' bustling French Quarter, Alexandria’s historic plantations to the heart of Cajun and Creole Country in Lafayette, every region is steeped in culture and southern hospitality.",
+    "bestTimeToVisit": "Early Spring to late Fall, and between Christmas and New Year’s when it’s mild and the festivals are in full swing.",
+    "language": "English",
+    "currency": "U.S. Dollar",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/louisiana.jpg",
+    "region": "USA",
+    "weather": "A humid subtropical climate with long, hot, humid summers and short, mild winters.",
+    "places": ["61d75654a235bda294ebc65b", "61d75678a235bda294ebc664"],
+    "thingsToDo": [
+      {
+        "name": "Go on a swamp tour",
+        "text": "Experience the intricate network of Louisiana’s scenic swamps by hopping on an Airboat, a kayak, or a tour boat."
+      },
+      {
+        "name": "Take a French Quarter walking tour",
+        "text": "Learn about the history and mysteries of New Orleans' oldest and most famous neighborhood."
+      },
+      {
+        "name": "Visit the National WWII Museum",
+        "text": "See history come to life with interactive displays as you get an in-depth look at every aspect of the conflict."
+      },
+      {
+        "name": "Experience Mardi Gras",
+        "text": "Celebrated the Tuesday before Ash Wednesday, it’s America’s most vibrant parade party with floats, costumes, music and dance."
+      },
+      {
+        "name": "Savor Cajun Cooking",
+        "text": "Just 45 minutes away from New Orleans, go up and down the Cajun Bayou food trail for delicious authentic Cajun food experiences."
+      }
+    ]
+  },
+  {
+    "name": "Nevada",
+    "description": "Nevada is a land of contrasts. When the shimmering lights and big names of the Las Vegas Strip fade into the desert night, the sky puts on a celestial show. See the sweep of the Milky Way from Great Basin National Park. If you’re looking to ski, golf, or swim, Lake Tahoe delivers. Bring the whole family to the Hoover Dam. For quirky fun, take the “Extraterrestrial Highway” near Area 51, or come for Burning Man.",
+    "bestTimeToVisit": "Come in the fall and spring for sightseeing and winter for skiing.",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/nevada.jpg",
+    "currency": "U.S. Dollar",
+    "weather": "Summers are very hot and winters are cool and dry; fall and spring bring comfortable weather. Pack a sweater or jacket for the evening when temperatures drop.",
+    "places": ["61d7568ca235bda294ebc66c", "61d756a9a235bda294ebc674"],
+    "language": "English",
+    "region": "USA",
+    "thingsToDo": [
+      {
+        "name": "Roll the Dice on the Vegas Strip",
+        "text": "Spend a weekend or a week in Sin City, rolling the dice, checking out casino shows, and indulging in exquisite cuisine."
+      },
+      {
+        "name": "Ski, Swim, or Golf at Lake Tahoe",
+        "text": "Ski Diamond Peak or Mt. Rose Ski resorts. In the summer, swim in the crystalline waters, or tee-off at Edgewood Tahoe, ranked highly by Golf Digest and Travel + Leisure readers."
+      },
+      {
+        "name": "Caves and Big Sky in Great Basin National Park",
+        "text": "Great Basin National Park is known for its hills of sage, bristlecone pine, Milky Way views, and cave system."
+      },
+      {
+        "name": "Climb or Hike the Mojave",
+        "text": "Red Rock Canyon draws climbers in the winter looking to test themselves on the park’s moderate and advanced climbs. Not a climber? Enjoy the hiking."
+      },
+      {
+        "name": "Marvel at the Hoover Dam",
+        "text": "Tour the dam and learn about this engineering and construction wonder. This National Historic Landmark is the largest dam in the western hemisphere."
+      }
+    ]
+  },
+  {
+    "name": "Netherlands",
+    "description": "From the Dutch masters in Amsterdam’s museums to tulip fields and flower auctions, the Netherlands is a land where culture meets nature. Journey to Zaanse Schans, known for its charming green houses and windmills. Visit the International Court of Justice at The Hague. Come in the springtime and see the Tulip Festival at Keukenhof Gardens blooming in vibrant color. Or, spend a weekend in Amsterdam, biking, walking, or hiking across the city’s 1,100 bridges.",
+    "bestTimeToVisit": " Springtime brings blossoms to the tulip fields, but mid-April through mid-October are also excellent and popular times to visit.",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/netherlands.jpg",
+    "currency": "Euro",
+    "language": "Dutch",
+    "weather": "The sea keeps the weather temperate during the winter and summer, but be sure to pack an umbrella for afternoon showers.",
+    "region": "Europe",
+    "thingsToDo": [
+      {
+        "name": "Stop to Smell the Flowers in Keukenhof",
+        "text": "If you make it to the Netherlands in the Spring, visit the Keukenhof, considered to be the largest flower garden in the world, boasting 7 million bulbs."
+      },
+      {
+        "name": "Cycle Past the Windmills of Zaanse Schans",
+        "text": "View the iconic Dutch windmills of Zaanse Schans by bike or on foot."
+      },
+      {
+        "name": "Visit the Secret Annex",
+        "text": "Step foot in the Secret Annex where Anne Frank and her family hid during World War II, and view her inspiring diary, on display at the Anne Frank House."
+      },
+      {
+        "name": "Get a Taste of Chocolate and the Middle Ages",
+        "text": "Stroll the cobblestone streets of Bruges, admire medieval architecture, and get a taste of Belgian chocolate."
+      },
+      {
+        "name": "The Girl with a Pearl Earring in The Hague",
+        "text": "In Amsterdam you can view several of Vermeer’s masterpieces at the Rijksmuseum, but if you want to see Vermeer’s famous Girl with a Pearl Earring, you’ll need to travel about an hour to the Hague’s Mauritshuis."
+      }
+    ],
+    "places": [
+      "61d739a41f61ddd827284d20",
+      "61d739bd1f61ddd827284d28",
+      "61d739e21f61ddd827284d30"
+    ]
+  },
+  {
     "name": "Spain",
     "description": "The land of Gaudí, Picasso, and Dalí. Mediterranean beaches. The Alcázar and the Great Mosque of Córdoba. The snow-capped Sierra Nevada. The flavor of Spain can be tasted in its tapas, felt in its flamenco, and experienced through its fiestas. The country is a blend of cultures, from its unique Basque region to its Muslim-influenced south. Spain’s cosmopolitan cities exude an elegance all their own, from Madrid’s Prado to Gaudí’s Barcelona—there’s an essence to Spain that can only be captured by being there—and we can help you experience it.",
-    "coverImage": "spain.jpg",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/spain.jpg",
     "bestTimeToVisit": "Fall is the best time to visit, when the crowds have dispersed and the weather is cooler. Summer is the most popular time, but prepare for heat.",
     "currency": "Euro",
     "language": "Spanish",
@@ -30,7 +133,7 @@
         "text": "Made glamourous by jet-setting celebrities, Mallorca and Ibiza offer spectacular beaches, a lively nightlife, and charming towns."
       }
     ],
-    "places": []
+    "places": ["61d739f51f61ddd827284d39", "61d73a0b1f61ddd827284d40"]
   },
   {
     "name": "Greece",
@@ -40,7 +143,7 @@
     "language": "Greek",
     "weather": "Overall Greece has a Mediterranean climate with plenty of sunshine and mild temperatures. Always check local weather before you go.",
     "bestTimeToVisit": "Any time of the year. May to August is considered the peak season, and September and October are also popular as it’s not too hot.",
-    "coverImage": "greece.jpg",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/greece.jpg",
     "thingsToDo": [
       {
         "name": "Travel back in time at the Acropolis",
@@ -63,7 +166,11 @@
         "text": "Enjoy the local-feel of a small village, drive along the breathtaking rugged south coast, bask in luxurious spas—options are aplenty in this largest Greek island."
       }
     ],
-    "places": []
+    "places": [
+      "61d73a1f1f61ddd827284d47",
+      "61d73a311f61ddd827284d4e",
+      "61d73a461f61ddd827284d55"
+    ]
   },
   {
     "name": "Austria",

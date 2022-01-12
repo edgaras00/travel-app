@@ -3,9 +3,9 @@ import { Link, useParams, useLocation } from "react-router-dom";
 import DestinationCard from "./DestinationCard";
 import DescriptionCard from "./DescriptionCard";
 import LocationMap from "./LocationMap";
+import Activities from "./Activities";
+import DestinationGlance from "./DestinationGlance";
 
-import { capitalizeAll } from "../utils/capitalize";
-// import slugify from "../utils/slugify";
 import "../styles/destinationDetails.css";
 
 const DestinationDetails = () => {
@@ -28,76 +28,120 @@ const DestinationDetails = () => {
     fetchDestinationData();
   }, [destinationID]);
 
+  let cardContainerClass;
+  let cardSize = "small";
+
   let locations = [];
   let locationCoordinates = [];
   let mapCenter = ["", ""];
-  let thingsToDo = [];
   if (destinationData) {
     if (destinationData.places.length > 0) {
+      if (
+        destinationData.places.length === 1 ||
+        destinationData.places.length === 2
+      ) {
+        cardContainerClass = "single-card";
+        cardSize = "large";
+      } else if (destinationData.places.length === 3) {
+        cardContainerClass = "three-cards";
+        cardSize = "medium";
+      } else if (destinationData.places.length === 4) {
+        cardContainerClass = "four-cards";
+        cardSize = "large";
+      } else if (destinationData.places.length === 6) {
+        cardContainerClass = "six-cards";
+        cardSize = "medium";
+      }
+
       locations = destinationData.places.map((location) => {
         return (
           <Link
             to={`${pathLocation.pathname}/${location.slug}`}
             key={location.name}
           >
-            <DestinationCard name={location.name} image={location.coverImage} />
+            <DestinationCard
+              name={location.name}
+              image={location.coverImage}
+              size={cardSize}
+            />
           </Link>
         );
       });
 
       locationCoordinates = destinationData.places.map((location) => {
-        return { name: location.name, coordinates: location.coordinates };
+        return {
+          name: location.name,
+          coordinates: location.coordinates,
+          slug: location.slug,
+        };
       });
 
       mapCenter = destinationData.places
         ? destinationData.places[0].coordinates
         : ["", ""];
     }
+  }
 
-    thingsToDo = destinationData.thingsToDo.map((activity) => {
-      return (
-        <li key={activity.name}>
-          <h3>{activity.name}</h3>
-          <p>{activity.text}</p>
-        </li>
-      );
-    });
+  let mapZoom = 6;
+  if (
+    destinationID === "france" ||
+    destinationID === "italy" ||
+    destinationID === "spain" ||
+    destinationID === "california" ||
+    destinationID === "nevada" ||
+    destinationID === "thailand" ||
+    destinationID === "colombia"
+  ) {
+    mapZoom = 5;
+  } else if (destinationID === "china" || destinationID === "brazil") {
+    mapZoom = 4;
+  } else if (destinationID === "netherlands" || destinationID === "louisiana") {
+    mapZoom = 8;
+  } else if (
+    destinationID === "chile" ||
+    destinationID === "australia" ||
+    destinationID === "canada"
+  ) {
+    mapZoom = 3;
+  } else if (destinationID === "bahamas" || destinationID === "barbados") {
+    mapZoom = 11;
   }
 
   return (
     <div className="destination-details">
-      <div className="destination-description">
+      <div className="destination-description region-description">
         <DescriptionCard
           image={destinationData ? destinationData.coverImage : null}
           title={destinationData ? destinationData.name : null}
           text={destinationData ? destinationData.description : null}
         />
       </div>
-      <div className="destination-at-glance region-at-glance">
-        <div className="destination-at-glance-text region-description-text">
-          <h2>{destinationData ? destinationData.name : null} at a Glance</h2>
-          <div>{destinationData ? destinationData.weather : null}</div>
-          <div>{destinationData ? destinationData.currency : null}</div>
-          <div>{destinationData ? destinationData.language : null}</div>
-          <div>{destinationData ? destinationData.bestTimeToVisit : null}</div>
-        </div>
+      <div className="destination-at-glance">
+        <DestinationGlance
+          name={destinationData && destinationData.name}
+          weather={destinationData && destinationData.weather}
+          currency={destinationData && destinationData.currency}
+          language={destinationData && destinationData.language}
+          bestTimeToVisit={destinationData && destinationData.bestTimeToVisit}
+        />
         <div className="destination-map region-map">
           <LocationMap
             center={mapCenter}
-            zoom={6}
+            zoom={mapZoom}
             coordinates={locationCoordinates}
             pathname={pathLocation.pathname}
           />
         </div>
       </div>
-      <div className="things-to-do">
-        <div className="things-to-do-image"></div>
-        <div className="things-list">
-          <h2>Top Things to Do in {capitalizeAll(destinationID)}</h2>
-          <ul>{thingsToDo}</ul>
-        </div>
+      <div className="activity-container">
+        <Activities
+          activityData={destinationData ? destinationData.thingsToDo : []}
+          destinationID={destinationID}
+        />
       </div>
-      <div className="destination-card-container">{locations}</div>
+      <div className={`destination-card-container ${cardContainerClass}`}>
+        {locations}
+      </div>
     </div>
   );
 };

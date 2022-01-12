@@ -1,9 +1,241 @@
 [
   {
+    "name": "New Orleans",
+    "coordinates": ["29.951065", "-90.071533"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/new-orleans.jpg",
+    "description": "The cradle of jazz music, New Orleans is a little out of step with the United States when it comes to dining, architecture and just day-to-day living. It’s a city of Creole cottages, palatial townhouses, elegant iron balconies and shaded courtyards. New Orleans is that rare place where you can order a cocktail to-go, and turn a corner and be swept along in a street parade.",
+    "thingsToDo": [
+      {
+        "name": "French Quarter",
+        "text": "Rakish, bohemian and bouncy, the French Quarter (Vieux Carré) is the grand dame, and springs to mind when many people think New Orleans. All the hallmarks are here, like the carnage of Bourbon Street, Creole cottages, wrought-iron balconies, laid-back cafes, pastel facades, gaslights, jazz clubs, flowery courtyards, to-go cups, antique stores and restaurants that have been around for a century or more."
+      },
+      {
+        "name": "Garden District",
+        "text": "New Orleans at its most refined, the Garden District was developed for rich Americans who didn’t want to live in the French Quarter with the Creoles. From the mid-1830s they built themselves theatrical Italianate and Greek Revival mansions, often painted bright white and sporting two tiers of galleries."
+      },
+      {
+        "name": "Jackson Square",
+        "text": "Once a military parade ground at the very centre of the city Jackson Square was first laid out in 1720s in the style of Place des Vosges in Paris. After the Battle of New Orleans in 1815 the plaza was renamed in honour of the victorious General Andrew Jackson who would become the seventh president of the United States between 1829 and 1837. At the very centre of formal gardens is the equestrian statue for Jackson by sculptor Clark Mills and unveiled in 1856."
+      },
+      {
+        "name": "Mardi Gras",
+        "text": "After twelfth night on January 6 New Orleans is officially in Mardi Gras season. Until Fat Tuesday (Shrove Tuesday), usually some time in February, the city is a blur of parades by enormous floats that have been months in the making."
+      },
+      {
+        "name": "Frenchmen Street",
+        "text": "When people talk about Frenchmen Street they normally mean the three-block stretch through Faubourg Marigny that has ascended the throne as the best place for live music in New Orleans."
+      },
+      {
+        "name": "French Market",
+        "text": "Up there with the United States’ great shopping and dining experiences, the French Market is in long iron-framed halls designed in the late-19th century by Joseph Abeilard, one of America’s first African American architects."
+      },
+      {
+        "name": "Royal Street",
+        "text": "Parallel to Bourbon Street as it cuts through the French Quarter, Royal Street is a quieter, maybe more genteel sibling."
+      }
+    ]
+  },
+  {
+    "name": "Baton Rouge",
+    "coordinates": ["30.471165", "-91.147385"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/baton-rouge.jpg",
+    "description": "Baton Rouge is the capital of the state of Louisiana, and is known for its amazing food scene, historical landmarks, and fun and quirky attractions. Located along the gorgeous banks of the powerhouse Mississippi River, Baton Rouge is known for its stunning river views and strategic location, and whatever your interests, you are sure to find something to enjoy in this city known for its dynamism and diversity.",
+    "thingsToDo": [
+      {
+        "name": "LSU Museum of Art",
+        "text": "Art lovers in Baton Rouge shouldn’t miss the chance to head to the LSU Museum of Art which is housed inside the larger Shaw Center for the Arts and encompasses a rather impressive 13,000 square feet as well as fourteen galleries."
+      },
+      {
+        "name": "Mike the Tiger Habitat",
+        "text": "Mike the Tiger is the official mascot of Louisiana State University, and one of the top things to do in this city is to visit his residence. A tiger has long been used as the mascot of the university, and Mike the Tiger I was first acquired in the 1930s."
+      },
+      {
+        "name": "Old State Capitol Building",
+        "text": "Louisiana’s Old State Capitol Building is one of the most historic buildings in the whole of the state and was the head of the State Legislature from the 1800s through to the 1930s. The location of the building is simply stunning, as it was built on a bluff that offers fantastic views over the Mississippi River and is known for its Gothic design which has made it a local landmark, as well as meaning that it is often mistaken for a castle rather than a state capitol."
+      },
+      {
+        "name": "Red Stick Farmers Market",
+        "text": "If you want to try some of the freshest produce in Baton Rouge then you need to head to the Red Stick Farmers Market which is open every Thursday and Saturday."
+      },
+      {
+        "name": "Baton Rouge Zoo",
+        "text": "Baton Rouge Zoo first opened its doors to the public in 1970 and has been going strong as an animal sanctuary ever since. The zoo now houses almost 2,000 animals and has reptiles, fish, birds, and primates from all over the world."
+      },
+      {
+        "name": "Louisiana Art & Science Museum",
+        "text": "If you are interested in art and science then look no further than the Louisiana Art and Science Museum which has galleries dedicated to both subjects as well as an in-house planetarium."
+      }
+    ]
+  },
+  {
+    "name": "Las Vegas",
+    "coordinates": ["36.114647", "-115.172813"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/las-vegas.jpg",
+    "description": "Las Vegas might boast a reputation for round-the-clock partying and dazzling casinos, but Sin City has far more to offer than simply hangovers and roulette! If you’re hunting for fun things to do in Las Vegas, you’ll be spoiled for choice.",
+    "thingsToDo": [
+      {
+        "name": "Fly Over Las Vegas on Board a Helicopter",
+        "text": "Get a chance to jump in a helicopter and fly under the twinkling starlight over the shimmering Las Vegas Strip. Taking to the skies in a chopper is one thing, but seeing Las Vegas illuminated by all its vibrant lights from the sky is another!"
+      },
+      {
+        "name": "Explore the Black Canyon Wildlife by Kayak",
+        "text": "One of the most enjoyable things you could do while visiting the Black Canyon is a half-day kayak tour. You’ll get to see the native wildlife, including desert bighorn sheep. The flora is also very impressive, and you’ll get to see a number of beautiful landscapes, such as the Emerald Cave."
+      },
+      {
+        "name": "Say “I do” in the Graceland Chapel in Front of Elvis",
+        "text": "If you’re crazy enough for a spur-of-the-moment wedding, then the Graceland Chapel in Las Vegas awaits. It can be an official or nonofficial wedding – the aim is just to have fun! If you want to spice up the event, you can even have the wedding officiated by Elvis!"
+      },
+      {
+        "name": "Try the Cowboy Lifestyle With a Sunset Dinner After a Horseback Tour",
+        "text": "Put yourself into the Wild West with a horseback-seated sunset! Dusk in Nevada is powerful and colorful, and what better way to see it than with a delicious dinner and nothing but nature as far as the eye can see?"
+      },
+      {
+        "name": "Witness the Warm Color Palette of the Valley of Fire",
+        "text": "Who said going to Las Vegas was just about gambling? The city is central to many stunning National Parks, including the Valley of Fire. Guided hiking tours pick you up and drop you off from Las Vegas, all you need to do is make sure the camera batteries are charged!"
+      },
+      {
+        "name": "Put on Your Best Poker Face at the Famous Bellagio Hotel",
+        "text": "If you are a fan of poker, you will definitely enjoy your stay in Las Vegas. You can play poker in basically every casino you pass by. But if there is one you can’t miss, it’s definitely the Bellagio Hotel. The sheer volume of cash changing hands at the Bellagio’s high-stakes tables are astronomical!"
+      }
+    ]
+  },
+  {
+    "name": "Reno",
+    "coordinates": ["39.530895", "-119.814972"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/reno.jpg",
+    "description": "When people think of gambling and casinos in the United States, they usually think of Las Vegas. As such Reno is often overlooked, which is great shame for anyone travelling here and missing out on the best that this city has to offer.  Along with the bright lights of the casinos here, there are a wealth of other things to do including walks by the city’s mighty Truckee River, as well as visits to museums, galleries, and zoos. If you venture out of Reno slightly, then you will come to the amazing and iconic Lake Tahoe, worth the trip in its own right, but even within the city limits you can expect to find gems such as Mount Rose as well as parks, botanical gardens, and arboretums.",
+    "thingsToDo": [
+      {
+        "name": "Lake Tahoe",
+        "text": "Lake Tahoe is technically about 40 miles outside of the city of Reno, but it is still on the biggest draws in the area. Located between Nevada and California, Lake Tahoe is known as one of the most beautiful places in the entire United States and visitors flock here from all over the world to see the azure waters of the lake surrounded by majestic mountains."
+      },
+      {
+        "name": "Mount Rose Ski Resort",
+        "text": "For some gorgeous scenery within the boundaries of Reno, look no further than Mount Rose Ski Resort which is only about 20 miles away from the downtown area of this city. Mount Rose stands at over 8,000 feet, and this makes it the highest resort in the Reno/Tahoe area."
+      },
+      {
+        "name": "Eldorado",
+        "text": "The Eldorado is one of the most famous casinos in Reno and is also known as one of the premium spots to gamble here, if you feel like testing your luck while you are in town. The Eldorado first opened its doors in the early 1970s, which means that it has seen a lot of change in Reno over the years, and it still has a kind of period charm to this day."
+      },
+      {
+        "name": "Riverwalk",
+        "text": "Snaking alongside the Truckee River in the downtown area of Reno is the Riverwalk. Here you will find a plethora of cultural activities on offer, and this area is particularly well known for its art galleries and restaurants."
+      },
+      {
+        "name": "National Automobile Museum",
+        "text": "If you are a fan of all things related to automobiles then consider a visit to the National Automobile Museum that has its home in Reno."
+      },
+      {
+        "name": "Atlantis Casino Resort Spa",
+        "text": "Atlantis Casino Resort Spa is one of the best known casinos and luxury hotels in Reno, and was built in 1972, making it something of a stalwart on the casino scene in this city."
+      }
+    ]
+  },
+  {
+    "name": "Amsterdam",
+    "coordinates": ["52.377956", "4.897070"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/amsterdam.jpg",
+    "description": "Amsterdam is a glorious city full of markets, museums, and great restaurants and bars. Its majestic canals are lined with 17th-century houses and buildings full of history. While the canal ring is home to some of the most popular attractions, new urban parks and developments outside the historic core mean there are fun, less-crowded places to explore, too.",
+    "thingsToDo": [
+      {
+        "name": "Feel The Royalty At The Royal Palace",
+        "text": "The Royal Palace in Amsterdam is a very interesting site to visit. Even if you are just one day in Amsterdam, it is worth seeing it! It is located at Dam Square and it is a very impressive building. The architecture is amazing and really stands out from the other buildings in Amsterdam."
+      },
+      {
+        "name": "Stroll And Shop Around Dam Square",
+        "text": "Dam square is located in the middle of the busy neighborhood Centrum. On one side of it stand the Royal Palace and on the other side, the National Monument – a memorial for WWII. The streets going out of the square to the north and south are the place for strolling between stores, restaurants and fast food, and tourist attractions."
+      },
+      {
+        "name": "Visit The Anne Frank House",
+        "text": "Even though you might associate Amsterdam with parties and fun, a top activity in the city is a heartbreaking one. Visiting the house where a little Jewish girl and her family went into hiding during World War II is a must to gain perspective about the painful past of the city. Walk through the halls of this biographical museum, where Anne’s famous Diary was written. Although it’s an incredibly sad experience, it’s also inspiring to see how something beautiful came from such a tragedy. Photography is prohibited at the museum. So put your phone away during your visit and immerse yourself in her freedomless world."
+      },
+      {
+        "name": "Stroll Around Vondelpark",
+        "text": "One of the top sites in Amsterdam is Vondelpark, as seen in this Amsterdam Itinerary.  The most famous park in the Netherlands, Vondelpark is 120 acres of landscaped grounds in the middle of the city. This park first opened in 1865, and now over a century and a half later is as popular as ever."
+      },
+      {
+        "name": "Explore The City Through The Canals",
+        "text": "Amsterdam’s unique location on the water means that a boat tour is an absolute must-do in this incredible city. With over 100 kilometers of canals, the so-called Grachten, Amsterdam can be explored from the water while seated comfortably. If you’re traveling with children this is a great way to avoid having to walk long distances while still getting to see many of the attractions that make this city so famous."
+      },
+      {
+        "name": "Visit Rijksmuseum",
+        "text": "The Rijksmuseum is in an impressive 19th-century building on Museum Square (Museumplein). The square is surrounded by four museums and is often filled with open-air exhibitions. The Rijksmuseum is the largest and most popular museum in the Netherlands. It is dedicated to the country’s art and history covering 800 years from 1200 to 2000."
+      }
+    ]
+  },
+  {
+    "name": "Rotterdam",
+    "coordinates": ["51.926517", "4.462456"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/rotterdam.jpg",
+    "description": "Rotterdam is located in the southern Netherlands and is the second largest city in the country after the capital Amsterdam with a population of approximately 630,000. Rotterdam has been a major city for many hundreds of years and has always served as a large port as it lies on the Rhine-Meuse-Scheldt river delta.",
+    "thingsToDo": [
+      {
+        "name": "Markthal Rotterdam",
+        "text": "The Markthal is a stunning piece of architecture that was constructed in 2009 and serves as both an office building and a marketplace. The design of the structure is quite unique with a large semi-circular grey façade and a large windowed section facing out to the surrounding courtyard. The inside of the structure has some amazing artwork by Arno Coenen and shows various colourful fruits, plants, insects and flowers."
+      },
+      {
+        "name": "Rotterdam Zoo",
+        "text": "Also known as the Diergaarde Blijdorp, the Rotterdam Zoo had stood for many years despite having to change locations during WWII to avoid bombing. The zoo is in great condition and features a Botanical garden and Oceanium and also operates breeding programs to help endangered species such as the Red Panda."
+      },
+      {
+        "name": "Euromast Tower",
+        "text": "The Euromast Tower is an observation station that was created in 1960 to provide panoramic views of the Rotterdam Cityscape. The towers stands at 606ft and with its antenna it is the tallest building in Rotterdam. The tower features a restaurant, a conference room for business meetings, a hotel suite and of course the observation deck."
+      },
+      {
+        "name": "Erasmus Bridge",
+        "text": "This monumental bridge spans the Nieuwe Maas distributary of the Rhine and runs from the confluence of the Noord and Lek rivers. The length of this impressive bridge stretches to an immense 802m making it the second largest in the Netherlands. The bridge is nicknamed the Swan due to its large upright mast that resembles the neck of a swan."
+      },
+      {
+        "name": "Rotterdam Central Station",
+        "text": "Rotterdam is a city that is full of modern and unique architecture and the central station is one such building. The new terminal was opened in 2014 and its architecture has become quite iconic. The building has a triangular shape that points towards the sky at a protruding angle."
+      },
+      {
+        "name": "Maritime Museum",
+        "text": "The Maritime Museum is one of the largest of its type in the world with a huge collection of cartography, maritime memorabilia and art. The museum is located in central Rotterdam near the Markthal and the Cube houses."
+      }
+    ]
+  },
+  {
+    "name": "Utrecht",
+    "description": "Utrecht is the fourth largest city in the Netherlands and serves as the capital of the Utrecht province in the centre of the country around 25 minutes south of Amsterdam. The city is an important religious centre in the Netherlands and has many historical churches and architecture dating as far back as the middle ages.",
+    "coordinates": ["52.092876", "5.104480"],
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/utrecht.jpg",
+    "thingsToDo": [
+      {
+        "name": "The Dom Tower of Utrecht",
+        "text": "This huge structure towers above the city and is one of Utrecht’s most iconic landmarks."
+      },
+      {
+        "name": "Railway Museum",
+        "text": "This fascinating railway museum is actually housed in one of Utrecht’s old railway stations and is located in the eastern part of the town."
+      },
+      {
+        "name": "Utrecht Canals",
+        "text": "Amsterdam is not the only city in the Netherlands to have a canal network – Utrecht has an extensive system of canals, most of which are lined with traditional houses and provide a beautiful area to walk through."
+      },
+      {
+        "name": "Centraal Museum",
+        "text": "This is the main museum in Utrecht and was originally established in 1838. The museum features an impressive collection of artworks mainly from well-known local artists such as Joachim Wtewael and Gerard Van Honthorst."
+      },
+      {
+        "name": "St Martin’s Cathedral",
+        "text": "St. Martin’s is the main Cathedral in Utrecht and was once connected to the Dom Tower, however the nave collapsed and the two building have been separate ever since."
+      },
+      {
+        "name": "Museum Speelklok",
+        "text": "The clock museum is a magical place full of entertainment and wondrous pieces that will delight people of all ages."
+      },
+      {
+        "name": "Utrecht Botanical Gardens",
+        "text": "The famous Botanical Gardens are located in the University of Utrecht in the eastern part of the town just off of the A28 road."
+      }
+    ]
+  },
+  {
     "name": "Barcelona",
     "coordinates": ["41.390205", "2.154007"],
     "description": "Pass through thousands of years of history as you explore Barcelona’s ancient Roman walls, its Gothic quarter, and its modern Gaudì masterpieces, including the Sagrada Família and Casa Batlló. Bask beside the Mediterranean by day, and by night enjoy paella and tapas at a seaside bar. Walk down Las Ramblas for people-watching and shopping.",
-    "coverImage": "barcelona.jpg",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/barcelona.jpg",
     "thingsToDo": [
       {
         "name": "See Nature Written in Stone in Gaudì’s Masterpieces",
@@ -29,7 +261,7 @@
   },
   {
     "name": "Madrid",
-    "coverImage": "madrid.jpg",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/madrid.jpg",
     "description": "Madrid is known for its vibrant culinary scene, its bustling city squares, its beautiful parks, and legendary Prado Museum. Spend a day in Madrid strolling the Parque del Buen Retiro. Visit Plaza Mayor to sample an Iberian ham bocadillo, and then browse the shops at Las Salinas. Set aside a day or two for the Prado Museum with its stunning collection that spans the eras.",
     "thingsToDo": [
       {
@@ -57,7 +289,7 @@
   },
   {
     "name": "Athens",
-    "coverImage": "athens.jpg",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/athens.jpg",
     "coordinates": ["37.983810", "23.727539"],
     "description": "Welcome to Athens, a modern metropolis with a glorious past. From fancy restaurants and traditional tavernas, to magnificent museums and historical sites, you’ll find a blend of the new and the old almost everywhere you go. Crowning the city are the majestic, marbled columns of the Acropolis, reminding the world of its role as the birthplace of democracy and Western civilization. Whether you choose to explore its historic past, enjoy its vibrant nightlife, or soak in the charm of this Greek capital, Liberty Travel can customize a vacation with authentic experiences just for you.",
     "thingsToDo": [
@@ -85,7 +317,7 @@
   },
   {
     "name": "Mykonos",
-    "coverImage": "mykonos.jpg",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/mykonos.jpg",
     "description": "One of the smallest Greek Cyclades islands, Mykonos is fast becoming one of the most glamorous destinations in the world. This beautiful island is all about enjoying the good life. Couture shops, swanky restaurants, upscale clubs, golden sandy beaches, and a plethora of land and water activities ensure there’s never a dull moment by day or night. Add to it breathtaking mountainous landscape, clear waters, turquoise skies, and whitewashed alleyways, and you have an amazing vacation destination.",
     "coordinates": ["37.450001", "25.350000"],
     "thingsToDo": [
@@ -113,7 +345,7 @@
   },
   {
     "name": "Santorini",
-    "coverImage": "santorini.jpg",
+    "coverImage": "https://travelappbucket.s3.amazonaws.com/imgs/santorini.jpg",
     "coordinates": ["36.393154", "25.461510"],
     "description": "A bucket-list destination for many, Santorini lives up to the hype. This crescent-shaped volcanic island is one of the most popular in the Greek Cyclades. Famous for its pristine beaches, crystal-blue sea, iconic caldera views, whitewashed cliff-side homes and stunning sunsets, Santorini is indeed a scenic marvel in the Aegean Sea.",
     "thingsToDo": [

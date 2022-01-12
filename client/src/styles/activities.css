@@ -1,0 +1,28 @@
+.things-to-do {
+  width: 100%;
+  display: flex;
+  background-color: rgb(248, 248, 248);
+  justify-content: center;
+}
+
+.things-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.3em 0;
+}
+
+.things-list h2 {
+  font-size: 2em;
+  margin-bottom: 1.2em;
+}
+
+.things-to-do ul {
+  margin-top: 1.5em;
+}
+
+.things-to-do li {
+  list-style-type: none;
+  margin-bottom: 1.2em;
+  width: 80%;
+}

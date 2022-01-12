@@ -71,6 +71,28 @@ const Destinations = () => {
     );
   });
 
+  let regionCoordinates = [];
+  if (regionData) {
+    regionCoordinates = regionData.destinationCoordinates.map(
+      (destination) => ({
+        ...destination,
+        slug: slugify(destination.name),
+      })
+    );
+  }
+
+  let mapZoom = 4;
+  if (
+    regionID === "asia" ||
+    regionID === "south-america" ||
+    regionID === "africa" ||
+    regionID === "north-america"
+  ) {
+    mapZoom = 3;
+  } else if (regionID === "antarctica") {
+    mapZoom = 2;
+  }
+
   return (
     <div className="destinations-container">
       <div className="region-description">
@@ -82,7 +104,7 @@ const Destinations = () => {
           />
         ) : null}
       </div>
-      <div className="region-at-glance">
+      <div className="destination-at-glance">
         <div className="region-description-text">
           {regionData ? <h2>{regionData.name} at a Glance</h2> : null}
           {regionData ? <p>{regionData.regionAtGlance}</p> : null}
@@ -97,8 +119,8 @@ const Destinations = () => {
                   ]
                 : ["", ""]
             }
-            zoom={4}
-            coordinates={regionData ? regionData.destinationCoordinates : ""}
+            zoom={mapZoom}
+            coordinates={regionCoordinates}
             pathname={pathLocation.pathname}
           />
         </div>

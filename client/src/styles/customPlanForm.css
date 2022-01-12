@@ -1,0 +1,134 @@
+.custom-plan-form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-plan-form {
+  width: 92%;
+}
+
+.plan-intro {
+  font-size: 1.08em;
+}
+
+.plan-header {
+  font-size: 1.7em;
+  margin-top: 0.6em;
+}
+
+.form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(141, 141, 141, 0.5);
+}
+
+.traveler-info {
+  margin-top: 1em;
+}
+
+.contact-inputs {
+  display: block;
+  margin-top: 0.5em;
+}
+
+.contact-input {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.contact-input input {
+  height: 60px;
+  width: 180px;
+  font-size: 1.1em;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.travel-plans {
+  margin-top: 1em;
+}
+
+.dropdowns {
+  margin-top: 0.5em;
+}
+
+.destination-select {
+  display: inline-block;
+  width: 46%;
+  font-size: 1.1em;
+  line-height: 40px;
+  margin-right: 19px;
+  margin-bottom: 1.1em;
+}
+
+.travel-plans input {
+  width: 44%;
+  height: 45px;
+  display: block;
+  margin-bottom: 1.1em;
+  border-radius: 5px;
+  font-size: 1.1em;
+  padding-left: 10px;
+}
+
+.travel-plans textarea {
+  width: 94%;
+  resize: none;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  padding-left: 10px;
+}
+
+.travel-interests {
+  margin-top: 1em;
+}
+
+.interest-header {
+  margin-bottom: 0.5em;
+}
+
+.checkbox-wrapper {
+  display: inline;
+  margin-right: 1.2em;
+  font-size: 1.1em;
+}
+
+.checkbox-wrapper label {
+  margin-left: 0.3em;
+}
+
+.subscription-checkbox {
+  display: block;
+  margin-top: 2em;
+}
+
+.plan-submit-button {
+  margin-top: 2em;
+}
+
+.plan-submit-button button {
+  border: none;
+  background-color: #457b9d;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.7em 1.3em;
+  border-radius: 3px;
+  font-size: 1.1em;
+}
+
+/* .custom-form {
+  width: 80%;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  bottom: auto;
+  margin-right: -50%;
+  right: auto;
+  transform: translate(50%, 50%);
+} */

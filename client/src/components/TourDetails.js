@@ -18,6 +18,8 @@ const TourDetails = () => {
     fetchTourDetails();
   }, [tourID]);
 
+  console.log(tourDetailsData);
+
   let center = [];
   let coordinates = [];
   let itinerary = [];
@@ -41,8 +43,6 @@ const TourDetails = () => {
     });
   }
 
-  console.log(tourDetailsData);
-
   return (
     <div className="tour-details">
       <div className="tour-description">
@@ -56,6 +56,7 @@ const TourDetails = () => {
         <LocationMap
           center={tourDetailsData ? center : ["", ""]}
           coordinates={tourDetailsData ? coordinates : null}
+          zoom={8}
         />
       </div>
       <div className="itinerary">

@@ -38,7 +38,6 @@ const DestinationRegions = () => {
         />
       </div>
       <h1 className="destination-question">Where Would You Like To Go?</h1>
-      {/* <div className="top-row">{destinationCards.slice(0, 3)}</div> */}
       <div className="destination-card-container">{regionCards}</div>
     </div>
   );

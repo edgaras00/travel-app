@@ -16,29 +16,30 @@
   margin-bottom: 6em;
 }
 
-.region-at-glance {
+.destination-at-glance {
   width: 100%;
   display: flex;
-  background-color: #eae4e9;
-  margin-bottom: 6em;
+  margin: 6em 0;
 }
 
 .region-description-text {
+  width: 50%;
+  background-color: rgb(248, 248, 248);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 50%;
-  font-size: 1.1em;
 }
 
 .region-description-text p {
   margin: 1.2em 0;
-  width: 80%;
+  margin-left: 1.3em;
+  width: 90%;
+  line-height: 1.4em;
 }
 
 .region-description-text h2 {
-  width: 80%;
+  width: 90%;
+  margin-left: 1em;
 }
 
 .region-map {

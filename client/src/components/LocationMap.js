@@ -8,7 +8,7 @@ const LocationMap = ({ center, zoom, coordinates, pathname }) => {
     destinationMarkers = coordinates.map((location) => {
       const locationPopup = pathname ? (
         <Popup>
-          <Link to={`${pathname}/${location.name}`}>{location.name}</Link>
+          <Link to={`${pathname}/${location.slug}`}>{location.name}</Link>
         </Popup>
       ) : (
         <Popup>{location.name}</Popup>
@@ -32,7 +32,8 @@ const LocationMap = ({ center, zoom, coordinates, pathname }) => {
     <div className="map">
       <MapContainer
         center={center}
-        zoom={4}
+        // center={["36.00", "-95"]}
+        zoom={zoom}
         scrollWheelZoom={false}
         style={{ height: "450px", width: "100%" }}
       >

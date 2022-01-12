@@ -5,14 +5,6 @@
   margin-bottom: 6em;
   margin-top: 4em;
 }
-
-/* .top-row {
-  width: 44%;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 2.2em;
-} */
-
 .destination-question {
   margin-top: 5em;
 }
@@ -23,5 +15,5 @@
   grid-template-columns: repeat(4, 1fr);
   column-gap: 1em;
   row-gap: 1em;
-  margin-top: 3em;
+  margin: 7em 0;
 }
