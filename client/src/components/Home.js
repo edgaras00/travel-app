@@ -9,12 +9,6 @@ import { Carousel } from "react-responsive-carousel";
 import "../styles/home.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import reviewData from "../utils/companyReviewData";
-import guidance from "../images/tour-guide.png";
-import value from "../images/diamond.png";
-import service from "../images/customer.png";
-import peace from "../images/peace-of-mind.png";
-import adventure from "../adventure-offer.jpg";
-import caribbean from "../caribbean-offer.jpg";
 
 const Home = () => {
   return (
@@ -55,22 +49,22 @@ const Home = () => {
       </div>
       <div className="card-container">
         <Card
-          icon={guidance}
+          icon="https://travelappbucket.s3.amazonaws.com/imgs/tour-guide.png"
           title="Guidance"
           text="Expert insight and travel knowledge"
         />
         <Card
-          icon={value}
+          icon="https://travelappbucket.s3.amazonaws.com/imgs/diamond.png"
           title="Value"
           text="Irressistable rates, offers and benefits"
         />
         <Card
-          icon={peace}
+          icon="https://travelappbucket.s3.amazonaws.com/imgs/peace-of-mind.png"
           title="Peace of Mind"
           text="Reassurance to book with confidence"
         />
         <Card
-          icon={service}
+          icon="https://travelappbucket.s3.amazonaws.com/imgs/customer.png"
           title="Service"
           text="Beside you every step of the way"
         />
@@ -93,7 +87,7 @@ const Home = () => {
       <div className="offer-container">
         <OfferCard
           reverse={true}
-          image={adventure}
+          image="https://travelappbucket.s3.amazonaws.com/imgs/adventure-offer.jpg"
           buttonText="Explore!"
           path="/tours"
           title="Plan Your Next Adventure"
@@ -138,7 +132,7 @@ const Home = () => {
       </div>
       <div className="offer-container">
         <OfferCard
-          image={caribbean}
+          image="https://travelappbucket.s3.amazonaws.com/imgs/caribbean-offer.jpg"
           buttonText="Start Planning"
           path="/destinations/caribbean"
           title="Caribbean Adventure Awaits"

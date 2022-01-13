@@ -1,8 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useContext } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFlag, faHeart } from "@fortawesome/free-solid-svg-icons";
-// import { AppContext } from "../context/appContext";
+import Tooltip from "@mui/material/Tooltip";
+import { AppContext } from "../context/appContext";
 import "../styles/tourCard.css";
 
 const TourCard = ({
@@ -13,10 +14,19 @@ const TourCard = ({
   duration,
   price,
   path,
-  // totalPrice,
   rating,
 }) => {
-  // const { addToCart } = useContext(AppContext);
+  const { user } = useContext(AppContext);
+  const navigate = useNavigate();
+
+  const handleTourBooking = () => {
+    if (!user) {
+      navigate("/login");
+      return;
+    }
+
+    navigate("/book", { state: { name } });
+  };
 
   return (
     <div className="tour-card">
@@ -27,15 +37,18 @@ const TourCard = ({
         <div className="tour-card-name">
           <h2>{name}</h2>
         </div>
-        <div className="tour-card-location">
-          <div>{location}</div>
-        </div>
-      </div>
-      <div className="tour-card-price">
-        <div>{duration} days</div>
-        <div>
-          from {price}
-          <sup>*</sup>
+        <div className="tour-card-info">
+          <div className="tour-card-location">
+            <div>{location}</div>
+          </div>
+
+          <div className="tour-card-price">
+            <div>{duration} days</div>
+            <div>
+              from {price}
+              <sup>*</sup>
+            </div>
+          </div>
         </div>
       </div>
       <div className="tour-card-footer">
@@ -47,9 +60,7 @@ const TourCard = ({
           <FontAwesomeIcon
             icon={faHeart}
             className="flag-icon"
-            // onClick={() =>
-            //   addToCart({ tourID, name, image, price, totalPrice })
-            // }
+            onClick={handleTourBooking}
           />
         </div>
       </div>

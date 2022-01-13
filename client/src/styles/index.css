@@ -1,8 +1,20 @@
 * {
   margin: 0;
-  /* padding: 0; */
+  padding: 0;
+  box-sizing: initial;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 
 a {
   text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #fff;
 }

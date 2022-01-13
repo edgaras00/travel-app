@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useContext } from "react";
 import Modal from "react-modal";
 import Select from "react-select";
 import { AppContext } from "../context/appContext";
@@ -20,14 +20,14 @@ const CustomPlanForm = () => {
 
   const { isFormModalOpen, closeFormModal } = useContext(AppContext);
 
-  useEffect(() => {
-    const getDestinations = async () => {
-      const response = await fetch("/api/destinations");
-      const data = await response.json();
-      setDestinationData(data.data.destinations);
-    };
-    getDestinations();
-  }, []);
+  // useEffect(() => {
+  //   const getDestinations = async () => {
+  //     const response = await fetch("/api/destinations");
+  //     const data = await response.json();
+  //     setDestinationData(data.data.destinations);
+  //   };
+  //   getDestinations();
+  // }, []);
 
   const destinationOptions = destinationData.map((destination) => {
     return { value: destination.name, label: destination.name };
@@ -41,6 +41,16 @@ const CustomPlanForm = () => {
     { value: "9-12 months", label: "9-12 months" },
     { value: "12+ months", label: "12+ months" },
   ];
+
+  const handleOnAfterOpen = async () => {
+    try {
+      const response = await fetch("/api/destinations");
+      const data = await response.json();
+      setDestinationData(data.data.destinations);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   const handleDestinationChange = (destination) => {
     setDestination(destination.value);
@@ -102,11 +112,15 @@ const CustomPlanForm = () => {
     },
   };
 
+  console.log(destination);
+  console.log(travelingWithin);
+
   return (
     <Modal
       isOpen={isFormModalOpen}
       onRequestClose={closeFormModal}
       overlayClassName="form-overlay"
+      onAfterOpen={handleOnAfterOpen}
       //   className={"custom-form"}
       style={customStyles}
     >
@@ -166,14 +180,14 @@ const CustomPlanForm = () => {
             <div className="dropdowns">
               <Select
                 // value={destination}
-                value={{ label: destination }}
+                // value={{ label: destination }}
                 options={destinationOptions}
                 onChange={handleDestinationChange}
-                // placeholder="Destination"
+                placeholder="Destination"
                 className="destination-select"
               />
               <Select
-                value={{ label: travelingWithin }}
+                // value={{ label: travelingWithin }}
                 options={timeframeOptions}
                 onChange={handleTimeframeChange}
                 placeholder="Traveling within"

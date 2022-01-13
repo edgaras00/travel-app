@@ -44,16 +44,16 @@ const Destinations = () => {
   }, [regionID]);
 
   let cardContainerClass;
-  let cardSize = "small";
+  let cardSize = "small-card";
   if (destinationData.length === 1 || destinationData.length === 2) {
     cardContainerClass = "single-card";
-    cardSize = "large";
+    cardSize = "large-card";
   } else if (destinationData.length === 3) {
     cardContainerClass = "three-cards";
-    cardSize = "medium";
+    cardSize = "medium-card";
   } else if (destinationData.length === 4) {
     cardContainerClass = "four-cards";
-    cardSize = "large";
+    cardSize = "large-card";
   }
 
   const destinationCards = destinationData.map((destination) => {

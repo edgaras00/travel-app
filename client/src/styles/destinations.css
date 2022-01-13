@@ -8,6 +8,8 @@
 
 .destination-list-header {
   margin-bottom: 1.2em;
+  font-size: 2.1em;
+  font-weight: 800;
 }
 
 .region-description {
@@ -17,34 +19,36 @@
 }
 
 .destination-at-glance {
-  width: 100%;
+  width: 94%;
   display: flex;
   margin: 6em 0;
 }
 
 .region-description-text {
-  width: 50%;
+  width: 46%;
   background-color: rgb(248, 248, 248);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: 3em;
 }
 
 .region-description-text p {
   margin: 1.2em 0;
-  margin-left: 1.3em;
   width: 90%;
-  line-height: 1.4em;
+  font-size: 1.05em;
+  line-height: 1.5em;
 }
 
 .region-description-text h2 {
   width: 90%;
-  margin-left: 1em;
+  font-size: 2.2em;
+  font-weight: bold;
 }
 
 .region-map {
   height: 450px;
-  width: 50%;
+  width: 52%;
 }
 
 .single-card,

@@ -7,6 +7,7 @@
 }
 .destination-question {
   margin-top: 5em;
+  margin-bottom: 1.5em;
 }
 
 .destination-card-container {
@@ -15,5 +16,4 @@
   grid-template-columns: repeat(4, 1fr);
   column-gap: 1em;
   row-gap: 1em;
-  margin: 7em 0;
 }

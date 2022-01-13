@@ -1,7 +1,5 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { AppContext } from "../context/appContext";
 
 import "../styles/navbar.css";
@@ -32,18 +30,14 @@ const Navbar = () => {
           <span>Blog</span>
         </Link>
         {user ? (
-          <span onClick={logOut}>Log Out</span>
+          <span onClick={logOut} className="logout-button">
+            Log Out
+          </span>
         ) : (
           <Link to="/login">
             <span>Log In</span>
           </Link>
         )}
-        {/* <Link to="/cart">
-          <FontAwesomeIcon
-            icon={faShoppingCart}
-            className="shopping-cart-nav"
-          />
-        </Link> */}
       </div>
     </div>
   );

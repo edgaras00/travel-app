@@ -22,10 +22,6 @@ const tourSchema = new Schema(
       type: String,
       required: [true, "Tour must have a description"],
     },
-    isSpecial: {
-      type: Boolean,
-      default: false,
-    },
     duration: {
       type: Number,
       required: [true, "Tour must have a duration (days)"],
@@ -60,6 +56,7 @@ const tourSchema = new Schema(
       required: [true, "Tour must have a cover image"],
     },
     images: [String],
+    itineraryDescription: String,
     itineraries: {},
     specialNotes: {},
     locations: [{ name: String, coordinates: [String] }],

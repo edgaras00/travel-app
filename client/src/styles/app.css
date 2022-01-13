@@ -1,3 +1,13 @@
+a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #fff;
+}
+
 .app {
   background-color: #eee2dc;
   background-color: #feffff;

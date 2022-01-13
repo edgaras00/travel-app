@@ -11,13 +11,13 @@
   text-align: center;
 }
 
-.medium {
+.medium-card {
   height: 280px;
   width: 400px;
   font-size: 2em;
 }
 
-.large {
+.large-card {
   height: 380px;
   width: 530px;
   font-size: 2.3em;

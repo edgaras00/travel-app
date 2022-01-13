@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AppContext } from "../context/appContext";
 import "../styles/login.css";
 
@@ -7,6 +7,7 @@ const Login = () => {
   const [emailInput, setEmailInput] = useState("");
   const [passwordInput, setPasswordInput] = useState("");
   const { setUser } = useContext(AppContext);
+  const navigate = useNavigate();
 
   const handleSubmit = async (event, email, password) => {
     try {
@@ -29,6 +30,7 @@ const Login = () => {
       console.log(data);
       setUser(data.data.user);
       localStorage.setItem("user", JSON.stringify(data.data.user));
+      navigate(-1);
     } catch (error) {
       console.log(error);
     }

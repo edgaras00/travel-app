@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 8em;
 }
 
 .single-card,
@@ -18,6 +19,6 @@
 }
 
 .activity-container {
-  width: 100%;
+  width: 94%;
   margin: 5em 0;
 }

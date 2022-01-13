@@ -1,0 +1,30 @@
+.tour-description {
+  margin-top: 3em;
+  margin-bottom: 5em;
+}
+
+.tour-map {
+  width: 58%;
+  margin-top: 5em;
+  margin-bottom: 3em;
+  padding-left: 5em;
+}
+
+.itinerary {
+  padding-left: 5em;
+  margin-top: 5em;
+}
+
+.itinerary-description-wrapper {
+  width: 50%;
+  margin-top: 1em;
+  margin-bottom: 2.2em;
+}
+
+.itinerary-accordion {
+  width: 50%;
+}
+
+.reviews {
+  padding-left: 5em;
+}

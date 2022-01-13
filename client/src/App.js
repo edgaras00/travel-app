@@ -1,5 +1,5 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
+import React, { useContext } from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -11,11 +11,13 @@ import Tours from "./components/Tours";
 import TourDetails from "./components/TourDetails";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
-
 import CheckoutLayout from "./components/CheckoutLayout";
+import { AppContext } from "./context/appContext";
 import "./styles/app.css";
 
 const App = () => {
+  const { user } = useContext(AppContext);
+
   return (
     <div className="app">
       <Navbar />
@@ -39,8 +41,10 @@ const App = () => {
         <Route path="/blog" />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/book" element={<CheckoutLayout />} />
-        {/* <Route path="/cart" element={<ShoppingCart />} /> */}
+        <Route
+          path="/book"
+          element={user ? <CheckoutLayout /> : <Navigate to="/login" />}
+        />
       </Routes>
       <Footer />
     </div>

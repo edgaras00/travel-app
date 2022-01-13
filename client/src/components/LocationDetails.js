@@ -10,8 +10,6 @@ const LocationDetails = () => {
   const { locationID } = useParams();
 
   useEffect(() => {
-    // let locationStr = capitalizeAll(locationID, "+");
-
     const fetchLocationData = async () => {
       const response = await fetch(
         `http://localhost:5000/api/places/${locationID}`
@@ -31,11 +29,9 @@ const LocationDetails = () => {
     }
   }
 
-  console.log(locationData);
-
   return (
     <div className="location-details">
-      <div className="location-description">
+      <div className="location-description region-description">
         <DescriptionCard
           image={locationData ? locationData.coverImage : null}
           text={locationData ? locationData.description : null}
@@ -57,14 +53,6 @@ const LocationDetails = () => {
             destinationID={locationID}
           />
         ) : null}
-
-        {/* <div className="things-to-do-image"></div>
-        {thingsToDo.length > 0 ? (
-          <div className="things-list">
-            <h2>Top Things to Do in {locationID}</h2>
-            <ul>{thingsToDo}</ul>
-          </div>
-        ) : null} */}
       </div>
     </div>
   );

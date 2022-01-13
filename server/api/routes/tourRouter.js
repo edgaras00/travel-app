@@ -14,8 +14,8 @@ router
   .route("/:tourID")
   .get(tourController.getTour)
   .patch(
-    authController.protectRoute,
-    authController.restrictRouteTo("admin", "guide"),
+    // authController.protectRoute,
+    // authController.restrictRouteTo("admin", "guide"),
     tourController.updateTour
   )
   .delete(

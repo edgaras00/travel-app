@@ -1,8 +1,4 @@
 import React, { useState } from "react";
-import facebook from "../images/facebook.svg";
-import instagram from "../images/instagram.svg";
-import twitter from "../images/twitter.svg";
-import youtube from "../images/youtube.svg";
 import "../styles/footer.css";
 
 const Footer = () => {
@@ -27,16 +23,28 @@ const Footer = () => {
         </div>
         <div className="social-media-links">
           <span>
-            <img src={facebook} alt="Facebook" />
+            <img
+              src="https://travelappbucket.s3.amazonaws.com/imgs/facebook.svg"
+              alt="Facebook"
+            />
           </span>
           <span>
-            <img src={instagram} alt="Instagram" />
+            <img
+              src="https://travelappbucket.s3.amazonaws.com/imgs/instagram.svg"
+              alt="Instagram"
+            />
           </span>
           <span>
-            <img src={twitter} alt="Twitter" />
+            <img
+              src="https://travelappbucket.s3.amazonaws.com/imgs/twitter.svg"
+              alt="Twitter"
+            />
           </span>
           <span>
-            <img src={youtube} alt="YouTube" />
+            <img
+              src="https://travelappbucket.s3.amazonaws.com/imgs/youtube.svg"
+              alt="YouTube"
+            />
           </span>
         </div>
         <div className="newsletter-offer">

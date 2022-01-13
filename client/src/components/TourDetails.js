@@ -4,6 +4,8 @@ import DescriptionCard from "./DescriptionCard";
 import LocationMap from "./LocationMap";
 import Accordion from "react-bootstrap/Accordion";
 import TourReviews from "./TourReviews";
+// import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/tourDetails.css";
 
 const TourDetails = () => {
   const [tourDetailsData, setTourDetailsData] = useState(null);
@@ -17,8 +19,6 @@ const TourDetails = () => {
     };
     fetchTourDetails();
   }, [tourID]);
-
-  console.log(tourDetailsData);
 
   let center = [];
   let coordinates = [];
@@ -60,9 +60,12 @@ const TourDetails = () => {
         />
       </div>
       <div className="itinerary">
-        <Accordion>{itinerary}</Accordion>
+        <h2>Itinerary</h2>
+        <div className="itinerary-description-wrapper">
+          <p>{tourDetailsData ? tourDetailsData.itineraryDescription : ""}</p>
+        </div>
+        <Accordion className="itinerary-accordion">{itinerary}</Accordion>
       </div>
-      <div className="images"></div>
       <div className="reviews">
         <TourReviews
           reviewData={tourDetailsData ? tourDetailsData.reviews : null}

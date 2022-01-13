@@ -41,16 +41,16 @@ const DestinationDetails = () => {
         destinationData.places.length === 2
       ) {
         cardContainerClass = "single-card";
-        cardSize = "large";
+        cardSize = "large-card";
       } else if (destinationData.places.length === 3) {
         cardContainerClass = "three-cards";
-        cardSize = "medium";
+        cardSize = "medium-card";
       } else if (destinationData.places.length === 4) {
         cardContainerClass = "four-cards";
-        cardSize = "large";
+        cardSize = "large-card";
       } else if (destinationData.places.length === 6) {
         cardContainerClass = "six-cards";
-        cardSize = "medium";
+        cardSize = "medium-card";
       }
 
       locations = destinationData.places.map((location) => {
@@ -139,6 +139,9 @@ const DestinationDetails = () => {
           destinationID={destinationID}
         />
       </div>
+      <h2 className="destination-list-header">
+        Popular {destinationData ? destinationData.name : ""} Destinations
+      </h2>
       <div className={`destination-card-container ${cardContainerClass}`}>
         {locations}
       </div>

@@ -31,3 +31,8 @@ a {
   align-items: center;
   font-size: 1.1em;
 }
+
+.logout-button {
+  color: #fff;
+  cursor: pointer;
+}
