@@ -1,3 +1,8 @@
+.tour-details {
+  display: flex;
+  flex-direction: column;
+}
+
 .tour-description {
   margin-top: 3em;
   margin-bottom: 5em;
@@ -5,9 +10,15 @@
 
 .tour-map {
   width: 58%;
-  margin-top: 5em;
+  margin-top: 8em;
   margin-bottom: 3em;
   padding-left: 5em;
+}
+
+.tour-map h2 {
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-bottom: 0.875em;
 }
 
 .itinerary {
@@ -16,7 +27,7 @@
 }
 
 .itinerary-description-wrapper {
-  width: 50%;
+  width: 55%;
   margin-top: 1em;
   margin-bottom: 2.2em;
 }
@@ -25,6 +36,10 @@
   width: 50%;
 }
 
+.itinerary-header {
+  font-weight: 700;
+}
+
 .reviews {
-  padding-left: 5em;
+  margin-bottom: 5em;
 }

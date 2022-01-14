@@ -3,20 +3,16 @@ import Modal from "react-modal";
 import Rating from "@mui/material/Rating";
 import "../styles/reviewModal.css";
 
-const ReviewModal = ({ isModalOpen, closeModal }) => {
+const ReviewModal = ({ isModalOpen, closeModal, tourID }) => {
   const [rating, setRating] = useState(5);
   const [reviewHeader, setReviewHeader] = useState("");
   const [reviewText, setReviewText] = useState("");
-
-  const tourID = 0;
-  const user = 0;
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
       const requestBody = {
         tour: tourID,
-        user,
         rating,
         header: reviewHeader,
         text: reviewText,
@@ -46,7 +42,9 @@ const ReviewModal = ({ isModalOpen, closeModal }) => {
       bottom: "auto",
       marginRight: "-50%",
       transform: "translate(-50%, -50%)",
-      width: "60%",
+      width: "70%",
+      borderRadius: "10px",
+      padding: 0,
     },
   };
 
@@ -57,6 +55,9 @@ const ReviewModal = ({ isModalOpen, closeModal }) => {
       style={customStyles}
     >
       <div className="review-form-wrapper">
+        <div className="review-modal-header">
+          <span onClick={closeModal}>X</span>
+        </div>
         <form className="review-form" onSubmit={handleSubmit}>
           <div className="submit-rating">
             <Rating
@@ -80,6 +81,7 @@ const ReviewModal = ({ isModalOpen, closeModal }) => {
               <textarea
                 value={reviewText}
                 onChange={(event) => setReviewText(event.target.value)}
+                placeholder="Let us know what you think about the tour!"
               />
             </div>
           </div>

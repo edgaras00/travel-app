@@ -8,7 +8,8 @@ const catchAsync = require("../utils/catchAsync");
 
 exports.bookTour = catchAsync(async (req, res, next) => {
   // const { product, token } = req.body;
-  const { id, amount, email } = req.body;
+  const { id, amount, tourID } = req.body;
+  const userID = req.user._id;
 
   const payment = await stripe.paymentIntents.create({
     amount: amount,
@@ -22,8 +23,8 @@ exports.bookTour = catchAsync(async (req, res, next) => {
     booking = await Booking.create({
       price: payment.amount,
       date: new Date(payment.created * 1000),
-      user: "61d39664d3826351c66e4591",
-      tour: "61c8e9f13aaa1270d0d2c2bf",
+      user: userID,
+      tour: tourID,
     });
   }
 

@@ -25,7 +25,7 @@ const TourCard = ({
       return;
     }
 
-    navigate("/book", { state: { name } });
+    navigate("/book", { state: { name, price, tourID } });
   };
 
   return (
@@ -54,14 +54,20 @@ const TourCard = ({
       <div className="tour-card-footer">
         <hr />
         <div className="tour-card-icons">
-          <Link to={path}>
-            <FontAwesomeIcon icon={faFlag} className="flag-icon" />
-          </Link>
-          <FontAwesomeIcon
-            icon={faHeart}
-            className="flag-icon"
-            onClick={handleTourBooking}
-          />
+          <Tooltip title="Details">
+            <Link to={path}>
+              <FontAwesomeIcon icon={faFlag} className="flag-icon" />
+            </Link>
+          </Tooltip>
+          <Tooltip title="Book">
+            <div>
+              <FontAwesomeIcon
+                icon={faHeart}
+                className="heart-icon"
+                onClick={handleTourBooking}
+              />
+            </div>
+          </Tooltip>
         </div>
       </div>
     </div>

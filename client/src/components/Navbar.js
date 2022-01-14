@@ -26,9 +26,7 @@ const Navbar = () => {
         <Link to="/tours">
           <span>Guided Tours</span>
         </Link>
-        <Link to="/blog">
-          <span>Blog</span>
-        </Link>
+
         {user ? (
           <span onClick={logOut} className="logout-button">
             Log Out

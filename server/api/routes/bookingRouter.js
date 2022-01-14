@@ -4,7 +4,7 @@ const authController = require("../controllers/authController");
 
 const router = express.Router();
 
-router.post("/book/", bookingController.bookTour);
+router.post("/book/", authController.protectRoute, bookingController.bookTour);
 
 router
   .route("/")

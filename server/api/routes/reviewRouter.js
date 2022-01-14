@@ -10,7 +10,7 @@ router
     // authController.restrictRouteTo("admin", "guide"),
     reviewController.getAllReviews
   )
-  .post(reviewController.submitReview);
+  .post(authController.protectRoute, reviewController.submitReview);
 // .post(
 //   authController.protectRoute,
 //   authController.restrictRouteTo("user"),

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import "../styles/checkoutForm.css";
 
-const CheckoutForm = () => {
+const CheckoutForm = ({ tourData }) => {
   const stripe = useStripe();
   const elements = useElements();
   const [isProcessing, setIsProcessing] = useState(false);
@@ -14,6 +15,7 @@ const CheckoutForm = () => {
   const [country, setCountry] = useState("");
   const [state, setState] = useState("");
   const [zip, setZip] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -53,15 +55,16 @@ const CheckoutForm = () => {
           },
           body: JSON.stringify({
             id,
-            amount: 100 * 100,
+            amount: tourData.price * 100,
+            tourID: tourData.tourID,
           }),
         };
 
         const response = await fetch("/api/bookings/book", requestOptions);
         const data = await response.json();
         if (data) {
-          console.log(data);
           setIsProcessing(false);
+          navigate("/");
         }
       } catch (error) {
         console.log(error);
@@ -73,7 +76,7 @@ const CheckoutForm = () => {
     base: {
       fontSize: "16px",
       "::placeholder": {
-        color: "#87bbfd",
+        color: "grey",
       },
     },
     invalid: {
@@ -92,103 +95,90 @@ const CheckoutForm = () => {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      style={{ height: "500px" }}
-      className="checkout-form"
-    >
+    <form onSubmit={handleSubmit} className="checkout-form">
+      <div className="checkout-header">
+        <h4>Book "{tourData.name}"</h4>
+      </div>
       <div className="billing-details">
         <div className="input-field">
-          <label>
-            <span>First Name</span>
-          </label>
           <input
             type="text"
             name="firstName"
+            placeholder="First Name"
             value={firstName}
             onChange={(event) => setFirstName(event.target.value)}
           />
         </div>
         <div className="input-field">
-          <label>
-            <span>Last Name</span>
-          </label>
           <input
             type="text"
             name="lastName"
+            placeholder="Last Name"
             value={lastName}
             onChange={(event) => setLastName(event.target.value)}
           />
         </div>
         <div className="input-field">
-          <label>
-            <span>Email</span>
-          </label>
           <input
             type="email"
             name="email"
+            placeholder="Email"
             value={email}
             onChange={(event) => setEmail(event.target.value)}
           />
         </div>
         <div className="input-field">
-          <label>
-            <span>Address</span>
-          </label>
           <input
             type="text"
             name="address"
+            placeholder="Address"
             value={address}
             onChange={(event) => setAddress(event.target.value)}
           />
         </div>
         <div className="input-field">
-          <label>
-            <span>City</span>
-          </label>
           <input
             type="text"
             name="city"
+            placeholder="City"
             value={city}
             onChange={(event) => setCity(event.target.value)}
           />
         </div>
         <div className="input-field">
-          <label>
-            <span>State</span>
-          </label>
           <input
             type="text"
             name="state"
+            placeholder="State"
             value={state}
             onChange={(event) => setState(event.target.value)}
           />
         </div>
         <div className="input-field">
-          <label>
-            <span>Country</span>
-          </label>
           <input
             type="text"
             name="country"
+            placeholder="Country"
             value={country}
             onChange={(event) => setCountry(event.target.value)}
           />
         </div>
         <div className="input-field">
-          <label>
-            <span>ZIP</span>
-          </label>
           <input
             type="postal"
             name="zip"
+            placeholder="ZIP"
             value={zip}
             onChange={(event) => setZip(event.target.value)}
           />
         </div>
       </div>
       <CardElement className="card-element" options={cardElementOpts} />
-      <button type="submit" disabled={!stripe || !elements || isProcessing}>
+      <button
+        className="book-button"
+        type="submit"
+        disabled={!stripe || !elements || isProcessing}
+      >
         {isProcessing ? "Processing..." : "Book"}
       </button>
     </form>

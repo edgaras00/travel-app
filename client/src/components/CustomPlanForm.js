@@ -109,12 +109,11 @@ const CustomPlanForm = () => {
       marginRight: "-50%",
       transform: "translate(-50%, -50%)",
       right: "auto",
+      borderRadius: 0,
+      height: "100vh",
+      padding: 0,
     },
   };
-
-  console.log(destination);
-  console.log(travelingWithin);
-
   return (
     <Modal
       isOpen={isFormModalOpen}
@@ -125,15 +124,23 @@ const CustomPlanForm = () => {
       style={customStyles}
     >
       <div className="custom-plan-form-wrapper">
+        <div className="custom-plan-header">
+          <div className="custom-header-content">
+            <span>Fill out the form below to get in touch with us</span>
+            <span onClick={closeFormModal} className="close-form-modal">
+              X
+            </span>
+          </div>
+        </div>
         <form className="custom-plan-form" onSubmit={handleSubmit}>
           <div className="plan-intro">
             Paradise Travel is dedicated to helping you get the best value and
             greatest experiences out of any trip. One of our Travel Consultants
             will respond to your enquiry within 48 hours.
           </div>
-          <h2 className="plan-header">Start Planning</h2>
+          <h3 className="plan-header">Start Planning</h3>
           <div className="traveler-info">
-            <h3 className="contact-detail-header">Your contact details</h3>
+            <h4 className="contact-detail-header">Your contact details</h4>
             <div className="contact-inputs">
               <div className="contact-input">
                 <input
@@ -170,13 +177,12 @@ const CustomPlanForm = () => {
                   onChange={(event) => setPhone(event.target.value)}
                   placeholder="Phone"
                   maxLength="10"
-                  //   pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
                 />
               </div>
             </div>
           </div>
           <div className="travel-plans">
-            <h3>Tell us about your travel plans</h3>
+            <h4>Tell us about your travel plans</h4>
             <div className="dropdowns">
               <Select
                 // value={destination}
@@ -209,7 +215,7 @@ const CustomPlanForm = () => {
             />
           </div>
           <div className="travel-interests">
-            <h3 className="interest-header">What are you interested in?</h3>
+            <h4 className="interest-header">What are you interested in?</h4>
             <div className="checkbox-wrapper">
               <input
                 type="checkbox"

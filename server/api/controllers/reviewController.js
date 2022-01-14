@@ -6,7 +6,10 @@ const AppError = require("../utils/appError");
 const catchAsync = require("../utils/catchAsync");
 
 exports.submitReview = catchAsync(async (req, res, next) => {
-  const { tour, user } = req.body;
+  const { tour } = req.body;
+  const user = req.user._id;
+
+  console.log(tour, user);
 
   // Check if booking exists
   const booking = await Booking.find({ user, tour });
@@ -19,14 +22,15 @@ exports.submitReview = catchAsync(async (req, res, next) => {
   if (prevReview) {
     return next(
       new AppError(
-        "User has already reviewed this tour. Use PATCH to update a review",
+        "User has already reviewed this tour. Use PATCH to update an existing review",
         400
       )
     );
   }
 
   // Create review
-  const review = await Review.create(req.body);
+  const reviewObject = { ...req.body, user };
+  const review = await Review.create(reviewObject);
 
   // Recalculate tour average rating
   let tourDoc = await Tour.findById(tour);

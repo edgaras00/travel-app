@@ -1,6 +1,7 @@
 import React from "react";
 import Rating from "@mui/material/Rating";
 import RatingBreakdown from "./RatingBreakdown";
+import ReviewModal from "./ReviewModal";
 import "../styles/reviewOverall.css";
 
 const ReviewOverall = ({
@@ -9,6 +10,7 @@ const ReviewOverall = ({
   isModalOpen,
   closeModal,
   openModal,
+  tourID,
 }) => {
   const reviewCounts = {
     1: 0,
@@ -25,12 +27,19 @@ const ReviewOverall = ({
     breakdownElements = Object.keys(reviewCounts).map((rating, index) => {
       const proportion = (reviewCounts[rating] / reviewData.length) * 100;
       return (
-        <RatingBreakdown
-          key={index + rating}
-          rating={rating}
-          count={reviewCounts[rating]}
-          proportion={proportion}
-        />
+        <div>
+          <ReviewModal
+            isModalOpen={isModalOpen}
+            closeModal={closeModal}
+            tourID={tourID}
+          />
+          <RatingBreakdown
+            key={index + rating}
+            rating={rating}
+            count={reviewCounts[rating]}
+            proportion={proportion}
+          />
+        </div>
       );
     });
   }

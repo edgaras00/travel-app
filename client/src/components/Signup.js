@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AppContext } from "../context/appContext";
-import "../styles/login.css";
+import "../styles/signup.css";
 
 const Signup = () => {
   const [name, setName] = useState("");
@@ -46,7 +46,7 @@ const Signup = () => {
   };
 
   return (
-    <div className="login-container">
+    <div className="signup-container">
       <form
         className="signup-form"
         onSubmit={(event) =>
@@ -54,7 +54,7 @@ const Signup = () => {
         }
       >
         <div className="login-header">
-          <div>CREATE YOUR ACCOUNT</div>
+          <h4>CREATE YOUR ACCOUNT</h4>
         </div>
         <div className="login-labels">
           <label>Name</label>

@@ -5,6 +5,7 @@ import { AppContextProvider } from "./context/appContext";
 import Modal from "react-modal";
 import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css";
+import ScrollToTop from "./components/ScrollToTop";
 import "./styles/index.css";
 
 Modal.setAppElement("#root");
@@ -12,6 +13,7 @@ Modal.setAppElement("#root");
 ReactDOM.render(
   <AppContextProvider>
     <Router>
+      <ScrollToTop />
       <App />
     </Router>
   </AppContextProvider>,

@@ -43,7 +43,7 @@ const Login = () => {
         onSubmit={(event) => handleSubmit(event, emailInput, passwordInput)}
       >
         <div className="login-header">
-          <div>LOG INTO YOUR ACCOUNT</div>
+          <h4>LOG INTO YOUR ACCOUNT</h4>
         </div>
         <div className="login-labels">
           <label>Email address</label>

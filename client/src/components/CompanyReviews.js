@@ -5,6 +5,7 @@ import "../styles/companyReviews.css";
 const CompanyReviews = ({ companyReviewData }) => {
   const reviewItems = companyReviewData.map((item) => (
     <ReviewItem
+      key={item.author}
       review={item.text}
       author={item.author}
       authorBackground={item.background}

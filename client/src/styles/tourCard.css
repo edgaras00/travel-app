@@ -62,8 +62,13 @@
   align-items: center;
 }
 
-.flag-icon {
-  color: grey;
+.flag-icon,
+.heart-icon {
+  color: #457b9d;
   font-size: 1.8em;
   cursor: pointer;
+}
+
+.heart-icon {
+  color: rgb(243, 60, 60);
 }

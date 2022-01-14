@@ -4,7 +4,6 @@ import DescriptionCard from "./DescriptionCard";
 import LocationMap from "./LocationMap";
 import Accordion from "react-bootstrap/Accordion";
 import TourReviews from "./TourReviews";
-// import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/tourDetails.css";
 
 const TourDetails = () => {
@@ -20,6 +19,8 @@ const TourDetails = () => {
     fetchTourDetails();
   }, [tourID]);
 
+  console.log(tourDetailsData);
+
   let center = [];
   let coordinates = [];
   let itinerary = [];
@@ -33,7 +34,9 @@ const TourDetails = () => {
       return (
         <Accordion.Item eventKey={index} key={index}>
           <Accordion.Header>
-            {tourDetailsData.itineraries[day].title}
+            <span className="itinerary-header">
+              {tourDetailsData.itineraries[day].title}
+            </span>
           </Accordion.Header>
           <Accordion.Body>
             {tourDetailsData.itineraries[day].description}
@@ -41,6 +44,16 @@ const TourDetails = () => {
         </Accordion.Item>
       );
     });
+  }
+
+  let mapZoom = 6;
+  if (tourID === "pandas-and-palaces") {
+    mapZoom = 4;
+  } else if (
+    tourID === "felucca-odyssey" ||
+    tourID === "6-day-group-garden-route-and-addo-adventure-tour"
+  ) {
+    mapZoom = 5;
   }
 
   return (
@@ -53,10 +66,11 @@ const TourDetails = () => {
         />
       </div>
       <div className="tour-map">
+        <h2>Locations</h2>
         <LocationMap
           center={tourDetailsData ? center : ["", ""]}
           coordinates={tourDetailsData ? coordinates : null}
-          zoom={8}
+          zoom={mapZoom}
         />
       </div>
       <div className="itinerary">

@@ -18,7 +18,7 @@ const CheckoutLayout = () => {
   return (
     <div className="checkout-layout">
       <Elements stripe={stripePromise}>
-        <CheckoutForm />
+        <CheckoutForm tourData={state} />
       </Elements>
     </div>
   );

@@ -34,7 +34,7 @@ const Tours = () => {
 
   return (
     <div className="tours-container">
-      <div className="destination-description">
+      <div className="destination-description region-description">
         <DescriptionCard
           image="https://travelappbucket.s3.amazonaws.com/imgs/tours-cover.jpg"
           title="See the World Like Never Before"
