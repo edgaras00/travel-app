@@ -26,6 +26,7 @@ const ReviewModal = ({
         rating,
         header: reviewHeader,
         text: reviewText,
+        date: Date.now(),
       };
       const requestOptions = {
         method: isEdit ? "PATCH" : "POST",

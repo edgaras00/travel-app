@@ -24,6 +24,7 @@ const TourReviews = ({
           header={review.header}
           name={review.user.name}
           text={review.text}
+          date={review.date}
           userID={review.user._id}
           openModal={openModal}
           isModalOpen={isModalOpen}
@@ -35,6 +36,8 @@ const TourReviews = ({
       );
     });
   }
+
+  console.log(reviewData);
 
   return (
     <div className="review-container">

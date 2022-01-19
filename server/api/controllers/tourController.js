@@ -28,11 +28,11 @@ exports.getTour = catchAsync(async (req, res, next) => {
   const tour = validateID(id)
     ? await Tour.findById(req.params.tourID).populate(
         "reviews",
-        "name header text rating -tour"
+        "name header text rating date -tour"
       )
     : await Tour.findOne({ slug: id }).populate(
         "reviews",
-        "name header text rating -tour"
+        "name header text rating date -tour"
       );
 
   if (!tour) {

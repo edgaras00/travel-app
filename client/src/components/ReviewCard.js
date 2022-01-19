@@ -9,6 +9,7 @@ const ReviewCard = ({
   header,
   text,
   name,
+  date,
   userID,
   tourID,
   reviewID,
@@ -24,6 +25,8 @@ const ReviewCard = ({
   const closeEditModal = () => {
     setIsEditModalOpen(false);
   };
+
+  const displayDate = date.split("T")[0];
 
   return (
     <div className="review-card">
@@ -44,6 +47,7 @@ const ReviewCard = ({
           <span onClick={openEditModal}>Edit</span>
         ) : null}
       </div>
+      <div className="review-date">{displayDate}</div>
       <div className="rating-wrapper">
         <div className="user-rating">
           <Rating value={rating} readOnly />
