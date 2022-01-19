@@ -22,11 +22,10 @@ const userSchema = new Schema({
     select: false,
   },
   photo: String,
-  cart: [{ type: Schema.Types.ObjectId, ref: "Tour" }],
   role: {
     type: String,
     default: "user",
-    enum: ["user", "admin", "guide"],
+    enum: ["user", "admin"],
   },
 });
 

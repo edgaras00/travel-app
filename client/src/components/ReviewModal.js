@@ -3,10 +3,18 @@ import Modal from "react-modal";
 import Rating from "@mui/material/Rating";
 import "../styles/reviewModal.css";
 
-const ReviewModal = ({ isModalOpen, closeModal, tourID }) => {
-  const [rating, setRating] = useState(5);
-  const [reviewHeader, setReviewHeader] = useState("");
-  const [reviewText, setReviewText] = useState("");
+const ReviewModal = ({
+  isModalOpen,
+  closeModal,
+  tourID,
+  text,
+  prevRating,
+  prevHeader,
+  isEdit,
+}) => {
+  const [rating, setRating] = useState(prevRating || 5);
+  const [reviewHeader, setReviewHeader] = useState(prevHeader || "");
+  const [reviewText, setReviewText] = useState(text || "");
 
   const handleSubmit = async (event) => {
     event.preventDefault();

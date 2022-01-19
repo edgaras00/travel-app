@@ -52,10 +52,12 @@ const CheckoutForm = ({ tourData }) => {
         city,
         line1: address,
         state: state,
-        country,
+        // country,
         postal_code: zip,
       },
     };
+
+    console.log(billingDetails);
 
     const { error, paymentMethod } = await stripe.createPaymentMethod({
       type: "card",
@@ -85,6 +87,7 @@ const CheckoutForm = ({ tourData }) => {
         const response = await fetch("/api/bookings/book", requestOptions);
         const data = await response.json();
         if (data) {
+          console.log(data);
           setIsProcessing(false);
           navigate("/");
         }
@@ -120,6 +123,7 @@ const CheckoutForm = ({ tourData }) => {
     <form onSubmit={handleSubmit} className="checkout-form">
       <div className="checkout-header">
         <h4>Book "{tourData.name}"</h4>
+        <h5>Price: ${tourData.price}</h5>
       </div>
       <div className="billing-details">
         <div className="form-line">

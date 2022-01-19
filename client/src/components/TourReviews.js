@@ -19,6 +19,11 @@ const TourReviews = ({ reviewData, averageRating, tourID }) => {
           header={review.header}
           name={review.user.name}
           text={review.text}
+          userID={review.user._id}
+          openModal={openModal}
+          isModalOpen={isModalOpen}
+          closeModal={closeModal}
+          tourID={tourID}
         />
       );
     });

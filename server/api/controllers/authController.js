@@ -59,7 +59,7 @@ exports.login = catchAsync(async (req, res, next) => {
 
   const token = await signToken(user._id);
 
-  const userObject = { name: user.name, email: user.email, cart: user.cart };
+  const userObject = { name: user.name, email: user.email, id: user._id };
 
   res.cookie("jwt", token, {
     httpOnly: true,

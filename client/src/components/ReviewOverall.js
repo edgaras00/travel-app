@@ -27,25 +27,23 @@ const ReviewOverall = ({
     breakdownElements = Object.keys(reviewCounts).map((rating, index) => {
       const proportion = (reviewCounts[rating] / reviewData.length) * 100;
       return (
-        <div>
-          <ReviewModal
-            isModalOpen={isModalOpen}
-            closeModal={closeModal}
-            tourID={tourID}
-          />
-          <RatingBreakdown
-            key={index + rating}
-            rating={rating}
-            count={reviewCounts[rating]}
-            proportion={proportion}
-          />
-        </div>
+        <RatingBreakdown
+          key={index + rating}
+          rating={rating}
+          count={reviewCounts[rating]}
+          proportion={proportion}
+        />
       );
     });
   }
 
   return (
     <div className="total-review">
+      <ReviewModal
+        isModalOpen={isModalOpen}
+        closeModal={closeModal}
+        tourID={tourID}
+      />
       <div className="total-review-summary">
         <div className="average-rating">
           {averageRating ? averageRating.toFixed(1) : null}
