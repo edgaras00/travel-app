@@ -7,9 +7,16 @@ import "../styles/navbar.css";
 const Navbar = () => {
   const { user, setUser } = useContext(AppContext);
 
-  const logOut = () => {
-    setUser(null);
+  const logOut = async () => {
     localStorage.removeItem("user");
+    setUser(null);
+    try {
+      const response = await fetch("/api/users/logout");
+      const data = await response.json();
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (

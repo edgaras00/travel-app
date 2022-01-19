@@ -3,7 +3,12 @@ import ReviewCard from "./ReviewCard";
 import ReviewOverall from "./ReviewOverall";
 import "../styles/tourReviews.css";
 
-const TourReviews = ({ reviewData, averageRating, tourID }) => {
+const TourReviews = ({
+  reviewData,
+  averageRating,
+  tourID,
+  toggleReviewUpdate,
+}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
@@ -24,6 +29,8 @@ const TourReviews = ({ reviewData, averageRating, tourID }) => {
           isModalOpen={isModalOpen}
           closeModal={closeModal}
           tourID={tourID}
+          reviewID={review._id}
+          toggleReviewUpdate={toggleReviewUpdate}
         />
       );
     });
@@ -42,6 +49,7 @@ const TourReviews = ({ reviewData, averageRating, tourID }) => {
           closeModal={closeModal}
           isModalOpen={isModalOpen}
           tourID={tourID}
+          toggleReviewUpdate={toggleReviewUpdate}
         />
       </div>
       <div className="review-cards">{reviewCards}</div>

@@ -106,6 +106,16 @@ exports.protectRoute = catchAsync(async (req, res, next) => {
   next();
 });
 
+exports.logout = catchAsync(async (req, res, next) => {
+  // Log out user
+  // "Delete" JWT cookie
+  console.log("logout route");
+  res.cookie("jwt", "", { maxAge: 1 });
+  res
+    .status(200)
+    .json({ status: "Success", message: "User logged out successfully" });
+});
+
 exports.restrictRouteTo = (...userRoles) => {
   return catchAsync(async (req, res, next) => {
     if (!userRoles.includes(req.user.role)) {

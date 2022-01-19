@@ -21,10 +21,7 @@ const Login = () => {
         },
         body: JSON.stringify(loginBody),
       };
-      const response = await fetch(
-        "http://localhost:5000/api/users/login",
-        requestOptions
-      );
+      const response = await fetch("/api/users/login", requestOptions);
 
       const data = await response.json();
       console.log(data);

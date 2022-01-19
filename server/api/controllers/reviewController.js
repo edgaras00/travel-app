@@ -45,6 +45,7 @@ exports.submitReview = catchAsync(async (req, res, next) => {
 });
 
 exports.userUpdateReview = catchAsync(async (req, res, next) => {
+  console.log(req.user);
   const review = await Review.findOneAndUpdate(
     { _id: req.params.reviewID, user: req.user._id },
     req.body,
@@ -54,6 +55,13 @@ exports.userUpdateReview = catchAsync(async (req, res, next) => {
   if (!review) {
     return next(new AppError("Review does not belong to user", 400));
   }
+
+  // Recalculate tour average rating
+  const tour = review.tour._id;
+  console.log(tour);
+  let tourDoc = await Tour.findById(tour);
+  await tourDoc.calculateAverage();
+  console.log(tourDoc);
 
   res.status(200).json({
     status: "Success",

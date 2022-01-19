@@ -8,6 +8,7 @@ import "../styles/tourDetails.css";
 
 const TourDetails = () => {
   const [tourDetailsData, setTourDetailsData] = useState(null);
+  const [reviewUpdate, setReviewUpdate] = useState(false);
   const { tourID } = useParams();
 
   useEffect(() => {
@@ -17,9 +18,11 @@ const TourDetails = () => {
       setTourDetailsData(data.data.tour);
     };
     fetchTourDetails();
-  }, [tourID]);
+  }, [tourID, reviewUpdate]);
 
-  console.log(tourDetailsData);
+  const toggleReviewUpdate = () => {
+    setReviewUpdate((prev) => !prev);
+  };
 
   let center = [];
   let coordinates = [];
@@ -85,6 +88,7 @@ const TourDetails = () => {
           reviewData={tourDetailsData ? tourDetailsData.reviews : null}
           averageRating={tourDetailsData ? tourDetailsData.averageRating : null}
           tourID={tourDetailsData ? tourDetailsData._id : null}
+          toggleReviewUpdate={toggleReviewUpdate}
         />
       </div>
     </div>

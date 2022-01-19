@@ -11,6 +11,8 @@ const ReviewModal = ({
   prevRating,
   prevHeader,
   isEdit,
+  reviewID,
+  toggleReviewUpdate,
 }) => {
   const [rating, setRating] = useState(prevRating || 5);
   const [reviewHeader, setReviewHeader] = useState(prevHeader || "");
@@ -26,7 +28,7 @@ const ReviewModal = ({
         text: reviewText,
       };
       const requestOptions = {
-        method: "POST",
+        method: isEdit ? "PATCH" : "POST",
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
@@ -34,9 +36,14 @@ const ReviewModal = ({
         body: JSON.stringify(requestBody),
       };
 
-      const response = await fetch("/api/reviews", requestOptions);
+      const response = await fetch(
+        `/api/reviews/${isEdit ? "update/" + reviewID : ""}`,
+        requestOptions
+      );
       const data = await response.json();
       console.log(data);
+      toggleReviewUpdate();
+      closeModal();
     } catch (error) {
       console.log(error);
     }
@@ -94,7 +101,7 @@ const ReviewModal = ({
             </div>
           </div>
           <div className="submit-review-wrapper">
-            <button>Submit Review</button>
+            <button>{isEdit ? "Edit" : "Submit"} Review</button>
           </div>
         </form>
       </div>

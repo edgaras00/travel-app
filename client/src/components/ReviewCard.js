@@ -4,7 +4,16 @@ import ReviewModal from "./ReviewModal";
 import { AppContext } from "../context/appContext";
 import "../styles/reviewCard.css";
 
-const ReviewCard = ({ rating, header, text, name, userID, tourID }) => {
+const ReviewCard = ({
+  rating,
+  header,
+  text,
+  name,
+  userID,
+  tourID,
+  reviewID,
+  toggleReviewUpdate,
+}) => {
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
   const { user } = useContext(AppContext);
 
@@ -26,6 +35,8 @@ const ReviewCard = ({ rating, header, text, name, userID, tourID }) => {
         prevHeader={header}
         prevRating={rating}
         isEdit={true}
+        reviewID={reviewID}
+        toggleReviewUpdate={toggleReviewUpdate}
       />
       <div className="review-user">
         {name}{" "}

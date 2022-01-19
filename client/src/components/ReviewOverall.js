@@ -11,6 +11,7 @@ const ReviewOverall = ({
   closeModal,
   openModal,
   tourID,
+  toggleReviewUpdate,
 }) => {
   const reviewCounts = {
     1: 0,
@@ -43,13 +44,15 @@ const ReviewOverall = ({
         isModalOpen={isModalOpen}
         closeModal={closeModal}
         tourID={tourID}
+        isEdit={false}
+        toggleReviewUpdate={toggleReviewUpdate}
       />
       <div className="total-review-summary">
         <div className="average-rating">
           {averageRating ? averageRating.toFixed(1) : null}
         </div>
         <div className="rating-star-container">
-          <Rating value={averageRating} readOnly size="large" />
+          <Rating value={averageRating} readOnly size="large" precision={0.5} />
         </div>
         <div className="number-reviews">
           {reviewData ? reviewData.length : null} traveler reviews
