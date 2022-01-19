@@ -20,15 +20,6 @@ const CustomPlanForm = () => {
 
   const { isFormModalOpen, closeFormModal } = useContext(AppContext);
 
-  // useEffect(() => {
-  //   const getDestinations = async () => {
-  //     const response = await fetch("/api/destinations");
-  //     const data = await response.json();
-  //     setDestinationData(data.data.destinations);
-  //   };
-  //   getDestinations();
-  // }, []);
-
   const destinationOptions = destinationData.map((destination) => {
     return { value: destination.name, label: destination.name };
   });

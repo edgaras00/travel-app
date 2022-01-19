@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
+import Select from "react-select";
+import statesUS from "../utils/statesUS";
+import countries from "../utils/countries";
 import "../styles/checkoutForm.css";
 
 const CheckoutForm = ({ tourData }) => {
@@ -17,6 +20,24 @@ const CheckoutForm = ({ tourData }) => {
   const [zip, setZip] = useState("");
   const navigate = useNavigate();
 
+  const stateOpts = statesUS.map((opt) => ({
+    value: opt,
+    label: opt,
+  }));
+
+  const countryOpts = countries.map((country) => ({
+    value: country,
+    label: country,
+  }));
+
+  const handleStateChange = (stateOpt) => {
+    setState(stateOpt.value);
+  };
+
+  const handleCountryChange = (country) => {
+    setCountry(country.value);
+  };
+
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -31,6 +52,7 @@ const CheckoutForm = ({ tourData }) => {
         city,
         line1: address,
         state: state,
+        country,
         postal_code: zip,
       },
     };
@@ -100,80 +122,87 @@ const CheckoutForm = ({ tourData }) => {
         <h4>Book "{tourData.name}"</h4>
       </div>
       <div className="billing-details">
-        <div className="input-field">
-          <input
-            type="text"
-            name="firstName"
-            placeholder="First Name"
-            value={firstName}
-            onChange={(event) => setFirstName(event.target.value)}
-          />
+        <div className="form-line">
+          <div className="buyer-info-input">
+            <input
+              type="text"
+              name="firstName"
+              placeholder="First Name"
+              value={firstName}
+              onChange={(event) => setFirstName(event.target.value)}
+            />
+          </div>
+          <div className="buyer-info-input">
+            <input
+              type="text"
+              name="lastName"
+              placeholder="Last Name"
+              value={lastName}
+              onChange={(event) => setLastName(event.target.value)}
+            />
+          </div>
+          <div className="buyer-info-input">
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
+            />
+          </div>
         </div>
-        <div className="input-field">
-          <input
-            type="text"
-            name="lastName"
-            placeholder="Last Name"
-            value={lastName}
-            onChange={(event) => setLastName(event.target.value)}
-          />
+        <div className="form-line">
+          <div className="address-first-input address-line">
+            <input
+              type="text"
+              name="address"
+              placeholder="Address"
+              value={address}
+              onChange={(event) => setAddress(event.target.value)}
+            />
+          </div>
+          <div className="address-first-input">
+            <input
+              type="text"
+              name="city"
+              placeholder="City"
+              value={city}
+              onChange={(event) => setCity(event.target.value)}
+            />
+          </div>
         </div>
-        <div className="input-field">
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            value={email}
-            onChange={(event) => setEmail(event.target.value)}
-          />
-        </div>
-        <div className="input-field">
-          <input
-            type="text"
-            name="address"
-            placeholder="Address"
-            value={address}
-            onChange={(event) => setAddress(event.target.value)}
-          />
-        </div>
-        <div className="input-field">
-          <input
-            type="text"
-            name="city"
-            placeholder="City"
-            value={city}
-            onChange={(event) => setCity(event.target.value)}
-          />
-        </div>
-        <div className="input-field">
-          <input
-            type="text"
-            name="state"
-            placeholder="State"
-            value={state}
-            onChange={(event) => setState(event.target.value)}
-          />
-        </div>
-        <div className="input-field">
-          <input
-            type="text"
-            name="country"
-            placeholder="Country"
-            value={country}
-            onChange={(event) => setCountry(event.target.value)}
-          />
-        </div>
-        <div className="input-field">
-          <input
-            type="postal"
-            name="zip"
-            placeholder="ZIP"
-            value={zip}
-            onChange={(event) => setZip(event.target.value)}
-          />
+        <div className="form-line">
+          <div className="address-second-input">
+            <Select
+              options={stateOpts}
+              onChange={handleStateChange}
+              placeholder="State"
+              className="us-state-select"
+            />
+          </div>
+          <div className="address-second-input">
+            <Select
+              options={countryOpts}
+              onChange={handleCountryChange}
+              placeholder="Country"
+              className="country-select"
+            />
+          </div>
+          <div className="address-second-input">
+            <input
+              className="zip"
+              type="text"
+              name="zip"
+              placeholder="ZIP"
+              value={zip}
+              onChange={(event) => setZip(event.target.value)}
+            />
+          </div>
         </div>
       </div>
-      <CardElement className="card-element" options={cardElementOpts} />
+      <div className="card-element-wrapper">
+        <CardElement className="card-element" options={cardElementOpts} />
+      </div>
       <button
         className="book-button"
         type="submit"
