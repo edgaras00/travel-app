@@ -6,16 +6,7 @@ import Tooltip from "@mui/material/Tooltip";
 import { AppContext } from "../context/appContext";
 import "../styles/tourCard.css";
 
-const TourCard = ({
-  tourID,
-  image,
-  name,
-  location,
-  duration,
-  price,
-  path,
-  rating,
-}) => {
+const TourCard = ({ tourID, image, name, location, duration, price, path }) => {
   const { user } = useContext(AppContext);
   const navigate = useNavigate();
 
@@ -45,7 +36,7 @@ const TourCard = ({
           <div className="tour-card-price">
             <div>{duration} days</div>
             <div>
-              from {price}
+              from ${price}
               <sup>*</sup>
             </div>
           </div>

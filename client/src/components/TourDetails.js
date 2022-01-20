@@ -4,6 +4,7 @@ import DescriptionCard from "./DescriptionCard";
 import LocationMap from "./LocationMap";
 import Accordion from "react-bootstrap/Accordion";
 import TourReviews from "./TourReviews";
+import { Carousel } from "react-responsive-carousel";
 import "../styles/tourDetails.css";
 
 const TourDetails = () => {
@@ -24,6 +25,7 @@ const TourDetails = () => {
     setReviewUpdate((prev) => !prev);
   };
 
+  let images = [];
   let center = [];
   let coordinates = [];
   let itinerary = [];
@@ -47,6 +49,12 @@ const TourDetails = () => {
         </Accordion.Item>
       );
     });
+
+    if (tourDetailsData.images.length > 0) {
+      images = tourDetailsData.images.map((imageURL) => (
+        <img src={imageURL} alt="tour" key={imageURL} />
+      ));
+    }
   }
 
   let mapZoom = 6;
@@ -67,6 +75,13 @@ const TourDetails = () => {
           title={tourDetailsData ? tourDetailsData.name : null}
           text={tourDetailsData ? tourDetailsData.description : null}
         />
+      </div>
+      <div className="tour-image-wrapper">
+        {tourDetailsData && tourDetailsData.images ? (
+          <div className="tour-images">
+            <Carousel dynamicHeight={true}>{images}</Carousel>
+          </div>
+        ) : null}
       </div>
       <div className="tour-map">
         <h2>Locations</h2>

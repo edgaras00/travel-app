@@ -43,3 +43,13 @@
 .reviews {
   margin-bottom: 5em;
 }
+
+.tour-image-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.tour-images {
+  width: 60%;
+}
