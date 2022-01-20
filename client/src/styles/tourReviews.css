@@ -35,10 +35,6 @@
   list-style-type: none;
 }
 
-.pagination-break {
-  border: 1px solid green;
-}
-
 .pagination-page {
   display: inline-block;
   margin-right: 0.9em;
