@@ -103,8 +103,8 @@ const TourDetails = () => {
       </div>
       <div className="reviews">
         <TourReviews
-          reviewData={tourDetailsData ? tourDetailsData.reviews : null}
-          averageRating={tourDetailsData ? tourDetailsData.averageRating : null}
+          reviewData={tourDetailsData ? tourDetailsData.reviews : []}
+          averageRating={tourDetailsData ? tourDetailsData.averageRating : 0}
           tourID={tourDetailsData ? tourDetailsData._id : null}
           toggleReviewUpdate={toggleReviewUpdate}
         />

@@ -32,7 +32,7 @@ const ReviewOverall = ({
           key={index + rating}
           rating={rating}
           count={reviewCounts[rating]}
-          proportion={proportion}
+          proportion={proportion ? proportion : 0}
         />
       );
     });

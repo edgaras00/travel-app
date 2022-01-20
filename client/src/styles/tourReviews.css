@@ -15,8 +15,70 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  margin-bottom: 2em;
 }
 
 .review-summary {
   margin-bottom: 3em;
+}
+
+.pagination-container {
+  background-color: rgb(231, 231, 231);
+  width: 30%;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.pagination-container li {
+  list-style-type: none;
+}
+
+.pagination-break {
+  border: 1px solid green;
+}
+
+.pagination-page {
+  display: inline-block;
+  margin-right: 0.9em;
+}
+
+.pagination-link {
+  background-color: rgb(231, 231, 231);
+  position: relative;
+  display: block;
+  padding: 0.375rem 0.75rem;
+  color: #457b9d;
+  font-weight: 800;
+}
+
+.active-page:focus {
+  outline: none;
+}
+
+.active-page-link {
+  background-color: #fff;
+  color: #37637e;
+  outline: none;
+}
+
+.previous,
+.next {
+  display: inline-block;
+}
+
+.previous {
+  margin-left: 5em;
+  margin-right: 1.5em;
+}
+
+.next {
+  margin-left: 1.5em;
+}
+
+.previous-link,
+.next-link {
+  color: #457b9d;
+  font-size: 1.6em;
 }

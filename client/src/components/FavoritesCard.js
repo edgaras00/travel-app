@@ -21,7 +21,7 @@ const FavoritesCard = ({
           <div className="favorites-text-container">
             <div className="favorites-title">
               <div className="title-top">{city}</div>
-              <div>{country}</div>
+              <div className="title-country">{country}</div>
             </div>
             <div className="favorites-text">
               <div>{title}</div>

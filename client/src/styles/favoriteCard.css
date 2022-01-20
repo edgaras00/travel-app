@@ -15,7 +15,7 @@
   width: 100%;
   height: 180px;
   display: flex;
-  background-color: rgb(91, 91, 253);
+  background-color: rgb(51, 51, 236);
   color: #fff;
 }
 
@@ -33,5 +33,5 @@
 }
 
 .title-top {
-  font-weight: bold;
+  font-weight: 800;
 }

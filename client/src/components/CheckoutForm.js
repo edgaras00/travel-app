@@ -52,13 +52,11 @@ const CheckoutForm = ({ tourData }) => {
       address: {
         city,
         line1: address,
+        line2: country,
         state: state,
-        // country,
         postal_code: zip,
       },
     };
-
-    console.log(billingDetails);
 
     const { error, paymentMethod } = await stripe.createPaymentMethod({
       type: "card",
