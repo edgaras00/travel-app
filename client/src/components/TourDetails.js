@@ -74,6 +74,9 @@ const TourDetails = () => {
           image={tourDetailsData ? tourDetailsData.coverImage : null}
           title={tourDetailsData ? tourDetailsData.name : null}
           text={tourDetailsData ? tourDetailsData.description : null}
+          price={tourDetailsData ? tourDetailsData.price : null}
+          tourID={tourDetailsData ? tourDetailsData._id : null}
+          isTour={true}
         />
       </div>
       <div className="tour-image-wrapper">

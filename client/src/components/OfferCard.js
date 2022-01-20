@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Button from "./Button";
 import "../styles/offerCard.css";
 
 const OfferCard = ({ image, title, text, reverse, buttonText, path }) => {
@@ -15,8 +16,11 @@ const OfferCard = ({ image, title, text, reverse, buttonText, path }) => {
         </div>
         <div className="offer-card-text">{text}</div>
         <div className="offer-button-wrapper">
-          <Link to={path}>
+          {/* <Link to={path}>
             <button className="offer-button">{buttonText}</button>
+          </Link> */}
+          <Link to={path}>
+            <Button text={buttonText} size="large" />
           </Link>
         </div>
       </div>

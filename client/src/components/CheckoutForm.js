@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import Select from "react-select";
+import Button from "./Button";
 import statesUS from "../utils/statesUS";
 import countries from "../utils/countries";
 import "../styles/checkoutForm.css";
@@ -207,13 +208,11 @@ const CheckoutForm = ({ tourData }) => {
       <div className="card-element-wrapper">
         <CardElement className="card-element" options={cardElementOpts} />
       </div>
-      <button
-        className="book-button"
-        type="submit"
+      <Button
+        size="large"
+        text={isProcessing ? "Processing..." : "Book"}
         disabled={!stripe || !elements || isProcessing}
-      >
-        {isProcessing ? "Processing..." : "Book"}
-      </button>
+      />
     </form>
   );
 };

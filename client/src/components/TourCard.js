@@ -15,7 +15,6 @@ const TourCard = ({ tourID, image, name, location, duration, price, path }) => {
       navigate("/login");
       return;
     }
-
     navigate("/book", { state: { name, price, tourID } });
   };
 

@@ -12,6 +12,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 1.8em;
+  padding-bottom: 2em;
 }
 
 .custom-header-content {
@@ -138,24 +139,3 @@
 .plan-submit-button {
   margin-top: 2em;
 }
-
-.plan-submit-button button {
-  border: none;
-  background-color: #457b9d;
-  color: #fff;
-  cursor: pointer;
-  padding: 0.7em 1.3em;
-  border-radius: 3px;
-  font-size: 1.1em;
-}
-
-/* .custom-form {
-  width: 80%;
-  background-color: #fff;
-  top: 50%;
-  left: 50%;
-  bottom: auto;
-  margin-right: -50%;
-  right: auto;
-  transform: translate(50%, 50%);
-} */

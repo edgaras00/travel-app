@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import Modal from "react-modal";
 import Select from "react-select";
+import Button from "./Button";
 import { AppContext } from "../context/appContext";
 import "../styles/customPlanForm.css";
 
@@ -176,15 +177,12 @@ const CustomPlanForm = () => {
             <h4>Tell us about your travel plans</h4>
             <div className="dropdowns">
               <Select
-                // value={destination}
-                // value={{ label: destination }}
                 options={destinationOptions}
                 onChange={handleDestinationChange}
                 placeholder="Destination"
                 className="destination-select"
               />
               <Select
-                // value={{ label: travelingWithin }}
                 options={timeframeOptions}
                 onChange={handleTimeframeChange}
                 placeholder="Traveling within"
@@ -273,7 +271,7 @@ const CustomPlanForm = () => {
             </div>
           </div>
           <div className="plan-submit-button">
-            <button>Submit</button>
+            <Button size="large" text="Submit" />
           </div>
         </form>
       </div>

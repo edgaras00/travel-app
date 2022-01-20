@@ -37,13 +37,3 @@
 .desc-button-container {
   margin-top: 1.5em;
 }
-
-.desc-button-container button {
-  border: none;
-  background-color: #457b9d;
-  color: #fff;
-  cursor: pointer;
-  padding: 0.7em 1.3em;
-  border-radius: 3px;
-  font-size: 1.1em;
-}

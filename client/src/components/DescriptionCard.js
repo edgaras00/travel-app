@@ -1,10 +1,23 @@
 import React, { useContext } from "react";
-import { AppContext } from "../context/appContext";
+import { useNavigate } from "react-router-dom";
 import CustomPlanForm from "./CustomPlanForm";
+import Button from "./Button";
+import { AppContext } from "../context/appContext";
 import "../styles/descriptionCard.css";
 
-const DescriptionCard = ({ image, title, text }) => {
-  const { openFormModal } = useContext(AppContext);
+const DescriptionCard = ({ image, title, text, isTour, price, tourID }) => {
+  const { openFormModal, user } = useContext(AppContext);
+
+  const navigate = useNavigate();
+
+  const handleTourBooking = () => {
+    if (!user) {
+      navigate("/login");
+      return;
+    }
+    navigate("/book", { state: { name: title, price, tourID } });
+  };
+
   return (
     <div className="description-card">
       <div className="description-card-image">
@@ -14,7 +27,11 @@ const DescriptionCard = ({ image, title, text }) => {
         <h2>{title}</h2>
         <p>{text}</p>
         <div className="desc-button-container">
-          <button onClick={openFormModal}>Start Planning</button>
+          <Button
+            size="large"
+            text="Start Planning"
+            handleClick={isTour ? handleTourBooking : openFormModal}
+          />
         </div>
       </div>
       <CustomPlanForm />
