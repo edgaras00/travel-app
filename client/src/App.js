@@ -12,6 +12,7 @@ import TourDetails from "./components/TourDetails";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import CheckoutLayout from "./components/CheckoutLayout";
+import NotFound from "./components/NotFound";
 import { AppContext } from "./context/appContext";
 import "./styles/app.css";
 
@@ -44,6 +45,7 @@ const App = () => {
           path="/book"
           element={user ? <CheckoutLayout /> : <Navigate to="/login" />}
         />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>

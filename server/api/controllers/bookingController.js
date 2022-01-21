@@ -1,13 +1,10 @@
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
-const { v4: uuidv4 } = require("uuid");
 const Booking = require("../models/bookingModel");
-const Tour = require("../models/tourModel");
 const APIFeatures = require("../utils/apiFeatures");
 const AppError = require("../utils/appError");
 const catchAsync = require("../utils/catchAsync");
 
 exports.bookTour = catchAsync(async (req, res, next) => {
-  // const { product, token } = req.body;
   const { id, amount, tourID } = req.body;
   const userID = req.user._id;
 

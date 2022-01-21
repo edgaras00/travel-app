@@ -26,6 +26,10 @@ const customOrderSchema = new Schema({
   numberOfTravelers: Number,
   comments: String,
   travelInterests: [String],
+  date: {
+    type: Date,
+    default: Date.now(),
+  },
 });
 
 const CustomOrder = mongoose.model("CustomOrder", customOrderSchema);

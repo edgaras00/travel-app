@@ -83,8 +83,7 @@ const CustomPlanForm = () => {
       };
 
       const response = await fetch("/api/custom", requestOptions);
-      const data = await response.json();
-      console.log(data);
+      await response.json();
       closeFormModal();
     } catch (error) {
       console.log(error);

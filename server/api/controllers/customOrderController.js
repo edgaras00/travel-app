@@ -29,7 +29,6 @@ exports.getCustomrOrder = catchAsync(async (req, res, next) => {
 });
 
 exports.createCustomOrder = catchAsync(async (req, res, next) => {
-  console.log("Hitting route");
   console.log(req.body);
   const customOrder = await CustomOrder.create(req.body);
 
