@@ -1,21 +1,31 @@
 .offer-card {
   width: 90%;
-  height: 450px;
+  height: 470px;
   border: 1px solid lightgrey;
+  border-radius: 10px;
   display: flex;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 .offer-card-reverse {
   flex-direction: row-reverse;
 }
 
+.offer-card-reverse img {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
 .offer-card img {
   width: 100%;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .offer-card-img-container {
   width: 60%;
-  min-height: 450px;
+  min-height: 470px;
   overflow: hidden;
 }
 
