@@ -138,4 +138,13 @@
 
 .plan-submit-button {
   margin-top: 2em;
+  display: flex;
+  align-items: center;
+}
+
+.plan-submit-button div {
+  color: rgb(204, 49, 49);
+  font-size: 1.03em;
+  font-weight: 600;
+  margin-left: 1.3em;
 }

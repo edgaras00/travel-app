@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Link, useParams, useLocation } from "react-router-dom";
+import { Link, useParams, useLocation, useNavigate } from "react-router-dom";
 import DestinationCard from "./DestinationCard";
 import DescriptionCard from "./DescriptionCard";
 import LocationMap from "./LocationMap";
 import Activities from "./Activities";
 import DestinationGlance from "./DestinationGlance";
+import handleErrors from "../utils/handleErrors";
+import errorRedirect from "../utils/errorRedirect";
 
 import "../styles/destinationDetails.css";
 
@@ -12,6 +14,7 @@ const DestinationDetails = () => {
   const [destinationData, setDestinationData] = useState(null);
   const { destinationID } = useParams();
   const pathLocation = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchDestinationData = async () => {
@@ -19,14 +22,20 @@ const DestinationDetails = () => {
         const response = await fetch(
           `http://localhost:5000/api/destinations/${destinationID}`
         );
+
+        if (response.status !== 200) {
+          handleErrors(response.status);
+        }
+
         const data = await response.json();
         setDestinationData(data.data.destination);
       } catch (error) {
         console.log(error);
+        errorRedirect(error.message, navigate);
       }
     };
     fetchDestinationData();
-  }, [destinationID]);
+  }, [destinationID, navigate]);
 
   let cardContainerClass;
   let cardSize = "small";

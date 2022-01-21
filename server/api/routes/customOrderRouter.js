@@ -5,12 +5,12 @@ const router = express.Router();
 
 router
   .route("/")
-  .get(customOrderController.getAllCustomrOrders)
+  .get(customOrderController.getAllCustomOrders)
   .post(customOrderController.createCustomOrder);
 
 router
   .route("/:customOrderID")
-  .get(customOrderController.createCustomOrder)
+  .get(customOrderController.getCustomOrder)
   .patch(customOrderController.updateCustomOrder)
   .delete(customOrderController.deleteCustomOrder);
 

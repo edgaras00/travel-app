@@ -94,3 +94,9 @@
   border-radius: 10px;
   font-size: 1.1em;
 }
+
+.submit-error {
+  color: rgb(204, 49, 49);
+  font-size: 1.03em;
+  font-weight: 600;
+}

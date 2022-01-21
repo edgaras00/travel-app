@@ -1,25 +1,40 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Carousel } from "react-responsive-carousel";
+import { useParams, useNavigate } from "react-router-dom";
 import DescriptionCard from "./DescriptionCard";
 import LocationMap from "./LocationMap";
 import Accordion from "react-bootstrap/Accordion";
 import TourReviews from "./TourReviews";
-import { Carousel } from "react-responsive-carousel";
+import handleErrors from "../utils/handleErrors";
+import errorRedirect from "../utils/errorRedirect";
 import "../styles/tourDetails.css";
 
 const TourDetails = () => {
   const [tourDetailsData, setTourDetailsData] = useState(null);
   const [reviewUpdate, setReviewUpdate] = useState(false);
   const { tourID } = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchTourDetails = async () => {
-      const response = await fetch(`http://localhost:5000/api/tours/${tourID}`);
-      const data = await response.json();
-      setTourDetailsData(data.data.tour);
+      try {
+        const response = await fetch(
+          `http://localhost:5000/api/tours/${tourID}`
+        );
+
+        if (response.status !== 200) {
+          handleErrors(response.status);
+        }
+
+        const data = await response.json();
+        setTourDetailsData(data.data.tour);
+      } catch (error) {
+        console.log(error);
+        errorRedirect(error.message, navigate);
+      }
     };
     fetchTourDetails();
-  }, [tourID, reviewUpdate]);
+  }, [tourID, reviewUpdate, navigate]);
 
   const toggleReviewUpdate = () => {
     setReviewUpdate((prev) => !prev);

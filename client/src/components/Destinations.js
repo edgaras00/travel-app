@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import DescriptionCard from "./DescriptionCard";
 import DestinationCard from "./DestinationCard";
 import LocationMap from "./LocationMap";
-import { Link, useParams, useLocation } from "react-router-dom";
+import { Link, useParams, useLocation, useNavigate } from "react-router-dom";
 import { capitalizeAll } from "../utils/capitalize";
 import slugify from "../utils/slugify";
+import handleErrors from "../utils/handleErrors";
+import errorRedirect from "../utils/errorRedirect";
 import "../styles/destinations.css";
 
 const Destinations = () => {
@@ -13,6 +15,7 @@ const Destinations = () => {
 
   const { regionID } = useParams();
   const pathLocation = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     let regionStr = capitalizeAll(regionID, "+");
@@ -22,10 +25,16 @@ const Destinations = () => {
         const response = await fetch(
           `http://localhost:5000/api/regions/${regionID}`
         );
+
+        if (response.status !== 200) {
+          handleErrors(response.status);
+        }
+
         const data = await response.json();
         setRegionData(data.data.region);
       } catch (error) {
         console.log(error);
+        errorRedirect(error.message, navigate);
       }
     };
     const fetchDestinations = async () => {
@@ -41,7 +50,7 @@ const Destinations = () => {
     };
     fetchDestinations();
     fetchRegionData();
-  }, [regionID]);
+  }, [regionID, navigate]);
 
   let cardContainerClass;
   let cardSize = "small-card";

@@ -19,6 +19,7 @@ const CheckoutForm = ({ tourData }) => {
   const [country, setCountry] = useState("");
   const [state, setState] = useState("");
   const [zip, setZip] = useState("");
+  const [submitError, setSubmitError] = useState(null);
   const navigate = useNavigate();
 
   const stateOpts = statesUS.map((opt) => ({
@@ -41,6 +42,21 @@ const CheckoutForm = ({ tourData }) => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    setSubmitError(null);
+
+    if (
+      !firstName ||
+      !lastName ||
+      !email ||
+      !address ||
+      !city ||
+      !state ||
+      !country ||
+      !zip
+    ) {
+      setSubmitError("Please fill in all of the fields");
+      return;
+    }
 
     if (elements == null) {
       return;
@@ -84,6 +100,11 @@ const CheckoutForm = ({ tourData }) => {
         };
 
         const response = await fetch("/api/bookings/book", requestOptions);
+
+        if (response.status !== 201) {
+          throw new Error("Something went wrong. Try again later.");
+        }
+
         const data = await response.json();
         if (data) {
           console.log(data);
@@ -92,6 +113,9 @@ const CheckoutForm = ({ tourData }) => {
         }
       } catch (error) {
         console.log(error);
+        setSubmitError(error.message);
+        setIsProcessing(false);
+        return;
       }
     }
   };
@@ -206,6 +230,7 @@ const CheckoutForm = ({ tourData }) => {
       <div className="card-element-wrapper">
         <CardElement className="card-element" options={cardElementOpts} />
       </div>
+      {submitError ? <div className="submit-error">{submitError}</div> : null}
       <Button
         size="large"
         text={isProcessing ? "Processing..." : "Book"}

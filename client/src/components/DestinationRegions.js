@@ -1,24 +1,31 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import DestinationCard from "./DestinationCard";
 import DescriptionCard from "./DescriptionCard";
+import errorRedirect from "../utils/errorRedirect";
 import "../styles/destinationRegions.css";
 
 const DestinationRegions = () => {
   const [regionData, setRegionData] = useState([]);
-
+  const navigate = useNavigate();
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await fetch("/api/regions");
+
+        if (response.status !== 200) {
+          throw new Error("Server error");
+        }
+
         const data = await response.json();
         setRegionData(data.data.regions);
       } catch (error) {
         console.log(error);
+        errorRedirect(error.message, navigate);
       }
     };
     fetchData();
-  }, []);
+  }, [navigate]);
 
   const regionCards = regionData.map((region) => {
     return (

@@ -16,8 +16,8 @@ const CustomPlanForm = () => {
   const [comments, setComments] = useState("");
   const [subscribe, setSubscribe] = useState(false);
   const [interests, setInterests] = useState([]);
-
   const [destinationData, setDestinationData] = useState([]);
+  const [submitError, setSubmitError] = useState(null);
 
   const { isFormModalOpen, closeFormModal } = useContext(AppContext);
 
@@ -37,11 +37,22 @@ const CustomPlanForm = () => {
   const handleOnAfterOpen = async () => {
     try {
       const response = await fetch("/api/destinations");
+
+      if (response.status !== 200) {
+        throw new Error("Could not get destination data");
+      }
+
       const data = await response.json();
       setDestinationData(data.data.destinations);
     } catch (error) {
       console.log(error);
+      setDestinationData([]);
+      return;
     }
+  };
+
+  const hadnleOnAfterClose = () => {
+    setSubmitError(null);
   };
 
   const handleDestinationChange = (destination) => {
@@ -60,6 +71,13 @@ const CustomPlanForm = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    setSubmitError(null);
+
+    if (!firstName || !lastName || !email || !phone) {
+      setSubmitError("Please fill in all contact data.");
+      return;
+    }
+
     try {
       const requestBody = {
         firstName,
@@ -83,10 +101,16 @@ const CustomPlanForm = () => {
       };
 
       const response = await fetch("/api/custom", requestOptions);
+
+      if (response.status !== 201) {
+        throw new Error("Something went wrong. Unable to submit data.");
+      }
+
       await response.json();
       closeFormModal();
     } catch (error) {
       console.log(error);
+      setSubmitError(error.message);
     }
   };
 
@@ -111,7 +135,7 @@ const CustomPlanForm = () => {
       onRequestClose={closeFormModal}
       overlayClassName="form-overlay"
       onAfterOpen={handleOnAfterOpen}
-      //   className={"custom-form"}
+      onAfterClose={hadnleOnAfterClose}
       style={customStyles}
     >
       <div className="custom-plan-form-wrapper">
@@ -271,6 +295,7 @@ const CustomPlanForm = () => {
           </div>
           <div className="plan-submit-button">
             <Button size="large" text="Submit" />
+            {submitError ? <div>{submitError}</div> : null}
           </div>
         </form>
       </div>

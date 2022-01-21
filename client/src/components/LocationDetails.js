@@ -1,24 +1,37 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import DescriptionCard from "./DescriptionCard";
 import LocationMap from "./LocationMap";
 import Activities from "./Activities";
+import handleErrors from "../utils/handleErrors";
+import errorRedirect from "../utils/errorRedirect";
 import "../styles/locationDetails.css";
 
 const LocationDetails = () => {
   const [locationData, setLocationData] = useState(null);
   const { locationID } = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchLocationData = async () => {
-      const response = await fetch(
-        `http://localhost:5000/api/places/${locationID}`
-      );
-      const data = await response.json();
-      setLocationData(data.data.place);
+      try {
+        const response = await fetch(
+          `http://localhost:5000/api/places/${locationID}`
+        );
+
+        if (response.status !== 200) {
+          handleErrors(response.status);
+        }
+
+        const data = await response.json();
+        setLocationData(data.data.place);
+      } catch (error) {
+        console.log(error);
+        errorRedirect(error.message, navigate);
+      }
     };
     fetchLocationData();
-  }, [locationID]);
+  }, [locationID, navigate]);
 
   let coordinates = [];
   if (locationData) {

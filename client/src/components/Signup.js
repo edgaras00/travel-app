@@ -8,6 +8,7 @@ const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [signupError, setSignupError] = useState(null);
 
   const { setUser } = useContext(AppContext);
   const navigate = useNavigate();
@@ -19,12 +20,21 @@ const Signup = () => {
     password,
     confirmPassword
   ) => {
-    try {
-      event.preventDefault();
-      if (password !== confirmPassword) {
-        throw new Error("Passwords don't match!");
-      }
+    event.preventDefault();
 
+    setSignupError(null);
+
+    if (!name || !email || !password || !confirmPassword) {
+      setSignupError("Please fill in all of the fields");
+      return;
+    }
+
+    if (password !== confirmPassword) {
+      setSignupError("Passwords do not match");
+      return;
+    }
+
+    try {
       const signupBody = { name, email, password };
       const requestOptions = {
         method: "POST",
@@ -102,10 +112,11 @@ const Signup = () => {
           minLength={6}
           onChange={(event) => setConfirmPassword(event.target.value)}
         />
-        <div className="login-button-container">
-          <button disabled={password.length < 6 && confirmPassword.length < 6}>
-            SIGN UP
-          </button>
+        <div className="signup-button-container">
+          <button>SIGN UP</button>
+          {signupError ? (
+            <div className="signup-error">{signupError}</div>
+          ) : null}
         </div>
         <div className="link-signup">
           Have an account?{" "}

@@ -24,7 +24,6 @@ const Login = () => {
       const response = await fetch("/api/users/login", requestOptions);
 
       const data = await response.json();
-      console.log(data);
       setUser(data.data.user);
       localStorage.setItem("user", JSON.stringify(data.data.user));
       navigate(-1);

@@ -29,6 +29,7 @@ const sendErrorDev = (err, res) => {
 
 const sendErrorProd = (err, res) => {
   // Only send to client when it's an operational error
+  console.log(err.statusCode, err.message);
   if (err.isOperational) {
     res.status(err.statusCode).json({
       status: err.status,
@@ -55,6 +56,7 @@ module.exports = (err, req, res, next) => {
     if (err.name === "CastError") error = handleCastErrorDB(error);
     if (err.code === 11000) error = handleDuplicateFieldsDB(error, err.errmsg);
     if (err.name === "ValidationError") error = handleValidationErrorDB(error);
+    if (err.statusCode === 404) error.message = "Resource not found";
     sendErrorProd(error, res);
   }
 };

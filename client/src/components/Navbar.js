@@ -12,8 +12,7 @@ const Navbar = () => {
     setUser(null);
     try {
       const response = await fetch("/api/users/logout");
-      const data = await response.json();
-      console.log(data);
+      await response.json();
     } catch (error) {
       console.log(error);
     }

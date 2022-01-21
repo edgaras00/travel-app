@@ -31,7 +31,6 @@ exports.getRegion = catchAsync(async (req, res, next) => {
   if (!region) {
     return next(new AppError("Region not found", 404));
   }
-
   res.status(200).json({
     status: "Success",
     data: {

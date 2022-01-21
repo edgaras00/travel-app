@@ -2,7 +2,7 @@ const CustomOrder = require("../models/customOrderModel");
 const catchAsync = require("../utils/catchAsync");
 const AppError = require("../utils/appError");
 
-exports.getAllCustomrOrders = catchAsync(async (req, res, next) => {
+exports.getAllCustomOrders = catchAsync(async (req, res, next) => {
   const customOrders = await CustomOrder.find();
 
   res.status(200).json({
@@ -13,7 +13,7 @@ exports.getAllCustomrOrders = catchAsync(async (req, res, next) => {
   });
 });
 
-exports.getCustomrOrder = catchAsync(async (req, res, next) => {
+exports.getCustomOrder = catchAsync(async (req, res, next) => {
   const customOrder = await CustomOrder.findById(req.params.customOrderID);
 
   if (!customOrder) {

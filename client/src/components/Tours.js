@@ -1,21 +1,32 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import TourCard from "./TourCard";
 import DescriptionCard from "./DescriptionCard";
+import errorRedirect from "../utils/errorRedirect";
 import "../styles/tours.css";
 
 const Tours = () => {
   const [tourData, setTourData] = useState([]);
-
-  console.log(tourData);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchTourData = async () => {
-      const response = await fetch("http://localhost:5000/api/tours");
-      const data = await response.json();
-      setTourData(data.data.tours);
+      try {
+        const response = await fetch("http://localhost:5000/api/tours");
+
+        if (response.status !== 200) {
+          throw new Error("Resource not found");
+        }
+
+        const data = await response.json();
+        setTourData(data.data.tours);
+      } catch (error) {
+        console.log(error);
+        errorRedirect(error.message, navigate);
+      }
     };
     fetchTourData();
-  }, []);
+  }, [navigate]);
 
   const tourCards = tourData.map((tour) => {
     return (
