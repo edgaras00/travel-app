@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import Rating from "@mui/material/Rating";
+import Button from "./Button";
 import "../styles/reviewModal.css";
 
 const ReviewModal = ({
@@ -21,6 +22,9 @@ const ReviewModal = ({
 
   const handleOnAfterClose = () => {
     setSubmitError(null);
+    setReviewText(text || "");
+    setReviewHeader(prevHeader || "");
+    setRating(prevRating || 5);
   };
 
   const handleSubmit = async (event) => {
@@ -140,7 +144,11 @@ const ReviewModal = ({
             </div>
           </div>
           <div className="submit-review-wrapper">
-            <button>{isEdit ? "Edit" : "Submit"} Review</button>
+            {/* <button>{isEdit ? "Edit" : "Submit"} Review</button> */}
+            <Button
+              text={`${isEdit ? "Edit" : "Submit"} Review`}
+              size="large"
+            />
             {submitError ? (
               <div className="review-error">{submitError}</div>
             ) : null}

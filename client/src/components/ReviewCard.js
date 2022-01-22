@@ -44,7 +44,9 @@ const ReviewCard = ({
       <div className="review-user">
         {name}{" "}
         {user && user.id === userID ? (
-          <span onClick={openEditModal}>Edit</span>
+          <span className="edit-review" onClick={openEditModal}>
+            Edit
+          </span>
         ) : null}
       </div>
       <div className="review-date">{displayDate}</div>

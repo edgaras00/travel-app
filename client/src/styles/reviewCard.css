@@ -24,3 +24,19 @@
   color: rgb(116, 116, 116);
   margin-bottom: 0.45em;
 }
+
+.edit-review {
+  background-color: #457b9d;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 200;
+  display: inline-block;
+  width: 60px;
+  text-align: center;
+  margin-left: 0.5em;
+  cursor: pointer;
+}
+
+.edit-review:hover {
+  background-color: #5092bb;
+}
