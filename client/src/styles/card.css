@@ -14,13 +14,13 @@ img {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+.card:hover .title {
+  text-decoration: underline;
+}
+
 .title {
   font-size: 2.2em;
   font-weight: bold;
-}
-
-.title:hover {
-  text-decoration: underline;
 }
 
 .text {
