@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { useParams, useNavigate } from "react-router-dom";
 import DescriptionCard from "./DescriptionCard";
@@ -94,6 +95,13 @@ const TourDetails = () => {
           isTour={true}
         />
       </div>
+      {/* <div className="tour-image-wrapper">
+        {tourDetailsData && tourDetailsData.images ? (
+          <div className="tour-images">
+            <Carousel interval={null}>{images}</Carousel>
+          </div>
+        ) : null}
+      </div> */}
       <div className="tour-image-wrapper">
         {tourDetailsData && tourDetailsData.images ? (
           <div className="tour-images">

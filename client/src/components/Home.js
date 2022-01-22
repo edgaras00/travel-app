@@ -1,50 +1,49 @@
 import React from "react";
+import Carousel from "react-bootstrap/Carousel";
 import ServiceCard from "./ServiceCard";
 import FavoritesCard from "./FavoritesCard";
 import OfferCard from "./OfferCard";
 import UpdateCard from "./UpdateCard";
 import CompanyReviews from "./CompanyReviews";
 import Partners from "./Partners";
-import { Carousel } from "react-responsive-carousel";
 import "../styles/home.css";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import reviewData from "../utils/companyReviewData";
 
 const Home = () => {
   return (
     <div className="home">
       <div className="carousel-container">
-        <Carousel
-          showThumbs={false}
-          showStatus={false}
-          //   autoPlay={true}
-          //   infiniteLoop={true}
-          //   interval={2000}
-        >
-          <div id="carousel-card-1">
-            <div className="carousel-text">
-              <div className="upper-text">GET CARRIED AWAY</div>
-              <div className="lower-text">
-                EVERYTHING YOU NEED TO EXPERIENCE AN INCREDIBLE GETAWAY.
+        <Carousel fade interval={null}>
+          <Carousel.Item>
+            <div id="carousel-card-1">
+              <div className="carousel-text">
+                <div className="upper-text">GET CARRIED AWAY</div>
+                <div className="lower-text">
+                  EVERYTHING YOU NEED TO EXPERIENCE AN INCREDIBLE GETAWAY.
+                </div>
               </div>
             </div>
-          </div>
-          <div id="carousel-card-2">
-            <div className="carousel-text">
-              <div className="upper-text">GET CARRIED AWAY</div>
-              <div className="lower-text">
-                EVERYTHING YOU NEED TO EXPERIENCE AN INCREDIBLE GETAWAY.
+          </Carousel.Item>
+          <Carousel.Item>
+            <div id="carousel-card-2">
+              <div className="carousel-text">
+                <div className="upper-text">GET CARRIED AWAY</div>
+                <div className="lower-text">
+                  EVERYTHING YOU NEED TO EXPERIENCE AN INCREDIBLE GETAWAY.
+                </div>
               </div>
             </div>
-          </div>
-          <div id="carousel-card-3">
-            <div className="carousel-text">
-              <div className="upper-text">GET CARRIED AWAY</div>
-              <div className="lower-text">
-                EVERYTHING YOU NEED TO EXPERIENCE AN INCREDIBLE GETAWAY.
+          </Carousel.Item>
+          <Carousel.Item>
+            <div id="carousel-card-3">
+              <div className="carousel-text">
+                <div className="upper-text">GET CARRIED AWAY</div>
+                <div className="lower-text">
+                  EVERYTHING YOU NEED TO EXPERIENCE AN INCREDIBLE GETAWAY.
+                </div>
               </div>
             </div>
-          </div>
+          </Carousel.Item>
         </Carousel>
       </div>
       <div className="card-container">
