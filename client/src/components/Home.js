@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./Card";
+import ServiceCard from "./ServiceCard";
 import FavoritesCard from "./FavoritesCard";
 import OfferCard from "./OfferCard";
 import UpdateCard from "./UpdateCard";
@@ -48,22 +48,22 @@ const Home = () => {
         </Carousel>
       </div>
       <div className="card-container">
-        <Card
+        <ServiceCard
           icon="https://travelappbucket.s3.amazonaws.com/imgs/tour-guide.png"
           title="Guidance"
           text="Expert insight and travel knowledge"
         />
-        <Card
+        <ServiceCard
           icon="https://travelappbucket.s3.amazonaws.com/imgs/diamond.png"
           title="Value"
           text="Irressistable rates, offers and benefits"
         />
-        <Card
+        <ServiceCard
           icon="https://travelappbucket.s3.amazonaws.com/imgs/peace-of-mind.png"
           title="Peace of Mind"
           text="Reassurance to book with confidence"
         />
-        <Card
+        <ServiceCard
           icon="https://travelappbucket.s3.amazonaws.com/imgs/customer.png"
           title="Service"
           text="Beside you every step of the way"

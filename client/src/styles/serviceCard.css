@@ -4,13 +4,14 @@ img {
 
 .card {
   width: 22%;
-  height: 200px;
+  height: 210px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   border: none;
   cursor: pointer;
+  padding-bottom: 0.5em;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 

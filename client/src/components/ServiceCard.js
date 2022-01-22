@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles/card.css";
+import "../styles/serviceCard.css";
 
-const Card = ({ icon, title, text }) => {
+const ServiceCard = ({ icon, title, text }) => {
   return (
     <div className="card">
       <div>
@@ -13,4 +13,4 @@ const Card = ({ icon, title, text }) => {
   );
 };
 
-export default Card;
+export default ServiceCard;
