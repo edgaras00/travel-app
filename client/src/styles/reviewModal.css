@@ -51,6 +51,8 @@
 .submit-review-wrapper {
   width: 100%;
   margin-top: 0.8em;
+  display: flex;
+  align-items: center;
 }
 
 .submit-review-wrapper button {
@@ -61,6 +63,13 @@
   padding: 0.7em 1.1em;
   border-radius: 5px;
   font-size: 1.1em;
+}
+
+.review-error {
+  margin-left: 1.2em;
+  font-size: 1.03em;
+  font-weight: 600;
+  color: rgb(204, 49, 49);
 }
 
 .review-text-wrapper {

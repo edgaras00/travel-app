@@ -46,12 +46,31 @@ const Signup = () => {
       };
       const response = await fetch("/api/users/signup", requestOptions);
       const data = await response.json();
+
+      if (response.status !== 201) {
+        if (
+          response.status === 400 &&
+          data.message.startsWith("Duplicate field")
+        ) {
+          throw new Error("Duplicate field");
+        }
+        throw new Error("Server error");
+      }
+
       console.log(data);
       setUser(data.data.user);
       navigate("/");
       localStorage.setItem("user", JSON.stringify(data.data.user));
     } catch (error) {
       console.log(error);
+      if (error.message === "Duplicate field") {
+        setSignupError("User with this email already exists.");
+        return;
+      }
+      if (error.message === "Server error") {
+        setSignupError("Something went wrong. Try again later.");
+        return;
+      }
     }
   };
 

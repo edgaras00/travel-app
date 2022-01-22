@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import ReactPaginate from "react-paginate";
 import CurrentReviews from "./CurrentReviews";
 // import ReviewCard from "./ReviewCard";
 import ReviewOverall from "./ReviewOverall";
+import { AppContext } from "../context/appContext";
 import "../styles/tourReviews.css";
 
 const TourReviews = ({
@@ -15,6 +17,9 @@ const TourReviews = ({
   const [currentReviews, setCurrentReviews] = useState(null);
   const [pageCount, setPageCount] = useState(0);
   const [reviewOffset, setReviewOffset] = useState(0);
+  const { user } = useContext(AppContext);
+  const navigate = useNavigate();
+
   const itemsPerPage = 1;
 
   //  let reviewCards = [];
@@ -51,7 +56,13 @@ const TourReviews = ({
     setReviewOffset(newOffset);
   };
 
-  const openModal = () => setIsModalOpen(true);
+  const openModal = () => {
+    if (!user) {
+      navigate("/login");
+      return;
+    }
+    setIsModalOpen(true);
+  };
   const closeModal = () => setIsModalOpen(false);
 
   return (

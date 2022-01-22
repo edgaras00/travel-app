@@ -17,9 +17,20 @@ const ReviewModal = ({
   const [rating, setRating] = useState(prevRating || 5);
   const [reviewHeader, setReviewHeader] = useState(prevHeader || "");
   const [reviewText, setReviewText] = useState(text || "");
+  const [submitError, setSubmitError] = useState(null);
+
+  const handleOnAfterClose = () => {
+    setSubmitError(null);
+  };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+
+    if (!reviewHeader || !reviewText) {
+      setSubmitError("Please fill in all of the fields.");
+      return;
+    }
+
     try {
       const requestBody = {
         tour: tourID,
@@ -42,11 +53,37 @@ const ReviewModal = ({
         requestOptions
       );
       const data = await response.json();
+
+      if (response.status !== 201) {
+        if (
+          response.status === 400 &&
+          data.message.startsWith("User has already")
+        ) {
+          throw new Error("Tour already reviewed");
+        }
+        if (
+          response.status === 400 &&
+          data.message.startsWith("No tour purchased")
+        ) {
+          throw new Error("Not purchased");
+        }
+      }
+
       console.log(data);
       toggleReviewUpdate();
       closeModal();
     } catch (error) {
       console.log(error);
+      if (error.message === "Tour already reviewed") {
+        setSubmitError("You have already reviewed this tour.");
+        return;
+      }
+      if (error.message === "Not purchased") {
+        setSubmitError(
+          "You need to book the tour before being able to review it."
+        );
+        return;
+      }
     }
   };
 
@@ -68,6 +105,7 @@ const ReviewModal = ({
     <Modal
       isOpen={isModalOpen}
       onRequestClose={closeModal}
+      onAfterClose={handleOnAfterClose}
       style={customStyles}
     >
       <div className="review-form-wrapper">
@@ -103,6 +141,9 @@ const ReviewModal = ({
           </div>
           <div className="submit-review-wrapper">
             <button>{isEdit ? "Edit" : "Submit"} Review</button>
+            {submitError ? (
+              <div className="review-error">{submitError}</div>
+            ) : null}
           </div>
         </form>
       </div>

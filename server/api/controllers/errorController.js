@@ -30,6 +30,7 @@ const sendErrorDev = (err, res) => {
 const sendErrorProd = (err, res) => {
   // Only send to client when it's an operational error
   console.log(err.statusCode, err.message);
+  console.log(Object.keys(err));
   if (err.isOperational) {
     res.status(err.statusCode).json({
       status: err.status,
@@ -48,11 +49,12 @@ const sendErrorProd = (err, res) => {
 module.exports = (err, req, res, next) => {
   err.statusCode = err.statusCode || 500;
   err.status = err.status || "Error";
+  err.message = err.message;
 
   if (process.env.NODE_ENV === "development") {
     sendErrorDev(err, res);
   } else if (process.env.NODE_ENV === "production") {
-    let error = { ...err };
+    let error = { ...err, message: err.message };
     if (err.name === "CastError") error = handleCastErrorDB(error);
     if (err.code === 11000) error = handleDuplicateFieldsDB(error, err.errmsg);
     if (err.name === "ValidationError") error = handleValidationErrorDB(error);
