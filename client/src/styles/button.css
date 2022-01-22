@@ -12,6 +12,12 @@
   font-size: 1.1em;
 }
 
+.button-medium {
+  padding: 0.65em 1em;
+  border-radius: 7px;
+  font-size: 1em;
+}
+
 .button-component:hover {
   background-color: #5092bb;
 }

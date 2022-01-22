@@ -2,6 +2,7 @@ import React from "react";
 import Rating from "@mui/material/Rating";
 import RatingBreakdown from "./RatingBreakdown";
 import ReviewModal from "./ReviewModal";
+import Button from "./Button";
 import "../styles/reviewOverall.css";
 
 const ReviewOverall = ({
@@ -58,9 +59,7 @@ const ReviewOverall = ({
           {reviewData ? reviewData.length : null} traveler reviews
         </div>
         <div className="review-button-container">
-          <button className="review-button" onClick={openModal}>
-            Write a Review
-          </button>
+          <Button text="Write a Review" size="medium" handleClick={openModal} />
         </div>
       </div>
       <div className="total-review-breakdown">{breakdownElements}</div>
