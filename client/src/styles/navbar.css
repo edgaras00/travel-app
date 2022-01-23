@@ -32,7 +32,27 @@ a {
   font-size: 1.1em;
 }
 
-.logout-button {
+.popover-trigger {
   color: #fff;
+  cursor: pointer;
+}
+
+#popover-basic {
+  min-width: 150px;
+  width: fit-content;
+  height: auto;
+  background-color: #457b9d;
+}
+
+.user-options {
+  min-height: 57px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.option-element {
+  color: #fff;
+  font-size: 1.1em;
   cursor: pointer;
 }

@@ -1,5 +1,9 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Popover from "react-bootstrap/Popover";
+
+// import UserPopover from "./UserPopover";
 import { AppContext } from "../context/appContext";
 
 import "../styles/navbar.css";
@@ -18,6 +22,22 @@ const Navbar = () => {
     }
   };
 
+  const popover = (
+    <Popover id="popover-basic">
+      <Popover.Header as="h3">{user ? user.name : ""}</Popover.Header>
+      <Popover.Body>
+        <div className="user-options">
+          <Link to="/" className="option-element">
+            Orders
+          </Link>
+          <div className="option-element" onClick={logOut}>
+            Log Out
+          </div>
+        </div>
+      </Popover.Body>
+    </Popover>
+  );
+
   return (
     <div className="navbar-container">
       <div className="logo">
@@ -32,11 +52,10 @@ const Navbar = () => {
         <Link to="/tours">
           <span>Guided Tours</span>
         </Link>
-
         {user ? (
-          <span onClick={logOut} className="logout-button">
-            Log Out
-          </span>
+          <OverlayTrigger trigger="click" placement="bottom" overlay={popover}>
+            <span className="popover-trigger">User</span>
+          </OverlayTrigger>
         ) : (
           <Link to="/login">
             <span>Log In</span>
