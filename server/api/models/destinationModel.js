@@ -1,9 +1,8 @@
 const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
 const slugify = require("slugify");
+const Schema = mongoose.Schema;
 
 const destinationSchema = new Schema({
-  // _id: Schema.Types.ObjectId,
   name: {
     type: String,
     required: [true, "Destination must have a name"],
@@ -19,7 +18,6 @@ const destinationSchema = new Schema({
   bestTimeToVisit: String,
   currency: {
     type: String,
-    // required: [true, "Destination must have a currency"],
   },
   language: {
     type: String,

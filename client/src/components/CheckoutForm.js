@@ -96,6 +96,7 @@ const CheckoutForm = ({ tourData }) => {
             id,
             amount: tourData.price * 100,
             tourID: tourData.tourID,
+            description: tourData.name,
           }),
         };
 

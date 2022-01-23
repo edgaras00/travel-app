@@ -1,8 +1,7 @@
 const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
 const slugify = require("slugify");
 
-const placeSchema = new Schema({
+const placeSchema = new mongoose.Schema({
   name: {
     type: String,
     required: [true, "A place must have a name"],

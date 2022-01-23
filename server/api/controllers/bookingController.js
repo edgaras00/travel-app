@@ -5,13 +5,13 @@ const AppError = require("../utils/appError");
 const catchAsync = require("../utils/catchAsync");
 
 exports.bookTour = catchAsync(async (req, res, next) => {
-  const { id, amount, tourID } = req.body;
+  const { id, amount, tourID, description } = req.body;
   const userID = req.user._id;
 
   const payment = await stripe.paymentIntents.create({
-    amount: amount,
+    amount,
     currency: "USD",
-    description: "Description",
+    description,
     payment_method: id,
     confirm: true,
   });

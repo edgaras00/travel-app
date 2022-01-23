@@ -1,8 +1,7 @@
 const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
 const slugify = require("slugify");
 
-const regionSchema = new Schema({
+const regionSchema = new mongoose.Schema({
   name: {
     type: String,
     required: [true, "A region must have a name"],
@@ -22,7 +21,6 @@ const regionSchema = new Schema({
     type: String,
     required: [true, "A region must have a cover image"],
   },
-  images: [String],
 });
 
 regionSchema.pre("save", function (next) {

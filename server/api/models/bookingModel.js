@@ -2,14 +2,13 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const bookingSchema = new Schema({
-  // _id: Schema.Types.ObjectId,
   price: {
     type: Number,
     required: [true, "Booking must have a price"],
   },
   date: {
     type: Date,
-    required: [true, "Booking must have a date"],
+    default: Date.now(),
   },
   user: {
     type: Schema.Types.ObjectId,

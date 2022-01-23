@@ -1,8 +1,7 @@
 const mongoose = require("mongoose");
 const { isEmail } = require("validator");
-const Schema = mongoose.Schema;
 
-const customOrderSchema = new Schema({
+const customOrderSchema = new mongoose.Schema({
   firstName: {
     type: String,
     required: [true, "Custom order must have a first name"],
@@ -14,7 +13,6 @@ const customOrderSchema = new Schema({
   phone: {
     type: Number,
     required: [true, "Custom order must have a phone number"],
-    maxLength: [10, "Phone number cannot be longer than 10 digits."],
   },
   email: {
     type: String,

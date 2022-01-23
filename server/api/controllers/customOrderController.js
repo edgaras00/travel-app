@@ -29,7 +29,6 @@ exports.getCustomOrder = catchAsync(async (req, res, next) => {
 });
 
 exports.createCustomOrder = catchAsync(async (req, res, next) => {
-  console.log(req.body);
   const customOrder = await CustomOrder.create(req.body);
 
   res.status(201).json({

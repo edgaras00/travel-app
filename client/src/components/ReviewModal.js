@@ -132,6 +132,7 @@ const ReviewModal = ({
                 name="reviewHeader"
                 placeholder="Review header"
                 value={reviewHeader}
+                maxLength="100"
                 onChange={(event) => setReviewHeader(event.target.value)}
               />
             </div>
@@ -140,6 +141,7 @@ const ReviewModal = ({
                 value={reviewText}
                 onChange={(event) => setReviewText(event.target.value)}
                 placeholder="Let us know what you think about the tour!"
+                maxLength="4000"
               />
             </div>
           </div>

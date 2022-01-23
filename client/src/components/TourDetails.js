@@ -95,17 +95,12 @@ const TourDetails = () => {
           isTour={true}
         />
       </div>
-      {/* <div className="tour-image-wrapper">
-        {tourDetailsData && tourDetailsData.images ? (
-          <div className="tour-images">
-            <Carousel interval={null}>{images}</Carousel>
-          </div>
-        ) : null}
-      </div> */}
       <div className="tour-image-wrapper">
         {tourDetailsData && tourDetailsData.images ? (
           <div className="tour-images">
-            <Carousel dynamicHeight={true}>{images}</Carousel>
+            <Carousel showStatus={false} dynamicHeight={true}>
+              {images}
+            </Carousel>
           </div>
         ) : null}
       </div>

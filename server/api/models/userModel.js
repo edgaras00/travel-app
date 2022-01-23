@@ -1,10 +1,8 @@
 const mongoose = require("mongoose");
 const { isEmail } = require("validator");
 const bcrypt = require("bcrypt");
-const Schema = mongoose.Schema;
 
-const userSchema = new Schema({
-  _id: Schema.Types.ObjectId,
+const userSchema = new mongoose.Schema({
   name: {
     type: String,
     required: [true, "User must have a name"],
@@ -21,7 +19,6 @@ const userSchema = new Schema({
     minLength: [6, "Password must be at least 6 characters long"],
     select: false,
   },
-  photo: String,
   role: {
     type: String,
     default: "user",

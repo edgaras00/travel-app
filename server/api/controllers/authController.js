@@ -1,5 +1,4 @@
 const { promisify } = require("util");
-const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const catchAsync = require("../utils/catchAsync");
 const AppError = require("../utils/appError");
@@ -14,7 +13,6 @@ const signToken = async (id) => {
 
 exports.signup = catchAsync(async (req, res, next) => {
   const newUser = {
-    _id: req.body._id ? req.body._id : mongoose.Types.ObjectId(),
     name: req.body.name,
     email: req.body.email,
     password: req.body.password,
@@ -109,7 +107,6 @@ exports.protectRoute = catchAsync(async (req, res, next) => {
 exports.logout = catchAsync(async (req, res, next) => {
   // Log out user
   // "Delete" JWT cookie
-  console.log("logout route");
   res.cookie("jwt", "", { maxAge: 1 });
   res
     .status(200)

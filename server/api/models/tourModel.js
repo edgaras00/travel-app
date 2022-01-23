@@ -1,11 +1,9 @@
 const mongoose = require("mongoose");
 const slugify = require("slugify");
-const Schema = mongoose.Schema;
 const Review = require("./reviewModel");
 
-const tourSchema = new Schema(
+const tourSchema = new mongoose.Schema(
   {
-    // _id: Schema.Types.ObjectId,
     name: {
       type: String,
       unique: true,
@@ -50,7 +48,6 @@ const tourSchema = new Schema(
         "city",
       ],
     },
-    groupSize: Number,
     coverImage: {
       type: String,
       required: [true, "Tour must have a cover image"],
@@ -60,7 +57,6 @@ const tourSchema = new Schema(
     itineraries: {},
     specialNotes: {},
     locations: [{ name: String, coordinates: [String] }],
-    guides: [{ type: Schema.Types.ObjectId, ref: "User" }],
     region: {
       type: String,
       enum: [
@@ -81,11 +77,6 @@ const tourSchema = new Schema(
   },
   { toJSON: { virtuals: true }, toObject: { virtuals: true } }
 );
-
-tourSchema.pre(/^find/, function (next) {
-  this.populate("guides");
-  next();
-});
 
 tourSchema.pre("save", function (next) {
   this.slug = slugify(this.name, { lower: true });
