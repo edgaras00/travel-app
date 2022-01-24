@@ -76,6 +76,11 @@
   outline: none;
 }
 
+.login-form button:hover,
+.signup-form button:hover {
+  background-color: #5092bb;
+}
+
 .link-signup {
   width: 68%;
   margin-top: 1.1em;
