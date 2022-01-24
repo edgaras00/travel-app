@@ -2,7 +2,6 @@ import React, { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import ReactPaginate from "react-paginate";
 import CurrentReviews from "./CurrentReviews";
-// import ReviewCard from "./ReviewCard";
 import ReviewOverall from "./ReviewOverall";
 import { AppContext } from "../context/appContext";
 import "../styles/tourReviews.css";
@@ -22,34 +21,24 @@ const TourReviews = ({
 
   const itemsPerPage = 1;
 
-  //  let reviewCards = [];
-  //  if (reviewData) {
-  //    reviewCards = reviewData.map((review, index) => {
-  //      return (
-  //        <ReviewCard
-  //          key={index}
-  //          rating={review.rating}
-  //          header={review.header}
-  //          name={review.user.name}
-  //          text={review.text}
-  //          date={review.date}
-  //          userID={review.user._id}
-  //          openModal={openModal}
-  //          isModalOpen={isModalOpen}
-  //          closeModal={closeModal}
-  //          tourID={tourID}
-  //          reviewID={review._id}
-  //          toggleReviewUpdate={toggleReviewUpdate}
-  //        />
-  //      );
-  //    });
-  //  }
-
   useEffect(() => {
     const endOffset = reviewOffset + itemsPerPage;
-    setCurrentReviews(reviewData.slice(reviewOffset, endOffset));
-    setPageCount(Math.ceil(reviewData.length / itemsPerPage));
-  }, [reviewOffset, itemsPerPage, reviewData]);
+
+    let reviewDisplay = [...reviewData];
+    if (user) {
+      const userReview = reviewDisplay.filter(
+        (review) => review.user._id === user.id
+      )[0];
+      if (userReview) {
+        const otherReviews = reviewDisplay.filter(
+          (review) => review.user._id !== user.id
+        );
+        reviewDisplay = [userReview, ...otherReviews];
+      }
+    }
+    setCurrentReviews(reviewDisplay.slice(reviewOffset, endOffset));
+    setPageCount(Math.ceil(reviewDisplay.length / itemsPerPage));
+  }, [reviewOffset, itemsPerPage, reviewData, user]);
 
   const handlePageClick = (event) => {
     const newOffset = (event.selected * itemsPerPage) % reviewData.length;

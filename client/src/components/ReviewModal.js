@@ -20,8 +20,6 @@ const ReviewModal = ({
   const [reviewText, setReviewText] = useState(text || "");
   const [submitError, setSubmitError] = useState(null);
 
-  console.log(rating);
-
   const handleOnAfterClose = () => {
     setSubmitError(null);
     setReviewText(text || "");
