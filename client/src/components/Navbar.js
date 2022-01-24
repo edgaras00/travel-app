@@ -27,7 +27,7 @@ const Navbar = () => {
       <Popover.Header as="h3">{user ? user.name : ""}</Popover.Header>
       <Popover.Body>
         <div className="user-options">
-          <Link to="/" className="option-element">
+          <Link to="/orders" className="option-element">
             Orders
           </Link>
           <div className="option-element" onClick={logOut}>
@@ -53,7 +53,12 @@ const Navbar = () => {
           <span>Guided Tours</span>
         </Link>
         {user ? (
-          <OverlayTrigger trigger="click" placement="bottom" overlay={popover}>
+          <OverlayTrigger
+            trigger="click"
+            rootClose
+            placement="bottom"
+            overlay={popover}
+          >
             <span className="popover-trigger">User</span>
           </OverlayTrigger>
         ) : (

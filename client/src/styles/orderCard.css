@@ -1,0 +1,27 @@
+.order-card {
+  width: 54%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
+.order-card a {
+  color: #000;
+}
+
+.order-card a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+.order-image {
+  width: 40%;
+}
+
+.order-image img {
+  width: 100%;
+}
+
+.order-text-wrapper {
+  margin-left: 1.65em;
+}

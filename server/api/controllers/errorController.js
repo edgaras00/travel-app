@@ -29,8 +29,7 @@ const sendErrorDev = (err, res) => {
 
 const sendErrorProd = (err, res) => {
   // Only send to client when it's an operational error
-  console.log(err.statusCode, err.message);
-  console.log(Object.keys(err));
+
   if (err.isOperational) {
     res.status(err.statusCode).json({
       status: err.status,
@@ -47,6 +46,7 @@ const sendErrorProd = (err, res) => {
 };
 
 module.exports = (err, req, res, next) => {
+  console.log(err);
   err.statusCode = err.statusCode || 500;
   err.status = err.status || "Error";
   err.message = err.message;

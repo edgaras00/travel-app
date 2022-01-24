@@ -67,6 +67,22 @@ exports.getBooking = catchAsync(async (req, res, next) => {
   });
 });
 
+exports.getUserBookings = catchAsync(async (req, res, next) => {
+  const userID = req.user._id;
+
+  const bookings = await Booking.find({ user: userID }).populate(
+    "tour",
+    "name coverImage price slug"
+  );
+
+  res.status(200).json({
+    status: "Success",
+    data: {
+      bookings,
+    },
+  });
+});
+
 exports.createBooking = catchAsync(async (req, res, next) => {
   const newBooking = { ...req.body, user: req.user._id };
   const booking = await Booking.create(newBooking);

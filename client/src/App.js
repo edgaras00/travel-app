@@ -12,6 +12,7 @@ import TourDetails from "./components/TourDetails";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import CheckoutLayout from "./components/CheckoutLayout";
+import Orders from "./components/Orders";
 import NotFound from "./components/NotFound";
 import ServerError from "./components/ServerError";
 import { AppContext } from "./context/appContext";
@@ -45,6 +46,10 @@ const App = () => {
         <Route
           path="/book"
           element={user ? <CheckoutLayout /> : <Navigate to="/login" />}
+        />
+        <Route
+          path="/orders"
+          element={user ? <Orders /> : <Navigate to="/login" />}
         />
         <Route path="/error" element={<ServerError />} />
         <Route path="*" element={<NotFound />} />
