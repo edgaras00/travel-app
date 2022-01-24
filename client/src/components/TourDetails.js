@@ -98,7 +98,7 @@ const TourDetails = () => {
       <div className="tour-image-wrapper">
         {tourDetailsData && tourDetailsData.images ? (
           <div className="tour-images">
-            <Carousel showStatus={false} dynamicHeight={true}>
+            <Carousel showStatus={false} dynamicHeight={false}>
               {images}
             </Carousel>
           </div>
