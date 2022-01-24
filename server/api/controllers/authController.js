@@ -4,6 +4,7 @@ const catchAsync = require("../utils/catchAsync");
 const AppError = require("../utils/appError");
 const User = require("../models/userModel");
 
+// Function to create a token
 const signToken = async (id) => {
   const token = await jwt.sign({ id }, process.env.JWT_SECRET, {
     expiresIn: process.env.JWT_EXPIRES_IN,
@@ -11,6 +12,7 @@ const signToken = async (id) => {
   return token;
 };
 
+// Sign up a new user
 exports.signup = catchAsync(async (req, res, next) => {
   const newUser = {
     name: req.body.name,
@@ -24,8 +26,10 @@ exports.signup = catchAsync(async (req, res, next) => {
 
   const token = await signToken(user._id);
 
-  const userObject = { name: user.name, email: user.email };
+  // User object that gets sent to the client
+  const userObject = { name: user.name, email: user.email, id: user._id };
 
+  // Send JWT as a cookie
   res.cookie("jwt", token, {
     httpOnly: true,
     maxAge: process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000,
@@ -39,6 +43,7 @@ exports.signup = catchAsync(async (req, res, next) => {
   });
 });
 
+// Sign in user
 exports.login = catchAsync(async (req, res, next) => {
   // Check for user
   const user = await User.findOne({ email: req.body.email }).select(
@@ -57,8 +62,10 @@ exports.login = catchAsync(async (req, res, next) => {
 
   const token = await signToken(user._id);
 
+  // User object that gets sent to client
   const userObject = { name: user.name, email: user.email, id: user._id };
 
+  // Send JWT as a cookie
   res.cookie("jwt", token, {
     httpOnly: true,
     maxAge: process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000,
@@ -73,6 +80,7 @@ exports.login = catchAsync(async (req, res, next) => {
   });
 });
 
+// Protect route
 exports.protectRoute = catchAsync(async (req, res, next) => {
   // Check for token
   let token;
@@ -104,6 +112,7 @@ exports.protectRoute = catchAsync(async (req, res, next) => {
   next();
 });
 
+// Log out user
 exports.logout = catchAsync(async (req, res, next) => {
   // Log out user
   // "Delete" JWT cookie
@@ -113,6 +122,7 @@ exports.logout = catchAsync(async (req, res, next) => {
     .json({ status: "Success", message: "User logged out successfully" });
 });
 
+// Route restriction
 exports.restrictRouteTo = (...userRoles) => {
   return catchAsync(async (req, res, next) => {
     if (!userRoles.includes(req.user.role)) {

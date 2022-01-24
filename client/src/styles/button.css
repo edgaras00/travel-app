@@ -21,3 +21,7 @@
 .button-component:hover {
   background-color: #5092bb;
 }
+
+.delete-review {
+  margin-left: 0.8em;
+}

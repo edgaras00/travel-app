@@ -20,6 +20,8 @@ const ReviewModal = ({
   const [reviewText, setReviewText] = useState(text || "");
   const [submitError, setSubmitError] = useState(null);
 
+  console.log(rating);
+
   const handleOnAfterClose = () => {
     setSubmitError(null);
     setReviewText(text || "");
@@ -73,7 +75,6 @@ const ReviewModal = ({
         }
       }
 
-      console.log(data);
       toggleReviewUpdate();
       closeModal();
     } catch (error) {
@@ -88,6 +89,20 @@ const ReviewModal = ({
         );
         return;
       }
+    }
+  };
+
+  const handleDeleteReview = async (event) => {
+    event.preventDefault();
+    try {
+      const response = await fetch(`/api/reviews/remove/${reviewID}`, {
+        method: "DELETE",
+      });
+      console.log(response.status);
+      toggleReviewUpdate();
+      closeModal();
+    } catch (error) {
+      console.log(error);
     }
   };
 
@@ -146,11 +161,18 @@ const ReviewModal = ({
             </div>
           </div>
           <div className="submit-review-wrapper">
-            {/* <button>{isEdit ? "Edit" : "Submit"} Review</button> */}
             <Button
               text={`${isEdit ? "Edit" : "Submit"} Review`}
               size="large"
             />
+            {isEdit ? (
+              <Button
+                text="Delete Review"
+                size="large"
+                className="delete-review"
+                handleClick={handleDeleteReview}
+              />
+            ) : null}
             {submitError ? (
               <div className="review-error">{submitError}</div>
             ) : null}

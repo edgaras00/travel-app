@@ -49,7 +49,6 @@ exports.getTour = catchAsync(async (req, res, next) => {
 
 exports.createTour = catchAsync(async (req, res, next) => {
   const newTour = {
-    // _id: req.body._id ? req.body._id : mongoose.Types.ObjectId(),
     ...req.body,
   };
 

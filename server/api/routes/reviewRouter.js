@@ -23,6 +23,12 @@ router.patch(
   reviewController.userUpdateReview
 );
 
+router.delete(
+  "/remove/:reviewID",
+  authController.protectRoute,
+  reviewController.userDeleteReview
+);
+
 router
   .route("/:reviewID")
   .get(reviewController.getReview)
