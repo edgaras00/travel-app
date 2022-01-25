@@ -6,7 +6,7 @@ const tourSchema = new mongoose.Schema(
   {
     name: {
       type: String,
-      unique: true,
+      unique: [true, "Review name has to be unique"],
       required: [true, "Tour must have a name"],
       minLength: [10, "Tour name must be at least 10 characters long"],
       maxLength: [50, "Tour name cannot be longer than 50 characters"],
@@ -55,7 +55,6 @@ const tourSchema = new mongoose.Schema(
     images: [String],
     itineraryDescription: String,
     itineraries: {},
-    specialNotes: {},
     locations: [{ name: String, coordinates: [String] }],
     region: {
       type: String,
@@ -89,8 +88,17 @@ tourSchema.virtual("reviews", {
   foreignField: "tour",
 });
 
-tourSchema.methods.calculateAverage = async function () {
+tourSchema.methods.calculateAverageRating = async function () {
   const reviews = await Review.find({ tour: this._id });
+
+  // If all reviews deleted
+  if (reviews.length === 0) {
+    this.averageRating = 4;
+    this.numberOfRatings = 0;
+    this.save();
+    return;
+  }
+
   const ratingSum = reviews
     .map((review) => review.rating)
     .reduce((prev, current) => prev + current);
@@ -98,6 +106,7 @@ tourSchema.methods.calculateAverage = async function () {
   this.averageRating = average;
   this.numberOfRatings = reviews.length;
   this.save();
+  return;
 };
 
 const Tour = mongoose.model("Tour", tourSchema);

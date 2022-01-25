@@ -4,6 +4,7 @@ const slugify = require("slugify");
 const placeSchema = new mongoose.Schema({
   name: {
     type: String,
+    unique: [true, "Place name has to be unique"],
     required: [true, "A place must have a name"],
   },
   slug: String,

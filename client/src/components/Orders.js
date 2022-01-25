@@ -33,8 +33,6 @@ const Orders = () => {
     ));
   }
 
-  console.log(bookings);
-
   return (
     <div className="user-orders">
       <div className="orders-content">

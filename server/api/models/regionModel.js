@@ -5,16 +5,14 @@ const regionSchema = new mongoose.Schema({
   name: {
     type: String,
     required: [true, "A region must have a name"],
-    unique: true,
+    unique: [true, "Region name has to be unique"],
   },
   slug: String,
   description: {
     type: String,
     required: [true, "A region must have a description"],
   },
-  regionAtGlance: {
-    type: String,
-  },
+  regionAtGlance: String,
   regionCoordinates: [String],
   destinationCoordinates: [{ name: String, coordinates: [String] }],
   coverImage: {

@@ -6,8 +6,8 @@ const destinationSchema = new Schema({
   name: {
     type: String,
     required: [true, "Destination must have a name"],
-    unique: true,
-    maxLength: [50, "Destination name cannot be longer than 50 characters"],
+    unique: [true, "Destination name has to be unique"],
+    maxLength: [70, "Destination name cannot be longer than 50 characters"],
   },
   slug: String,
   description: {
@@ -16,13 +16,8 @@ const destinationSchema = new Schema({
   },
   weather: String,
   bestTimeToVisit: String,
-  currency: {
-    type: String,
-  },
-  language: {
-    type: String,
-    required: [true, "Destination must have a language"],
-  },
+  currency: String,
+  language: String,
   region: {
     type: "String",
     required: [true, "Destination must have a region"],

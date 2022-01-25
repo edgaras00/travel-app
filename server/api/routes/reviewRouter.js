@@ -1,21 +1,38 @@
 const express = require("express");
-const router = express.Router();
+const router = express.Router({ mergeParams: true });
 const reviewController = require("../controllers/reviewController");
 const authController = require("../controllers/authController");
 
 router
   .route("/")
   .get(
-    // authController.protectRoute,
-    // authController.restrictRouteTo("admin", "guide"),
+    authController.protectRoute,
+    authController.restrictRouteTo("admin"),
     reviewController.getAllReviews
   )
-  .post(authController.protectRoute, reviewController.submitReview);
-// .post(
-//   authController.protectRoute,
-//   authController.restrictRouteTo("user"),
-//   reviewController.createReview
-// );
+  .post(
+    authController.protectRoute,
+    authController.restrictRouteTo("user"),
+    reviewController.submitReview
+  );
+
+router
+  .route("/:reviewID")
+  .get(
+    authController.protectRoute,
+    authController.restrictRouteTo("admin"),
+    reviewController.getReview
+  )
+  .patch(
+    authController.protectRoute,
+    authController.restrictRouteTo("admin"),
+    reviewController.updateReview
+  )
+  .delete(
+    authController.protectRoute,
+    authController.restrictRouteTo("admin"),
+    reviewController.deleteReview
+  );
 
 router.patch(
   "/update/:reviewID",
@@ -28,19 +45,5 @@ router.delete(
   authController.protectRoute,
   reviewController.userDeleteReview
 );
-
-router
-  .route("/:reviewID")
-  .get(reviewController.getReview)
-  .patch(
-    authController.protectRoute,
-    authController.restrictRouteTo("admin", "user"),
-    reviewController.updateReview
-  )
-  .delete(
-    authController.protectRoute,
-    authController.restrictRouteTo("admin", "user"),
-    reviewController.deleteReview
-  );
 
 module.exports = router;

@@ -6,6 +6,12 @@ const router = express.Router({ mergeParams: true });
 
 router.post("/book/", authController.protectRoute, bookingController.bookTour);
 
+router.get(
+  "/user",
+  authController.protectRoute,
+  bookingController.getUserBookings
+);
+
 router
   .route("/")
   .get(
@@ -13,13 +19,11 @@ router
     authController.restrictRouteTo("admin"),
     bookingController.getAllBookings
   )
-  .post(authController.protectRoute, bookingController.createBooking);
-
-router.get(
-  "/user",
-  authController.protectRoute,
-  bookingController.getUserBookings
-);
+  .post(
+    authController.protectRoute,
+    authController.restrictRouteTo("admin"),
+    bookingController.createBooking
+  );
 
 router
   .route("/:bookingID")

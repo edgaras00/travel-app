@@ -22,7 +22,10 @@ const customOrderSchema = new mongoose.Schema({
   destination: String,
   travelingWithin: String,
   numberOfTravelers: Number,
-  comments: String,
+  comments: {
+    type: String,
+    maxLength: 5000,
+  },
   travelInterests: [String],
   date: {
     type: Date,

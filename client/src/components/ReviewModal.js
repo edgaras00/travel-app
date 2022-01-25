@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
 import Rating from "@mui/material/Rating";
 import Button from "./Button";
@@ -18,7 +18,13 @@ const ReviewModal = ({
   const [rating, setRating] = useState(prevRating || 5);
   const [reviewHeader, setReviewHeader] = useState(prevHeader || "");
   const [reviewText, setReviewText] = useState(text || "");
+
   const [submitError, setSubmitError] = useState(null);
+
+  useEffect(() => {
+    setReviewText(text);
+    setReviewHeader(prevHeader);
+  }, [text, prevHeader]);
 
   const handleOnAfterClose = () => {
     setSubmitError(null);
@@ -30,7 +36,7 @@ const ReviewModal = ({
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    if (!reviewHeader || !reviewText) {
+    if (!reviewHeader || !reviewText || !rating) {
       setSubmitError("Please fill in all of the fields.");
       return;
     }
@@ -57,8 +63,8 @@ const ReviewModal = ({
         requestOptions
       );
       const data = await response.json();
-
-      if (response.status !== 201) {
+      if (response.status !== 201 && response.status !== 200) {
+        console.log("Hello");
         if (
           response.status === 400 &&
           data.message.startsWith("User has already")
@@ -71,8 +77,8 @@ const ReviewModal = ({
         ) {
           throw new Error("Not purchased");
         }
+        throw new Error("Server error");
       }
-
       toggleReviewUpdate();
       closeModal();
     } catch (error) {
@@ -87,6 +93,10 @@ const ReviewModal = ({
         );
         return;
       }
+      if (error.message === "Server error") {
+        setSubmitError("Something went wrong. Try again later.");
+        return;
+      }
     }
   };
 
@@ -96,11 +106,18 @@ const ReviewModal = ({
       const response = await fetch(`/api/reviews/remove/${reviewID}`, {
         method: "DELETE",
       });
-      console.log(response.status);
+
+      if (response.status !== 204) {
+        throw new Error("Server error");
+      }
+
       toggleReviewUpdate();
       closeModal();
     } catch (error) {
       console.log(error);
+      if (error.message === "Server error") {
+        setSubmitError("Something went wrong. Try again later.");
+      }
     }
   };
 

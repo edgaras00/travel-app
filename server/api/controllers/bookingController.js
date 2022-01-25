@@ -4,36 +4,6 @@ const APIFeatures = require("../utils/apiFeatures");
 const AppError = require("../utils/appError");
 const catchAsync = require("../utils/catchAsync");
 
-exports.bookTour = catchAsync(async (req, res, next) => {
-  const { id, amount, tourID, description } = req.body;
-  const userID = req.user._id;
-
-  const payment = await stripe.paymentIntents.create({
-    amount,
-    currency: "USD",
-    description,
-    payment_method: id,
-    confirm: true,
-  });
-  let booking;
-  if (payment.status === "succeeded") {
-    booking = await Booking.create({
-      price: payment.amount,
-      date: new Date(payment.created * 1000),
-      user: userID,
-      tour: tourID,
-    });
-  }
-
-  res.status(201).json({
-    status: "Success",
-    message: "Payment successful!",
-    data: {
-      booking,
-    },
-  });
-});
-
 exports.getAllBookings = catchAsync(async (req, res, next) => {
   const features = new APIFeatures(Booking.find(), req.query)
     .filter()
@@ -63,22 +33,6 @@ exports.getBooking = catchAsync(async (req, res, next) => {
     status: "Success",
     data: {
       booking,
-    },
-  });
-});
-
-exports.getUserBookings = catchAsync(async (req, res, next) => {
-  const userID = req.user._id;
-
-  const bookings = await Booking.find({ user: userID }).populate(
-    "tour",
-    "name coverImage price slug"
-  );
-
-  res.status(200).json({
-    status: "Success",
-    data: {
-      bookings,
     },
   });
 });
@@ -124,5 +78,51 @@ exports.deleteBooking = catchAsync(async (req, res, next) => {
   res.status(204).json({
     status: "Success",
     message: "Successful deletion",
+  });
+});
+
+exports.bookTour = catchAsync(async (req, res, next) => {
+  const { id, amount, tourID, description } = req.body;
+  const userID = req.user._id;
+
+  const payment = await stripe.paymentIntents.create({
+    amount,
+    currency: "USD",
+    description,
+    payment_method: id,
+    confirm: true,
+  });
+  let booking;
+  if (payment.status === "succeeded") {
+    booking = await Booking.create({
+      price: payment.amount,
+      date: new Date(payment.created * 1000),
+      user: userID,
+      tour: tourID,
+    });
+  }
+
+  res.status(201).json({
+    status: "Success",
+    message: "Payment successful!",
+    data: {
+      booking,
+    },
+  });
+});
+
+exports.getUserBookings = catchAsync(async (req, res, next) => {
+  const userID = req.user._id;
+
+  const bookings = await Booking.find({ user: userID }).populate(
+    "tour",
+    "name coverImage price slug"
+  );
+
+  res.status(200).json({
+    status: "Success",
+    data: {
+      bookings,
+    },
   });
 });

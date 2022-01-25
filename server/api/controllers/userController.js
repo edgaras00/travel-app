@@ -65,34 +65,3 @@ exports.deleteUser = catchAsync(async (req, res, next) => {
     message: "Successful deletion",
   });
 });
-
-exports.modifyCart = catchAsync(async (req, res, next) => {
-  let user;
-
-  if (req.body.action === "clear") {
-    user = await User.findByIdAndUpdate(
-      req.user._id,
-      { $set: { cart: [] } },
-      { new: true }
-    );
-  } else if (req.body.action === "add") {
-    user = await User.findByIdAndUpdate(
-      req.user._id,
-      { $push: { cart: req.body.tourID } },
-      { new: true }
-    );
-  } else if (req.body.action === "remove") {
-    user = await User.findByIdAndUpdate(
-      req.user._id,
-      { $pull: { cart: req.body.tourID } },
-      { new: true }
-    );
-  }
-
-  res.status(200).json({
-    status: "Success",
-    data: {
-      user,
-    },
-  });
-});
