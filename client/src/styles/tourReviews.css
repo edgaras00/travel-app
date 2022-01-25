@@ -23,7 +23,6 @@
 }
 
 .pagination-container {
-  background-color: rgb(231, 231, 231);
   width: 30%;
   height: 55px;
   display: flex;
@@ -41,7 +40,6 @@
 }
 
 .pagination-link {
-  background-color: rgb(231, 231, 231);
   position: relative;
   display: block;
   padding: 0.375rem 0.75rem;
@@ -49,12 +47,17 @@
   font-weight: 800;
 }
 
+.pagination-link:hover {
+  color: #37637e;
+}
+
 .active-page:focus {
   outline: none;
 }
 
 .active-page-link {
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: rgb(231, 231, 231);
   color: #37637e;
   outline: none;
 }
@@ -77,4 +80,14 @@
 .next-link {
   color: #457b9d;
   font-size: 1.6em;
+}
+
+.previous-link:hover,
+.next-link:hover {
+  color: #37637e;
+}
+
+.pagination-break {
+  color: #457b9d;
+  font-size: 1.5em;
 }

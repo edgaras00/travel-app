@@ -20,6 +20,11 @@
   align-items: center;
 }
 
+.loading {
+  min-height: 300px;
+  justify-content: center;
+}
+
 .no-orders {
   display: flex;
   justify-content: center;

@@ -7,7 +7,6 @@ import "../styles/descriptionCard.css";
 
 const DescriptionCard = ({ image, title, text, isTour, price, tourID }) => {
   const { openFormModal, user } = useContext(AppContext);
-
   const navigate = useNavigate();
 
   const handleTourBooking = () => {

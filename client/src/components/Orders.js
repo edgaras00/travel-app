@@ -5,13 +5,16 @@ import "../styles/orders.css";
 
 const Orders = () => {
   const [bookings, setBookings] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const getBookings = async () => {
       try {
+        setIsLoading(true);
         const response = await fetch("/api/bookings/user");
         const data = await response.json();
         setBookings(data.data.bookings);
+        setIsLoading(false);
       } catch (error) {
         console.log(error);
       }
@@ -35,22 +38,28 @@ const Orders = () => {
 
   return (
     <div className="user-orders">
-      <div className="orders-content">
-        <div className="orders-header">
-          <h2>{bookings.length > 0 ? "Orders" : "You Have No Bookings!"}</h2>
+      {isLoading ? (
+        <div className="orders-content loading">
+          <h2>Loading...</h2>
         </div>
-        <div className="orders-container">
-          {bookings.length > 0 ? (
-            bookingCards
-          ) : (
-            <div className="no-orders">
-              <Link to="/tours" className="check-tours">
-                <h3>Check Out Our Tours!</h3>
-              </Link>
-            </div>
-          )}
+      ) : (
+        <div className="orders-content">
+          <div className="orders-header">
+            <h2>{bookings.length > 0 ? "Orders" : "You Have No Bookings!"}</h2>
+          </div>
+          <div className="orders-container">
+            {bookings.length > 0 ? (
+              bookingCards
+            ) : (
+              <div className="no-orders">
+                <Link to="/tours" className="check-tours">
+                  <h3>Check Out Our Tours!</h3>
+                </Link>
+              </div>
+            )}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };

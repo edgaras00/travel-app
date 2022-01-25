@@ -9,7 +9,7 @@ const tourSchema = new mongoose.Schema(
       unique: [true, "Review name has to be unique"],
       required: [true, "Tour must have a name"],
       minLength: [10, "Tour name must be at least 10 characters long"],
-      maxLength: [50, "Tour name cannot be longer than 50 characters"],
+      maxLength: [100, "Tour name cannot be longer than 50 characters"],
     },
     slug: String,
     price: {

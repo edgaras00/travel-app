@@ -19,7 +19,7 @@ const TourReviews = ({
   const { user } = useContext(AppContext);
   const navigate = useNavigate();
 
-  const itemsPerPage = 1;
+  const itemsPerPage = 5;
 
   useEffect(() => {
     const endOffset = reviewOffset + itemsPerPage;
