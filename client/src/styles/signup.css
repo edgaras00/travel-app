@@ -1,6 +1,6 @@
 .signup-container {
   min-height: 100vh;
-  padding: 5em 0;
+  padding: 5rem 0;
   width: 100%;
   display: flex;
   align-items: center;
@@ -17,7 +17,7 @@
   justify-content: center;
   width: 44%;
   height: 650px;
-  margin-bottom: 5em;
+  margin-bottom: 5rem;
 }
 
 .signup-button-container {
@@ -27,8 +27,8 @@
 }
 
 .signup-error {
-  margin-left: 1.2em;
+  margin-left: 1.2rem;
   color: rgb(204, 49, 49);
-  font-size: 1.03em;
+  font-size: 1.03rem;
   font-weight: 600;
 }

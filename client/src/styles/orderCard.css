@@ -2,7 +2,7 @@
   width: 54%;
   display: flex;
   align-items: center;
-  margin-bottom: 3em;
+  margin-bottom: 3rem;
 }
 
 .order-card a {
@@ -23,6 +23,6 @@
 }
 
 .order-text-wrapper {
-  margin-left: 1.65em;
+  margin-left: 1.65rem;
   width: 60%;
 }

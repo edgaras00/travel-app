@@ -32,15 +32,12 @@ const LocationMap = ({ center, zoom, coordinates, pathname }) => {
     <div className="map">
       <MapContainer
         center={center}
-        // center={["36.00", "-95"]}
         zoom={zoom}
         scrollWheelZoom={false}
         style={{ height: "450px", width: "100%" }}
       >
         <ChangeView center={center} zoom={14} />
         <TileLayer
-          //   attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          //   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="https://carto.com/">carto.com</a> contributors'
           url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png"
         />

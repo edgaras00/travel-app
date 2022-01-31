@@ -2,12 +2,12 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 8em;
-  padding-left: 5em;
+  margin-top: 8rem;
+  padding-left: 5rem;
 }
 
 .review-container-header {
-  margin-bottom: 3em;
+  margin-bottom: 3rem;
 }
 
 .review-cards {
@@ -15,11 +15,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 }
 
 .review-summary {
-  margin-bottom: 3em;
+  margin-bottom: 3rem;
 }
 
 .pagination-container {
@@ -36,7 +36,7 @@
 
 .pagination-page {
   display: inline-block;
-  margin-right: 0.9em;
+  margin-right: 0.9rem;
 }
 
 .pagination-link {
@@ -68,18 +68,18 @@
 }
 
 .previous {
-  margin-left: 5em;
-  margin-right: 1.5em;
+  margin-left: 5rem;
+  margin-right: 1.5rem;
 }
 
 .next {
-  margin-left: 1.5em;
+  margin-left: 1.5rem;
 }
 
 .previous-link,
 .next-link {
   color: #457b9d;
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
 
 .previous-link:hover,
@@ -89,5 +89,5 @@
 
 .pagination-break {
   color: #457b9d;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }

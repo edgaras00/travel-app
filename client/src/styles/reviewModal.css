@@ -1,12 +1,12 @@
 .review-form-wrapper {
-  padding-bottom: 2em;
+  padding-bottom: 2rem;
 }
 
 .review-modal-header {
   height: 50px;
   background-color: #457b9d;
   color: #fff;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   font-weight: 700;
   cursor: pointer;
   display: flex;
@@ -15,7 +15,7 @@
 }
 
 .review-modal-header span {
-  margin-right: 2em;
+  margin-right: 2rem;
 }
 
 .review-modal-header:hover {
@@ -29,32 +29,32 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 0 1.4em;
+  padding: 0 1.4rem;
 }
 
 .submit-rating {
   width: 100%;
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 
 .review-inputs {
   width: 100%;
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 
 .review-header-input {
-  margin-bottom: 1.1em;
+  margin-bottom: 1.1rem;
 }
 
 .review-header-input input {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   width: 35%;
-  padding-left: 0.8em;
+  padding-left: 0.8rem;
 }
 
 .submit-review-wrapper {
   width: 100%;
-  margin-top: 0.8em;
+  margin-top: 0.8rem;
   display: flex;
   align-items: center;
 }
@@ -64,14 +64,14 @@
   background-color: #457b9d;
   color: #fff;
   cursor: pointer;
-  padding: 0.7em 1.1em;
+  padding: 0.7rem 1.1rem;
   border-radius: 5px;
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 
 .review-error {
-  margin-left: 1.2em;
-  font-size: 1.03em;
+  margin-left: 1.2rem;
+  font-size: 1.03rem;
   font-weight: 600;
   color: rgb(204, 49, 49);
 }
@@ -84,9 +84,9 @@
   width: 99%;
   height: 200px;
   resize: none;
-  padding-left: 0.8em;
-  padding-top: 0.8em;
-  font-size: 1.15em;
+  padding-left: 0.8rem;
+  padding-top: 0.8rem;
+  font-size: 1.15rem;
 }
 
 .deleteReview {

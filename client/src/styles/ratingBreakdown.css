@@ -1,7 +1,6 @@
 .rating-breakdown {
   display: flex;
-  /* align-items: center; */
-  font-size: 1.2em;
+  font-size: 1.2rem;
   justify-content: space-evenly;
 }
 
@@ -10,5 +9,5 @@
 }
 
 .rating-value {
-  margin-right: 0.3em;
+  margin-right: 0.3rem;
 }

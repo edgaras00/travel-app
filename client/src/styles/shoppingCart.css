@@ -12,19 +12,19 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 5em 0;
+  margin: 5rem 0;
 }
 
 .cart-header {
-  margin-top: 1.8em;
-  margin-left: 2em;
-  margin-bottom: 0.8em;
+  margin-top: 1.8rem;
+  margin-left: 2rem;
+  margin-bottom: 0.8rem;
 }
 
 .cart-hr {
   width: 94%;
   height: 1px;
   background-color: grey;
-  margin-bottom: 1.2em;
+  margin-bottom: 1.2rem;
   align-self: center;
 }

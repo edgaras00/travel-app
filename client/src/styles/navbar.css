@@ -20,7 +20,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
 
 .links {
@@ -29,7 +29,7 @@ a {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 
 .popover-trigger {
@@ -53,6 +53,6 @@ a {
 
 .option-element {
   color: #fff;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   cursor: pointer;
 }

@@ -20,31 +20,31 @@
 
 .signup-form {
   height: 500px;
-  padding: 1em 0;
+  padding: 1rem 0;
 }
 
 .login-header {
   width: 70%;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 .login-labels {
   width: 70%;
-  margin-bottom: 0.5em;
-  font-size: 1.1em;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 
 .login-form input,
 .signup-form input {
   width: 70%;
-  height: 2.9em;
-  margin-bottom: 2em;
-  padding-left: 0.5em;
+  height: 2.9rem;
+  margin-bottom: 2rem;
+  padding-left: 0.5rem;
 }
 
 #password-input {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
 }
 
 .login-button-container {
@@ -54,8 +54,8 @@
 }
 
 .login-error {
-  margin-left: 1.2em;
-  font-size: 1.03em;
+  margin-left: 1.2rem;
+  font-size: 1.03rem;
   font-weight: 600;
   color: rgb(204, 49, 49);
 }
@@ -83,7 +83,7 @@
 
 .link-signup {
   width: 68%;
-  margin-top: 1.1em;
+  margin-top: 1.1rem;
 }
 
 .link-signup a {
@@ -101,5 +101,5 @@
 
 .pass-length {
   width: 70%;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
 }

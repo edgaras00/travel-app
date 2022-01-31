@@ -1,17 +1,17 @@
 .review-item {
   width: 20%;
-  padding: 2em 10px;
+  padding: 2rem 10px;
   quotes: "\201c""\201d";
-  margin-right: 2em;
+  margin-right: 2rem;
 }
 
 .review-item:before {
   color: #e0d5c5;
   content: open-quote;
-  font-size: 16em;
-  line-height: 0.08em;
-  /* margin-right: 0.25em; */
-  vertical-align: -0.3em;
+  font-size: 16rem;
+  line-height: 0.08rem;
+  /* margin-right: 0.25rem; */
+  vertical-align: -0.3rem;
   position: relative;
   top: 68px;
   right: 60px;
@@ -20,21 +20,15 @@
 
 .review-item-text {
   width: 90%;
-  font-size: 1.6em;
-  margin-bottom: 1.1em;
+  font-size: 1.6rem;
+  margin-bottom: 1.1rem;
   position: relative;
 }
 
 .author {
-  font-size: 1.4em;
+  font-size: 1.4rem;
 }
 
 .author span {
   color: #cca468;
 }
-
-/* .review-item p {
-  display: inline;
-  position: relative;
-  width: 20px;
-} */

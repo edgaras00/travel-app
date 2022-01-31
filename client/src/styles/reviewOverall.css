@@ -12,13 +12,13 @@
 }
 
 .average-rating {
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: bold;
 }
 
 .number-reviews {
-  margin-top: 0.09em;
-  margin-bottom: 1.35em;
+  margin-top: 0.09rem;
+  margin-bottom: 1.35rem;
 }
 
 .total-review-breakdown {

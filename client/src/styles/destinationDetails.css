@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 8em;
+  margin-bottom: 8rem;
 }
 
 .single-card,
@@ -14,11 +14,11 @@
 .six-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 2em;
-  row-gap: 2em;
+  column-gap: 2rem;
+  row-gap: 2rem;
 }
 
 .activity-container {
   width: 94%;
-  margin: 5em 0;
+  margin: 5rem 0;
 }

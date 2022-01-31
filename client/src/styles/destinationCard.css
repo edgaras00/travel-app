@@ -6,7 +6,7 @@
   align-items: center;
   color: #fff;
   font-weight: 800;
-  font-size: 1.6em;
+  font-size: 1.6rem;
   background-size: cover;
   text-align: center;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -15,11 +15,11 @@
 .medium-card {
   height: 280px;
   width: 400px;
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .large-card {
   height: 380px;
   width: 530px;
-  font-size: 2.3em;
+  font-size: 2.3rem;
 }

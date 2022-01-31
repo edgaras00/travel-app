@@ -7,15 +7,15 @@
 }
 
 .button-large {
-  padding: 0.7em 1.3em;
+  padding: 0.7rem 1.3rem;
   border-radius: 7px;
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 
 .button-medium {
-  padding: 0.65em 1em;
+  padding: 0.65rem 1rem;
   border-radius: 7px;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .button-component:hover {
@@ -23,5 +23,5 @@
 }
 
 .delete-review {
-  margin-left: 0.8em;
+  margin-left: 0.8rem;
 }

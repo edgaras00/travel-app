@@ -72,8 +72,6 @@ exports.submitReview = catchAsync(async (req, res, next) => {
   const { tour } = req.body;
   const user = req.user._id;
 
-  console.log(tour, user);
-
   // Check if booking exists
   const booking = await Booking.find({ user, tour });
   if (booking.length === 0) {

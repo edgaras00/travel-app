@@ -22,19 +22,19 @@
 
 .buyer-info-input {
   display: inline-block;
-  margin-right: 1em;
+  margin-right: 1rem;
 }
 
 .address-first-input {
   display: inline-block;
-  margin-right: 1.8em;
-  margin-top: 1.2em;
+  margin-right: 1.8rem;
+  margin-top: 1.2rem;
 }
 
 .buyer-info-input input {
   width: 210px;
   height: 60px;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   padding-left: 10px;
   border-radius: 5px;
 }
@@ -42,7 +42,7 @@
 .address-first-input input {
   width: 285px;
   height: 60px;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   padding-left: 10px;
   border-radius: 5px;
 }

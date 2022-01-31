@@ -9,12 +9,12 @@
 
 .glance-item {
   font-weight: bold;
-  font-size: 1.105em;
+  font-size: 1.105rem;
 }
 
 .glance-text,
 .header-wrapper {
   width: 90%;
-  margin-left: 1.2em;
-  margin-bottom: 0.5em;
+  margin-left: 1.2rem;
+  margin-bottom: 0.5rem;
 }
