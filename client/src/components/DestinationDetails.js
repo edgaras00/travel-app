@@ -148,9 +148,9 @@ const DestinationDetails = () => {
           destinationID={destinationID}
         />
       </div>
-      <h2 className="destination-list-header">
-        Popular {destinationData ? destinationData.name : ""} Destinations
-      </h2>
+      {locations.length > 0 ? (
+        <h2>Popular {destinationData.name} Destinations</h2>
+      ) : null}
       <div className={`destination-card-container ${cardContainerClass}`}>
         {locations}
       </div>

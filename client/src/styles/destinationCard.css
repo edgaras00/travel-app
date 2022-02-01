@@ -1,6 +1,6 @@
 .destination-card {
   height: 200px;
-  width: 300px;
+  width: 288px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,7 @@
 
 .medium-card {
   height: 280px;
-  width: 400px;
+  width: 370px;
   font-size: 2rem;
 }
 

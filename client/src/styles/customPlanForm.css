@@ -29,6 +29,10 @@
   cursor: pointer;
 }
 
+.close-form-modal:hover {
+  color: rgb(221, 221, 221);
+}
+
 .custom-plan-form {
   width: 92%;
 }
