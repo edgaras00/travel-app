@@ -31,8 +31,13 @@ exports.getTour = catchAsync(async (req, res, next) => {
         "name header text rating date -tour"
       )
     : await Tour.findOne({ slug: id }).populate(
-        "reviews",
-        "name header text rating date -tour"
+        // "reviews",
+        // "name header text rating date -tour",
+        {
+          path: "reviews",
+          select: "name header text rating date -tour",
+          options: { sort: { date: -1 } },
+        }
       );
 
   if (!tour) {
