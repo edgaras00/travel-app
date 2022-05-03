@@ -40,3 +40,14 @@
   color: rgb(223, 223, 223);
   border: 3px solid rgb(223, 223, 223);
 }
+
+@media (max-width: 1000px) {
+  .update-card {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+
+  .update-button {
+    height: 60px;
+  }
+}
