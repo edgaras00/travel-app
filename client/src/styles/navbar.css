@@ -56,3 +56,56 @@ a {
   font-size: 1.1rem;
   cursor: pointer;
 }
+
+.toggle-button {
+  position: absolute;
+  top: 2.4rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+  .links {
+    display: none;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-container.active {
+    height: 250px;
+  }
+
+  .logo {
+    width: 180px;
+    margin-left: 10px;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .links.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .links.active a {
+    margin-bottom: 10px;
+  }
+}

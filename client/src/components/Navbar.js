@@ -1,15 +1,14 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Popover from "react-bootstrap/Popover";
-
-// import UserPopover from "./UserPopover";
 import { AppContext } from "../context/appContext";
 
 import "../styles/navbar.css";
 
 const Navbar = () => {
   const { user, setUser } = useContext(AppContext);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const logOut = async () => {
     localStorage.removeItem("user");
@@ -20,6 +19,10 @@ const Navbar = () => {
     } catch (error) {
       console.log(error);
     }
+  };
+
+  const toggleNav = () => {
+    setIsMenuOpen((prev) => !prev);
   };
 
   const popover = (
@@ -39,13 +42,18 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar-container">
+    <div className={`navbar-container ${isMenuOpen ? "active" : null}`}>
       <div className="logo">
         <Link to="/">
           <h3>Paradise Travel</h3>
         </Link>
       </div>
-      <div className="links">
+      <a className="toggle-button" onClick={toggleNav}>
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </a>
+      <div className={`links ${isMenuOpen ? "active" : null}`}>
         <Link to="/destinations">
           <span>Destinations</span>
         </Link>
