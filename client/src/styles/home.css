@@ -115,3 +115,15 @@
   justify-content: center;
   margin-top: 10rem;
 }
+
+@media (max-width: 1000px) {
+  .upper-text {
+    text-align: center;
+    font-size: 3.2rem;
+  }
+
+  .lower-text {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+}
