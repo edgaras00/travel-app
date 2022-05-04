@@ -92,3 +92,40 @@
   font-size: 1.05rem;
   margin-bottom: 2rem;
 }
+
+@media (max-width: 1000px) {
+  .footer {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .company-description-text {
+    display: none;
+  }
+
+  .footer-links {
+    width: 80%;
+  }
+
+  .company-description {
+    width: 80%;
+  }
+
+  .social-media-links {
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .newsletter-offer {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .footer form {
+    display: flex;
+  }
+
+  .footer button {
+    width: 40%;
+  }
+}
