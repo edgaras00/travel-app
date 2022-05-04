@@ -23,3 +23,10 @@
   width: 530px;
   font-size: 2.3rem;
 }
+
+@media (max-width: 1000px) {
+  .destination-card {
+    width: 350px;
+    height: 220px;
+  }
+}
