@@ -18,3 +18,9 @@
   justify-items: center;
   row-gap: 4rem;
 }
+
+@media (max-width: 1000px) {
+  .tour-card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
