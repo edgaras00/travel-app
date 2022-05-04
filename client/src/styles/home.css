@@ -137,4 +137,23 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .offer-container {
+    height: auto;
+  }
+
+  .favorites-header h2,
+  .updates-header h2 {
+    font-size: 2rem;
+  }
+
+  .favorites-header p {
+    font-size: 1.1rem;
+  }
+
+  .traveler-favorites-container {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
 }

@@ -34,3 +34,27 @@
 .partners-grid img {
   width: 160px;
 }
+
+@media (max-width: 1000px) {
+  .partners-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .partners-grid img {
+    width: 96px;
+  }
+
+  .partners-header {
+    margin-bottom: 2rem;
+  }
+
+  .partners-header h2 {
+    margin-bottom: 1.2rem;
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  .partners-header p {
+    font-size: 1.2rem;
+  }
+}

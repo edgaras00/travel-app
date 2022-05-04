@@ -32,3 +32,24 @@
 .author span {
   color: #cca468;
 }
+
+@media (max-width: 1000px) {
+  .review-item {
+    width: 80%;
+  }
+
+  .review-item-text {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .author {
+    font-size: 1.1rem;
+  }
+
+  .review-item:before {
+    font-size: 12rem;
+    right: 30px;
+    top: 78px;
+  }
+}
