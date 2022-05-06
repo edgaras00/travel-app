@@ -32,3 +32,9 @@
   font-size: 1.03rem;
   font-weight: 600;
 }
+
+@media (max-width: 1000px) {
+  .signup-form {
+    width: 80%;
+  }
+}
