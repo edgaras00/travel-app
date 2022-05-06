@@ -25,7 +25,9 @@
 }
 
 @media (max-width: 1000px) {
-  .destination-card {
+  .destination-card,
+  .large-card,
+  .medium-card {
     width: 350px;
     height: 220px;
   }

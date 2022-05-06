@@ -91,3 +91,13 @@
   color: #457b9d;
   font-size: 1.5rem;
 }
+
+@media (max-width: 1000px) {
+  .review-container-header {
+    text-align: center;
+  }
+
+  .review-cards {
+    width: 90%;
+  }
+}

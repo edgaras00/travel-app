@@ -63,6 +63,9 @@ const ReviewOverall = ({
         </div>
       </div>
       <div className="total-review-breakdown">{breakdownElements}</div>
+      <div className="review-button-container-responsive">
+        <Button text="Write a Review" size="medium" handleClick={openModal} />
+      </div>
     </div>
   );
 };

@@ -40,3 +40,9 @@
 .edit-review:hover {
   background-color: #5092bb;
 }
+
+@media (max-width: 1000px) {
+  .review-card {
+    width: 96%;
+  }
+}

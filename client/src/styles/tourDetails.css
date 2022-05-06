@@ -57,3 +57,30 @@
 .tour-images img {
   max-height: 500px;
 }
+
+@media (max-width: 1000px) {
+  .tour-map {
+    width: 90%;
+    padding-left: 2rem;
+  }
+
+  .tour-map h2 {
+    text-align: center;
+  }
+
+  .itinerary {
+    padding-left: 2rem;
+  }
+
+  .itinerary h2 {
+    text-align: center;
+  }
+
+  .itinerary-description-wrapper {
+    width: 90%;
+  }
+
+  .itinerary-accordion {
+    width: 90%;
+  }
+}

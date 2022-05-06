@@ -64,3 +64,37 @@
   column-gap: 2rem;
   row-gap: 2rem;
 }
+
+@media (max-width: 1000px) {
+  .destination-at-glance {
+    flex-direction: column;
+  }
+
+  .region-description-text {
+    width: 100%;
+    align-items: center;
+  }
+
+  .region-description-text h2 {
+    text-align: center;
+  }
+
+  .region-map {
+    width: 100%;
+  }
+
+  .four-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .single-card,
+  .three-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .destination-list-header {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+}
