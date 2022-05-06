@@ -152,3 +152,51 @@
   font-weight: 600;
   margin-left: 1.3rem;
 }
+
+@media (max-width: 1000px) {
+  .plan-header,
+  .contact-detail-header {
+    text-align: center;
+  }
+
+  .contact-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .contact-input {
+    padding-left: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .travel-plans h4 {
+    text-align: center;
+  }
+
+  .travel-plans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dropdowns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .interest-header {
+    text-align: center;
+  }
+
+  .checkbox-wrapper {
+    display: block;
+  }
+
+  .plan-submit-button {
+    display: flex;
+    justify-content: center;
+  }
+}
