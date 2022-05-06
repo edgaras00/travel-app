@@ -100,3 +100,17 @@
   font-size: 1.03em;
   font-weight: 600;
 }
+
+@media (max-width: 1000px) {
+  .checkout-form {
+    height: auto;
+    width: 80%;
+    padding: 2rem 0;
+  }
+
+  .form-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

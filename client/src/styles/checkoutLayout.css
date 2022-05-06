@@ -6,3 +6,10 @@
   align-items: center;
   background-color: #f7f7f7;
 }
+
+@media (max-width: 1000px) {
+  .checkout-layout {
+    height: auto;
+    padding: 2rem 0;
+  }
+}
