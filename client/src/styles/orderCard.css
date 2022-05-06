@@ -26,3 +26,15 @@
   margin-left: 1.65rem;
   width: 60%;
 }
+
+@media (max-width: 1000px) {
+  .order-card {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .order-image {
+    width: 80%;
+    margin-bottom: 0.5rem;
+  }
+}
