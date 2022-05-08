@@ -96,6 +96,7 @@ a {
 
   .toggle-button {
     display: flex;
+    cursor: pointer;
   }
 
   .links.active {

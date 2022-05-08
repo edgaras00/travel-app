@@ -48,11 +48,11 @@ const Navbar = () => {
           <h3>Paradise Travel</h3>
         </Link>
       </div>
-      <a className="toggle-button" onClick={toggleNav}>
+      <span className="toggle-button" onClick={toggleNav}>
         <span className="bar"></span>
         <span className="bar"></span>
         <span className="bar"></span>
-      </a>
+      </span>
       <div className={`links ${isMenuOpen ? "active" : null}`}>
         <Link to="/destinations">
           <span>Destinations</span>
