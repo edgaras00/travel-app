@@ -29,7 +29,11 @@ const Login = () => {
         },
         body: JSON.stringify(loginBody),
       };
-      const response = await fetch("/api/users/login", requestOptions);
+      // const response = await fetch("/api/users/login", requestOptions);
+      const response = await fetch(
+        "https://travelparadise.herokuapp.com/api/users/login",
+        requestOptions
+      );
 
       if (response.status !== 200) {
         if (response.status === 401) {

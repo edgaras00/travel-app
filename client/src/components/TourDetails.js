@@ -19,8 +19,11 @@ const TourDetails = () => {
   useEffect(() => {
     const fetchTourDetails = async () => {
       try {
+        // const response = await fetch(
+        //   `http://localhost:5000/api/tours/${tourID}`
+        // );
         const response = await fetch(
-          `http://localhost:5000/api/tours/${tourID}`
+          `https://travelparadise.herokuapp.com/api/tours/${tourID}`
         );
 
         if (response.status !== 200) {

@@ -14,7 +14,10 @@ const Navbar = () => {
     localStorage.removeItem("user");
     setUser(null);
     try {
-      const response = await fetch("/api/users/logout");
+      // const response = await fetch("/api/users/logout");
+      const response = await fetch(
+        "https://travelparadise.herokuapp.com/api/users/logout"
+      );
       await response.json();
     } catch (error) {
       console.log(error);

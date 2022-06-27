@@ -36,7 +36,10 @@ const CustomPlanForm = () => {
 
   const handleOnAfterOpen = async () => {
     try {
-      const response = await fetch("/api/destinations");
+      // const response = await fetch("/api/destinations");
+      const response = await fetch(
+        "https://travelparadise.herokuapp.com/api/destinations"
+      );
 
       if (response.status !== 200) {
         throw new Error("Could not get destination data");
@@ -100,7 +103,11 @@ const CustomPlanForm = () => {
         body: JSON.stringify(requestBody),
       };
 
-      const response = await fetch("/api/custom", requestOptions);
+      // const response = await fetch("/api/custom", requestOptions);
+      const response = await fetch(
+        "https://travelparadise.herokuapp.com/api/custom",
+        requestOptions
+      );
 
       if (response.status !== 201) {
         throw new Error("Something went wrong. Unable to submit data.");

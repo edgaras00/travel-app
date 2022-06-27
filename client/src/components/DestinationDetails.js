@@ -20,7 +20,8 @@ const DestinationDetails = () => {
     const fetchDestinationData = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/destinations/${destinationID}`
+          // `http://localhost:5000/api/destinations/${destinationID}`
+          `https://travelparadise.herokuapp.com/api/destinations/${destinationID}`
         );
 
         if (response.status !== 200) {

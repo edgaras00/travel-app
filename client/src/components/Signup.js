@@ -44,7 +44,11 @@ const Signup = () => {
         },
         body: JSON.stringify(signupBody),
       };
-      const response = await fetch("/api/users/signup", requestOptions);
+      // const response = await fetch("/api/users/signup", requestOptions);
+      const response = await fetch(
+        "https://travelparadise.herokuapp.com/api/users/signup",
+        requestOptions
+      );
       const data = await response.json();
 
       if (response.status !== 201) {

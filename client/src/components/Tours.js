@@ -12,7 +12,10 @@ const Tours = () => {
   useEffect(() => {
     const fetchTourData = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/tours");
+        // const response = await fetch("http://localhost:5000/api/tours");
+        const response = await fetch(
+          `https://travelparadise.herokuapp.com/api/tours`
+        );
 
         if (response.status !== 200) {
           throw new Error("Resource not found");
