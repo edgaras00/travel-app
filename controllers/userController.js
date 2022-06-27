@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const User = require("../models/userModel");
-const APIFeatures = require("../utils/APIFeatures");
+const APIFeatures = require("../utils/apiFeatures");
 const catchAsync = require("../utils/catchAsync");
 
 exports.getAllUsers = catchAsync(async (req, res, next) => {
