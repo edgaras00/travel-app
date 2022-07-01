@@ -1,4 +1,7 @@
 # Paradise Travel
+https://travelparadise.herokuapp.com/
+<br/>
+<br/>
 <img src="docs/main.png" width="800px">
 A full-stack web application for a fictional travel agency.
 <br/>
