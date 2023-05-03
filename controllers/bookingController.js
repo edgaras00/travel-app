@@ -7,7 +7,7 @@ const AppError = require("../utils/appError");
 const catchAsync = require("../utils/catchAsync");
 
 exports.getAllBookings = catchAsync(async (req, res, next) => {
-  // Build qeury
+  // Build query
   const features = new APIFeatures(Booking.find(), req.query)
     .filter()
     .sort()
