@@ -3,47 +3,26 @@ const router = express.Router({ mergeParams: true });
 const reviewController = require("../controllers/reviewController");
 const authController = require("../controllers/authController");
 
+// Protected and restricted routes
+router.use(authController.protectRoute);
+
+// Only users can post tour reviews
 router
   .route("/")
-  .get(
-    authController.protectRoute,
-    authController.restrictRouteTo("admin"),
-    reviewController.getAllReviews
-  )
-  .post(
-    authController.protectRoute,
-    authController.restrictRouteTo("user"),
-    reviewController.submitReview
-  );
+  .get(authController.restrictRouteTo("admin"), reviewController.getAllReviews)
+  .post(authController.restrictRouteTo("user"), reviewController.submitReview);
 
 router
   .route("/:reviewID")
-  .get(
-    authController.protectRoute,
-    authController.restrictRouteTo("admin"),
-    reviewController.getReview
-  )
-  .patch(
-    authController.protectRoute,
-    authController.restrictRouteTo("admin"),
-    reviewController.updateReview
-  )
+  .get(authController.restrictRouteTo("admin"), reviewController.getReview)
+  .patch(authController.restrictRouteTo("admin"), reviewController.updateReview)
   .delete(
-    authController.protectRoute,
     authController.restrictRouteTo("admin"),
     reviewController.deleteReview
   );
 
-router.patch(
-  "/update/:reviewID",
-  authController.protectRoute,
-  reviewController.userUpdateReview
-);
+router.patch("/update/:reviewID", reviewController.userUpdateReview);
 
-router.delete(
-  "/remove/:reviewID",
-  authController.protectRoute,
-  reviewController.userDeleteReview
-);
+router.delete("/remove/:reviewID", reviewController.userDeleteReview);
 
 module.exports = router;
