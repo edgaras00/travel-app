@@ -5,15 +5,19 @@ module.exports = class APIFeatures {
   }
 
   filter() {
-    const queryParams = { ...this.queryString };
+    const queryObject = { ...this.queryString };
+    // Filter fields
     const ignoredFields = ["page", "limit", "sort", "fields"];
-    ignoredFields.forEach((field) => delete queryParams[field]);
+    ignoredFields.forEach((field) => delete queryObject[field]);
 
-    const queryStr = JSON.stringify(queryParams).replace(
+    // Create MongoDB operators from the query string
+    // gt --> $gt | gte --> $gte
+    const queryStr = JSON.stringify(queryObject).replace(
       /\b(gt|gte|lt|lte)\b/g,
       (match) => `$${match}`
     );
 
+    // Set query
     this.query = this.query.find(JSON.parse(queryStr));
 
     return this;
@@ -31,6 +35,8 @@ module.exports = class APIFeatures {
     if (this.queryString.fields) {
       const selectedFields = this.queryString.fields.split(",").join(" ");
       this.query = this.query.select(selectedFields);
+    } else {
+      this.query = this.query.select("-__v");
     }
     return this;
   }

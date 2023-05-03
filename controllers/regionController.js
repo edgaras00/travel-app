@@ -1,17 +1,20 @@
 const Region = require("../models/regionModel");
 const APIFeatures = require("../utils/apiFeatures");
 const AppError = require("../utils/appError");
+
 const catchAsync = require("../utils/catchAsync");
-const mongoose = require("mongoose");
 const validateID = require("../utils/validateID");
 
 exports.getAllRegions = catchAsync(async (req, res, next) => {
+  // Build query
   const features = new APIFeatures(Region.find(), req.query)
     .filter()
     .limitFields()
     .paginate();
 
+  // Execute Query
   const regions = await features.query;
+
   res.status(200).json({
     status: "Success",
     results: regions.length,
@@ -41,7 +44,6 @@ exports.getRegion = catchAsync(async (req, res, next) => {
 
 exports.createRegion = catchAsync(async (req, res, next) => {
   const newRegion = {
-    // _id: req.body._id ? req.body._id : mongoose.Types.ObjectId(),
     ...req.body,
   };
   const region = await Region.create(newRegion);

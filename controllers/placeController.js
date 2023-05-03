@@ -1,15 +1,18 @@
 const Place = require("../models/placeModel");
 const APIFeatures = require("../utils/apiFeatures");
 const AppError = require("../utils/appError");
+
 const catchAsync = require("../utils/catchAsync");
 const validateID = require("../utils/validateID");
 
 exports.getAllPlaces = catchAsync(async (req, res, next) => {
+  // Build query
   const features = new APIFeatures(Place.find(), req.query)
     .filter()
     .limitFields()
     .paginate();
 
+  // Execute query
   const places = await features.query;
 
   res.status(200).json({

@@ -34,6 +34,7 @@ const reviewSchema = new Schema({
   },
 });
 
+// Populate user and tour fields with their names
 reviewSchema.pre(/^find/, function (next) {
   this.populate("user tour", "name");
   next();

@@ -100,10 +100,10 @@ const CheckoutForm = ({ tourData }) => {
           }),
         };
 
-        // const response = await fetch("/api/bookings/book", requestOptions);
-        const response = await fetch(
-          "https://travelparadise.herokuapp.com/api/bookings/book"
-        );
+        const response = await fetch("/api/bookings/book", requestOptions);
+        // const response = await fetch(
+        //   "https://travelparadise.herokuapp.com/api/bookings/book"
+        // );
 
         if (response.status !== 201) {
           throw new Error("Something went wrong. Try again later.");

@@ -20,6 +20,7 @@ const placeSchema = new mongoose.Schema({
   thingsToDo: [{ name: String, text: String }],
 });
 
+// Slugify place name
 placeSchema.pre("save", function (next) {
   this.slug = slugify(this.name, { lower: true });
   next();

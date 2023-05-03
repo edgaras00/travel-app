@@ -1,14 +1,18 @@
 const CustomOrder = require("../models/customOrderModel");
+
 const APIFeatures = require("../utils/apiFeatures");
 const catchAsync = require("../utils/catchAsync");
 const AppError = require("../utils/appError");
 
 exports.getAllCustomOrders = catchAsync(async (req, res, next) => {
+  // Build query
   const features = new APIFeatures(CustomOrder.find(), req.query)
     .filter()
     .sort()
     .limitFields()
     .paginate();
+
+  // Execute query
   const customOrders = await features.query;
 
   res.status(200).json({

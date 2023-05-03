@@ -11,10 +11,10 @@ const Orders = () => {
     const getBookings = async () => {
       try {
         setIsLoading(true);
-        // const response = await fetch("/api/bookings/user");
-        const response = await fetch(
-          "https://travelparadise.herokuapp.com/api/bookings/user"
-        );
+        const response = await fetch("/api/bookings/user");
+        // const response = await fetch(
+        //   "https://travelparadise.herokuapp.com/api/bookings/user"
+        // );
         const data = await response.json();
         setBookings(data.data.bookings);
         setIsLoading(false);

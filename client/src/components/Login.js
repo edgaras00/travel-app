@@ -31,7 +31,8 @@ const Login = () => {
       };
       // const response = await fetch("/api/users/login", requestOptions);
       const response = await fetch(
-        "https://travelparadise.herokuapp.com/api/users/login",
+        `/api/users/login`,
+        // "https://travelparadise.herokuapp.com/api/users/login",
         requestOptions
       );
 

@@ -1,16 +1,20 @@
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
+
 const Booking = require("../models/bookingModel");
+
 const APIFeatures = require("../utils/apiFeatures");
 const AppError = require("../utils/appError");
 const catchAsync = require("../utils/catchAsync");
 
 exports.getAllBookings = catchAsync(async (req, res, next) => {
+  // Build qeury
   const features = new APIFeatures(Booking.find(), req.query)
     .filter()
     .sort()
     .limitFields()
     .paginate();
 
+  // Execute query
   const bookings = await features.query.populate("user tour", "name");
 
   res.status(200).json({
@@ -85,6 +89,7 @@ exports.bookTour = catchAsync(async (req, res, next) => {
   const { id, amount, tourID, description } = req.body;
   const userID = req.user._id;
 
+  // Create a new paymentIntent object
   const payment = await stripe.paymentIntents.create({
     amount,
     currency: "USD",

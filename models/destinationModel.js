@@ -45,6 +45,7 @@ const destinationSchema = new Schema({
   tours: [{ type: Schema.Types.ObjectId, ref: "Tour" }],
 });
 
+// Slugify name
 destinationSchema.pre("save", function (next) {
   this.slug = slugify(this.name, { lower: true });
   next();

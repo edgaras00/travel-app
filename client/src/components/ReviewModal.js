@@ -58,16 +58,16 @@ const ReviewModal = ({
         body: JSON.stringify(requestBody),
       };
 
-      // const response = await fetch(
-      //   `/api/reviews/${isEdit ? "update/" + reviewID : ""}`,
-      //   requestOptions
-      // );
       const response = await fetch(
-        `https://travelparadise.herokuapp.com/api/reviews/${
-          isEdit ? "update/" + reviewID : ""
-        }`,
+        `/api/reviews/${isEdit ? "update/" + reviewID : ""}`,
         requestOptions
       );
+      // const response = await fetch(
+      //   `https://travelparadise.herokuapp.com/api/reviews/${
+      //     isEdit ? "update/" + reviewID : ""
+      //   }`,
+      //   requestOptions
+      // );
       const data = await response.json();
       if (response.status !== 201 && response.status !== 200) {
         console.log("Hello");
@@ -109,15 +109,15 @@ const ReviewModal = ({
   const handleDeleteReview = async (event) => {
     event.preventDefault();
     try {
-      // const response = await fetch(`/api/reviews/remove/${reviewID}`, {
-      //   method: "DELETE",
-      // });
-      const response = await fetch(
-        `https://travelparadise.herokuapp.com/api/reviews/remove/${reviewID}`,
-        {
-          method: "DELETE",
-        }
-      );
+      const response = await fetch(`/api/reviews/remove/${reviewID}`, {
+        method: "DELETE",
+      });
+      // const response = await fetch(
+      //   `https://travelparadise.herokuapp.com/api/reviews/remove/${reviewID}`,
+      //   {
+      //     method: "DELETE",
+      //   }
+      // );
 
       if (response.status !== 204) {
         throw new Error("Server error");

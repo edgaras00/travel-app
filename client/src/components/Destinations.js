@@ -23,8 +23,8 @@ const Destinations = () => {
     const fetchRegionData = async () => {
       try {
         const response = await fetch(
-          // `http://localhost:5000/api/regions/${regionID}`
-          `https://travelparadise.herokuapp.com/api/regions/${regionID}`
+          `/api/regions/${regionID}`
+          // `https://travelparadise.herokuapp.com/api/regions/${regionID}`
         );
 
         if (response.status !== 200) {
@@ -41,8 +41,8 @@ const Destinations = () => {
     const fetchDestinations = async () => {
       try {
         const response = await fetch(
-          // `http://localhost:5000/api/destinations?region=${regionStr}`
-          `https://travelparadise.herokuapp.com/api/destinations?region=${regionStr}`
+          `/api/destinations?region=${regionStr}`
+          // `https://travelparadise.herokuapp.com/api/destinations?region=${regionStr}`
         );
         const data = await response.json();
         setDestinationData(data.data.destinations);

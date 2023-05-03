@@ -21,6 +21,7 @@ const regionSchema = new mongoose.Schema({
   },
 });
 
+// Slugify region name
 regionSchema.pre("save", function (next) {
   this.slug = slugify(this.name, { lower: true });
   next();

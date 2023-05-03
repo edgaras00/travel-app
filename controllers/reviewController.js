@@ -1,17 +1,20 @@
 const Review = require("../models/reviewModel");
 const Booking = require("../models/bookingModel");
 const Tour = require("../models/tourModel");
+
 const APIFeatures = require("../utils/apiFeatures");
 const AppError = require("../utils/appError");
 const catchAsync = require("../utils/catchAsync");
 
 exports.getAllReviews = catchAsync(async (req, res, next) => {
+  // Buld query
   const features = new APIFeatures(Review.find(), req.query)
     .filter()
     .sort()
     .limitFields()
     .paginate();
 
+  // Execute query
   const reviews = await features.query;
 
   res.status(200).json({

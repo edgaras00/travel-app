@@ -1,15 +1,44 @@
 const { promisify } = require("util");
 const jwt = require("jsonwebtoken");
+
 const catchAsync = require("../utils/catchAsync");
 const AppError = require("../utils/appError");
 const User = require("../models/userModel");
 
 // Function to create a token
-const signToken = async (id) => {
-  const token = await jwt.sign({ id }, process.env.JWT_SECRET, {
+const signToken = (id) => {
+  const token = jwt.sign({ id }, process.env.JWT_SECRET, {
     expiresIn: process.env.JWT_EXPIRES_IN,
   });
   return token;
+};
+
+const createAndSendToken = (user, statusCode, res) => {
+  // Function that creates a token and sends it as a cookie to client
+
+  const token = signToken(user.id);
+
+  // Cookie options
+  const cookieOptions = {
+    httpOnly: true,
+    expires: new Date(
+      Date.now() + process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000
+    ),
+  };
+  // Make it secure only in production
+  if (process.env.NODE_ENV === "production") cookieOptions.secure = true;
+
+  // Send JWT as a cookie
+  res.cookie("jwt", token, cookieOptions);
+
+  // Send response
+  res.status(statusCode).json({
+    status: "success",
+    token,
+    data: {
+      user,
+    },
+  });
 };
 
 // Sign up a new user
@@ -24,23 +53,13 @@ exports.signup = catchAsync(async (req, res, next) => {
   // Hide password in output
   user.password = undefined;
 
-  const token = await signToken(user._id);
+  const token = signToken(user._id);
 
   // User object that gets sent to the client
   const userObject = { name: user.name, email: user.email, id: user._id };
 
   // Send JWT as a cookie
-  res.cookie("jwt", token, {
-    httpOnly: true,
-    maxAge: process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000,
-  });
-  res.status(201).json({
-    status: "Success",
-    token,
-    data: {
-      user: userObject,
-    },
-  });
+  createAndSendToken(userObject, 201, res);
 });
 
 // Sign in user
@@ -60,24 +79,10 @@ exports.login = catchAsync(async (req, res, next) => {
   // Hide password
   user.password = undefined;
 
-  const token = await signToken(user._id);
-
   // User object that gets sent to client
   const userObject = { name: user.name, email: user.email, id: user._id };
 
-  // Send JWT as a cookie
-  res.cookie("jwt", token, {
-    httpOnly: true,
-    maxAge: process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000,
-  });
-
-  res.status(200).json({
-    status: "Success",
-    token,
-    data: {
-      user: userObject,
-    },
-  });
+  createAndSendToken(userObject, 201, res);
 });
 
 // Protect route
@@ -124,10 +129,13 @@ exports.logout = catchAsync(async (req, res, next) => {
 
 // Route restriction
 exports.restrictRouteTo = (...userRoles) => {
-  return catchAsync(async (req, res, next) => {
+  return (req, res, next) => {
+    // userRoles = ["admin", "user"]
     if (!userRoles.includes(req.user.role)) {
-      return next(new AppError("Not authorized", 401));
+      return next(
+        new AppError("You do not have permission to perform this action", 401)
+      );
     }
     next();
-  });
+  };
 };

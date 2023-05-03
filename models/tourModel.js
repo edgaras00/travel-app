@@ -74,14 +74,18 @@ const tourSchema = new mongoose.Schema(
       ],
     },
   },
+  // Include virtual properties in the output (both JSON and Object)
+  // Virtual properties are not stored in DB but are defined in the schema
   { toJSON: { virtuals: true }, toObject: { virtuals: true } }
 );
 
+// Slugify tour name
 tourSchema.pre("save", function (next) {
   this.slug = slugify(this.name, { lower: true });
   next();
 });
 
+// Define virtual review property
 tourSchema.virtual("reviews", {
   ref: "Review",
   localField: "_id",
@@ -99,6 +103,7 @@ tourSchema.methods.calculateAverageRating = async function () {
     return;
   }
 
+  // Calculate average
   const ratingSum = reviews
     .map((review) => review.rating)
     .reduce((prev, current) => prev + current);
