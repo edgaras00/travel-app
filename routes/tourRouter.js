@@ -4,27 +4,19 @@ const authController = require("../controllers/authController");
 
 const router = express.Router();
 
-router
-  .route("/")
-  .get(tourController.getAllTours)
-  .post(
-    authController.protectRoute,
-    authController.restrictRouteTo("admin"),
-    tourController.createTour
-  );
+// Public routes
+router.get("/", tourController.getAllTours);
+router.get("/:tourID", tourController.getTour);
+
+// Protected and restricted routes
+router.use(authController.protectRoute);
+router.use(authController.restrictRouteTo("admin"));
+
+router.post("/", tourController.createTour);
 
 router
   .route("/:tourID")
-  .get(tourController.getTour)
-  .patch(
-    authController.protectRoute,
-    authController.restrictRouteTo("admin"),
-    tourController.updateTour
-  )
-  .delete(
-    authController.protectRoute,
-    authController.restrictRouteTo("admin"),
-    tourController.deleteTour
-  );
+  .patch(tourController.updateTour)
+  .delete(tourController.deleteTour);
 
 module.exports = router;

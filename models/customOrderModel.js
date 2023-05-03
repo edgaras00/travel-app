@@ -5,10 +5,12 @@ const customOrderSchema = new mongoose.Schema({
   firstName: {
     type: String,
     required: [true, "Custom order must have a first name"],
+    trim: true,
   },
   lastName: {
     type: String,
     required: [true, "Custom order must have a last name"],
+    trim: true,
   },
   phone: {
     type: Number,
@@ -19,13 +21,18 @@ const customOrderSchema = new mongoose.Schema({
     type: String,
     required: [true, "Custom order must have an email"],
     validate: [isEmail, "Invalid email"],
+    trim: true,
   },
-  destination: String,
+  destination: {
+    type: String,
+    trim: true,
+  },
   travelingWithin: String,
   numberOfTravelers: Number,
   comments: {
     type: String,
     maxLength: 5000,
+    trim: true,
   },
   travelInterests: [String],
   date: {

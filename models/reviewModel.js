@@ -6,11 +6,13 @@ const reviewSchema = new Schema({
     type: String,
     required: [true, "Review must have a header"],
     maxLength: [100, "Review header cannot be longer than 100 characters"],
+    trim: true,
   },
   text: {
     type: String,
     required: [true, "Review must have text"],
     maxLength: [4000, "Review cannot be longer than 4000 characters"],
+    trim: true,
   },
   rating: {
     type: Number,
@@ -34,6 +36,7 @@ const reviewSchema = new Schema({
   },
 });
 
+// Query middleware
 // Populate user and tour fields with their names
 reviewSchema.pre(/^find/, function (next) {
   this.populate("user tour", "name");

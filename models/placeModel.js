@@ -6,6 +6,7 @@ const placeSchema = new mongoose.Schema({
     type: String,
     unique: [true, "Place name has to be unique"],
     required: [true, "A place must have a name"],
+    trim: true,
   },
   slug: String,
   description: {

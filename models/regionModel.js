@@ -6,6 +6,7 @@ const regionSchema = new mongoose.Schema({
     type: String,
     required: [true, "A region must have a name"],
     unique: [true, "Region name has to be unique"],
+    trim: true,
   },
   slug: String,
   description: {

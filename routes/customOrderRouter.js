@@ -4,31 +4,20 @@ const customOrderController = require("../controllers/customOrderController");
 
 const router = express.Router();
 
-router
-  .route("/")
-  .get(
-    authController.protectRoute,
-    authController.restrictRouteTo("admin"),
-    customOrderController.getAllCustomOrders
-  )
-  .post(customOrderController.createCustomOrder);
+// Protect all routes middleware
+router.use(authController.protectRoute);
+
+router.post("/", customOrderController.createCustomOrder);
+
+// Restrict routes to "admin"
+router.use(authController.restrictRouteTo("admin"));
+
+router.get("/", customOrderController.getAllCustomOrders);
 
 router
   .route("/:customOrderID")
-  .get(
-    authController.protectRoute,
-    authController.restrictRouteTo("admin"),
-    customOrderController.getCustomOrder
-  )
-  .patch(
-    authController.protectRoute,
-    authController.restrictRouteTo("admin"),
-    customOrderController.updateCustomOrder
-  )
-  .delete(
-    authController.protectRoute,
-    authController.restrictRouteTo("admin"),
-    customOrderController.deleteCustomOrder
-  );
+  .get(customOrderController.getCustomOrder)
+  .patch(customOrderController.updateCustomOrder)
+  .delete(customOrderController.deleteCustomOrder);
 
 module.exports = router;

@@ -8,6 +8,10 @@ router.post("/signup", authController.signup);
 router.post("/login", authController.login);
 router.get("/logout", authController.logout);
 
+// Protect all routes after this middleware
+router.use(authController.protectRoute);
+router.use(authController.restrictRouteTo("admin"));
+
 router.get(
   "/",
   authController.protectRoute,
@@ -17,20 +21,8 @@ router.get(
 
 router
   .route("/:userID")
-  .get(
-    authController.protectRoute,
-    authController.restrictRouteTo("admin"),
-    userController.getUser
-  )
-  .patch(
-    authController.protectRoute,
-    authController.restrictRouteTo("admin"),
-    userController.updateUser
-  )
-  .delete(
-    authController.protectRoute,
-    authController.restrictRouteTo("admin"),
-    userController.deleteUser
-  );
+  .get(userController.getUser)
+  .patch(userController.updateUser)
+  .delete(userController.deleteUser);
 
 module.exports = router;

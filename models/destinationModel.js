@@ -8,18 +8,20 @@ const destinationSchema = new Schema({
     required: [true, "Destination must have a name"],
     unique: [true, "Destination name has to be unique"],
     maxLength: [70, "Destination name cannot be longer than 50 characters"],
+    trim: true,
   },
   slug: String,
   description: {
     type: String,
     required: [true, "Destination must have a description"],
+    trim: true,
   },
   weather: String,
   bestTimeToVisit: String,
   currency: String,
   language: String,
   region: {
-    type: "String",
+    type: String,
     required: [true, "Destination must have a region"],
     enum: [
       "USA",

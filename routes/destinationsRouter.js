@@ -4,27 +4,19 @@ const authController = require("../controllers/authController");
 
 const router = express.Router();
 
-router
-  .route("/")
-  .get(destinationController.getAllDestinations)
-  .post(
-    authController.protectRoute,
-    authController.restrictRouteTo("admin"),
-    destinationController.createDestination
-  );
+// Public routes
+router.get("/", destinationController.getAllDestinations);
+router.get("/:destinationID", destinationController.getDestination);
+
+// Protect and restrict routes middleware
+router.use(authController.protectRoute);
+router.use(authController.restrictRouteTo("admin"));
+
+router.post("/", destinationController.createDestination);
 
 router
   .route("/:destinationID")
-  .get(destinationController.getDestination)
-  .patch(
-    authController.protectRoute,
-    authController.restrictRouteTo("admin"),
-    destinationController.updateDestination
-  )
-  .delete(
-    authController.protectRoute,
-    authController.restrictRouteTo("admin"),
-    destinationController.deleteDestination
-  );
+  .patch(destinationController.updateDestination)
+  .delete(destinationController.deleteDestination);
 
 module.exports = router;
