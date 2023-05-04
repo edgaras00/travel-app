@@ -1,6 +1,10 @@
 import { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AppContext } from "../../context/appContext";
+
+import { AppError } from "../../utils/AppError";
+import { setRequestOptions } from "../../utils/setReqOptions";
+
 import "../../styles/login.css";
 
 const Login = () => {
@@ -20,44 +24,24 @@ const Login = () => {
     }
 
     try {
-      const loginBody = { email, password };
-      const requestOptions = {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(loginBody),
-      };
-      // const response = await fetch("/api/users/login", requestOptions);
-      const response = await fetch(
-        `/api/users/login`,
-        // "https://travelparadise.herokuapp.com/api/users/login",
-        requestOptions
-      );
+      const requestOptions = setRequestOptions("POST", { email, password });
+      const response = await fetch("/api/users/login", requestOptions);
+      // const response = await fetch(
+      //   "https://travelparadise.herokuapp.com/api/users/login",
+      //   requestOptions
+      // );
+      const data = await response.json();
 
       if (response.status !== 200) {
-        if (response.status === 401) {
-          throw new Error("Auth error");
-        }
-        throw new Error("Server error");
+        throw new AppError(data.message, response.status);
       }
 
-      const data = await response.json();
-      console.log(data);
       setUser(data.data.user);
       localStorage.setItem("user", JSON.stringify(data.data.user));
       navigate(-1);
     } catch (error) {
-      console.log(error);
-      if (error.message === "Auth error") {
-        setLoginError("Wrong email or password.");
-        return;
-      }
-      if (error.message === "Server error") {
-        setLoginError("Something went wrong. Try again later.");
-        return;
-      }
+      console.error(error);
+      setLoginError(error.message);
     }
   };
 
@@ -90,7 +74,7 @@ const Login = () => {
           onChange={(event) => setPasswordInput(event.target.value)}
         />
         <div className="login-button-container">
-          <button>LOGIN</button>
+          <button>LOG IN</button>
           {loginError ? <div className="login-error">{loginError}</div> : null}
         </div>
         <div className="link-signup">

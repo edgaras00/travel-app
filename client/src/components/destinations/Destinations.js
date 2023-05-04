@@ -38,7 +38,7 @@ const Destinations = () => {
         const data = await response.json();
         setRegionData(data.data.region);
       } catch (error) {
-        console.log(error);
+        console.error(error);
         errorRedirect(error.message, navigate);
       }
     };

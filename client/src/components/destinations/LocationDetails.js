@@ -30,7 +30,7 @@ const LocationDetails = () => {
         const data = await response.json();
         setLocationData(data.data.place);
       } catch (error) {
-        console.log(error);
+        console.error(error);
         errorRedirect(error.message, navigate);
       }
     };

@@ -5,6 +5,7 @@ import DestinationCard from "./DestinationCard";
 import DescriptionCard from "./DescriptionCard";
 
 import errorRedirect from "../../utils/errorRedirect";
+import { AppError } from "../../utils/AppError";
 
 import "../../styles/destinationRegions.css";
 
@@ -20,13 +21,13 @@ const DestinationRegions = () => {
         // );
 
         if (response.status !== 200) {
-          throw new Error("Server error");
+          throw new AppError("Server error", response.status);
         }
 
         const data = await response.json();
         setRegionData(data.data.regions);
       } catch (error) {
-        console.log(error);
+        console.error(error);
         errorRedirect(error.message, navigate);
       }
     };

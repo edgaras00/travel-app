@@ -1,6 +1,10 @@
 import { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AppContext } from "../../context/appContext";
+
+import { AppError } from "../../utils/AppError";
+import { setRequestOptions } from "../../utils/setReqOptions";
+
 import "../../styles/signup.css";
 
 const Signup = () => {
@@ -35,15 +39,11 @@ const Signup = () => {
     }
 
     try {
-      const signupBody = { name, email, password };
-      const requestOptions = {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(signupBody),
-      };
+      const requestOptions = setRequestOptions("POST", {
+        name,
+        email,
+        password,
+      });
       const response = await fetch("/api/users/signup", requestOptions);
       // const response = await fetch(
       //   "https://travelparadise.herokuapp.com/api/users/signup",
@@ -52,29 +52,23 @@ const Signup = () => {
       const data = await response.json();
 
       if (response.status !== 201) {
-        if (
-          response.status === 400 &&
-          data.message.startsWith("Duplicate field")
-        ) {
-          throw new Error("Duplicate field");
-        }
-        throw new Error("Server error");
+        throw new AppError(data.message, response.status);
       }
 
-      console.log(data);
       setUser(data.data.user);
       navigate("/");
       localStorage.setItem("user", JSON.stringify(data.data.user));
     } catch (error) {
-      console.log(error);
-      if (error.message === "Duplicate field") {
-        setSignupError("User with this email already exists.");
+      console.error(error);
+      if (error.statusCode === 500) {
+        setSignupError("Something went wrong. Please try again later.");
         return;
       }
-      if (error.message === "Server error") {
-        setSignupError("Something went wrong. Try again later.");
+      if (error.message.startsWith("Duplicate field")) {
+        setSignupError("User with this email already exists");
         return;
       }
+      setSignupError(error.message);
     }
   };
 

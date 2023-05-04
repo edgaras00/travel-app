@@ -119,7 +119,7 @@ const CheckoutForm = ({ tourData }) => {
           navigate("/");
         }
       } catch (error) {
-        console.log(error);
+        console.error(error);
         setSubmitError(error.message);
         setIsProcessing(false);
         return;

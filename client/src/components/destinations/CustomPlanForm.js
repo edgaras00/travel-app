@@ -5,6 +5,9 @@ import Modal from "react-modal";
 import Select from "react-select";
 import Button from "../Button";
 
+import { AppError } from "../../utils/AppError";
+import { setRequestOptions } from "../../utils/setReqOptions";
+
 import "../../styles/customPlanForm.css";
 
 const CustomPlanForm = () => {
@@ -42,21 +45,21 @@ const CustomPlanForm = () => {
       // const response = await fetch(
       //   "https://travelparadise.herokuapp.com/api/destinations"
       // );
+      const data = await response.json();
 
       if (response.status !== 200) {
-        throw new Error("Could not get destination data");
+        throw new AppError("Could not get destination data", response.status);
       }
 
-      const data = await response.json();
       setDestinationData(data.data.destinations);
     } catch (error) {
-      console.log(error);
+      console.error(error);
       setDestinationData([]);
       return;
     }
   };
 
-  const hadnleOnAfterClose = () => {
+  const handleOnAfterClose = () => {
     setSubmitError(null);
   };
 
@@ -96,29 +99,25 @@ const CustomPlanForm = () => {
         travelInterests: interests,
       };
 
-      const requestOptions = {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(requestBody),
-      };
+      const requestOptions = setRequestOptons("POST", requestBody);
 
-      // const response = await fetch("/api/custom", requestOptions);
-      const response = await fetch(
-        "https://travelparadise.herokuapp.com/api/custom",
-        requestOptions
-      );
+      const response = await fetch("/api/custom", requestOptions);
+      // const response = await fetch(
+      //   "https://travelparadise.herokuapp.com/api/custom",
+      //   requestOptions
+      // );
 
       if (response.status !== 201) {
-        throw new Error("Something went wrong. Unable to submit data.");
+        throw new AppError(
+          "Something went wrong. Unable to submit data.",
+          response.status
+        );
       }
 
       await response.json();
       closeFormModal();
     } catch (error) {
-      console.log(error);
+      console.error(error);
       setSubmitError(error.message);
     }
   };
@@ -144,7 +143,7 @@ const CustomPlanForm = () => {
       onRequestClose={closeFormModal}
       overlayClassName="form-overlay"
       onAfterOpen={handleOnAfterOpen}
-      onAfterClose={hadnleOnAfterClose}
+      onAfterClose={handleOnAfterClose}
       style={customStyles}
     >
       <div className="custom-plan-form-wrapper">
