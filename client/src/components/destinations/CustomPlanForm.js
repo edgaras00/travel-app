@@ -46,7 +46,6 @@ const CustomPlanForm = () => {
       //   "https://travelparadise.herokuapp.com/api/destinations"
       // );
       const data = await response.json();
-
       if (response.status !== 200) {
         throw new AppError("Could not get destination data", response.status);
       }
@@ -107,6 +106,9 @@ const CustomPlanForm = () => {
       //   requestOptions
       // );
 
+      const data = await response.json();
+      console.log(data.status);
+
       if (response.status !== 201) {
         throw new AppError(
           "Something went wrong. Unable to submit data.",
@@ -114,7 +116,6 @@ const CustomPlanForm = () => {
         );
       }
 
-      await response.json();
       closeFormModal();
     } catch (error) {
       console.error(error);
@@ -133,8 +134,9 @@ const CustomPlanForm = () => {
       transform: "translate(-50%, -50%)",
       right: "auto",
       borderRadius: 0,
-      height: "100vh",
+      height: "90vh",
       padding: 0,
+      paddingBottom: "30px",
     },
   };
   return (
@@ -220,6 +222,7 @@ const CustomPlanForm = () => {
                 className="destination-select"
               />
             </div>
+            <label>Travelers</label>
             <input
               type="number"
               name="travelers"

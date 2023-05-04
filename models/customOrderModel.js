@@ -13,7 +13,7 @@ const customOrderSchema = new mongoose.Schema({
     trim: true,
   },
   phone: {
-    type: Number,
+    type: String,
     required: [true, "Custom order must have a phone number"],
     validate: [isMobilePhone, "Invalid phone number"],
   },
@@ -25,7 +25,6 @@ const customOrderSchema = new mongoose.Schema({
   },
   destination: {
     type: String,
-    trim: true,
   },
   travelingWithin: String,
   numberOfTravelers: Number,

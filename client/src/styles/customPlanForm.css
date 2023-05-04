@@ -110,7 +110,7 @@
 .travel-plans textarea {
   width: 94%;
   resize: none;
-  height: 45px;
+  height: 100px;
   line-height: 45px;
   border-radius: 5px;
   font-size: 1.1rem;
