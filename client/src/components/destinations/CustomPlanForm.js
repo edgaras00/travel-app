@@ -222,10 +222,11 @@ const CustomPlanForm = () => {
                 className="destination-select"
               />
             </div>
-            <label>Travelers</label>
+            <label htmlFor="travelers">Travelers</label>
             <input
               type="number"
               name="travelers"
+              id="travelers"
               value={travelers}
               onChange={(event) => setTravelers(event.target.value)}
               placeholder="Travelers"

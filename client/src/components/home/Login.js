@@ -55,20 +55,22 @@ const Login = () => {
           <h4>LOG INTO YOUR ACCOUNT</h4>
         </div>
         <div className="login-labels">
-          <label>Email address</label>
+          <label htmlFor="email">Email address</label>
         </div>
         <input
           type="email"
           name="emailInput"
+          id="email"
           value={emailInput}
           onChange={(event) => setEmailInput(event.target.value)}
         />
         <div className="login-labels">
-          <label>Password</label>
+          <label htmlFor="password">Password</label>
         </div>
         <input
           type="password"
           name="passwordInput"
+          id="password"
           value={passwordInput}
           minLength={6}
           onChange={(event) => setPasswordInput(event.target.value)}

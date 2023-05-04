@@ -84,29 +84,32 @@ const Signup = () => {
           <h4>CREATE YOUR ACCOUNT</h4>
         </div>
         <div className="login-labels">
-          <label>Name</label>
+          <label htmlFor="name">Name</label>
         </div>
         <input
           type="text"
           name="name"
+          id="name"
           value={name}
           onChange={(event) => setName(event.target.value)}
         />
         <div className="login-labels">
-          <label>Email address</label>
+          <label htmlFor="email">Email address</label>
         </div>
         <input
           type="email"
           name="email"
+          id="email"
           value={email}
           onChange={(event) => setEmail(event.target.value)}
         />
         <div className="login-labels">
-          <label>Password</label>
+          <label htmlFor="password">Password</label>
         </div>
         <input
           type="password"
           name="password"
+          id="password"
           value={password}
           id="password-input"
           minLength={6}
@@ -120,11 +123,12 @@ const Signup = () => {
           </span>
         </div>
         <div className="login-labels">
-          <label>Confirm password</label>
+          <label htmlFor="confirmPassword">Confirm password</label>
         </div>
         <input
           type="password"
           name="confirmPassword"
+          id="confirmPassword"
           value={confirmPassword}
           minLength={6}
           onChange={(event) => setConfirmPassword(event.target.value)}
