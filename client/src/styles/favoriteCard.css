@@ -38,6 +38,10 @@
   justify-content: center;
 }
 
+.favorites-text {
+  font-size: 0.9rem;
+}
+
 .favorites-title {
   font-size: 2rem;
 }

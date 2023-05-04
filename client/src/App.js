@@ -1,21 +1,34 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import Home from "./components/Home";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import DestinationRegions from "./components/DestinationRegions";
-import Destinations from "./components/Destinations";
-import DestinationDetails from "./components/DestinationDetails";
-import LocationDetails from "./components/LocationDetails";
-import Tours from "./components/Tours";
-import TourDetails from "./components/TourDetails";
-import Login from "./components/Login";
-import Signup from "./components/Signup";
-import CheckoutLayout from "./components/CheckoutLayout";
-import Orders from "./components/Orders";
-import NotFound from "./components/NotFound";
-import ServerError from "./components/ServerError";
 import { AppContext } from "./context/appContext";
+
+// Components
+
+// Home
+import Home from "./components/home/Home";
+import Navbar from "./components/home/Navbar";
+import Footer from "./components/home/Footer";
+import Login from "./components/home/Login";
+import Signup from "./components/home/Signup";
+
+// Destinations
+import DestinationRegions from "./components/destinations/DestinationRegions";
+import Destinations from "./components/destinations/Destinations";
+import DestinationDetails from "./components/destinations/DestinationDetails";
+import LocationDetails from "./components/destinations/LocationDetails";
+
+// Tours
+import Tours from "./components/tours/Tours";
+import TourDetails from "./components/tours/TourDetails";
+
+// Orders
+import CheckoutLayout from "./components/orders/CheckoutLayout";
+import Orders from "./components/orders/Orders";
+
+// Errors
+import NotFound from "./components/errors/NotFound";
+import ServerError from "./components/errors/ServerError";
+
 import "./styles/app.css";
 
 const App = () => {

@@ -11,7 +11,7 @@ const FavoritesCard = ({
   path,
 }) => {
   return (
-    <div className={"favorites-card"}>
+    <div className="favorites-card">
       <Link to={path}>
         <div className="favorite-card-content">
           <div className="favorite-image-wrapper">
