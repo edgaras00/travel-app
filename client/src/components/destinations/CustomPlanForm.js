@@ -99,7 +99,7 @@ const CustomPlanForm = () => {
         travelInterests: interests,
       };
 
-      const requestOptions = setRequestOptons("POST", requestBody);
+      const requestOptions = setRequestOptions("POST", requestBody);
 
       const response = await fetch("/api/custom", requestOptions);
       // const response = await fetch(
