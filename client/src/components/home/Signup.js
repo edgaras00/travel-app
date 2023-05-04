@@ -104,12 +104,11 @@ const Signup = () => {
           onChange={(event) => setEmail(event.target.value)}
         />
         <div className="login-labels">
-          <label htmlFor="password">Password</label>
+          <label htmlFor="password-input">Password</label>
         </div>
         <input
           type="password"
           name="password"
-          id="password"
           value={password}
           id="password-input"
           minLength={6}
