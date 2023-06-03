@@ -112,15 +112,14 @@ const ReviewModal = ({
   const handleDeleteReview = async (event) => {
     event.preventDefault();
     try {
+      let url = `https://paradisetravel-api.onrender.com/api/reviews/remove/${reviewID}`;
+      if (process.env.REACT_APP_ENV === "development") {
+        url = `/api/reviews/remove/${reviewID}`;
+      }
       const response = await fetch(`/api/reviews/remove/${reviewID}`, {
         method: "DELETE",
+        headers: { Authorization: `Bearer ${token}` },
       });
-      // const response = await fetch(
-      //   `https://travelparadise.herokuapp.com/api/reviews/remove/${reviewID}`,
-      //   {
-      //     method: "DELETE",
-      //   }
-      // );
 
       if (response.status !== 204) {
         throw new Error("Server error");
