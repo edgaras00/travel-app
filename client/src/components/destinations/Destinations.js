@@ -45,10 +45,11 @@ const Destinations = () => {
     };
     const fetchDestinations = async () => {
       try {
-        const response = await fetch(
-          `/api/destinations?region=${regionStr}`
-          // `https://travelparadise.herokuapp.com/api/destinations?region=${regionStr}`
-        );
+        let url = `https://paradisetravel-api.onrender.com/api/destinations?region=${regionStr}`;
+        if (process.env.REACT_APP_ENV === "development") {
+          url = `/api/destinaions?region=${regionStr}`;
+        }
+        const response = await fetch(url);
         const data = await response.json();
         setDestinationData(data.data.destinations);
       } catch (error) {
