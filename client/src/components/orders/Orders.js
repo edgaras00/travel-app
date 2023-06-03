@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
+import { AppContext } from "../../context/appContext";
 
 import OrderCard from "./OrderCard";
 
@@ -8,15 +9,20 @@ import "../../styles/orders.css";
 const Orders = () => {
   const [bookings, setBookings] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const { token } = useContext(appContext);
 
   useEffect(() => {
     const getBookings = async () => {
       try {
         setIsLoading(true);
-        const response = await fetch("/api/bookings/user");
-        // const response = await fetch(
-        //   "https://travelparadise.herokuapp.com/api/bookings/user"
-        // );
+        let url = "https://paradisetravel.onrender.com/api/bookings/user";
+        if (process.env.REACT_APP_ENV === "development") {
+          url = "/api/bookings/user";
+        }
+        const response = await fetch(url, {
+          headers: { Authorization: `Bearer ${token}` },
+        });
+
         const data = await response.json();
         setBookings(data.data.bookings);
         setIsLoading(false);

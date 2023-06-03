@@ -1,8 +1,8 @@
 const { promisify } = require("util");
 const jwt = require("jsonwebtoken");
 
-const catchAsync = require("../utils/catchAsync");
-const AppError = require("../utils/appError");
+const catchAsync = require("../../utils/catchAsync");
+const AppError = require("../../utils/appError");
 const User = require("../models/userModel");
 
 // Function to create a token

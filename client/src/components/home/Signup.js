@@ -14,7 +14,7 @@ const Signup = () => {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [signupError, setSignupError] = useState(null);
 
-  const { setUser } = useContext(AppContext);
+  const { setUser, setToken } = useContext(AppContext);
   const navigate = useNavigate();
 
   const handleSubmit = async (
@@ -44,11 +44,11 @@ const Signup = () => {
         email,
         password,
       });
-      const response = await fetch("/api/users/signup", requestOptions);
-      // const response = await fetch(
-      //   "https://travelparadise.herokuapp.com/api/users/signup",
-      //   requestOptions
-      // );
+      let url = "https://paradisetravel.onrender.com/api/users/signup";
+      if (process.env.REACT_APP_ENV === "development") {
+        url = "/api/users/signup";
+      }
+      const response = await fetch(url, requestOptions);
       const data = await response.json();
 
       if (response.status !== 201) {
@@ -56,8 +56,10 @@ const Signup = () => {
       }
 
       setUser(data.data.user);
+      setToken(data.token);
       navigate("/");
       localStorage.setItem("user", JSON.stringify(data.data.user));
+      localStorage.setItem("token", data.token);
     } catch (error) {
       console.error(error);
       if (error.statusCode === 500) {

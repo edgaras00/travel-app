@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { AppContext } from "../../context/appContext";
 
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import Select from "react-select";
@@ -23,6 +24,7 @@ const CheckoutForm = ({ tourData }) => {
   const [state, setState] = useState("");
   const [zip, setZip] = useState("");
   const [submitError, setSubmitError] = useState(null);
+  const { token } = useContext(AppContext);
   const navigate = useNavigate();
 
   const stateOpts = statesUS.map((opt) => ({
@@ -94,6 +96,7 @@ const CheckoutForm = ({ tourData }) => {
           headers: {
             Accept: "application/json",
             "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
           },
           body: JSON.stringify({
             id,
@@ -102,11 +105,11 @@ const CheckoutForm = ({ tourData }) => {
             description: tourData.name,
           }),
         };
-
-        const response = await fetch("/api/bookings/book", requestOptions);
-        // const response = await fetch(
-        //   "https://travelparadise.herokuapp.com/api/bookings/book"
-        // );
+        let url = "https://paradisetravel.onrender.com/api/bookings/book";
+        if (process.env.REACT_APP_ENV === "development") {
+          url = "/api/bookings/book";
+        }
+        const response = await fetch(url, requestOptions);
 
         if (response.status !== 201) {
           throw new Error("Something went wrong. Try again later.");

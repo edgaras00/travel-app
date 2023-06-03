@@ -1,9 +1,9 @@
 const Region = require("../models/regionModel");
-const APIFeatures = require("../utils/apiFeatures");
-const AppError = require("../utils/appError");
 
-const catchAsync = require("../utils/catchAsync");
-const validateID = require("../utils/validateID");
+const APIFeatures = require("../../utils/apiFeatures");
+const AppError = require("../../utils/appError");
+const catchAsync = require("../../utils/catchAsync");
+const validateID = require("../../utils/validateID");
 
 exports.getAllRegions = catchAsync(async (req, res, next) => {
   // Build query

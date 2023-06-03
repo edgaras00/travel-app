@@ -6,6 +6,7 @@ const AppContextProvider = (props) => {
   const [user, setUser] = useState(
     JSON.parse(localStorage.getItem("user")) || null
   );
+  const [token, setToken] = useState(localStorage.getItem("token") || null);
 
   const [isFormModalOpen, setIsFormModalOpen] = useState(false);
   const openFormModal = () => setIsFormModalOpen(true);
@@ -19,6 +20,8 @@ const AppContextProvider = (props) => {
         isFormModalOpen,
         openFormModal,
         closeFormModal,
+        token,
+        setToken,
       }}
     >
       {props.children}

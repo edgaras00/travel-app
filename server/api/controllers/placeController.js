@@ -1,9 +1,9 @@
 const Place = require("../models/placeModel");
-const APIFeatures = require("../utils/apiFeatures");
-const AppError = require("../utils/appError");
+const APIFeatures = require("../../utils/apiFeatures");
+const AppError = require("../../utils/appError");
 
-const catchAsync = require("../utils/catchAsync");
-const validateID = require("../utils/validateID");
+const catchAsync = require("../../utils/catchAsync");
+const validateID = require("../../utils/validateID");
 
 exports.getAllPlaces = catchAsync(async (req, res, next) => {
   // Build query

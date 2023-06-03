@@ -8,18 +8,20 @@ import { AppContext } from "../../context/appContext";
 import "../../styles/navbar.css";
 
 const Navbar = () => {
-  const { user, setUser } = useContext(AppContext);
+  const { user, setUser, token, setToken } = useContext(AppContext);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const logOut = async () => {
     localStorage.removeItem("user");
+    localStorage.removeItem("token");
     setUser(null);
+    setToken(null);
     try {
-      // const response = await fetch("/api/users/logout");
-      const response = await fetch(
-        "/api/users/logout"
-        // "https://travelparadise.herokuapp.com/api/users/logout"
-      );
+      let url = "https://paradisetravel.onrender.com/api/users/logout";
+      if (process.env.REACT_APP_ENV === "development") {
+        url = "/api/users/logout";
+      }
+      const response = await fetch(url);
       await response.json();
     } catch (error) {
       console.log(error);

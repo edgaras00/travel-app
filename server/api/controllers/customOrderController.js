@@ -1,8 +1,8 @@
 const CustomOrder = require("../models/customOrderModel");
 
-const APIFeatures = require("../utils/apiFeatures");
-const catchAsync = require("../utils/catchAsync");
-const AppError = require("../utils/appError");
+const APIFeatures = require("../../utils/apiFeatures");
+const catchAsync = require("../../utils/catchAsync");
+const AppError = require("../../utils/appError");
 
 exports.getAllCustomOrders = catchAsync(async (req, res, next) => {
   // Build query
