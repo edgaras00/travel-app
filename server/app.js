@@ -6,15 +6,15 @@ const cors = require("cors");
 const AppError = require("./utils/appError");
 
 // Routers
-const destinationRouter = require("./routes/destinationsRouter");
-const regionRouter = require("./routes/regionRouter");
-const userRouter = require("./routes/userRouter");
-const bookingRouter = require("./routes/bookingRouter");
-const reviewRouter = require("./routes/reviewRouter");
-const tourRouter = require("./routes/tourRouter");
-const placeRouter = require("./routes/placeRouter");
-const customOrderRouter = require("./routes/customOrderRouter");
-const errorHandler = require("./controllers/errorController");
+const destinationRouter = require("./api/routes/destinationsRouter");
+const regionRouter = require("./api/routes/regionRouter");
+const userRouter = require("./api/routes/userRouter");
+const bookingRouter = require("./api/routes/bookingRouter");
+const reviewRouter = require("./api/routes/reviewRouter");
+const tourRouter = require("./api/routes/tourRouter");
+const placeRouter = require("./api/routes/placeRouter");
+const customOrderRouter = require("./api/routes/customOrderRouter");
+const errorHandler = require("./api/controllers/errorController");
 
 const app = express();
 

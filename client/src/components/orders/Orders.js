@@ -9,7 +9,7 @@ import "../../styles/orders.css";
 const Orders = () => {
   const [bookings, setBookings] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const { token } = useContext(appContext);
+  const { token } = useContext(AppContext);
 
   useEffect(() => {
     const getBookings = async () => {
@@ -31,7 +31,7 @@ const Orders = () => {
       }
     };
     getBookings();
-  }, []);
+  }, [token]);
 
   let bookingCards = [];
   if (bookings.length > 0) {

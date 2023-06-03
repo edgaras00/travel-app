@@ -8,7 +8,7 @@ import { AppContext } from "../../context/appContext";
 import "../../styles/navbar.css";
 
 const Navbar = () => {
-  const { user, setUser, token, setToken } = useContext(AppContext);
+  const { user, setUser, setToken } = useContext(AppContext);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const logOut = async () => {

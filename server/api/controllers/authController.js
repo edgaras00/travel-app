@@ -82,7 +82,7 @@ exports.login = catchAsync(async (req, res, next) => {
   // User object that gets sent to client
   const userObject = { name: user.name, email: user.email, id: user._id };
 
-  createAndSendToken(userObject, 201, res);
+  createAndSendToken(userObject, 200, res);
 });
 
 // Protect route

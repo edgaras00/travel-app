@@ -85,7 +85,7 @@ const CheckoutForm = ({ tourData }) => {
       billing_details: billingDetails,
     });
 
-    console.log(paymentMethod);
+    // console.log(paymentMethod);
 
     if (!error) {
       setIsProcessing(true);
@@ -117,7 +117,7 @@ const CheckoutForm = ({ tourData }) => {
 
         const data = await response.json();
         if (data) {
-          console.log(data);
+          // console.log(data);
           setIsProcessing(false);
           navigate("/");
         }

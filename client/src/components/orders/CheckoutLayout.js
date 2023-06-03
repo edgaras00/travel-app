@@ -13,7 +13,6 @@ const CheckoutLayout = () => {
   const { state } = useLocation();
 
   if (!state) {
-    console.log("No state");
     return <Navigate replace to="/tours" />;
   }
 
