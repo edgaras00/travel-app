@@ -15,10 +15,11 @@ const Tours = () => {
   useEffect(() => {
     const fetchTourData = async () => {
       try {
-        const response = await fetch("/api/tours");
-        // const response = await fetch(
-        //   `https://travelparadise.herokuapp.com/api/tours`
-        // );
+        let url = "https://paradisetravel-api.onrender.com/api/tours";
+        if (process.env.REACT_APP_ENV === "development") {
+          url = "/api/tours";
+        }
+        const response = await fetch(url);
 
         if (response.status !== 200) {
           throw new Error("Resource not found");

@@ -41,10 +41,12 @@ const CustomPlanForm = () => {
 
   const handleOnAfterOpen = async () => {
     try {
-      const response = await fetch("/api/destinations");
-      // const response = await fetch(
-      //   "https://travelparadise.herokuapp.com/api/destinations"
-      // );
+      let url = "https://paradisetravel-api.onrender.com/api/destinations";
+      if (process.env.REACT_APP_ENV === "development") {
+        url = "/api/destinations";
+      }
+      const response = await fetch(url);
+
       const data = await response.json();
       if (response.status !== 200) {
         throw new AppError("Could not get destination data", response.status);

@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import { AppContext } from "../../context/appContext";
 import Modal from "react-modal";
 import Rating from "@mui/material/Rating";
 
@@ -22,6 +23,7 @@ const ReviewModal = ({
   const [reviewText, setReviewText] = useState(text || "");
 
   const [submitError, setSubmitError] = useState(null);
+  const { token } = useContext(AppContext);
 
   useEffect(() => {
     setReviewText(text);
@@ -56,20 +58,19 @@ const ReviewModal = ({
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
         },
         body: JSON.stringify(requestBody),
       };
 
-      const response = await fetch(
-        `/api/reviews/${isEdit ? "update/" + reviewID : ""}`,
-        requestOptions
-      );
-      // const response = await fetch(
-      //   `https://travelparadise.herokuapp.com/api/reviews/${
-      //     isEdit ? "update/" + reviewID : ""
-      //   }`,
-      //   requestOptions
-      // );
+      let url = `https://paradisetravel-api.onrender.com/api/reviews/${
+        isEdit ? "/update/" + reviewID : ""
+      }`;
+      if (process.env.REACT_APP_ENV === "development") {
+        url = `/api/reviews/${isEdit ? "update/" + reviewID : ""}`;
+      }
+      const response = await fetch(url, requestOptions);
+
       const data = await response.json();
       if (response.status !== 201 && response.status !== 200) {
         console.log("Hello");

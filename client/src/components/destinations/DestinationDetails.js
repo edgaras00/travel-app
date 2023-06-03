@@ -22,10 +22,11 @@ const DestinationDetails = () => {
   useEffect(() => {
     const fetchDestinationData = async () => {
       try {
-        const response = await fetch(
-          `/api/destinations/${destinationID}`
-          // `https://travelparadise.herokuapp.com/api/destinations/${destinationID}`
-        );
+        let url = `https://paradisetravel-api.onrender.com/api/destinations/${destinationID}`;
+        if (process.env.REACT_APP_ENV === "development") {
+          url = `/api/destinations/${destinationID}`;
+        }
+        const response = await fetch(url);
 
         if (response.status !== 200) {
           handleErrors(response.status);

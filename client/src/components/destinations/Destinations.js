@@ -26,10 +26,11 @@ const Destinations = () => {
     if (regionID === "usa") regionStr = regionID.toUpperCase();
     const fetchRegionData = async () => {
       try {
-        const response = await fetch(
-          `/api/regions/${regionID}`
-          // `https://travelparadise.herokuapp.com/api/regions/${regionID}`
-        );
+        let url = `https://paradisetravel-api.onrender.com/api/regions/${regionID}`;
+        if (process.env.REACT_APP_ENV === "development") {
+          url = `/api/regions/${regionID}`;
+        }
+        const response = await fetch(url);
 
         if (response.status !== 200) {
           handleErrors(response.status);

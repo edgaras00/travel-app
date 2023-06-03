@@ -17,7 +17,7 @@ const Navbar = () => {
     setUser(null);
     setToken(null);
     try {
-      let url = "https://paradisetravel.onrender.com/api/users/logout";
+      let url = "https://paradisetravel-api.onrender.com/api/users/logout";
       if (process.env.REACT_APP_ENV === "development") {
         url = "/api/users/logout";
       }

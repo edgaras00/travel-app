@@ -18,10 +18,11 @@ const LocationDetails = () => {
   useEffect(() => {
     const fetchLocationData = async () => {
       try {
-        const response = await fetch(
-          `/api/places/${locationID}`
-          // `https://travelparadise.herokuapp.com/api/places/${locationID}`
-        );
+        let url = `https://paradisetravel-api.onrender.com/api/places/${locationID}`;
+        if (process.env.REACT_APP_ENV === "development") {
+          url = `/api/places/${locationID}`;
+        }
+        const response = await fetch(url);
 
         if (response.status !== 200) {
           handleErrors(response.status);

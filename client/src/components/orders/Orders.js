@@ -15,7 +15,7 @@ const Orders = () => {
     const getBookings = async () => {
       try {
         setIsLoading(true);
-        let url = "https://paradisetravel.onrender.com/api/bookings/user";
+        let url = "https://paradisetravel-api.onrender.com/api/bookings/user";
         if (process.env.REACT_APP_ENV === "development") {
           url = "/api/bookings/user";
         }

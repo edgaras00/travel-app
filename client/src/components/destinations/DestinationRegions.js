@@ -15,10 +15,11 @@ const DestinationRegions = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/api/regions");
-        // const response = await fetch(
-        //   "https://travelparadise.herokuapp.com/api/regions"
-        // );
+        let url = "https://paradisetravel-api.onrender.com/api/regions";
+        if (process.env.REACT_APP_ENV === "development") {
+          url = "/api/regions";
+        }
+        const response = await fetch(url);
 
         if (response.status !== 200) {
           throw new AppError("Server error", response.status);

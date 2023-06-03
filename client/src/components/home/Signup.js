@@ -44,7 +44,7 @@ const Signup = () => {
         email,
         password,
       });
-      let url = "https://paradisetravel.onrender.com/api/users/signup";
+      let url = "https://paradisetravel-api.onrender.com/api/users/signup";
       if (process.env.REACT_APP_ENV === "development") {
         url = "/api/users/signup";
       }

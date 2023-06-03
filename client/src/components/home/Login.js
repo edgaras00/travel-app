@@ -24,7 +24,7 @@ const Login = () => {
     }
 
     try {
-      let url = "https://paradisetravel.onrender.com/api/users/login";
+      let url = "https://paradisetravel-api.onrender.com/api/users/login";
       if (process.env.REACT_APP_ENV === "development") {
         url = "/api/users/login";
       }

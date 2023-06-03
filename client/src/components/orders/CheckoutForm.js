@@ -105,7 +105,7 @@ const CheckoutForm = ({ tourData }) => {
             description: tourData.name,
           }),
         };
-        let url = "https://paradisetravel.onrender.com/api/bookings/book";
+        let url = "https://paradisetravel-api.onrender.com/api/bookings/book";
         if (process.env.REACT_APP_ENV === "development") {
           url = "/api/bookings/book";
         }
