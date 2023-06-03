@@ -116,7 +116,7 @@ const ReviewModal = ({
       if (process.env.REACT_APP_ENV === "development") {
         url = `/api/reviews/remove/${reviewID}`;
       }
-      const response = await fetch(`/api/reviews/remove/${reviewID}`, {
+      const response = await fetch(url, {
         method: "DELETE",
         headers: { Authorization: `Bearer ${token}` },
       });
