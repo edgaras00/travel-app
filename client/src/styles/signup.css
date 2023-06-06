@@ -38,3 +38,9 @@
     width: 80%;
   }
 }
+
+@media (max-width: 420px) {
+  .signup-form {
+    width: 100%;
+  }
+}

@@ -109,3 +109,9 @@
     width: 80%;
   }
 }
+
+@media (max-width: 420px) {
+  .login-form {
+    width: 100%;
+  }
+}

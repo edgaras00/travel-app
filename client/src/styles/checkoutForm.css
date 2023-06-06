@@ -114,3 +114,51 @@
     align-items: center;
   }
 }
+
+@media (max-width: 420px) {
+  .checkout-form {
+    width: 94%;
+  }
+
+  .billing-details {
+    width: 96%;
+  }
+  .buyer-info-input {
+    width: 80%;
+    margin-top: 1rem;
+  }
+  .buyer-info-input input {
+    width: 100%;
+  }
+
+  .address-first-input {
+    width: 80%;
+    margin-right: 1rem;
+  }
+
+  .address-first-input input {
+    width: 100%;
+  }
+
+  .address-second-input {
+    width: 80%;
+    margin-right: 1rem;
+  }
+
+  .us-state-select {
+    width: 100%;
+  }
+
+  .country-select {
+    width: 100%;
+  }
+
+  .card-element-wrapper {
+    margin: 30px 0px;
+    width: 100%;
+  }
+
+  .card-element {
+    width: 100%;
+  }
+}

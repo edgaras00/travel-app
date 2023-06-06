@@ -92,3 +92,9 @@
 .deleteReview {
   margin-left: 20px;
 }
+
+@media (max-width: 420px) {
+  .review-header-input input {
+    width: 60%;
+  }
+}

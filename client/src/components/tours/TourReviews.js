@@ -83,25 +83,29 @@ const TourReviews = ({
           toggleReviewUpdate={toggleReviewUpdate}
         />
       </div>
-      <ReactPaginate
-        breakLabel="..."
-        nextLabel=">"
-        previousLabel="<"
-        onPageChange={handlePageClick}
-        pageRangeDisplayed={3}
-        pageCount={pageCount}
-        renderOnZeroPageCount={null}
-        containerClassName="pagination-container"
-        breakClassName="pagination-break"
-        pageClassName="pagination-page"
-        pageLinkClassName="pagination-link"
-        activeClassName="active-page"
-        activeLinkClassName="active-page-link"
-        previousClassName="previous"
-        nextClassName="next"
-        previousLinkClassName="previous-link"
-        nextLinkClassName="next-link"
-      />
+      <div className="pagination-wrapper">
+        {pageCount <= 1 ? null : (
+          <ReactPaginate
+            breakLabel="..."
+            nextLabel=">"
+            previousLabel="<"
+            onPageChange={handlePageClick}
+            pageRangeDisplayed={3}
+            pageCount={pageCount}
+            renderOnZeroPageCount={null}
+            containerClassName="pagination-container"
+            breakClassName="pagination-break"
+            pageClassName="pagination-page"
+            pageLinkClassName="pagination-link"
+            activeClassName="active-page"
+            activeLinkClassName="active-page-link"
+            previousClassName="previous"
+            nextClassName="next"
+            previousLinkClassName="previous-link"
+            nextLinkClassName="next-link"
+          />
+        )}
+      </div>
     </div>
   );
 };

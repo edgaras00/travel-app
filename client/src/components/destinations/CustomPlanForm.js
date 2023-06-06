@@ -7,6 +7,7 @@ import Button from "../Button";
 
 import { AppError } from "../../utils/AppError";
 import { setRequestOptions } from "../../utils/setReqOptions";
+import useWindowWidth from "../../hooks/useWindowWidth";
 
 import "../../styles/customPlanForm.css";
 
@@ -25,6 +26,7 @@ const CustomPlanForm = () => {
   const [submitError, setSubmitError] = useState(null);
 
   const { isFormModalOpen, closeFormModal } = useContext(AppContext);
+  const { width } = useWindowWidth();
 
   const destinationOptions = destinationData.map((destination) => {
     return { value: destination.name, label: destination.name };
@@ -101,12 +103,11 @@ const CustomPlanForm = () => {
       };
 
       const requestOptions = setRequestOptions("POST", requestBody);
-
-      const response = await fetch("/api/custom", requestOptions);
-      // const response = await fetch(
-      //   "https://travelparadise.herokuapp.com/api/custom",
-      //   requestOptions
-      // );
+      let url = "https://paradisetravel-api.onrender.com/api/custom";
+      if (process.env.REACT_APP_ENV === "development") {
+        url = "/api/custom";
+      }
+      const response = await fetch(url, requestOptions);
 
       const data = await response.json();
       console.log(data.status);
@@ -127,7 +128,7 @@ const CustomPlanForm = () => {
 
   const customStyles = {
     content: {
-      width: "68%",
+      width: width > 420 ? "68%" : "90%",
       backgroundColor: "#fff",
       top: "50%",
       left: "50%",
@@ -136,7 +137,7 @@ const CustomPlanForm = () => {
       transform: "translate(-50%, -50%)",
       right: "auto",
       borderRadius: 0,
-      height: "90vh",
+      height: "80vh",
       padding: 0,
       paddingBottom: "30px",
     },

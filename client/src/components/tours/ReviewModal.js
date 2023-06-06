@@ -4,6 +4,7 @@ import Modal from "react-modal";
 import Rating from "@mui/material/Rating";
 
 import Button from "../Button";
+import useWindowWidth from "../../hooks/useWindowWidth";
 
 import "../../styles/reviewModal.css";
 
@@ -24,6 +25,7 @@ const ReviewModal = ({
 
   const [submitError, setSubmitError] = useState(null);
   const { token } = useContext(AppContext);
+  const { width } = useWindowWidth();
 
   useEffect(() => {
     setReviewText(text);
@@ -143,7 +145,7 @@ const ReviewModal = ({
       bottom: "auto",
       marginRight: "-50%",
       transform: "translate(-50%, -50%)",
-      width: "70%",
+      width: width > 420 ? "70%" : "90%",
       borderRadius: "10px",
       padding: 0,
     },
