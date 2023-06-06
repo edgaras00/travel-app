@@ -154,7 +154,9 @@ const DestinationDetails = () => {
         />
       </div>
       {locations.length > 0 ? (
-        <h2>Popular {destinationData.name} Destinations</h2>
+        <h2 className="destination-detail-popular">
+          Popular {destinationData.name} Destinations
+        </h2>
       ) : null}
       <div className={`destination-card-container ${cardContainerClass}`}>
         {locations}

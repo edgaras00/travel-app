@@ -58,3 +58,13 @@
     font-size: 1.2rem;
   }
 }
+
+@media (max-width: 420px) {
+  .partners-container {
+    width: 100%;
+  }
+
+  .partners-grid img {
+    width: 80px;
+  }
+}

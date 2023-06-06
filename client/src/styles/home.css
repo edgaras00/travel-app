@@ -157,3 +157,22 @@
     align-items: center;
   }
 }
+
+@media (max-width: 420px) {
+  .favorites-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .favorites-header p {
+    width: 90%;
+  }
+
+  .upper-text {
+    font-size: 2.8rem;
+  }
+
+  .lower-text {
+    font-size: 1.2rem;
+  }
+}

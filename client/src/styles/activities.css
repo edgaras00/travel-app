@@ -48,3 +48,16 @@
     font-size: 1.3rem;
   }
 }
+
+@media (max-width: 420px) {
+  .things-to-do {
+    width: 100%;
+  }
+  .things-list {
+    width: 90%;
+    text-align: center;
+  }
+  .things-to-do li {
+    margin-left: 16px;
+  }
+}

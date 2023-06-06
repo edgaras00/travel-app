@@ -47,7 +47,7 @@ const Destinations = () => {
       try {
         let url = `https://paradisetravel-api.onrender.com/api/destinations?region=${regionStr}`;
         if (process.env.REACT_APP_ENV === "development") {
-          url = `/api/destinaions?region=${regionStr}`;
+          url = `/api/destinations?region=${regionStr}`;
         }
         const response = await fetch(url);
         const data = await response.json();

@@ -98,3 +98,15 @@
     font-size: 1.8rem;
   }
 }
+
+@media (max-width: 420px) {
+  .destination-at-glance {
+    width: 100%;
+    align-items: center;
+  }
+
+  .region-description-text {
+    align-items: flex-start;
+    width: 90%;
+  }
+}

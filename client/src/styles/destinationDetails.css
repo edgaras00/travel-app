@@ -22,3 +22,9 @@
   width: 94%;
   margin: 5rem 0;
 }
+
+@media (max-width: 420px) {
+  .destination-detail-popular {
+    text-align: center;
+  }
+}
