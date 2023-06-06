@@ -1,5 +1,5 @@
 # Paradise Travel
-https://travelparadise.herokuapp.com/
+https://paradisetravel.onrender.com/
 <br/>
 <br/>
 <img src="docs/main.png" width="800px">
