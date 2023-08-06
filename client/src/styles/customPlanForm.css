@@ -154,6 +154,12 @@
   margin-left: 1.3rem;
 }
 
+@-moz-document url-prefix() {
+  .custom-plan-form-wrapper {
+    padding-bottom: 1.2rem;
+  }
+}
+
 @media (max-width: 1000px) {
   .plan-header,
   .contact-detail-header {

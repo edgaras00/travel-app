@@ -110,6 +110,12 @@
   }
 }
 
+@media (max-width: 490px) {
+  .signup-form button {
+    width: 32%;
+  }
+}
+
 @media (max-width: 420px) {
   .login-form {
     width: 100%;
