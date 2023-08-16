@@ -35,12 +35,7 @@ app.use("/api/tours", tourRouter);
 app.use("/api/bookings", bookingRouter);
 app.use("/api/places", placeRouter);
 app.use("/api/custom", customOrderRouter);
-
-// app.use(express.static(path.join(__dirname, "./client/build")));
-
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "./client/build", "index.html"));
-// });
+app.use("/", (req, res) => res.status(200).send("Welcome"));
 
 // Handle not defined routes | 404
 app.all("*", (req, res, next) => {
